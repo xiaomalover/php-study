@@ -1,0 +1,7 @@
+this is a test txt
+
+it will use by file function in ./file.php
+
+ok , that's all.
+
+thanks!!!
