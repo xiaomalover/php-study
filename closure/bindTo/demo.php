@@ -238,3 +238,26 @@ object(Me)#9 (4) {
 }
 */
 
+/**
+ * Closure bindTo static version bind function demo
+ */
+class X
+{
+    private $title = 'title X';
+}
+
+class M
+{
+    private $title = 'title M';
+}
+
+$cl = function () {
+    echo $this->title, PHP_EOL;
+};
+$x = new X();
+$m = new M();
+
+$cl = Closure::bind($cl, $x, $x);
+$cl();
+$cl = Closure::bind($cl, $m, $m);
+$cl();
