@@ -1,0 +1,1 @@
+This use for test RecursiveDirectoryIterator only.
