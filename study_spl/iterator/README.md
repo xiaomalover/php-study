@@ -1,1 +1,1 @@
-This is the directory for spl iterator
+PHP 标准库 - 迭代器

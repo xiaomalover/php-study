@@ -1,1 +1,1 @@
-This repository is the notes for study php standard library.
+学习SPL(Standard PHP Library)笔记

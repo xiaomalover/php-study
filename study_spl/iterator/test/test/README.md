@@ -1,1 +1,1 @@
-This use for test RecursiveDirectoryIterator only.
+测试递归迭代器用的测试目录及文件。
