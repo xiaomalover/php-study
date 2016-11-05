@@ -84,7 +84,9 @@ define("PASSWORD_BCRYPT", 1);
  * </ul>
  * @since 5.5.0
  */
-function password_get_info ($hash) {}
+function password_get_info($hash)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.5.0, PHP 5)<br/>
@@ -103,7 +105,9 @@ function password_get_info ($hash) {}
  * @return string|bool Returns the hashed password, or FALSE on failure.
  * @since 5.5.0
  */
-function password_hash ($password, $algo, $options = null) {}
+function password_hash($password, $algo, $options = null)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.5.0, PHP 5)<br/>
@@ -116,7 +120,9 @@ function password_hash ($password, $algo, $options = null) {}
  * @return string Returns TRUE if the hash should be rehashed to match the given algo and options, or FALSE otherwise.
  * @since 5.5.0
  */
-function password_needs_rehash ($hash, $algo, $options = null) {}
+function password_needs_rehash($hash, $algo, $options = null)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.5.0, PHP 5)<br/>
@@ -128,6 +134,8 @@ function password_needs_rehash ($hash, $algo, $options = null) {}
  * @return boolean Returns TRUE if the password and hash match, or FALSE otherwise.
  * @since 5.5.0
  */
-function password_verify ($password, $hash) {}
+function password_verify($password, $hash)
+{
+}
 
 // End of password v.

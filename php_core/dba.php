@@ -121,7 +121,9 @@
  * @since 4.0
  * @since 5.0
  */
-function dba_open ($path, $mode, $handler = null, $_ = null) {}
+function dba_open($path, $mode, $handler = null, $_ = null)
+{
+}
 
 /**
  * Open database persistently
@@ -146,7 +148,9 @@ function dba_open ($path, $mode, $handler = null, $_ = null) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_popen ($path, $mode, $handler = null, $_ = null) {}
+function dba_popen($path, $mode, $handler = null, $_ = null)
+{
+}
 
 /**
  * Close a DBA database
@@ -159,7 +163,9 @@ function dba_popen ($path, $mode, $handler = null, $_ = null) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_close ($handle) {}
+function dba_close($handle)
+{
+}
 
 /**
  * Delete DBA entry specified by key
@@ -175,7 +181,9 @@ function dba_close ($handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_delete ($key, $handle) {}
+function dba_delete($key, $handle)
+{
+}
 
 /**
  * Check whether key exists
@@ -191,7 +199,9 @@ function dba_delete ($key, $handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_exists ($key, $handle) {}
+function dba_exists($key, $handle)
+{
+}
 
 /**
  * Fetch data specified by key
@@ -213,7 +223,9 @@ function dba_exists ($key, $handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_fetch ($key, $handle) {}
+function dba_fetch($key, $handle)
+{
+}
 
 /**
  * Insert entry
@@ -234,7 +246,9 @@ function dba_fetch ($key, $handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_insert ($key, $value, $handle) {}
+function dba_insert($key, $value, $handle)
+{
+}
 
 /**
  * Replace or insert entry
@@ -253,7 +267,9 @@ function dba_insert ($key, $value, $handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_replace ($key, $value, $handle) {}
+function dba_replace($key, $value, $handle)
+{
+}
 
 /**
  * Fetch first key
@@ -266,7 +282,9 @@ function dba_replace ($key, $value, $handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_firstkey ($handle) {}
+function dba_firstkey($handle)
+{
+}
 
 /**
  * Fetch next key
@@ -279,7 +297,9 @@ function dba_firstkey ($handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_nextkey ($handle) {}
+function dba_nextkey($handle)
+{
+}
 
 /**
  * Optimize database
@@ -292,7 +312,9 @@ function dba_nextkey ($handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_optimize ($handle) {}
+function dba_optimize($handle)
+{
+}
 
 /**
  * Synchronize database
@@ -305,7 +327,9 @@ function dba_optimize ($handle) {}
  * @since 4.0
  * @since 5.0
  */
-function dba_sync ($handle) {}
+function dba_sync($handle)
+{
+}
 
 /**
  * List all the handlers available
@@ -324,7 +348,9 @@ function dba_sync ($handle) {}
  * @since 4.3.0
  * @since 5.0
  */
-function dba_handlers ($full_info = false) {}
+function dba_handlers($full_info = false)
+{
+}
 
 /**
  * List all open database files
@@ -333,7 +359,9 @@ function dba_handlers ($full_info = false) {}
  * @since 4.3.0
  * @since 5.0
  */
-function dba_list () {}
+function dba_list()
+{
+}
 
 /**
  * Splits a key in string representation into array representation
@@ -346,6 +374,8 @@ function dba_list () {}
  * <i>key</i> is <b>NULL</b> or <b>FALSE</b>.
  * @since 5.0
  */
-function dba_key_split ($key) {}
+function dba_key_split($key)
+{
+}
 
 // End of dba v.

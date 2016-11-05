@@ -20,7 +20,9 @@
  * @since 4.0
  * @since 5.0
  */
-function shm_attach ($key, $memsize = null, $perm = 0666) {}
+function shm_attach($key, $memsize = null, $perm = 0666)
+{
+}
 
 /**
  * Removes shared memory from Unix systems
@@ -33,7 +35,9 @@ function shm_attach ($key, $memsize = null, $perm = 0666) {}
  * @since 4.0
  * @since 5.0
  */
-function shm_remove ($shm_identifier) {}
+function shm_remove($shm_identifier)
+{
+}
 
 /**
  * Disconnects from shared memory segment
@@ -46,7 +50,9 @@ function shm_remove ($shm_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function shm_detach ($shm_identifier) {}
+function shm_detach($shm_identifier)
+{
+}
 
 /**
  * Inserts or updates a variable in shared memory
@@ -68,7 +74,9 @@ function shm_detach ($shm_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function shm_put_var ($shm_identifier, $variable_key, $variable) {}
+function shm_put_var($shm_identifier, $variable_key, $variable)
+{
+}
 
 /**
  * Check whether a specific entry exists
@@ -82,7 +90,9 @@ function shm_put_var ($shm_identifier, $variable_key, $variable) {}
  * @return bool <b>TRUE</b> if the entry exists, otherwise <b>FALSE</b>
  * @since 5.3.0
  */
-function shm_has_var ($shm_identifier, $variable_key) {}
+function shm_has_var($shm_identifier, $variable_key)
+{
+}
 
 /**
  * Returns a variable from shared memory
@@ -97,7 +107,9 @@ function shm_has_var ($shm_identifier, $variable_key) {}
  * @since 4.0
  * @since 5.0
  */
-function shm_get_var ($shm_identifier, $variable_key) {}
+function shm_get_var($shm_identifier, $variable_key)
+{
+}
 
 /**
  * Removes a variable from shared memory
@@ -113,7 +125,9 @@ function shm_get_var ($shm_identifier, $variable_key) {}
  * @since 4.0
  * @since 5.0
  */
-function shm_remove_var ($shm_identifier, $variable_key) {}
+function shm_remove_var($shm_identifier, $variable_key)
+{
+}
 
 // End of sysvshm v.
 ?>

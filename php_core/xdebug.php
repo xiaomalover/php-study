@@ -5,51 +5,67 @@
  * The main body of a script is level 0 and each include and/or function call adds one to the stack depth level.
  * @return int
  */
-function xdebug_get_stack_depth () {}
+function xdebug_get_stack_depth()
+{
+}
 
 /**
  * Displays the current function stack, in a similar way as what Xdebug would display in an error situation.
  * @param string $message
- * @param int $options    A bit mask of the following constants: XDEBUG_STACK_NO_DESC
+ * @param int $options A bit mask of the following constants: XDEBUG_STACK_NO_DESC
  * @return array
  */
-function xdebug_get_function_stack ($message = '', $options = 0) {}
+function xdebug_get_function_stack($message = '', $options = 0)
+{
+}
 
 /**
  * Returns an array which resembles the stack trace up to this point.
  * @return array
  */
-function xdebug_print_function_stack () {}
+function xdebug_print_function_stack()
+{
+}
 
 /**
  * Returns an array where each element is a variable name which is defined in the current scope.
  * @return array
  */
-function xdebug_get_declared_vars () {}
+function xdebug_get_declared_vars()
+{
+}
 
 /**
  * This function returns the filename that contains the function/method that called the current function/method.
  * @return string
  */
-function xdebug_call_file () {}
+function xdebug_call_file()
+{
+}
 
 /**
  * This function returns the name of the class from which the current function/method was called from.
  * @return string
  */
-function xdebug_call_class () {}
+function xdebug_call_class()
+{
+}
 
 /**
  * This function returns the name of the function/method from which the current function/method was called from.
  * @return string
  */
-function xdebug_call_function () {}
+function xdebug_call_function()
+{
+}
 
 /**
  * This function returns the line number that contains the function/method that called the current function/method.
  * @return int
  */
-function xdebug_call_line () {}
+function xdebug_call_line()
+{
+}
 
 /**
  * This function starts the monitoring of functions that were given in a list as argument to this function.
@@ -59,27 +75,35 @@ function xdebug_call_line () {}
  * @param string[] $list_of_functions_to_monitor
  * @return void
  */
-function xdebug_start_function_monitor ( array $list_of_functions_to_monitor ) {}
+function xdebug_start_function_monitor(array $list_of_functions_to_monitor)
+{
+}
 
 /**
  * This function stops the function monitor.
  * In order to get the list of monitored functions, you need to use the xdebug_get_monitored_functions() function.
  * @return void
  */
-function xdebug_stop_function_monitor () {}
+function xdebug_stop_function_monitor()
+{
+}
 
 /**
  * Returns a structure which contains information about where the monitored functions were executed in your script.
  * @return array
  */
-function xdebug_get_monitored_functions () {}
+function xdebug_get_monitored_functions()
+{
+}
 
 /**
  * This function displays structured information about one or more expressions that includes its type and value.
  * Arrays are explored recursively with values.
  * @return void
  */
-function xdebug_var_dump ($var) {}
+function xdebug_var_dump($var)
+{
+}
 
 /**
  * This function displays structured information about one or more variables that includes its type, value and refcount information.
@@ -93,7 +117,9 @@ function xdebug_var_dump ($var) {}
  * @param string $varName
  * @return void
  */
-function xdebug_debug_zval ($varName) {}
+function xdebug_debug_zval($varName)
+{
+}
 
 /**
  * This function displays structured information about one or more variables that includes its type,
@@ -104,30 +130,38 @@ function xdebug_debug_zval ($varName) {}
  * @param string $varName
  * @return void
  */
-function xdebug_debug_zval_stdout ($varName) {}
+function xdebug_debug_zval_stdout($varName)
+{
+}
 
 /**
  * Enable showing stack traces on error conditions.
  * @return void
  */
-function xdebug_enable () {}
+function xdebug_enable()
+{
+}
 
 /**
  * Disable showing stack traces on error conditions.
  * @return void
  */
-function xdebug_disable () {}
+function xdebug_disable()
+{
+}
 
 /**
  * Return whether stack traces would be shown in case of an error or not.
  * @return bool
  */
-function xdebug_is_enabled () {}
+function xdebug_is_enabled()
+{
+}
 
 /**
  * Starts recording all notices, warnings and errors and prevents their display
  *
- * When this function is executed, Xdebug will cause PHP not to display any notices, warnings or errors. 
+ * When this function is executed, Xdebug will cause PHP not to display any notices, warnings or errors.
  * Instead, they are formatted according to Xdebug's normal error formatting rules (ie, the error table
  * with the red exclamation mark) and then stored in a buffer.
  * This will continue until you call xdebug_stop_error_collection().
@@ -136,14 +170,18 @@ function xdebug_is_enabled () {}
  * This is really useful if you want to prevent Xdebug's powerful error reporting features from destroying your layout.
  * @return void
  */
-function xdebug_start_error_collection () {}
+function xdebug_start_error_collection()
+{
+}
 
 /**
  * When this function is executed, error collection as started by xdebug_start_error_collection() is aborted.
  * The errors stored in the collection buffer are not deleted and still available to be fetched through xdebug_get_collected_errors().
  * @return void
  */
-function xdebug_stop_error_collection () {}
+function xdebug_stop_error_collection()
+{
+}
 
 /**
  * This function returns all errors from the collection buffer that contains all errors that were stored there when error collection was started with xdebug_start_error_collection().
@@ -152,14 +190,18 @@ function xdebug_stop_error_collection () {}
  * @param bool $clean
  * @return string
  */
-function xdebug_get_collected_errors ($clean = false) {}
+function xdebug_get_collected_errors($clean = false)
+{
+}
 
 /**
  * This function makes the debugger break on the specific line as if a normal file/line breakpoint was set on this line.
  *
  * @return bool
  */
-function xdebug_break () {}
+function xdebug_break()
+{
+}
 
 /**
  * Start tracing function calls from this point to the file in the trace_file parameter.
@@ -171,38 +213,50 @@ function xdebug_break () {}
  * @param $options
  * @return void
  */
-function xdebug_start_trace ($trace_file, $options = 0) {}
+function xdebug_start_trace($trace_file, $options = 0)
+{
+}
 
 /**
  * Stop tracing function calls and closes the trace file.
  *
  * @return void
  */
-function xdebug_stop_trace () {}
+function xdebug_stop_trace()
+{
+}
 
 /**
  * Returns the name of the file which is used to trace the output of this script too.
  * This is useful when xdebug.auto_trace is enabled.
  * @return string
  */
-function xdebug_get_tracefile_name () {}
+function xdebug_get_tracefile_name()
+{
+}
 
 /**
  * Returns the name of the file which is used to save profile information to.
  *
  * @return string
  */
-function xdebug_get_profiler_filename () {}
+function xdebug_get_profiler_filename()
+{
+}
 
 /**
  * @return bool
  */
-function xdebug_dump_aggr_profiling_data () {}
+function xdebug_dump_aggr_profiling_data()
+{
+}
 
 /**
  * @return bool
  */
-function xdebug_clear_aggr_profiling_data () {}
+function xdebug_clear_aggr_profiling_data()
+{
+}
 
 /**
  * Returns the current amount of memory the script uses.
@@ -211,7 +265,9 @@ function xdebug_clear_aggr_profiling_data () {}
  *
  * @return int
  */
-function xdebug_memory_usage () {}
+function xdebug_memory_usage()
+{
+}
 
 /**
  * Returns the maximum amount of memory the script used until now.
@@ -220,14 +276,18 @@ function xdebug_memory_usage () {}
  *
  * @return int
  */
-function xdebug_peak_memory_usage () {}
+function xdebug_peak_memory_usage()
+{
+}
 
 /**
  * Returns the current time index since the starting of the script in seconds.
  *
  * @return float
  */
-function xdebug_time_index () {}
+function xdebug_time_index()
+{
+}
 
 /**
  * This function starts gathering the information for code coverage.
@@ -239,7 +299,9 @@ function xdebug_time_index () {}
  * @param int $options
  * @return void
  */
-function xdebug_start_code_coverage ($options = 0) {}
+function xdebug_start_code_coverage($options = 0)
+{
+}
 
 /**
  * This function stops collecting information, the information in memory will be destroyed.
@@ -248,13 +310,17 @@ function xdebug_start_code_coverage ($options = 0) {}
  * @param bool $cleanup Destroy collected information in memory
  * @return void
  */
-function xdebug_stop_code_coverage ($cleanup = true) {}
+function xdebug_stop_code_coverage($cleanup = true)
+{
+}
 
 /**
  * Returns whether code coverage is active.
  * @return bool
  */
-function xdebug_code_coverage_started () {}
+function xdebug_code_coverage_started()
+{
+}
 
 /**
  * Returns a structure which contains information about which lines
@@ -262,14 +328,18 @@ function xdebug_code_coverage_started () {}
  *
  * @return array
  */
-function xdebug_get_code_coverage () {}
+function xdebug_get_code_coverage()
+{
+}
 
 /**
  * Returns the number of functions called, including constructors, desctructors and methods.
  *
  * @return int
  */
-function xdebug_get_function_count () {}
+function xdebug_get_function_count()
+{
+}
 
 /**
  * This function dumps the values of the elements of the super globals
@@ -277,7 +347,9 @@ function xdebug_get_function_count () {}
  *
  * @return void
  */
-function xdebug_dump_superglobals () {}
+function xdebug_dump_superglobals()
+{
+}
 
 /**
  * Returns all the headers that are set with PHP's header() function,
@@ -285,13 +357,15 @@ function xdebug_dump_superglobals () {}
  *
  * @return array
  */
-function xdebug_get_headers () {}
+function xdebug_get_headers()
+{
+}
 
-define ('XDEBUG_STACK_NO_DESC', 1);
-define ('XDEBUG_TRACE_APPEND', 1);
-define ('XDEBUG_TRACE_COMPUTERIZED', 2);
-define ('XDEBUG_TRACE_HTML', 4);
-define ('XDEBUG_TRACE_NAKED_FILENAME', 8;
-define ('XDEBUG_CC_UNUSED', 1);
-define ('XDEBUG_CC_DEAD_CODE', 2);
-define ('XDEBUG_CC_BRANCH_CHECK', 4)
+define('XDEBUG_STACK_NO_DESC', 1);
+define('XDEBUG_TRACE_APPEND', 1);
+define('XDEBUG_TRACE_COMPUTERIZED', 2);
+define('XDEBUG_TRACE_HTML', 4);
+define('XDEBUG_TRACE_NAKED_FILENAME', 8;
+define('XDEBUG_CC_UNUSED', 1);
+define('XDEBUG_CC_DEAD_CODE', 2);
+define('XDEBUG_CC_BRANCH_CHECK', 4)

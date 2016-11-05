@@ -15,7 +15,9 @@
  * @since 4.0
  * @since 5.0
  */
-function wddx_serialize_value ($var, $comment = null) {}
+function wddx_serialize_value($var, $comment = null)
+{
+}
 
 /**
  * Serialize variables into a WDDX packet
@@ -29,7 +31,9 @@ function wddx_serialize_value ($var, $comment = null) {}
  * @since 4.0
  * @since 5.0
  */
-function wddx_serialize_vars ($var_name, $_ = null) {}
+function wddx_serialize_vars($var_name, $_ = null)
+{
+}
 
 /**
  * Starts a new WDDX packet with structure inside it
@@ -41,7 +45,9 @@ function wddx_serialize_vars ($var_name, $_ = null) {}
  * @since 4.0
  * @since 5.0
  */
-function wddx_packet_start ($comment = null) {}
+function wddx_packet_start($comment = null)
+{
+}
 
 /**
  * Ends a WDDX packet with the specified ID
@@ -53,7 +59,9 @@ function wddx_packet_start ($comment = null) {}
  * @since 4.0
  * @since 5.0
  */
-function wddx_packet_end ($packet_id) {}
+function wddx_packet_end($packet_id)
+{
+}
 
 /**
  * Add variables to a WDDX packet with the specified ID
@@ -70,7 +78,9 @@ function wddx_packet_end ($packet_id) {}
  * @since 4.0
  * @since 5.0
  */
-function wddx_add_vars ($packet_id, $var_name, $_ = null) {}
+function wddx_add_vars($packet_id, $var_name, $_ = null)
+{
+}
 
 /**
  * Unserializes a WDDX packet
@@ -83,7 +93,9 @@ function wddx_add_vars ($packet_id, $var_name, $_ = null) {}
  * @since 4.0
  * @since 5.0
  */
-function wddx_deserialize ($packet) {}
+function wddx_deserialize($packet)
+{
+}
 
 // End of wddx v.
 ?>

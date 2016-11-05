@@ -71,7 +71,7 @@ while ($st->valid()) {
 echo PHP_EOL;
 
 //出栈用pop()
-echo "Now pop one, the poped element is : " , $st->pop(), PHP_EOL;
+echo "Now pop one, the poped element is : ", $st->pop(), PHP_EOL;
 
 //再次打印栈
 echo "And Now, the stack is:", PHP_EOL;

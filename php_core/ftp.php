@@ -23,7 +23,9 @@
  * @since 4.0
  * @since 5.0
  */
-function ftp_connect ($host, $port = 21, $timeout = 90) {}
+function ftp_connect($host, $port = 21, $timeout = 90)
+{
+}
 
 /**
  * Opens an Secure SSL-FTP connection
@@ -46,7 +48,9 @@ function ftp_connect ($host, $port = 21, $timeout = 90) {}
  * @since 4.3.0
  * @since 5.0
  */
-function ftp_ssl_connect ($host, $port = 21, $timeout = 90) {}
+function ftp_ssl_connect($host, $port = 21, $timeout = 90)
+{
+}
 
 /**
  * Logs in to an FTP connection
@@ -65,7 +69,9 @@ function ftp_ssl_connect ($host, $port = 21, $timeout = 90) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_login ($ftp_stream, $username, $password) {}
+function ftp_login($ftp_stream, $username, $password)
+{
+}
 
 /**
  * Returns the current directory name
@@ -77,7 +83,9 @@ function ftp_login ($ftp_stream, $username, $password) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_pwd ($ftp_stream) {}
+function ftp_pwd($ftp_stream)
+{
+}
 
 /**
  * Changes to the parent directory
@@ -89,7 +97,9 @@ function ftp_pwd ($ftp_stream) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_cdup ($ftp_stream) {}
+function ftp_cdup($ftp_stream)
+{
+}
 
 /**
  * Changes the current directory on a FTP server
@@ -105,7 +115,9 @@ function ftp_cdup ($ftp_stream) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_chdir ($ftp_stream, $directory) {}
+function ftp_chdir($ftp_stream, $directory)
+{
+}
 
 /**
  * Requests execution of a command on the FTP server
@@ -121,7 +133,9 @@ function ftp_chdir ($ftp_stream, $directory) {}
  * @since 4.0.3
  * @since 5.0
  */
-function ftp_exec ($ftp_stream, $command) {}
+function ftp_exec($ftp_stream, $command)
+{
+}
 
 /**
  * Sends an arbitrary command to an FTP server
@@ -137,7 +151,9 @@ function ftp_exec ($ftp_stream, $command) {}
  * <b>ftp_raw</b> determine if the command succeeded.
  * @since 5.0
  */
-function ftp_raw ($ftp_stream, $command) {}
+function ftp_raw($ftp_stream, $command)
+{
+}
 
 /**
  * Creates a directory
@@ -152,7 +168,9 @@ function ftp_raw ($ftp_stream, $command) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_mkdir ($ftp_stream, $directory) {}
+function ftp_mkdir($ftp_stream, $directory)
+{
+}
 
 /**
  * Removes a directory
@@ -168,7 +186,9 @@ function ftp_mkdir ($ftp_stream, $directory) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_rmdir ($ftp_stream, $directory) {}
+function ftp_rmdir($ftp_stream, $directory)
+{
+}
 
 /**
  * Set permissions on a file via FTP
@@ -185,7 +205,9 @@ function ftp_rmdir ($ftp_stream, $directory) {}
  * @return int the new file permissions on success or <b>FALSE</b> on error.
  * @since 5.0
  */
-function ftp_chmod ($ftp_stream, $mode, $filename) {}
+function ftp_chmod($ftp_stream, $mode, $filename)
+{
+}
 
 /**
  * Allocates space for a file to be uploaded
@@ -203,7 +225,9 @@ function ftp_chmod ($ftp_stream, $mode, $filename) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.0
  */
-function ftp_alloc ($ftp_stream, $filesize, &$result = null) {}
+function ftp_alloc($ftp_stream, $filesize, &$result = null)
+{
+}
 
 /**
  * Returns a list of files in the given directory
@@ -222,7 +246,9 @@ function ftp_alloc ($ftp_stream, $filesize, &$result = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_nlist ($ftp_stream, $directory) {}
+function ftp_nlist($ftp_stream, $directory)
+{
+}
 
 /**
  * Returns a detailed list of files in the given directory
@@ -246,7 +272,9 @@ function ftp_nlist ($ftp_stream, $directory) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_rawlist ($ftp_stream, $directory, $recursive = false) {}
+function ftp_rawlist($ftp_stream, $directory, $recursive = false)
+{
+}
 
 /**
  * Returns the system type identifier of the remote FTP server
@@ -258,7 +286,9 @@ function ftp_rawlist ($ftp_stream, $directory, $recursive = false) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_systype ($ftp_stream) {}
+function ftp_systype($ftp_stream)
+{
+}
 
 /**
  * Turns passive mode on or off
@@ -273,7 +303,9 @@ function ftp_systype ($ftp_stream) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_pasv ($ftp_stream, $pasv) {}
+function ftp_pasv($ftp_stream, $pasv)
+{
+}
 
 /**
  * Downloads a file from the FTP server
@@ -298,7 +330,9 @@ function ftp_pasv ($ftp_stream, $pasv) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_get ($ftp_stream, $local_file, $remote_file, $mode, $resumepos = 0) {}
+function ftp_get($ftp_stream, $local_file, $remote_file, $mode, $resumepos = 0)
+{
+}
 
 /**
  * Downloads a file from the FTP server and saves to an open file
@@ -323,7 +357,9 @@ function ftp_get ($ftp_stream, $local_file, $remote_file, $mode, $resumepos = 0)
  * @since 4.0
  * @since 5.0
  */
-function ftp_fget ($ftp_stream, $handle, $remote_file, $mode, $resumepos = 0) {}
+function ftp_fget($ftp_stream, $handle, $remote_file, $mode, $resumepos = 0)
+{
+}
 
 /**
  * Uploads a file to the FTP server
@@ -346,7 +382,9 @@ function ftp_fget ($ftp_stream, $handle, $remote_file, $mode, $resumepos = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_put ($ftp_stream, $remote_file, $local_file, $mode, $startpos = 0) {}
+function ftp_put($ftp_stream, $remote_file, $local_file, $mode, $startpos = 0)
+{
+}
 
 /**
  * Uploads from an open file to the FTP server
@@ -369,7 +407,9 @@ function ftp_put ($ftp_stream, $remote_file, $local_file, $mode, $startpos = 0) 
  * @since 4.0
  * @since 5.0
  */
-function ftp_fput ($ftp_stream, $remote_file, $handle, $mode, $startpos = 0) {}
+function ftp_fput($ftp_stream, $remote_file, $handle, $mode, $startpos = 0)
+{
+}
 
 /**
  * Returns the size of the given file
@@ -384,7 +424,9 @@ function ftp_fput ($ftp_stream, $remote_file, $handle, $mode, $startpos = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_size ($ftp_stream, $remote_file) {}
+function ftp_size($ftp_stream, $remote_file)
+{
+}
 
 /**
  * Returns the last modified time of the given file
@@ -400,7 +442,9 @@ function ftp_size ($ftp_stream, $remote_file) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_mdtm ($ftp_stream, $remote_file) {}
+function ftp_mdtm($ftp_stream, $remote_file)
+{
+}
 
 /**
  * Renames a file or a directory on the FTP server
@@ -418,7 +462,9 @@ function ftp_mdtm ($ftp_stream, $remote_file) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_rename ($ftp_stream, $oldname, $newname) {}
+function ftp_rename($ftp_stream, $oldname, $newname)
+{
+}
 
 /**
  * Deletes a file on the FTP server
@@ -433,7 +479,9 @@ function ftp_rename ($ftp_stream, $oldname, $newname) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_delete ($ftp_stream, $path) {}
+function ftp_delete($ftp_stream, $path)
+{
+}
 
 /**
  * Sends a SITE command to the server
@@ -449,7 +497,9 @@ function ftp_delete ($ftp_stream, $path) {}
  * @since 4.0
  * @since 5.0
  */
-function ftp_site ($ftp_stream, $command) {}
+function ftp_site($ftp_stream, $command)
+{
+}
 
 /**
  * Closes an FTP connection
@@ -461,7 +511,9 @@ function ftp_site ($ftp_stream, $command) {}
  * @since 4.2.0
  * @since 5.0
  */
-function ftp_close ($ftp_stream) {}
+function ftp_close($ftp_stream)
+{
+}
 
 /**
  * Set miscellaneous runtime FTP options
@@ -503,7 +555,9 @@ function ftp_close ($ftp_stream) {}
  * @since 4.2.0
  * @since 5.0
  */
-function ftp_set_option ($ftp_stream, $option, $value) {}
+function ftp_set_option($ftp_stream, $option, $value)
+{
+}
 
 /**
  * Retrieves various runtime behaviours of the current FTP stream
@@ -535,7 +589,9 @@ function ftp_set_option ($ftp_stream, $option, $value) {}
  * @since 4.2.0
  * @since 5.0
  */
-function ftp_get_option ($ftp_stream, $option) {}
+function ftp_get_option($ftp_stream, $option)
+{
+}
 
 /**
  * Retrieves a file from the FTP server and writes it to an open file (non-blocking)
@@ -559,7 +615,9 @@ function ftp_get_option ($ftp_stream, $option) {}
  * @since 4.3.0
  * @since 5.0
  */
-function ftp_nb_fget ($ftp_stream, $handle, $remote_file, $mode, $resumepos = 0) {}
+function ftp_nb_fget($ftp_stream, $handle, $remote_file, $mode, $resumepos = 0)
+{
+}
 
 /**
  * Retrieves a file from the FTP server and writes it to a local file (non-blocking)
@@ -583,7 +641,9 @@ function ftp_nb_fget ($ftp_stream, $handle, $remote_file, $mode, $resumepos = 0)
  * @since 4.3.0
  * @since 5.0
  */
-function ftp_nb_get ($ftp_stream, $local_file, $remote_file, $mode, $resumepos = 0) {}
+function ftp_nb_get($ftp_stream, $local_file, $remote_file, $mode, $resumepos = 0)
+{
+}
 
 /**
  * Continues retrieving/sending a file (non-blocking)
@@ -596,7 +656,9 @@ function ftp_nb_get ($ftp_stream, $local_file, $remote_file, $mode, $resumepos =
  * @since 4.3.0
  * @since 5.0
  */
-function ftp_nb_continue ($ftp_stream) {}
+function ftp_nb_continue($ftp_stream)
+{
+}
 
 /**
  * Stores a file on the FTP server (non-blocking)
@@ -620,7 +682,9 @@ function ftp_nb_continue ($ftp_stream) {}
  * @since 4.3.0
  * @since 5.0
  */
-function ftp_nb_put ($ftp_stream, $remote_file, $local_file, $mode, $startpos = 0) {}
+function ftp_nb_put($ftp_stream, $remote_file, $local_file, $mode, $startpos = 0)
+{
+}
 
 /**
  * Stores a file from an open file to the FTP server (non-blocking)
@@ -644,7 +708,9 @@ function ftp_nb_put ($ftp_stream, $remote_file, $local_file, $mode, $startpos = 
  * @since 4.3.0
  * @since 5.0
  */
-function ftp_nb_fput ($ftp_stream, $remote_file, $handle, $mode, $startpos = 0) {}
+function ftp_nb_fput($ftp_stream, $remote_file, $handle, $mode, $startpos = 0)
+{
+}
 
 /**
  * Alias of <b>ftp_close</b>
@@ -653,32 +719,34 @@ function ftp_nb_fput ($ftp_stream, $remote_file, $handle, $mode, $startpos = 0) 
  * @since 4.0
  * @since 5.0
  */
-function ftp_quit ($ftp) {}
+function ftp_quit($ftp)
+{
+}
 
 
 /**
  * <p></p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_ASCII', 1);
+define('FTP_ASCII', 1);
 
 /**
  * <p></p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_TEXT', 1);
+define('FTP_TEXT', 1);
 
 /**
  * <p></p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_BINARY', 2);
+define('FTP_BINARY', 2);
 
 /**
  * <p></p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_IMAGE', 2);
+define('FTP_IMAGE', 2);
 
 /**
  * <p>
@@ -687,7 +755,7 @@ define ('FTP_IMAGE', 2);
  * </p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_AUTORESUME', -1);
+define('FTP_AUTORESUME', -1);
 
 /**
  * <p>
@@ -695,7 +763,7 @@ define ('FTP_AUTORESUME', -1);
  * </p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_TIMEOUT_SEC', 0);
+define('FTP_TIMEOUT_SEC', 0);
 
 /**
  * <p>
@@ -703,7 +771,7 @@ define ('FTP_TIMEOUT_SEC', 0);
  * </p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_AUTOSEEK', 1);
+define('FTP_AUTOSEEK', 1);
 
 /**
  * <p>
@@ -711,7 +779,7 @@ define ('FTP_AUTOSEEK', 1);
  * </p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_FAILED', 0);
+define('FTP_FAILED', 0);
 
 /**
  * <p>
@@ -719,7 +787,7 @@ define ('FTP_FAILED', 0);
  * </p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_FINISHED', 1);
+define('FTP_FINISHED', 1);
 
 /**
  * <p>
@@ -727,7 +795,7 @@ define ('FTP_FINISHED', 1);
  * </p>
  * @link http://php.net/manual/en/ftp.constants.php
  */
-define ('FTP_MOREDATA', 2);
+define('FTP_MOREDATA', 2);
 
 // End of ftp v.
 ?>

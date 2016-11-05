@@ -23,7 +23,9 @@
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_init ($number, $base = 0) {}
+function gmp_init($number, $base = 0)
+{
+}
 
 /**
  * Convert GMP number to integer
@@ -35,7 +37,9 @@ function gmp_init ($number, $base = 0) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_intval ($gmpnumber) {}
+function gmp_intval($gmpnumber)
+{
+}
 
 /**
  * Sets the RNG seed
@@ -46,7 +50,10 @@ function gmp_intval ($gmpnumber) {}
  * @return mixed Returns NULL on success.
  * @since 7.0
  */
-function gmp_random_seed ($seed ) {}
+function gmp_random_seed($seed)
+{
+}
+
 /**
  * Convert GMP number to string
  * @link http://php.net/manual/en/function.gmp-strval.php
@@ -63,7 +70,9 @@ function gmp_random_seed ($seed ) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_strval ($gmpnumber, $base = 10) {}
+function gmp_strval($gmpnumber, $base = 10)
+{
+}
 
 /**
  * Add numbers
@@ -82,7 +91,9 @@ function gmp_strval ($gmpnumber, $base = 10) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_add ($a, $b) {}
+function gmp_add($a, $b)
+{
+}
 
 /**
  * Subtract numbers
@@ -101,7 +112,9 @@ function gmp_add ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_sub ($a, $b) {}
+function gmp_sub($a, $b)
+{
+}
 
 /**
  * Multiply numbers
@@ -120,7 +133,9 @@ function gmp_sub ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_mul ($a, $b) {}
+function gmp_mul($a, $b)
+{
+}
 
 /**
  * Divide numbers and get quotient and remainder
@@ -146,7 +161,9 @@ function gmp_mul ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_div_qr ($n, $d, $round = GMP_ROUND_ZERO) {}
+function gmp_div_qr($n, $d, $round = GMP_ROUND_ZERO)
+{
+}
 
 /**
  * Divide numbers
@@ -171,7 +188,9 @@ function gmp_div_qr ($n, $d, $round = GMP_ROUND_ZERO) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_div_q ($a, $b, $round = GMP_ROUND_ZERO) {}
+function gmp_div_q($a, $b, $round = GMP_ROUND_ZERO)
+{
+}
 
 /**
  * Remainder of the division of numbers
@@ -194,7 +213,9 @@ function gmp_div_q ($a, $b, $round = GMP_ROUND_ZERO) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_div_r ($n, $d, $round = GMP_ROUND_ZERO) {}
+function gmp_div_r($n, $d, $round = GMP_ROUND_ZERO)
+{
+}
 
 /**
  * Divide numbers
@@ -219,7 +240,9 @@ function gmp_div_r ($n, $d, $round = GMP_ROUND_ZERO) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_div ($a, $b, $round = GMP_ROUND_ZERO) {}
+function gmp_div($a, $b, $round = GMP_ROUND_ZERO)
+{
+}
 
 /**
  * Modulo operation
@@ -235,7 +258,9 @@ function gmp_div ($a, $b, $round = GMP_ROUND_ZERO) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_mod ($n, $d) {}
+function gmp_mod($n, $d)
+{
+}
 
 /**
  * Exact division of numbers
@@ -254,7 +279,9 @@ function gmp_mod ($n, $d) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_divexact ($n, $d) {}
+function gmp_divexact($n, $d)
+{
+}
 
 /**
  * Negate number
@@ -265,7 +292,9 @@ function gmp_divexact ($n, $d) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_neg ($a) {}
+function gmp_neg($a)
+{
+}
 
 /**
  * Absolute value
@@ -276,7 +305,9 @@ function gmp_neg ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_abs ($a) {}
+function gmp_abs($a)
+{
+}
 
 /**
  * Factorial
@@ -290,7 +321,9 @@ function gmp_abs ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_fact ($a) {}
+function gmp_fact($a)
+{
+}
 
 /**
  * Calculate square root
@@ -301,7 +334,9 @@ function gmp_fact ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_sqrt ($a) {}
+function gmp_sqrt($a)
+{
+}
 
 /**
  * Square root with remainder
@@ -318,7 +353,9 @@ function gmp_sqrt ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_sqrtrem ($a) {}
+function gmp_sqrtrem($a)
+{
+}
 
 /**
  * Raise number into power
@@ -336,7 +373,9 @@ function gmp_sqrtrem ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_pow ($base, $exp) {}
+function gmp_pow($base, $exp)
+{
+}
 
 /**
  * Raise number into power with modulo
@@ -360,7 +399,9 @@ function gmp_pow ($base, $exp) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_powm ($base, $exp, $mod) {}
+function gmp_powm($base, $exp, $mod)
+{
+}
 
 /**
  * Perfect square check
@@ -375,7 +416,9 @@ function gmp_powm ($base, $exp, $mod) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_perfect_square ($a) {}
+function gmp_perfect_square($a)
+{
+}
 
 /**
  * Check if number is "probably prime"
@@ -400,7 +443,9 @@ function gmp_perfect_square ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_prob_prime ($a, $reps = 10) {}
+function gmp_prob_prime($a, $reps = 10)
+{
+}
 
 /**
  * Calculate GCD
@@ -414,7 +459,9 @@ function gmp_prob_prime ($a, $reps = 10) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_gcd ($a, $b) {}
+function gmp_gcd($a, $b)
+{
+}
 
 /**
  * Calculate GCD and multipliers
@@ -427,7 +474,9 @@ function gmp_gcd ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_gcdext ($a, $b) {}
+function gmp_gcdext($a, $b)
+{
+}
 
 /**
  * Inverse by modulo
@@ -440,7 +489,9 @@ function gmp_gcdext ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_invert ($a, $b) {}
+function gmp_invert($a, $b)
+{
+}
 
 /**
  * Jacobi symbol
@@ -456,7 +507,9 @@ function gmp_invert ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_jacobi ($a, $p) {}
+function gmp_jacobi($a, $p)
+{
+}
 
 /**
  * Legendre symbol
@@ -472,7 +525,9 @@ function gmp_jacobi ($a, $p) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_legendre ($a, $p) {}
+function gmp_legendre($a, $p)
+{
+}
 
 /**
  * Compare numbers
@@ -487,7 +542,9 @@ function gmp_legendre ($a, $p) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_cmp ($a, $b) {}
+function gmp_cmp($a, $b)
+{
+}
 
 /**
  * Sign of number
@@ -500,7 +557,9 @@ function gmp_cmp ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_sign ($a) {}
+function gmp_sign($a)
+{
+}
 
 /**
  * Random number
@@ -514,7 +573,9 @@ function gmp_sign ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_random ($limiter = 20) {}
+function gmp_random($limiter = 20)
+{
+}
 
 /**
  * Bitwise AND
@@ -527,7 +588,9 @@ function gmp_random ($limiter = 20) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_and ($a, $b) {}
+function gmp_and($a, $b)
+{
+}
 
 /**
  * Bitwise OR
@@ -540,7 +603,9 @@ function gmp_and ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_or ($a, $b) {}
+function gmp_or($a, $b)
+{
+}
 
 /**
  * Calculates one's complement
@@ -551,7 +616,9 @@ function gmp_or ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_com ($a) {}
+function gmp_com($a)
+{
+}
 
 /**
  * Bitwise XOR
@@ -564,7 +631,9 @@ function gmp_com ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_xor ($a, $b) {}
+function gmp_xor($a, $b)
+{
+}
 
 /**
  * Set bit
@@ -585,7 +654,9 @@ function gmp_xor ($a, $b) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_setbit (&$a, $index, $set_clear = true) {}
+function gmp_setbit(&$a, $index, $set_clear = true)
+{
+}
 
 /**
  * Clear bit
@@ -598,7 +669,9 @@ function gmp_setbit (&$a, $index, $set_clear = true) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_clrbit (&$a, $index) {}
+function gmp_clrbit(&$a, $index)
+{
+}
 
 /**
  * Scan for 0
@@ -616,7 +689,9 @@ function gmp_clrbit (&$a, $index) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_scan0 ($a, $start) {}
+function gmp_scan0($a, $start)
+{
+}
 
 /**
  * Scan for 1
@@ -634,7 +709,9 @@ function gmp_scan0 ($a, $start) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_scan1 ($a, $start) {}
+function gmp_scan1($a, $start)
+{
+}
 
 /**
  * Tests if a bit is set
@@ -647,7 +724,9 @@ function gmp_scan1 ($a, $start) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.3.0
  */
-function gmp_testbit ($a, $index) {}
+function gmp_testbit($a, $index)
+{
+}
 
 /**
  * Population count
@@ -658,7 +737,9 @@ function gmp_testbit ($a, $index) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_popcount ($a) {}
+function gmp_popcount($a)
+{
+}
 
 /**
  * Hamming distance
@@ -677,7 +758,9 @@ function gmp_popcount ($a) {}
  * @since 4.0.4
  * @since 5.0
  */
-function gmp_hamdist ($a, $b) {}
+function gmp_hamdist($a, $b)
+{
+}
 
 /**
  * Import from a binary string
@@ -689,7 +772,9 @@ function gmp_hamdist ($a, $b) {}
  * @return GMP|bool Returns a GMP number or FALSE on failure.
  * @since 5.6.1
  */
-function gmp_import ($data, $word_size = 1, $options = GMP_MSW_FIRST | GMP_NATIVE_ENDIAN) {}
+function gmp_import($data, $word_size = 1, $options = GMP_MSW_FIRST | GMP_NATIVE_ENDIAN)
+{
+}
 
 /**
  * Export to a binary string
@@ -701,7 +786,9 @@ function gmp_import ($data, $word_size = 1, $options = GMP_MSW_FIRST | GMP_NATIV
  * @return string|bool Returns a string or FALSE on failure.
  * @since 5.6.1
  */
-function gmp_export (GMP $gmpnumber, $word_size = 1, $options = GMP_MSW_FIRST | GMP_NATIVE_ENDIAN) {}
+function gmp_export(GMP $gmpnumber, $word_size = 1, $options = GMP_MSW_FIRST | GMP_NATIVE_ENDIAN)
+{
+}
 
 /**
  * Takes the nth root of a and returns the integer component of the result.
@@ -712,7 +799,9 @@ function gmp_export (GMP $gmpnumber, $word_size = 1, $options = GMP_MSW_FIRST | 
  * @return GMP The integer component of the resultant root, as a GMP number.
  * @since 5.6.0
  */
-function gmp_root (GMP $a, $nth) {}
+function gmp_root(GMP $a, $nth)
+{
+}
 
 /**
  * Takes the nth root of a and returns the integer component and remainder of the result.
@@ -724,7 +813,9 @@ function gmp_root (GMP $a, $nth) {}
  * the root, and the second element is the remainder, both represented as GMP numbers.</p>
  * @since 5.6.0
  */
-function gmp_rootrem (GMP $a, $nth) {}
+function gmp_rootrem(GMP $a, $nth)
+{
+}
 
 /**
  * Find next prime number
@@ -735,24 +826,27 @@ function gmp_rootrem (GMP $a, $nth) {}
  * as a GMP number.
  * @since 5.2.0
  */
-function gmp_nextprime ($a) {}
+function gmp_nextprime($a)
+{
+}
 
-define ('GMP_ROUND_ZERO', 0);
-define ('GMP_ROUND_PLUSINF', 1);
-define ('GMP_ROUND_MINUSINF', 2);
-define ('GMP_MSW_FIRST', 1);
-define ('GMP_LSW_FIRST', 2);
-define ('GMP_LITTLE_ENDIAN', 4);
-define ('GMP_BIG_ENDIAN', 8);
-define ('GMP_NATIVE_ENDIAN', 16);
+define('GMP_ROUND_ZERO', 0);
+define('GMP_ROUND_PLUSINF', 1);
+define('GMP_ROUND_MINUSINF', 2);
+define('GMP_MSW_FIRST', 1);
+define('GMP_LSW_FIRST', 2);
+define('GMP_LITTLE_ENDIAN', 4);
+define('GMP_BIG_ENDIAN', 8);
+define('GMP_NATIVE_ENDIAN', 16);
 
 /**
  * The GMP library version
  * @link http://php.net/manual/en/gmp.constants.php
  */
-define ('GMP_VERSION', "");
+define('GMP_VERSION', "");
 
-class GMP implements Serializable {
+class GMP implements Serializable
+{
 
     /**
      * String representation of object
@@ -760,7 +854,9 @@ class GMP implements Serializable {
      * @return string the string representation of the object or null
      * @since 5.1.0
      */
-    public function serialize() {}
+    public function serialize()
+    {
+    }
 
     /**
      * Constructs the object
@@ -771,7 +867,10 @@ class GMP implements Serializable {
      * @return void
      * @since 5.1.0
      */
-    public function unserialize($serialized) {}
+    public function unserialize($serialized)
+    {
+    }
 }
+
 // End of gmp v.
 ?>

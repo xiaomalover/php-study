@@ -10,7 +10,9 @@
  * invalidated or if there was nothing to invalidate, or <b>FALSE</b> if the opcode
  * cache is disabled.
  */
-function opcache_compile_file($file) { }
+function opcache_compile_file($file)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.5.0, PECL ZendOpcache &gt;= 7.0.0 )<br/>
@@ -23,7 +25,9 @@ function opcache_compile_file($file) { }
  * invalidated or if there was nothing to invalidate, or <b>FALSE</b> if the opcode
  * cache is disabled.
  */
-function opcache_invalidate($script, $force = FALSE) { }
+function opcache_invalidate($script, $force = false)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.5.0, PECL ZendOpcache &gt;= 7.0.0 )<br/>
@@ -31,7 +35,9 @@ function opcache_invalidate($script, $force = FALSE) { }
  * @link http://www.php.net/manual/en/function.opcache-reset.php
  * @return boolean Returns <b>TRUE</b> if the opcode cache was reset, or <b>FALSE</b> if the opcode cache is disabled.
  */
-function opcache_reset() { }
+function opcache_reset()
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.5.5, PECL ZendOpcache &gt;= 7.0.2 )<br/>
@@ -40,7 +46,9 @@ function opcache_reset() { }
  * @param bool $get_scripts <p>Include script specific state information</p>
  * @return array <p>Returns an array of information, optionally containing script specific state information</p>
  */
-function opcache_get_status ($get_scripts = TRUE) {}
+function opcache_get_status($get_scripts = true)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.5.5, PECL ZendOpcache &gt;= 7.0.2 )<br/>
@@ -48,14 +56,18 @@ function opcache_get_status ($get_scripts = TRUE) {}
  * @link http://php.net/manual/en/function.opcache-get-configuration.php
  * @return array <p>Returns an array of information, including ini, blacklist and version</p>
  */
-function opcache_get_configuration() {}
+function opcache_get_configuration()
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.6, PECL ZendOpcache &gt;= 7.0.4 )<br/>
- * This function checks if a PHP script has been cached in OPCache. 
+ * This function checks if a PHP script has been cached in OPCache.
  * This can be used to more easily detect the "warming" of the cache for a particular script.
  * @link https://secure.php.net/manual/en/function.opcache-is-script-cached.php
  * @param $file The path to the PHP script to be checked.
  * @return bool Returns TRUE if file is cached in OPCache, FALSE otherwise.
  */
-function opcache_is_script_cached($file) {}
+function opcache_is_script_cached($file)
+{
+}

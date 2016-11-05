@@ -16,7 +16,9 @@
  * @since 4.3.0
  * @since 5.0
  */
-function msg_get_queue ($key, $perms = 0666) {}
+function msg_get_queue($key, $perms = 0666)
+{
+}
 
 /**
  * Send a message to a message queue
@@ -56,7 +58,9 @@ function msg_get_queue ($key, $perms = 0666) {}
  * @since 4.3.0
  * @since 5.0
  */
-function msg_send ($queue, $msgtype, $message, $serialize = true, $blocking = true, &$errorcode = null) {}
+function msg_send($queue, $msgtype, $message, $serialize = true, $blocking = true, &$errorcode = null)
+{
+}
 
 /**
  * Receive a message from a message queue
@@ -145,7 +149,17 @@ function msg_send ($queue, $msgtype, $message, $serialize = true, $blocking = tr
  * @since 4.3.0
  * @since 5.0
  */
-function msg_receive ($queue, $desiredmsgtype, &$msgtype, $maxsize, &$message, $unserialize = true, $flags = 0, &$errorcode = null) {}
+function msg_receive(
+    $queue,
+    $desiredmsgtype,
+    &$msgtype,
+    $maxsize,
+    &$message,
+    $unserialize = true,
+    $flags = 0,
+    &$errorcode = null
+) {
+}
 
 /**
  * Destroy a message queue
@@ -157,7 +171,9 @@ function msg_receive ($queue, $desiredmsgtype, &$msgtype, $maxsize, &$message, $
  * @since 4.3.0
  * @since 5.0
  */
-function msg_remove_queue ($queue) {}
+function msg_remove_queue($queue)
+{
+}
 
 /**
  * Returns information from the message queue data structure
@@ -235,7 +251,9 @@ function msg_remove_queue ($queue) {}
  * @since 4.3.0
  * @since 5.0
  */
-function msg_stat_queue ($queue) {}
+function msg_stat_queue($queue)
+{
+}
 
 /**
  * Set information in the message queue data structure
@@ -251,7 +269,9 @@ function msg_stat_queue ($queue) {}
  * @since 4.3.0
  * @since 5.0
  */
-function msg_set_queue ($queue, array $data) {}
+function msg_set_queue($queue, array $data)
+{
+}
 
 /**
  * Check whether a message queue exists
@@ -262,13 +282,15 @@ function msg_set_queue ($queue, array $data) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.3.0
  */
-function msg_queue_exists ($key) {}
+function msg_queue_exists($key)
+{
+}
 
-define ('MSG_IPC_NOWAIT', 1);
-define ('MSG_EAGAIN', 11);
-define ('MSG_ENOMSG', 42);
-define ('MSG_NOERROR', 2);
-define ('MSG_EXCEPT', 4);
+define('MSG_IPC_NOWAIT', 1);
+define('MSG_EAGAIN', 11);
+define('MSG_ENOMSG', 42);
+define('MSG_NOERROR', 2);
+define('MSG_EXCEPT', 4);
 
 // End of sysvmsg v.
 ?>

@@ -6,7 +6,8 @@
  * Represents SNMP session.
  * @link http://php.net/manual/en/class.snmp.php
  */
-class SNMP  {
+class SNMP
+{
     /**
      * @var int Maximum OID per GET/SET/GETBULK request
      * @link http://www.php.net/manual/en/class.snmp.php#snmp.props.max-oids
@@ -16,9 +17,9 @@ class SNMP  {
     /**
      * @var int Controls the method how the SNMP values will be returned
      * <dl>
-     * <dt>SNMP_VALUE_LIBRARY	<dd>The return values will be as returned by the Net-SNMP library.
-     * <dt>SNMP_VALUE_PLAIN	<dd>The return values will be the plain value without the SNMP type hint.
-     * <dt>SNMP_VALUE_OBJECT	 <dd>The return values will be objects with the properties "value" and "type", where the latter is one of the SNMP_OCTET_STR, SNMP_COUNTER etc. constants. The way "value" is returned is based on which one of SNMP_VALUE_LIBRARY, SNMP_VALUE_PLAIN is set
+     * <dt>SNMP_VALUE_LIBRARY    <dd>The return values will be as returned by the Net-SNMP library.
+     * <dt>SNMP_VALUE_PLAIN    <dd>The return values will be the plain value without the SNMP type hint.
+     * <dt>SNMP_VALUE_OBJECT     <dd>The return values will be objects with the properties "value" and "type", where the latter is one of the SNMP_OCTET_STR, SNMP_COUNTER etc. constants. The way "value" is returned is based on which one of SNMP_VALUE_LIBRARY, SNMP_VALUE_PLAIN is set
      * <dl>
      * @link http://www.php.net/manual/en/class.snmp.php#snmp.props.max-oids
      */
@@ -42,12 +43,12 @@ class SNMP  {
      * @var int Controls OID output format
      * <p>OID .1.3.6.1.2.1.1.3.0 representation for various oid_output_format values
      * <dl>
-     * <dt>SNMP_OID_OUTPUT_FULL	<dd>.iso.org.dod.internet.mgmt.mib-2.system.sysUpTime.sysUpTimeInstance
-     * <dt>SNMP_OID_OUTPUT_NUMERIC	<dd>.1.3.6.1.2.1.1.3.0
-     * <dt>SNMP_OID_OUTPUT_MODULE	<dd>DISMAN-EVENT-MIB::sysUpTimeInstance
-     * <dt>SNMP_OID_OUTPUT_SUFFIX	<dd>sysUpTimeInstance
-     * <dt>SNMP_OID_OUTPUT_UCD	<dd>system.sysUpTime.sysUpTimeInstance
-     * <dt>SNMP_OID_OUTPUT_NONE	<dd>Undefined
+     * <dt>SNMP_OID_OUTPUT_FULL    <dd>.iso.org.dod.internet.mgmt.mib-2.system.sysUpTime.sysUpTimeInstance
+     * <dt>SNMP_OID_OUTPUT_NUMERIC    <dd>.1.3.6.1.2.1.1.3.0
+     * <dt>SNMP_OID_OUTPUT_MODULE    <dd>DISMAN-EVENT-MIB::sysUpTimeInstance
+     * <dt>SNMP_OID_OUTPUT_SUFFIX    <dd>sysUpTimeInstance
+     * <dt>SNMP_OID_OUTPUT_UCD    <dd>system.sysUpTime.sysUpTimeInstance
+     * <dt>SNMP_OID_OUTPUT_NONE    <dd>Undefined
      * </dl>
      * @link http://www.php.net/manual/en/class.snmp.php#snmp.props.oid-output-format
      */
@@ -73,23 +74,23 @@ class SNMP  {
     public $info;
 
     const VERSION_1 = 0;
-	const VERSION_2c = 1;
-	const VERSION_2C = 1;
-	const VERSION_3 = 3;
-	const ERRNO_NOERROR = 0;
-	const ERRNO_ANY = 126;
-	const ERRNO_GENERIC = 2;
-	const ERRNO_TIMEOUT = 4;
-	const ERRNO_ERROR_IN_REPLY = 8;
-	const ERRNO_OID_NOT_INCREASING = 16;
-	const ERRNO_OID_PARSING_ERROR = 32;
-	const ERRNO_MULTIPLE_SET_QUERIES = 64;
+    const VERSION_2c = 1;
+    const VERSION_2C = 1;
+    const VERSION_3 = 3;
+    const ERRNO_NOERROR = 0;
+    const ERRNO_ANY = 126;
+    const ERRNO_GENERIC = 2;
+    const ERRNO_TIMEOUT = 4;
+    const ERRNO_ERROR_IN_REPLY = 8;
+    const ERRNO_OID_NOT_INCREASING = 16;
+    const ERRNO_OID_PARSING_ERROR = 32;
+    const ERRNO_MULTIPLE_SET_QUERIES = 64;
 
 
-	/**
-	 * Creates SNMP instance representing session to remote SNMP agent
-	 * @link http://php.net/manual/en/snmp.construct.php
-	 * @param $version SNMP protocol version:
+    /**
+     * Creates SNMP instance representing session to remote SNMP agent
+     * @link http://php.net/manual/en/snmp.construct.php
+     * @param $version SNMP protocol version:
      * <b>SNMP::VERSION_1</b>,
      * <b>SNMP::VERSION_2C</b>,
      * <b>SNMP::VERSION_3</b>.
@@ -111,10 +112,10 @@ class SNMP  {
      * <tr><td>FQDN with specific port, force usage of IPv6 address</td><td>[host.domain]:1161</td>
      * </tbody>
      * </table>
-	 * @param $community string <p>The purpuse of <i>community</i> is
+     * @param $community string <p>The purpuse of <i>community</i> is
      * <acronym title="Simple Network Management Protocol">SNMP</acronym> version specific:</p>
      * <table>
-	 * @since 5.4.0
+     * @since 5.4.0
      *
      * <tbody>
      * <tr><td>SNMP::VERSION_1</td><td><acronym title="Simple Network Management Protocol">SNMP</acronym> community</td></tr>
@@ -123,18 +124,22 @@ class SNMP  {
      * <tr><td>SNMP::VERSION_3</td><td><acronym title="Simple Network Management Protocol">SNMP</acronym>v3 securityName</td></tr>
      * </tbody>
      * </table>
-	 * @param $timeout [optional] int The number of microseconds until the first timeout.
-	 * @param $retries [optional] int The number of retries in case timeout occurs.
+     * @param $timeout [optional] int The number of microseconds until the first timeout.
+     * @param $retries [optional] int The number of retries in case timeout occurs.
      */
-	public function __construct ($version, $hostname, $community, $timeout = 1000000, $retries = 5) {}
+    public function __construct($version, $hostname, $community, $timeout = 1000000, $retries = 5)
+    {
+    }
 
-	/**
-	 * Close SNMP session
-	 * @link http://php.net/manual/en/snmp.close.php
-	 * @return mixed <b>TRUE</b> on success or <b>FALSE</b> on failure.
-	 * @since 5.4.0
-	 */
-	public function close () {}
+    /**
+     * Close SNMP session
+     * @link http://php.net/manual/en/snmp.close.php
+     * @return mixed <b>TRUE</b> on success or <b>FALSE</b> on failure.
+     * @since 5.4.0
+     */
+    public function close()
+    {
+    }
 
     /**
      * Configures security-related SNMPv3 session parameters
@@ -149,53 +154,68 @@ class SNMP  {
      * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
      * @since 5.4.0
      */
-	public function setSecurity ($sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $contextName, $contextEngineID) {}
+    public function setSecurity(
+        $sec_level,
+        $auth_protocol,
+        $auth_passphrase,
+        $priv_protocol,
+        $priv_passphrase,
+        $contextName,
+        $contextEngineID
+    ) {
+    }
 
-	/**
-	 * Fetch an SNMP object
-	 * @link http://php.net/manual/en/snmp.get.php
-	 * @param $object_id mixed The SNMP object (OID) or objects
+    /**
+     * Fetch an SNMP object
+     * @link http://php.net/manual/en/snmp.get.php
+     * @param $object_id mixed The SNMP object (OID) or objects
      * @param $preserve_keys bool [optional] When object_id is a array and preserve_keys set to <b>TRUE</b> keys in results will be taken exactly as in object_id, otherwise SNMP::oid_output_format property is used to determinate the form of keys.
-	 * @return mixed SNMP objects requested as string or array
-	 * depending on <i>object_id</i> type or <b>FALSE</b> on error.
-	 * @since 5.4.0
-	 */
-	public function get ($object_id, $preserve_keys = FALSE) {}
+     * @return mixed SNMP objects requested as string or array
+     * depending on <i>object_id</i> type or <b>FALSE</b> on error.
+     * @since 5.4.0
+     */
+    public function get($object_id, $preserve_keys = false)
+    {
+    }
 
-	/**
-	 * Fetch an SNMP object which
+    /**
+     * Fetch an SNMP object which
      * follows the given object id
-	 * @link http://php.net/manual/en/snmp.getnext.php
-	 * @param $object_id mixed <p>
+     * @link http://php.net/manual/en/snmp.getnext.php
+     * @param $object_id mixed <p>
      * The <acronym title="Simple Network Management Protocol">SNMP</acronym> object (OID) or objects
      * </p>
-	 * @return mixed SNMP objects requested as string or array
-	 * depending on <i>object_id</i> type or <b>FALSE</b> on error.
-	 * @since 5.4.0
-	 */
-	public function getnext ($object_id) {}
+     * @return mixed SNMP objects requested as string or array
+     * depending on <i>object_id</i> type or <b>FALSE</b> on error.
+     * @since 5.4.0
+     */
+    public function getnext($object_id)
+    {
+    }
 
-	/**
-	 * Fetch SNMP object subtree
-	 * @link http://php.net/manual/en/snmp.walk.php
-	 * @param $object_id string <p>Root of subtree to be fetched</p>
+    /**
+     * Fetch SNMP object subtree
+     * @link http://php.net/manual/en/snmp.walk.php
+     * @param $object_id string <p>Root of subtree to be fetched</p>
      * @param $suffix_as_keys bool [optional] <p>By default full OID notation is used for keys in output array. If set to <b>TRUE</b> subtree prefix will be removed from keys leaving only suffix of object_id.</p>
      * @param $max_repetitions int [optional] <p>This specifies the maximum number of iterations over the repeating variables. The default is to use this value from SNMP object.</p>
      * @param $non_repeaters int [optional] <p>This specifies the number of supplied variables that should not be iterated over. The default is to use this value from SNMP object.</p>
      * @return array associative array of the SNMP object ids and their values on success or <b>FALSE</b> on error.
-	 * When a SNMP error occures <b>SNMP::getErrno</b> and
-	 * <b>SNMP::getError</b> can be used for retrieving error
-	 * number (specific to SNMP extension, see class constants) and error message
-	 * respectively.
-	 * @since 5.4.0
-	 */
-	public function walk ($object_id, $suffix_as_keys = FALSE, $max_repetitions, $non_repeaters) {}
+     * When a SNMP error occures <b>SNMP::getErrno</b> and
+     * <b>SNMP::getError</b> can be used for retrieving error
+     * number (specific to SNMP extension, see class constants) and error message
+     * respectively.
+     * @since 5.4.0
+     */
+    public function walk($object_id, $suffix_as_keys = false, $max_repetitions, $non_repeaters)
+    {
+    }
 
-	/**
-	 * Set the value of an SNMP object
-	 * @link http://php.net/manual/en/snmp.set.php
-	 * @param $object_id string <p>The SNMP object id</p>
-	 * @since 5.4.0
+    /**
+     * Set the value of an SNMP object
+     * @link http://php.net/manual/en/snmp.set.php
+     * @param $object_id string <p>The SNMP object id</p>
+     * @since 5.4.0
      *
      * <p>When count of OIDs in object_id array is greater than
      * max_oids object property set method will have to use multiple queries
@@ -242,7 +262,6 @@ class SNMP  {
      * If the MIB-Files are loaded by into the MIB Tree with "snmp_read_mib" or by specifying it in the libsnmp config, '=' may be used as
      * the <i>type</code></i> parameter for all object ids as the type can then be automatically read from the MIB.
      * </p>
-
      * <p>
      * Note that there are two ways to set a variable of the type BITS like e.g.
      * "SYNTAX    BITS {telnet(0), ftp(1), http(2), icmp(3), snmp(4), ssh(5), https(6)}":
@@ -258,27 +277,33 @@ class SNMP  {
      * <p>
      * See examples section for more details.
      * </p>
-	 * @param $value mixed <p>
+     * @param $value mixed <p>
      * The new value.</p>
      * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
-	 */
-	public function set ($object_id, $type, $value) {}
+     */
+    public function set($object_id, $type, $value)
+    {
+    }
 
-	/**
-	 * Get last error code
-	 * @link http://php.net/manual/en/snmp.geterrno.php
-	 * @return int one of SNMP error code values described in constants chapter.
-	 * @since 5.4.0
-	 */
-	public function getErrno () {}
+    /**
+     * Get last error code
+     * @link http://php.net/manual/en/snmp.geterrno.php
+     * @return int one of SNMP error code values described in constants chapter.
+     * @since 5.4.0
+     */
+    public function getErrno()
+    {
+    }
 
-	/**
-	 * Get last error message
-	 * @link http://php.net/manual/en/snmp.geterror.php
-	 * @return string String describing error from last SNMP request.
-	 * @since 5.4.0
-	 */
-	public function getError () {}
+    /**
+     * Get last error message
+     * @link http://php.net/manual/en/snmp.geterror.php
+     * @return string String describing error from last SNMP request.
+     * @since 5.4.0
+     */
+    public function getError()
+    {
+    }
 
 }
 
@@ -289,7 +314,8 @@ class SNMP  {
  * information about Exceptions in PHP.
  * @link http://php.net/manual/en/class.snmpexception.php
  */
-class SNMPException extends RuntimeException  {
+class SNMPException extends RuntimeException
+{
     /**
      * @var string Textual error message. Exception::getMessage() to access it.
      */
@@ -322,7 +348,9 @@ class SNMPException extends RuntimeException  {
  * @since 4.0
  * @since 5.0
  */
-function snmpget ($hostname, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmpget($hostname, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Fetch the SNMP object which follows the given object id
@@ -336,7 +364,9 @@ function snmpget ($hostname, $community, $object_id, $timeout = 1000000, $retrie
  * In case of an error, an E_WARNING message is shown.
  * @since 5.0
  */
-function snmpgetnext ($host, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmpgetnext($host, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Fetch all the SNMP objects from an agent
@@ -365,7 +395,9 @@ function snmpgetnext ($host, $community, $object_id, $timeout = 1000000, $retrie
  * @since 4.0
  * @since 5.0
  */
-function snmpwalk ($hostname, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmpwalk($hostname, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Return all objects including their respective object ID within the specified one
@@ -380,7 +412,9 @@ function snmpwalk ($hostname, $community, $object_id, $timeout = 1000000, $retri
  * @since 4.0
  * @since 5.0
  */
-function snmprealwalk ($host, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmprealwalk($host, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Query for a tree of information about a network entity
@@ -412,7 +446,9 @@ function snmprealwalk ($host, $community, $object_id, $timeout = 1000000, $retri
  * @since 4.0
  * @since 5.0
  */
-function snmpwalkoid ($hostname, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmpwalkoid($hostname, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Set the value of an SNMP object
@@ -479,7 +515,9 @@ function snmpwalkoid ($hostname, $community, $object_id, $timeout = 1000000, $re
  * @since 4.0
  * @since 5.0
  */
-function snmpset ($host, $community, $object_id, $type, $value, $timeout = 1000000, $retries = 5) {}
+function snmpset($host, $community, $object_id, $type, $value, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Fetches the current value of the UCD library's quick_print setting
@@ -488,7 +526,9 @@ function snmpset ($host, $community, $object_id, $type, $value, $timeout = 10000
  * @since 4.0
  * @since 5.0
  */
-function snmp_get_quick_print () {}
+function snmp_get_quick_print()
+{
+}
 
 /**
  * Set the value of <i>quick_print</i> within the UCD SNMP library
@@ -498,7 +538,9 @@ function snmp_get_quick_print () {}
  * @since 4.0
  * @since 5.0
  */
-function snmp_set_quick_print ($quick_print) {}
+function snmp_set_quick_print($quick_print)
+{
+}
 
 /**
  * Return all values that are enums with their enum value instead of the raw integer
@@ -510,7 +552,9 @@ function snmp_set_quick_print ($quick_print) {}
  * @since 4.3.0
  * @since 5.0
  */
-function snmp_set_enum_print ($enum_print) {}
+function snmp_set_enum_print($enum_print)
+{
+}
 
 /**
  * Set the OID output format
@@ -531,7 +575,9 @@ function snmp_set_enum_print ($enum_print) {}
  * @return bool No value is returned.
  * @since 5.2.0
  */
-function snmp_set_oid_output_format ($oid_format = SNMP_OID_OUTPUT_MODULE) {}
+function snmp_set_oid_output_format($oid_format = SNMP_OID_OUTPUT_MODULE)
+{
+}
 
 /**
  * Return all objects including their respective object id within the specified one
@@ -541,7 +587,9 @@ function snmp_set_oid_output_format ($oid_format = SNMP_OID_OUTPUT_MODULE) {}
  * @since 4.3.0
  * @since 5.0
  */
-function snmp_set_oid_numeric_print ($oid_format) {}
+function snmp_set_oid_numeric_print($oid_format)
+{
+}
 
 /**
  * Fetch an SNMP object
@@ -564,7 +612,9 @@ function snmp_set_oid_numeric_print ($oid_format) {}
  * @return string SNMP object value on success or <b>FALSE</b> on error.
  * @since 5.2.0
  */
-function snmp2_get ($host, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmp2_get($host, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Fetch the SNMP object which follows the given object id
@@ -588,7 +638,9 @@ function snmp2_get ($host, $community, $object_id, $timeout = 1000000, $retries 
  * In case of an error, an E_WARNING message is shown.
  * @since 5.2.0
  */
-function snmp2_getnext ($host, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmp2_getnext($host, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Fetch all the SNMP objects from an agent
@@ -618,7 +670,9 @@ function snmp2_getnext ($host, $community, $object_id, $timeout = 1000000, $retr
  * <i>object_id</i> as root or <b>FALSE</b> on error.
  * @since 5.2.0
  */
-function snmp2_walk ($host, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmp2_walk($host, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Return all objects including their respective object ID within the specified one
@@ -642,7 +696,9 @@ function snmp2_walk ($host, $community, $object_id, $timeout = 1000000, $retries
  * In case of an error, an E_WARNING message is shown.
  * @since 5.2.0
  */
-function snmp2_real_walk ($host, $community, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmp2_real_walk($host, $community, $object_id, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Set the value of an SNMP object
@@ -708,7 +764,9 @@ function snmp2_real_walk ($host, $community, $object_id, $timeout = 1000000, $re
  * If an unknown or invalid OID is specified the warning probably reads "Could not add variable".
  * @since 5.2.0
  */
-function snmp2_set ($host, $community, $object_id, $type, $value, $timeout = 1000000, $retries = 5) {}
+function snmp2_set($host, $community, $object_id, $type, $value, $timeout = 1000000, $retries = 5)
+{
+}
 
 /**
  * Fetch an SNMP object
@@ -747,7 +805,19 @@ function snmp2_set ($host, $community, $object_id, $type, $value, $timeout = 100
  * @since 4.0
  * @since 5.0
  */
-function snmp3_get ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmp3_get(
+    $host,
+    $sec_name,
+    $sec_level,
+    $auth_protocol,
+    $auth_passphrase,
+    $priv_protocol,
+    $priv_passphrase,
+    $object_id,
+    $timeout = 1000000,
+    $retries = 5
+) {
+}
 
 /**
  * Fetch the SNMP object which follows the given object id
@@ -787,7 +857,19 @@ function snmp3_get ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphra
  * In case of an error, an E_WARNING message is shown.
  * @since 5.0
  */
-function snmp3_getnext ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmp3_getnext(
+    $host,
+    $sec_name,
+    $sec_level,
+    $auth_protocol,
+    $auth_passphrase,
+    $priv_protocol,
+    $priv_passphrase,
+    $object_id,
+    $timeout = 1000000,
+    $retries = 5
+) {
+}
 
 /**
  * Fetch all the SNMP objects from an agent
@@ -833,7 +915,19 @@ function snmp3_getnext ($host, $sec_name, $sec_level, $auth_protocol, $auth_pass
  * @since 4.0
  * @since 5.0
  */
-function snmp3_walk ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $timeout = 1000000, $retries = 5) {}
+function snmp3_walk(
+    $host,
+    $sec_name,
+    $sec_level,
+    $auth_protocol,
+    $auth_passphrase,
+    $priv_protocol,
+    $priv_passphrase,
+    $object_id,
+    $timeout = 1000000,
+    $retries = 5
+) {
+}
 
 /**
  * Return all objects including their respective object ID within the specified one
@@ -875,7 +969,19 @@ function snmp3_walk ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphr
  * @since 4.0
  * @since 5.0
  */
-function snmp3_real_walk ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $timeout = null, $retries = null) {}
+function snmp3_real_walk(
+    $host,
+    $sec_name,
+    $sec_level,
+    $auth_protocol,
+    $auth_passphrase,
+    $priv_protocol,
+    $priv_passphrase,
+    $object_id,
+    $timeout = null,
+    $retries = null
+) {
+}
 
 /**
  * Set the value of an SNMP object
@@ -957,7 +1063,21 @@ function snmp3_real_walk ($host, $sec_name, $sec_level, $auth_protocol, $auth_pa
  * @since 4.0
  * @since 5.0
  */
-function snmp3_set ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphrase, $priv_protocol, $priv_passphrase, $object_id, $type, $value, $timeout = 1000000, $retries = 5) {}
+function snmp3_set(
+    $host,
+    $sec_name,
+    $sec_level,
+    $auth_protocol,
+    $auth_passphrase,
+    $priv_protocol,
+    $priv_passphrase,
+    $object_id,
+    $type,
+    $value,
+    $timeout = 1000000,
+    $retries = 5
+) {
+}
 
 /**
  * Specify the method how the SNMP values will be returned
@@ -986,7 +1106,9 @@ function snmp3_set ($host, $sec_name, $sec_level, $auth_protocol, $auth_passphra
  * @since 4.3.3
  * @since 5.0
  */
-function snmp_set_valueretrieval ($method) {}
+function snmp_set_valueretrieval($method)
+{
+}
 
 /**
  * Return the method how the SNMP values will be returned
@@ -997,7 +1119,9 @@ function snmp_set_valueretrieval ($method) {}
  * @since 4.3.3
  * @since 5.0
  */
-function snmp_get_valueretrieval () {}
+function snmp_get_valueretrieval()
+{
+}
 
 /**
  * Reads and parses a MIB file into the active MIB tree
@@ -1006,58 +1130,60 @@ function snmp_get_valueretrieval () {}
  * @return bool
  * @since 5.0
  */
-function snmp_read_mib ($filename) {}
+function snmp_read_mib($filename)
+{
+}
 
 
 /**
  * As of 5.4.0
  * @link http://php.net/manual/en/snmp.constants.php
  */
-define ('SNMP_OID_OUTPUT_SUFFIX', 1);
+define('SNMP_OID_OUTPUT_SUFFIX', 1);
 
 /**
  * As of 5.4.0
  * @link http://php.net/manual/en/snmp.constants.php
  */
-define ('SNMP_OID_OUTPUT_MODULE', 2);
+define('SNMP_OID_OUTPUT_MODULE', 2);
 
 /**
  * As of 5.2.0
  * @link http://php.net/manual/en/snmp.constants.php
  */
-define ('SNMP_OID_OUTPUT_FULL', 3);
+define('SNMP_OID_OUTPUT_FULL', 3);
 
 /**
  * As of 5.2.0
  * @link http://php.net/manual/en/snmp.constants.php
  */
-define ('SNMP_OID_OUTPUT_NUMERIC', 4);
+define('SNMP_OID_OUTPUT_NUMERIC', 4);
 
 /**
  * As of 5.4.0
  * @link http://php.net/manual/en/snmp.constants.php
  */
-define ('SNMP_OID_OUTPUT_UCD', 5);
+define('SNMP_OID_OUTPUT_UCD', 5);
 
 /**
  * As of 5.4.0
  * @link http://php.net/manual/en/snmp.constants.php
  */
-define ('SNMP_OID_OUTPUT_NONE', 6);
-define ('SNMP_VALUE_LIBRARY', 0);
-define ('SNMP_VALUE_PLAIN', 1);
-define ('SNMP_VALUE_OBJECT', 2);
-define ('SNMP_BIT_STR', 3);
-define ('SNMP_OCTET_STR', 4);
-define ('SNMP_OPAQUE', 68);
-define ('SNMP_NULL', 5);
-define ('SNMP_OBJECT_ID', 6);
-define ('SNMP_IPADDRESS', 64);
-define ('SNMP_COUNTER', 66);
-define ('SNMP_UNSIGNED', 66);
-define ('SNMP_TIMETICKS', 67);
-define ('SNMP_UINTEGER', 71);
-define ('SNMP_INTEGER', 2);
-define ('SNMP_COUNTER64', 70);
+define('SNMP_OID_OUTPUT_NONE', 6);
+define('SNMP_VALUE_LIBRARY', 0);
+define('SNMP_VALUE_PLAIN', 1);
+define('SNMP_VALUE_OBJECT', 2);
+define('SNMP_BIT_STR', 3);
+define('SNMP_OCTET_STR', 4);
+define('SNMP_OPAQUE', 68);
+define('SNMP_NULL', 5);
+define('SNMP_OBJECT_ID', 6);
+define('SNMP_IPADDRESS', 64);
+define('SNMP_COUNTER', 66);
+define('SNMP_UNSIGNED', 66);
+define('SNMP_TIMETICKS', 67);
+define('SNMP_UINTEGER', 71);
+define('SNMP_INTEGER', 2);
+define('SNMP_COUNTER64', 70);
 
 // End of snmp v.0.1

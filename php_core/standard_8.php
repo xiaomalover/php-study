@@ -57,7 +57,9 @@
  * @since 4.0
  * @since 5.0
  */
-function syslog ($priority, $message) {}
+function syslog($priority, $message)
+{
+}
 
 /**
  * Close connection to system logger
@@ -66,7 +68,9 @@ function syslog ($priority, $message) {}
  * @since 4.0
  * @since 5.0
  */
-function closelog () {}
+function closelog()
+{
+}
 
 /**
  * Registers a function that will be called when PHP starts sending output.
@@ -78,7 +82,9 @@ function closelog () {}
  * @since 4.0
  * @since 5.0
  */
-function header_register_callback ( callable $callback ) {}
+function header_register_callback(callable $callback)
+{
+}
 
 /**
  * PHP > 5.4.0<br/>
@@ -98,7 +104,9 @@ function header_register_callback ( callable $callback ) {}
  * that can be used directly in an IMG tag.<br>
  * On failure, FALSE is returned.
  */
-function getimagesizefromstring ($imagedata , array &$imageinfo) {}
+function getimagesizefromstring($imagedata, array &$imageinfo)
+{
+}
 
 /**
  * PHP > 5.4.0<br/>
@@ -109,7 +117,9 @@ function getimagesizefromstring ($imagedata , array &$imageinfo) {}
  * @return int Returns the previous chunk size on success.<br>
  * Will return <b>FALSE</b> if chunk_size is less than 1 or greater than <b>PHP_INT_MAX</b>.
  */
-function stream_set_chunk_size ($fp , $chunk_size) {}
+function stream_set_chunk_size($fp, $chunk_size)
+{
+}
 
 /**
  * PHP > 5.4.0<br/>
@@ -118,7 +128,9 @@ function stream_set_chunk_size ($fp , $chunk_size) {}
  * @param resource $stream The stream resource to import.
  * @return void Returns <b>FALSE</b> or <b>NULL</b> on failure.
  */
-function socket_import_stream ($stream) {}
+function socket_import_stream($stream)
+{
+}
 
 /**
  * Initializes all syslog related variables
@@ -128,7 +140,9 @@ function socket_import_stream ($stream) {}
  * @since 4.0
  * @since 5.0
  */
-function define_syslog_variables () {}
+function define_syslog_variables()
+{
+}
 
 /**
  * Combined linear congruential generator
@@ -137,7 +151,9 @@ function define_syslog_variables () {}
  * @since 4.0
  * @since 5.0
  */
-function lcg_value () {}
+function lcg_value()
+{
+}
 
 /**
  * Calculate the metaphone key of a string
@@ -151,7 +167,9 @@ function lcg_value () {}
  * @since 4.0
  * @since 5.0
  */
-function metaphone ($str, $phones = null) {}
+function metaphone($str, $phones = null)
+{
+}
 
 /**
  * Turn on output buffering
@@ -221,25 +239,31 @@ function metaphone ($str, $phones = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ob_start ($output_callback = null, $chunk_size = null, $erase = null) {}
+function ob_start($output_callback = null, $chunk_size = null, $erase = null)
+{
+}
 
 /**
  * Flush (send) the output buffer
  * @link http://php.net/manual/en/function.ob-flush.php
- * @return void 
+ * @return void
  * @since 4.2.0
  * @since 5.0
  */
-function ob_flush () {}
+function ob_flush()
+{
+}
 
 /**
  * Clean (erase) the output buffer
  * @link http://php.net/manual/en/function.ob-clean.php
- * @return void 
+ * @return void
  * @since 4.2.0
  * @since 5.0
  */
-function ob_clean () {}
+function ob_clean()
+{
+}
 
 /**
  * Flush (send) the output buffer and turn off output buffering
@@ -250,7 +274,9 @@ function ob_clean () {}
  * @since 4.0
  * @since 5.0
  */
-function ob_end_flush () {}
+function ob_end_flush()
+{
+}
 
 /**
  * Clean (erase) the output buffer and turn off output buffering
@@ -261,7 +287,9 @@ function ob_end_flush () {}
  * @since 4.0
  * @since 5.0
  */
-function ob_end_clean () {}
+function ob_end_clean()
+{
+}
 
 /**
  * Flush the output buffer, return it as a string and turn off output buffering
@@ -270,7 +298,9 @@ function ob_end_clean () {}
  * @since 4.3.0
  * @since 5.0
  */
-function ob_get_flush () {}
+function ob_get_flush()
+{
+}
 
 /**
  * Get current buffer contents and delete current output buffer
@@ -280,7 +310,9 @@ function ob_get_flush () {}
  * @since 4.3.0
  * @since 5.0
  */
-function ob_get_clean () {}
+function ob_get_clean()
+{
+}
 
 /**
  * Return the length of the output buffer
@@ -290,7 +322,9 @@ function ob_get_clean () {}
  * @since 4.0.2
  * @since 5.0
  */
-function ob_get_length () {}
+function ob_get_length()
+{
+}
 
 /**
  * Return the nesting level of the output buffering mechanism
@@ -300,7 +334,9 @@ function ob_get_length () {}
  * @since 4.2.0
  * @since 5.0
  */
-function ob_get_level () {}
+function ob_get_level()
+{
+}
 
 /**
  * Get status of output buffers
@@ -367,7 +403,9 @@ function ob_get_level () {}
  * @since 4.2.0
  * @since 5.0
  */
-function ob_get_status ($full_status = null) {}
+function ob_get_status($full_status = null)
+{
+}
 
 /**
  * Return the contents of the output buffer
@@ -377,7 +415,9 @@ function ob_get_status ($full_status = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ob_get_contents () {}
+function ob_get_contents()
+{
+}
 
 /**
  * Turn implicit flush on/off
@@ -385,11 +425,13 @@ function ob_get_contents () {}
  * @param int $flag [optional] <p>
  * true to turn implicit flushing on, false otherwise.
  * </p>
- * @return void 
+ * @return void
  * @since 4.0
  * @since 5.0
  */
-function ob_implicit_flush ($flag = null) {}
+function ob_implicit_flush($flag = null)
+{
+}
 
 /**
  * List all output handlers in use
@@ -402,7 +444,9 @@ function ob_implicit_flush ($flag = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function ob_list_handlers () {}
+function ob_list_handlers()
+{
+}
 
 /**
  * Sort an array by key
@@ -419,7 +463,9 @@ function ob_list_handlers () {}
  * @since 4.0
  * @since 5.0
  */
-function ksort (array &$array, $sort_flags = null) {}
+function ksort(array &$array, $sort_flags = null)
+{
+}
 
 /**
  * Sort an array by key in reverse order
@@ -436,7 +482,9 @@ function ksort (array &$array, $sort_flags = null) {}
  * @since 4.0
  * @since 5.0
  */
-function krsort (array &$array, $sort_flags = null) {}
+function krsort(array &$array, $sort_flags = null)
+{
+}
 
 /**
  * Sort an array using a "natural order" algorithm
@@ -448,7 +496,9 @@ function krsort (array &$array, $sort_flags = null) {}
  * @since 4.0
  * @since 5.0
  */
-function natsort (array &$array) {}
+function natsort(array &$array)
+{
+}
 
 /**
  * Sort an array using a case insensitive "natural order" algorithm
@@ -460,7 +510,9 @@ function natsort (array &$array) {}
  * @since 4.0
  * @since 5.0
  */
-function natcasesort (array &$array) {}
+function natcasesort(array &$array)
+{
+}
 
 /**
  * Sort an array and maintain index association
@@ -477,7 +529,9 @@ function natcasesort (array &$array) {}
  * @since 4.0
  * @since 5.0
  */
-function asort (array &$array, $sort_flags = null) {}
+function asort(array &$array, $sort_flags = null)
+{
+}
 
 /**
  * Sort an array in reverse order and maintain index association
@@ -494,7 +548,9 @@ function asort (array &$array, $sort_flags = null) {}
  * @since 4.0
  * @since 5.0
  */
-function arsort (array &$array, $sort_flags = null) {}
+function arsort(array &$array, $sort_flags = null)
+{
+}
 
 /**
  * Sort an array
@@ -514,7 +570,9 @@ function arsort (array &$array, $sort_flags = null) {}
  * @since 4.0
  * @since 5.0
  */
-function sort (array &$array, $sort_flags = null) {}
+function sort(array &$array, $sort_flags = null)
+{
+}
 
 /**
  * Sort an array in reverse order
@@ -531,7 +589,9 @@ function sort (array &$array, $sort_flags = null) {}
  * @since 4.0
  * @since 5.0
  */
-function rsort (array &$array, $sort_flags = null) {}
+function rsort(array &$array, $sort_flags = null)
+{
+}
 
 /**
  * Sort an array by values using a user-defined comparison function
@@ -548,7 +608,9 @@ function rsort (array &$array, $sort_flags = null) {}
  * @since 4.0
  * @since 5.0
  */
-function usort (array &$array, $cmp_function) {}
+function usort(array &$array, $cmp_function)
+{
+}
 
 /**
  * Sort an array with a user-defined comparison function and maintain index association
@@ -564,7 +626,9 @@ function usort (array &$array, $cmp_function) {}
  * @since 4.0
  * @since 5.0
  */
-function uasort (array &$array, $cmp_function) {}
+function uasort(array &$array, $cmp_function)
+{
+}
 
 /**
  * Sort an array by keys using a user-defined comparison function
@@ -587,7 +651,9 @@ function uasort (array &$array, $cmp_function) {}
  * @since 4.0
  * @since 5.0
  */
-function uksort (array &$array, $cmp_function) {}
+function uksort(array &$array, $cmp_function)
+{
+}
 
 /**
  * Shuffle an array
@@ -599,7 +665,9 @@ function uksort (array &$array, $cmp_function) {}
  * @since 4.0
  * @since 5.0
  */
-function shuffle (array &$array) {}
+function shuffle(array &$array)
+{
+}
 
 /**
  * Apply a user function to every member of an array
@@ -635,7 +703,9 @@ function shuffle (array &$array) {}
  * @since 4.0
  * @since 5.0
  */
-function array_walk (array &$array, $funcname, $userdata = null) {}
+function array_walk(array &$array, $funcname, $userdata = null)
+{
+}
 
 /**
  * Apply a user function recursively to every member of an array
@@ -664,7 +734,9 @@ function array_walk (array &$array, $funcname, $userdata = null) {}
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function array_walk_recursive (array &$input, $funcname, $userdata = null) {}
+function array_walk_recursive(array &$input, $funcname, $userdata = null)
+{
+}
 
 /**
  * Counts all elements in an array, or something in an object.
@@ -672,7 +744,7 @@ function array_walk_recursive (array &$input, $funcname, $userdata = null) {}
  * The interface has exactly one method, {@see Countable::count()}, which returns the return value for the count() function.
  * Please see the {@see Array} section of the manual for a detailed explanation of how arrays are implemented and used in PHP.
  * @link http://php.net/manual/en/function.count.php
- * @param array|Countable $var  The array or the object.
+ * @param array|Countable $var The array or the object.
  * @param int $mode [optional] If the optional mode parameter is set to
  * COUNT_RECURSIVE (or 1), count
  * will recursively count the array. This is particularly useful for
@@ -695,7 +767,9 @@ function array_walk_recursive (array &$input, $funcname, $userdata = null) {}
  * @since 4.0
  * @since 5.0
  */
-function count ($var, $mode = COUNT_NORMAL) {}
+function count($var, $mode = COUNT_NORMAL)
+{
+}
 
 /**
  * Set the internal pointer of an array to its last element
@@ -710,7 +784,9 @@ function count ($var, $mode = COUNT_NORMAL) {}
  * @since 4.0
  * @since 5.0
  */
-function end (array &$array) {}
+function end(array &$array)
+{
+}
 
 /**
  * Rewind the internal array pointer
@@ -724,7 +800,9 @@ function end (array &$array) {}
  * @since 4.0
  * @since 5.0
  */
-function prev (array &$array) {}
+function prev(array &$array)
+{
+}
 
 /**
  * Advance the internal array pointer of an array
@@ -737,7 +815,9 @@ function prev (array &$array) {}
  * @since 4.0
  * @since 5.0
  */
-function next (array &$array) {}
+function next(array &$array)
+{
+}
 
 /**
  * Set the internal pointer of an array to its first element
@@ -750,7 +830,9 @@ function next (array &$array) {}
  * @since 4.0
  * @since 5.0
  */
-function reset (array &$array) {}
+function reset(array &$array)
+{
+}
 
 /**
  * Return the current element in an array
@@ -761,12 +843,14 @@ function reset (array &$array) {}
  * @return mixed The current function simply returns the
  * value of the array element that's currently being pointed to by the
  * internal pointer. It does not move the pointer in any way. If the
- * internal pointer points beyond the end of the elements list or the array is 
+ * internal pointer points beyond the end of the elements list or the array is
  * empty, current returns false.
  * @since 4.0
  * @since 5.0
  */
-function current (array &$array) {}
+function current(array &$array)
+{
+}
 
 /**
  * Fetch a key from an array
@@ -777,12 +861,14 @@ function current (array &$array) {}
  * @return mixed The key function simply returns the
  * key of the array element that's currently being pointed to by the
  * internal pointer. It does not move the pointer in any way. If the
- * internal pointer points beyond the end of the elements list or the array is 
+ * internal pointer points beyond the end of the elements list or the array is
  * empty, key returns &null;.
  * @since 4.0
  * @since 5.0
  */
-function key (array &$array) {}
+function key(array &$array)
+{
+}
 
 /**
  * Find lowest value
@@ -796,7 +882,9 @@ function key (array &$array) {}
  * @since 4.0
  * @since 5.0
  */
-function min (array $value1, $value2 = null, ...$values) {}
+function min(array $value1, $value2 = null, ...$values)
+{
+}
 
 /**
  * Find highest value
@@ -810,7 +898,9 @@ function min (array $value1, $value2 = null, ...$values) {}
  * @since 4.0
  * @since 5.0
  */
-function max (array $value1, $value2 = null, ...$values) {}
+function max(array $value1, $value2 = null, ...$values)
+{
+}
 
 /**
  * Checks if a value exists in an array
@@ -836,7 +926,9 @@ function max (array $value1, $value2 = null, ...$values) {}
  * @since 4.0
  * @since 5.0
  */
-function in_array ($needle, array $haystack, $strict = null) {}
+function in_array($needle, array $haystack, $strict = null)
+{
+}
 
 /**
  * Searches the array for a given value and returns the corresponding key if successful
@@ -868,12 +960,14 @@ function in_array ($needle, array $haystack, $strict = null) {}
  * @since 4.0.5
  * @since 5.0
  */
-function array_search ($needle, array $haystack, $strict = null) {}
+function array_search($needle, array $haystack, $strict = null)
+{
+}
 
 /**
  * Import variables into the current symbol table from an array
  * @link http://php.net/manual/en/function.extract.php
- * @param array $var_array<p>
+ * @param array $var_array <p>
  * Note that prefix is only required if
  * extract_type is EXTR_PREFIX_SAME,
  * EXTR_PREFIX_ALL, EXTR_PREFIX_INVALID
@@ -898,7 +992,9 @@ function array_search ($needle, array $haystack, $strict = null) {}
  * @since 4.0
  * @since 5.0
  */
-function extract (array $var_array, $extract_type = null, $prefix = null) {}
+function extract(array $var_array, $extract_type = null, $prefix = null)
+{
+}
 
 /**
  * Create array containing variables and their values
@@ -910,12 +1006,14 @@ function extract (array $var_array, $extract_type = null, $prefix = null) {}
  * arrays of variable names inside it; compact
  * handles it recursively.
  * </p>
- * @param mixed $_ [optional] 
+ * @param mixed $_ [optional]
  * @return array the output array with all the variables added to it.
  * @since 4.0
  * @since 5.0
  */
-function compact ($varname, $_ = null) {}
+function compact($varname, $_ = null)
+{
+}
 
 /**
  * Fill an array with values
@@ -934,7 +1032,9 @@ function compact ($varname, $_ = null) {}
  * @since 4.2.0
  * @since 5.0
  */
-function array_fill ($start_index, $num, $value) {}
+function array_fill($start_index, $num, $value)
+{
+}
 
 /**
  * Fill an array with values, specifying keys
@@ -949,7 +1049,9 @@ function array_fill ($start_index, $num, $value) {}
  * @return array the filled array
  * @since 5.2.0
  */
-function array_fill_keys (array $keys, $value) {}
+function array_fill_keys(array $keys, $value)
+{
+}
 
 /**
  * Create an array containing a range of elements
@@ -972,7 +1074,9 @@ function array_fill_keys (array $keys, $value) {}
  * @since 4.0
  * @since 5.0
  */
-function range ($low, $high, $step = null) {}
+function range($low, $high, $step = null)
+{
+}
 
 /**
  * Sort multiple or multi-dimensional arrays
@@ -982,20 +1086,22 @@ function range ($low, $high, $step = null) {}
  * </p>
  * @param mixed $arg [optional] <p>
  * Optionally another array, or sort options for the
- * previous array argument: 
- * SORT_ASC, 
- * SORT_DESC, 
+ * previous array argument:
+ * SORT_ASC,
+ * SORT_DESC,
  * SORT_REGULAR,
  * SORT_NUMERIC,
  * SORT_STRING.
  * </p>
- * @param mixed $arg [optional] 
- * @param mixed $_ [optional] 
+ * @param mixed $arg [optional]
+ * @param mixed $_ [optional]
  * @return bool true on success or false on failure.
  * @since 4.0
  * @since 5.0
  */
-function array_multisort (array &$arr, $arg = null, $arg = null, $_ = null) {}
+function array_multisort(array &$arr, $arg = null, $arg = null, $_ = null)
+{
+}
 
 /**
  * Push one or more elements onto the end of array
@@ -1006,12 +1112,14 @@ function array_multisort (array &$arr, $arg = null, $arg = null, $_ = null) {}
  * @param mixed $var <p>
  * The pushed value.
  * </p>
- * @param mixed $_ [optional] 
+ * @param mixed $_ [optional]
  * @return int the new number of elements in the array.
  * @since 4.0
  * @since 5.0
  */
-function array_push (array &$array, $var, $_ = null) {}
+function array_push(array &$array, $var, $_ = null)
+{
+}
 
 /**
  * Pop the element off the end of array
@@ -1025,7 +1133,9 @@ function array_push (array &$array, $var, $_ = null) {}
  * @since 4.0
  * @since 5.0
  */
-function array_pop (array &$array) {}
+function array_pop(array &$array)
+{
+}
 
 /**
  * Shift an element off the beginning of array
@@ -1038,7 +1148,9 @@ function array_pop (array &$array) {}
  * @since 4.0
  * @since 5.0
  */
-function array_shift (array &$array) {}
+function array_shift(array &$array)
+{
+}
 
 /**
  * Prepend one or more elements to the beginning of an array
@@ -1049,12 +1161,14 @@ function array_shift (array &$array) {}
  * @param mixed $var <p>
  * The prepended variable.
  * </p>
- * @param mixed $_ [optional] 
+ * @param mixed $_ [optional]
  * @return int the new number of elements in the array.
  * @since 4.0
  * @since 5.0
  */
-function array_unshift (array &$array, $var, $_ = null) {}
+function array_unshift(array &$array, $var, $_ = null)
+{
+}
 
 /**
  * Remove a portion of the array and replace it with something else
@@ -1102,7 +1216,9 @@ function array_unshift (array &$array, $var, $_ = null) {}
  * @since 4.0
  * @since 5.0
  */
-function array_splice (array &$input, $offset, $length = null, $replacement = null) {}
+function array_splice(array &$input, $offset, $length = null, $replacement = null)
+{
+}
 
 /**
  * Extract a slice of the array
@@ -1134,7 +1250,9 @@ function array_splice (array &$input, $offset, $length = null, $replacement = nu
  * @since 4.0
  * @since 5.0
  */
-function array_slice (array $array, $offset, $length = null, $preserve_keys = null) {}
+function array_slice(array $array, $offset, $length = null, $preserve_keys = null)
+{
+}
 
 /**
  * Merge one or more arrays
@@ -1142,12 +1260,14 @@ function array_slice (array $array, $offset, $length = null, $preserve_keys = nu
  * @param array $array1 <p>
  * Initial array to merge.
  * </p>
- * @param array $array2 [optional] 
- * @param array $_ [optional] 
+ * @param array $array2 [optional]
+ * @param array $_ [optional]
  * @return array the resulting array.
  * @since 4.0
  * @since 5.0
  */
-function array_merge (array $array1, array $array2 = null, array $_ = null) {}
+function array_merge(array $array1, array $array2 = null, array $_ = null)
+{
+}
 
 ?>

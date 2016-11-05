@@ -87,7 +87,7 @@ $_POST = array();
 $HTTP_POST_VARS = array();
 
 /**
- *  @xglobal $_REQUEST array
+ * @xglobal $_REQUEST array
  * Variables provided to the script via the GET, POST, and COOKIE input mechanisms,
  * and which therefore cannot be trusted.
  * The presence and order of variable inclusion in this array is defined according to the
@@ -161,8 +161,8 @@ $_SERVER['PATH_INFO'] = '';
 $_SERVER['ORIG_PATH_INFO'] = '';
 
 /**
- *  @xglobal $_SESSION array
- *  @xglobal $HTTP_SESSION_VARS array
+ * @xglobal $_SESSION array
+ * @xglobal $HTTP_SESSION_VARS array
  *
  * Variables which are currently registered to a script's session.
  * Analogous to the old $HTTP_SESSION_VARS array (which is still available, but deprecated).
@@ -188,7 +188,7 @@ $HTTP_SESSION_VARS = array();
 $argc = 0;
 
 /**
- *  @xglobal $argv array
+ * @xglobal $argv array
  *
  * Array of arguments passed to script
  *
@@ -204,7 +204,7 @@ $argv = array();
  *
  * <p><a href="http://www.php.net/manual/en/reserved.variables.php">
  * http://us2.php.net/manual/en/reserved.variables.php</a>
- * 
+ *
  * @deprecated 5.6.0 Deprecated as of PHP 5.6.0. Use the php://input stream instead.
  */
 $HTTP_RAW_POST_DATA = '';

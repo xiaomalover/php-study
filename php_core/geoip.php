@@ -13,7 +13,9 @@
  * </p>
  * @return string the corresponding database version, or <b>NULL</b> on error.
  */
-function geoip_database_info ($database = GEOIP_COUNTRY_EDITION) {}
+function geoip_database_info($database = GEOIP_COUNTRY_EDITION)
+{
+}
 
 /**
  * (PECL geoip &gt;= 0.2.0)<br/>
@@ -25,7 +27,9 @@ function geoip_database_info ($database = GEOIP_COUNTRY_EDITION) {}
  * @return string the two letter ISO country code on success, or <b>FALSE</b>
  * if the address cannot be found in the database.
  */
-function geoip_country_code_by_name ($hostname) {}
+function geoip_country_code_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 0.2.0)<br/>
@@ -37,7 +41,9 @@ function geoip_country_code_by_name ($hostname) {}
  * @return string the three letter country code on success, or <b>FALSE</b>
  * if the address cannot be found in the database.
  */
-function geoip_country_code3_by_name ($hostname) {}
+function geoip_country_code3_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 0.2.0)<br/>
@@ -49,7 +55,9 @@ function geoip_country_code3_by_name ($hostname) {}
  * @return string the country name on success, or <b>FALSE</b> if the address cannot
  * be found in the database.
  */
-function geoip_country_name_by_name ($hostname) {}
+function geoip_country_name_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 1.0.3)<br/>
@@ -61,7 +69,9 @@ function geoip_country_name_by_name ($hostname) {}
  * @return string the two letter continent code on success, or <b>FALSE</b> if the
  * address cannot be found in the database.
  */
-function geoip_continent_code_by_name ($hostname) {}
+function geoip_continent_code_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 0.2.0)<br/>
@@ -73,7 +83,9 @@ function geoip_continent_code_by_name ($hostname) {}
  * @return string the organization name on success, or <b>FALSE</b> if the address
  * cannot be found in the database.
  */
-function geoip_org_by_name ($hostname) {}
+function geoip_org_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 0.2.0)<br/>
@@ -85,7 +97,9 @@ function geoip_org_by_name ($hostname) {}
  * @return array the associative array on success, or <b>FALSE</b> if the address
  * cannot be found in the database.
  */
-function geoip_record_by_name ($hostname) {}
+function geoip_record_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 0.2.0)<br/>
@@ -96,7 +110,9 @@ function geoip_record_by_name ($hostname) {}
  * </p>
  * @return int the connection type.
  */
-function geoip_id_by_name ($hostname) {}
+function geoip_id_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 0.2.0)<br/>
@@ -108,7 +124,9 @@ function geoip_id_by_name ($hostname) {}
  * @return array the associative array on success, or <b>FALSE</b> if the address
  * cannot be found in the database.
  */
-function geoip_region_by_name ($hostname) {}
+function geoip_region_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 1.0.2)<br/>
@@ -120,7 +138,9 @@ function geoip_region_by_name ($hostname) {}
  * @return string the ISP name on success, or <b>FALSE</b> if the address
  * cannot be found in the database.
  */
-function geoip_isp_by_name ($hostname) {}
+function geoip_isp_by_name($hostname)
+{
+}
 
 /**
  * (PECL geoip &gt;= 1.0.1)<br/>
@@ -133,7 +153,9 @@ function geoip_isp_by_name ($hostname) {}
  * </p>
  * @return bool <b>TRUE</b> is database exists, <b>FALSE</b> if not found, or <b>NULL</b> on error.
  */
-function geoip_db_avail ($database) {}
+function geoip_db_avail($database)
+{
+}
 
 /**
  * (PECL geoip &gt;= 1.0.1)<br/>
@@ -141,7 +163,9 @@ function geoip_db_avail ($database) {}
  * @link http://php.net/manual/en/function.geoip-db-get-all-info.php
  * @return array the associative array.
  */
-function geoip_db_get_all_info () {}
+function geoip_db_get_all_info()
+{
+}
 
 /**
  * (PECL geoip &gt;= 1.0.1)<br/>
@@ -154,7 +178,9 @@ function geoip_db_get_all_info () {}
  * </p>
  * @return string the filename of the corresponding database, or <b>NULL</b> on error.
  */
-function geoip_db_filename ($database) {}
+function geoip_db_filename($database)
+{
+}
 
 /**
  * (PECL geoip &gt;= 1.0.4)<br/>
@@ -171,7 +197,9 @@ function geoip_db_filename ($database) {}
  * @return string the region name on success, or <b>FALSE</b> if the country and region code
  * combo cannot be found.
  */
-function geoip_region_name_by_code ($country_code, $region_code) {}
+function geoip_region_name_by_code($country_code, $region_code)
+{
+}
 
 /**
  * (PECL geoip &gt;= 1.0.4)<br/>
@@ -188,23 +216,25 @@ function geoip_region_name_by_code ($country_code, $region_code) {}
  * @return string the time zone on success, or <b>FALSE</b> if the country and region code
  * combo cannot be found.
  */
-function geoip_time_zone_by_country_and_region ($country_code, $region_code = null) {}
+function geoip_time_zone_by_country_and_region($country_code, $region_code = null)
+{
+}
 
-define ('GEOIP_COUNTRY_EDITION', 1);
-define ('GEOIP_REGION_EDITION_REV0', 7);
-define ('GEOIP_CITY_EDITION_REV0', 6);
-define ('GEOIP_ORG_EDITION', 5);
-define ('GEOIP_ISP_EDITION', 4);
-define ('GEOIP_CITY_EDITION_REV1', 2);
-define ('GEOIP_REGION_EDITION_REV1', 3);
-define ('GEOIP_PROXY_EDITION', 8);
-define ('GEOIP_ASNUM_EDITION', 9);
-define ('GEOIP_NETSPEED_EDITION', 10);
-define ('GEOIP_DOMAIN_EDITION', 11);
-define ('GEOIP_UNKNOWN_SPEED', 0);
-define ('GEOIP_DIALUP_SPEED', 1);
-define ('GEOIP_CABLEDSL_SPEED', 2);
-define ('GEOIP_CORPORATE_SPEED', 3);
+define('GEOIP_COUNTRY_EDITION', 1);
+define('GEOIP_REGION_EDITION_REV0', 7);
+define('GEOIP_CITY_EDITION_REV0', 6);
+define('GEOIP_ORG_EDITION', 5);
+define('GEOIP_ISP_EDITION', 4);
+define('GEOIP_CITY_EDITION_REV1', 2);
+define('GEOIP_REGION_EDITION_REV1', 3);
+define('GEOIP_PROXY_EDITION', 8);
+define('GEOIP_ASNUM_EDITION', 9);
+define('GEOIP_NETSPEED_EDITION', 10);
+define('GEOIP_DOMAIN_EDITION', 11);
+define('GEOIP_UNKNOWN_SPEED', 0);
+define('GEOIP_DIALUP_SPEED', 1);
+define('GEOIP_CABLEDSL_SPEED', 2);
+define('GEOIP_CORPORATE_SPEED', 3);
 
 // End of geoip v.1.0.8
 ?>

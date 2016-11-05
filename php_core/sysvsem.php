@@ -24,7 +24,9 @@
  * @since 4.0
  * @since 5.0
  */
-function sem_get ($key, $max_acquire = 1, $perm = 0666, $auto_release = 1) {}
+function sem_get($key, $max_acquire = 1, $perm = 0666, $auto_release = 1)
+{
+}
 
 /**
  * Acquire a semaphore
@@ -37,7 +39,9 @@ function sem_get ($key, $max_acquire = 1, $perm = 0666, $auto_release = 1) {}
  * @since 4.0
  * @since 5.0
  */
-function sem_acquire ($sem_identifier) {}
+function sem_acquire($sem_identifier)
+{
+}
 
 /**
  * Release a semaphore
@@ -50,7 +54,9 @@ function sem_acquire ($sem_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function sem_release ($sem_identifier) {}
+function sem_release($sem_identifier)
+{
+}
 
 /**
  * Remove a semaphore
@@ -63,7 +69,9 @@ function sem_release ($sem_identifier) {}
  * @since 4.1.0
  * @since 5.0
  */
-function sem_remove ($sem_identifier) {}
+function sem_remove($sem_identifier)
+{
+}
 
 // End of sysvsem v.
 ?>

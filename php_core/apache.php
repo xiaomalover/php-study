@@ -8,7 +8,9 @@
  * @since 4.0.5
  * @since 5.0
  */
-function apache_child_terminate () {}
+function apache_child_terminate()
+{
+}
 
 /**
  * Get a list of loaded Apache modules
@@ -17,7 +19,9 @@ function apache_child_terminate () {}
  * @since 4.3.2
  * @since 5.0
  */
-function apache_get_modules () {}
+function apache_get_modules()
+{
+}
 
 /**
  * Fetch the Apache version
@@ -26,7 +30,9 @@ function apache_get_modules () {}
  * @since 4.3.2
  * @since 5.0
  */
-function apache_get_version () {}
+function apache_get_version()
+{
+}
 
 /**
  * Get an Apache subprocess_env variable
@@ -43,7 +49,9 @@ function apache_get_version () {}
  * @since 4.3.0
  * @since 5.0
  */
-function apache_getenv ( $variable, $walk_to_top = false ) {}
+function apache_getenv($variable, $walk_to_top = false)
+{
+}
 
 /**
  * Perform a partial request for the specified URI and return all info about it
@@ -57,7 +65,9 @@ function apache_getenv ( $variable, $walk_to_top = false ) {}
  * @since 4.0
  * @since 5.0
  */
-function apache_lookup_uri ( $filename ) {}
+function apache_lookup_uri($filename)
+{
+}
 
 /**
  * Get and set apache request notes
@@ -74,7 +84,9 @@ function apache_lookup_uri ( $filename ) {}
  * @since 4.0
  * @since 5.0
  */
-function apache_note ( $note_name, $note_value = '' ) {}
+function apache_note($note_name, $note_value = '')
+{
+}
 
 /**
  * Fetches all HTTP request headers from the current request
@@ -83,7 +95,9 @@ function apache_note ( $note_name, $note_value = '' ) {}
  * @since 4.3.0
  * @since 5.0
  */
-function apache_request_headers () {}
+function apache_request_headers()
+{
+}
 
 /**
  * Reset the Apache write timer
@@ -93,7 +107,9 @@ function apache_request_headers () {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.1.0
  */
-function apache_reset_timeout () {}
+function apache_reset_timeout()
+{
+}
 
 /**
  * Fetch all HTTP response headers
@@ -102,7 +118,9 @@ function apache_reset_timeout () {}
  * @since 4.3.0
  * @since 5.0
  */
-function apache_response_headers () {}
+function apache_response_headers()
+{
+}
 
 /**
  * Sets the value of the Apache environment variable specified by variable.
@@ -121,7 +139,9 @@ function apache_response_headers () {}
  * @since 4.2.0
  * @since 5.0
  */
-function apache_setenv ( $variable, $value, $walk_to_top = false ) {}
+function apache_setenv($variable, $value, $walk_to_top = false)
+{
+}
 
 /**
  * Fetches all HTTP headers from the current request.
@@ -131,7 +151,9 @@ function apache_setenv ( $variable, $value, $walk_to_top = false ) {}
  * @since 4.0
  * @since 5.0
  */
-function getallheaders () {}
+function getallheaders()
+{
+}
 
 /**
  * Perform an Apache sub-request
@@ -146,4 +168,6 @@ function getallheaders () {}
  * @since 4.0
  * @since 5.0
  */
-function virtual ( $filename ) {}
+function virtual($filename)
+{
+}

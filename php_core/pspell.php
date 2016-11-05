@@ -36,7 +36,9 @@
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_new ($language, $spelling = null, $jargon = null, $encoding = null, $mode = 0) {}
+function pspell_new($language, $spelling = null, $jargon = null, $encoding = null, $mode = 0)
+{
+}
 
 /**
  * Load a new dictionary with personal wordlist
@@ -75,7 +77,9 @@ function pspell_new ($language, $spelling = null, $jargon = null, $encoding = nu
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_new_personal ($personal, $language, $spelling = null, $jargon = null, $encoding = null, $mode = 0) {}
+function pspell_new_personal($personal, $language, $spelling = null, $jargon = null, $encoding = null, $mode = 0)
+{
+}
 
 /**
  * Load a new dictionary with settings based on a given config
@@ -88,7 +92,9 @@ function pspell_new_personal ($personal, $language, $spelling = null, $jargon = 
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_new_config ($config) {}
+function pspell_new_config($config)
+{
+}
 
 /**
  * Check a word
@@ -101,7 +107,9 @@ function pspell_new_config ($config) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_check ($dictionary_link, $word) {}
+function pspell_check($dictionary_link, $word)
+{
+}
 
 /**
  * Suggest spellings of a word
@@ -114,7 +122,9 @@ function pspell_check ($dictionary_link, $word) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_suggest ($dictionary_link, $word) {}
+function pspell_suggest($dictionary_link, $word)
+{
+}
 
 /**
  * Store a replacement pair for a word
@@ -133,7 +143,9 @@ function pspell_suggest ($dictionary_link, $word) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_store_replacement ($dictionary_link, $misspelled, $correct) {}
+function pspell_store_replacement($dictionary_link, $misspelled, $correct)
+{
+}
 
 /**
  * Add the word to a personal wordlist
@@ -146,7 +158,9 @@ function pspell_store_replacement ($dictionary_link, $misspelled, $correct) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_add_to_personal ($dictionary_link, $word) {}
+function pspell_add_to_personal($dictionary_link, $word)
+{
+}
 
 /**
  * Add the word to the wordlist in the current session
@@ -159,7 +173,9 @@ function pspell_add_to_personal ($dictionary_link, $word) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_add_to_session ($dictionary_link, $word) {}
+function pspell_add_to_session($dictionary_link, $word)
+{
+}
 
 /**
  * Clear the current session
@@ -169,7 +185,9 @@ function pspell_add_to_session ($dictionary_link, $word) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_clear_session ($dictionary_link) {}
+function pspell_clear_session($dictionary_link)
+{
+}
 
 /**
  * Save the personal wordlist to a file
@@ -182,7 +200,9 @@ function pspell_clear_session ($dictionary_link) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_save_wordlist ($dictionary_link) {}
+function pspell_save_wordlist($dictionary_link)
+{
+}
 
 /**
  * Create a config used to open a dictionary
@@ -213,7 +233,9 @@ function pspell_save_wordlist ($dictionary_link) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_config_create ($language, $spelling = null, $jargon = null, $encoding = null) {}
+function pspell_config_create($language, $spelling = null, $jargon = null, $encoding = null)
+{
+}
 
 /**
  * Consider run-together words as valid compounds
@@ -227,7 +249,9 @@ function pspell_config_create ($language, $spelling = null, $jargon = null, $enc
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_config_runtogether ($dictionary_link, $flag) {}
+function pspell_config_runtogether($dictionary_link, $flag)
+{
+}
 
 /**
  * Change the mode number of suggestions returned
@@ -242,7 +266,9 @@ function pspell_config_runtogether ($dictionary_link, $flag) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_config_mode ($dictionary_link, $mode) {}
+function pspell_config_mode($dictionary_link, $mode)
+{
+}
 
 /**
  * Ignore words less than N characters long
@@ -255,7 +281,9 @@ function pspell_config_mode ($dictionary_link, $mode) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_config_ignore ($dictionary_link, $n) {}
+function pspell_config_ignore($dictionary_link, $n)
+{
+}
 
 /**
  * Set a file that contains personal wordlist
@@ -269,7 +297,9 @@ function pspell_config_ignore ($dictionary_link, $n) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_config_personal ($dictionary_link, $file) {}
+function pspell_config_personal($dictionary_link, $file)
+{
+}
 
 /**
  * Location of the main word list
@@ -279,7 +309,9 @@ function pspell_config_personal ($dictionary_link, $file) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.0
  */
-function pspell_config_dict_dir ($conf, $directory) {}
+function pspell_config_dict_dir($conf, $directory)
+{
+}
 
 /**
  * location of language data files
@@ -289,7 +321,9 @@ function pspell_config_dict_dir ($conf, $directory) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.0
  */
-function pspell_config_data_dir ($conf, $directory) {}
+function pspell_config_data_dir($conf, $directory)
+{
+}
 
 /**
  * Set a file that contains replacement pairs
@@ -302,13 +336,15 @@ function pspell_config_data_dir ($conf, $directory) {}
  * @since 4.0.2
  * @since 5.0
  */
-function pspell_config_repl ($dictionary_link, $file) {}
+function pspell_config_repl($dictionary_link, $file)
+{
+}
 
 /**
  * Determine whether to save a replacement pairs list
  * @since 4.0.2
  * @since 5.0
-along with the wordlist
+ * along with the wordlist
  * @link http://php.net/manual/en/function.pspell-config-save-repl.php
  * @param int $dictionary_link
  * @param bool $flag <p>
@@ -316,12 +352,14 @@ along with the wordlist
  * </p>
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  */
-function pspell_config_save_repl ($dictionary_link, $flag) {}
+function pspell_config_save_repl($dictionary_link, $flag)
+{
+}
 
-define ('PSPELL_FAST', 1);
-define ('PSPELL_NORMAL', 2);
-define ('PSPELL_BAD_SPELLERS', 3);
-define ('PSPELL_RUN_TOGETHER', 8);
+define('PSPELL_FAST', 1);
+define('PSPELL_NORMAL', 2);
+define('PSPELL_BAD_SPELLERS', 3);
+define('PSPELL_RUN_TOGETHER', 8);
 
 // End of pspell v.
 ?>

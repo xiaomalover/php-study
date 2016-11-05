@@ -28,7 +28,7 @@
  * with the same arguments, no new link will be established,
  * but instead, the connection identifier of the already
  * opened connection will be
- * returned. The new_link parameter modifies this 
+ * returned. The new_link parameter modifies this
  * behavior and makes cubrid_connect() always open
  * a new connection, even if cubrid_connect() was called
  * before with the same parameters.
@@ -37,7 +37,9 @@
  * a CUBRID connection identifier on success or false on failure.
  * </p>
  */
-function cubrid_connect ($host, $port, $dbname, $userid = 'PUBLIC', $passwd = '', $new_link = FALSE) {}
+function cubrid_connect($host, $port, $dbname, $userid = 'PUBLIC', $passwd = '', $new_link = false)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -69,7 +71,9 @@ function cubrid_connect ($host, $port, $dbname, $userid = 'PUBLIC', $passwd = ''
  * a CUBRID connection identifier on success or false on failure.
  * </p>
  */
-function cubrid_connect_with_url ($conn_url, $userid = 'PUBLIC', $passwd = '', $new_link = FALSE) {}
+function cubrid_connect_with_url($conn_url, $userid = 'PUBLIC', $passwd = '', $new_link = false)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -97,7 +101,9 @@ function cubrid_connect_with_url ($conn_url, $userid = 'PUBLIC', $passwd = '', $
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_pconnect ($host, $port, $dbname, $userid = 'PUBLIC', $passwd = '') {}
+function cubrid_pconnect($host, $port, $dbname, $userid = 'PUBLIC', $passwd = '')
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -120,7 +126,9 @@ function cubrid_pconnect ($host, $port, $dbname, $userid = 'PUBLIC', $passwd = '
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_pconnect_with_url ($conn_url, $userid = 'PUBLIC', $passwd = '') {}
+function cubrid_pconnect_with_url($conn_url, $userid = 'PUBLIC', $passwd = '')
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -136,7 +144,9 @@ function cubrid_pconnect_with_url ($conn_url, $userid = 'PUBLIC', $passwd = '') 
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_close ($conn_identifier = null) {}
+function cubrid_close($conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -147,7 +157,9 @@ function cubrid_close ($conn_identifier = null) {}
  * </p>
  * @return bool Returns true on success or false on failure.
  */
-function cubrid_disconnect ($conn_identifier = null) {}
+function cubrid_disconnect($conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -191,7 +203,9 @@ function cubrid_disconnect ($conn_identifier = null) {}
  * </li>
  * </ul>
  */
-function cubrid_query ($query, $conn_identifier = null) {}
+function cubrid_query($query, $conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -212,7 +226,9 @@ function cubrid_query ($query, $conn_identifier = null) {}
  * or FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_execute ($conn_identifier, $sql, $option = null) {}
+function cubrid_execute($conn_identifier, $sql, $option = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -230,7 +246,9 @@ function cubrid_execute ($conn_identifier, $sql, $option = null) {}
  * process is unsuccessful.
  * </p>
  */
-function cubrid_execute ($request_identifier, $option = null) {}
+function cubrid_execute($request_identifier, $option = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -258,7 +276,9 @@ function cubrid_execute ($request_identifier, $option = null) {}
  * </p>
  * @return bool TRUE, when process is successful, otherwise FALSE.
  */
-function cubrid_bind ($req_identifier, $bind_index, $bind_value, $bind_value_type = null) {}
+function cubrid_bind($req_identifier, $bind_index, $bind_value, $bind_value_type = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -269,7 +289,9 @@ function cubrid_bind ($req_identifier, $bind_index, $bind_value, $bind_value_typ
  * </p>
  * @return bool TRUE, when process is successful, otherwise FALSE.
  */
-function cubrid_close_prepare ($req_identifier) {}
+function cubrid_close_prepare($req_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -280,7 +302,9 @@ function cubrid_close_prepare ($req_identifier) {}
  * </p>
  * @return bool TRUE, when process is successful, or FALSE.
  */
-function cubrid_close_request ($req_identifier) {}
+function cubrid_close_request($req_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -308,7 +332,9 @@ function cubrid_close_request ($req_identifier) {}
  * </li>
  * </ul>
  */
-function cubrid_col_get ($conn_identifier, $oid, $attr_name) {}
+function cubrid_col_get($conn_identifier, $oid, $attr_name)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -328,7 +354,9 @@ function cubrid_col_get ($conn_identifier, $oid, $attr_name) {}
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_col_size ($conn_identifier, $oid, $attr_name) {}
+function cubrid_col_size($conn_identifier, $oid, $attr_name)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -352,7 +380,9 @@ function cubrid_col_size ($conn_identifier, $oid, $attr_name) {}
  * or false on error.
  * </p>
  */
-function cubrid_unbuffered_query ($query, $conn_identifier = null) {}
+function cubrid_unbuffered_query($query, $conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -366,7 +396,9 @@ function cubrid_unbuffered_query ($query, $conn_identifier = null) {}
  * or false on failure.
  * </p>
  */
-function cubrid_list_dbs ($conn_identifier) {}
+function cubrid_list_dbs($conn_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -379,7 +411,9 @@ function cubrid_list_dbs ($conn_identifier) {}
  * Error message that occurred.
  * </p>
  */
-function cubrid_error ($connection = null) {}
+function cubrid_error($connection = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -390,7 +424,9 @@ function cubrid_error ($connection = null) {}
  * Error message that occurred.
  * </p>
  */
-function cubrid_error_msg () {}
+function cubrid_error_msg()
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -407,7 +443,9 @@ function cubrid_error_msg () {}
  * 0 (zero) if no error occurred.
  * </p>
  */
-function cubrid_errno ($conn_identifier = null) {}
+function cubrid_errno($conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -419,7 +457,9 @@ function cubrid_errno ($conn_identifier = null) {}
  * 0 (zero) if no error occurred.
  * </p>
  */
-function cubrid_error_code () {}
+function cubrid_error_code()
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -436,7 +476,9 @@ function cubrid_error_code () {}
  * and there is no last request.
  * </p>
  */
-function cubrid_affected_rows ($conn_identifier = null) {}
+function cubrid_affected_rows($conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -452,24 +494,26 @@ function cubrid_affected_rows ($conn_identifier = null) {}
  * not generate new rows. FALSE on failure.
  * </p>
  */
-function cubrid_insert_id ($conn_identifier = null) {}
+function cubrid_insert_id($conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
  * Return the value of a specific field in a specific row
  * @link http://php.net/manual/en/function.cubrid-result.php
- * @param resource $result 
+ * @param resource $result
  * @param int $row <p>
- * The row number from the result that's being retrieved. Row numbers 
+ * The row number from the result that's being retrieved. Row numbers
  * start at 0.
  * </p>
  * @param mixed $field [optional] <p>
  * The name or offset of the field being retrieved.
  * </p>
  * <p>
- * It can be the field's offset, the field's name, or the field's table 
+ * It can be the field's offset, the field's name, or the field's table
  * dot field name (tablename.fieldname). If the column name has been
- * aliased ('select foo as bar from...'), use the alias instead of the 
+ * aliased ('select foo as bar from...'), use the alias instead of the
  * column name. If undefined, the first field is retrieved.
  * </p>
  * @return string <p>
@@ -477,7 +521,9 @@ function cubrid_insert_id ($conn_identifier = null) {}
  * FALSE on failure.
  * </p>
  */
-function cubrid_result ($result, $row, $field = 0) {}
+function cubrid_result($result, $row, $field = 0)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -494,7 +540,9 @@ function cubrid_result ($result, $row, $field = 0) {}
  * FALSE when process is unsuccessful.
  * </p>
  */
-function cubrid_num_rows ($result) {}
+function cubrid_num_rows($result)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -508,7 +556,9 @@ function cubrid_num_rows ($result) {}
  * FALSE, if SQL statement is not SELECT.
  * </p>
  */
-function cubrid_num_cols ($result) {}
+function cubrid_num_cols($result)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -524,7 +574,9 @@ function cubrid_num_cols ($result) {}
  * FALSE when process is unsuccessful.
  * </p>
  */
-function cubrid_num_fields ($result) {}
+function cubrid_num_fields($result)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -565,7 +617,9 @@ function cubrid_num_fields ($result) {}
  * column name such as "count(*)" cannot be received in object type.
  * </p>
  */
-function cubrid_fetch ($result, $type = CUBRID_BOTH) {}
+function cubrid_fetch($result, $type = CUBRID_BOTH)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -584,13 +638,15 @@ function cubrid_fetch ($result, $type = CUBRID_BOTH) {}
  * NULL, when process is unsuccessful.
  * </p>
  */
-function cubrid_fetch_row ($result, $type = null) {}
+function cubrid_fetch_row($result, $type = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
  * Fetch a result row as an associative array, a numeric array, or both
  * @link http://php.net/manual/en/function.cubrid-fetch-array.php
- * @param resource $result 
+ * @param resource $result
  * @param int $type [optional] <p>
  * The type of array that is to be fetched. It's a constant and can
  * take the following values: CUBRID_ASSOC, CUBRID_NUM, and CUBRID_BOTH.
@@ -614,7 +670,9 @@ function cubrid_fetch_row ($result, $type = null) {}
  * <li>CUBRID_BOTH : Numerical & Associative array (default)</li>
  * </ul>
  */
-function cubrid_fetch_array ($result, $type = CUBRID_BOTH) {}
+function cubrid_fetch_array($result, $type = CUBRID_BOTH)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -633,7 +691,9 @@ function cubrid_fetch_array ($result, $type = CUBRID_BOTH) {}
  * NULL, when process is unsuccessful.
  * </p>
  */
-function cubrid_fetch_assoc ($result, $type = null) {}
+function cubrid_fetch_assoc($result, $type = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -661,7 +721,9 @@ function cubrid_fetch_assoc ($result, $type = null) {}
  * are no more rows, or NULL, when process is unsuccessful.
  * </p>
  */
-function cubrid_fetch_object ($result, $class_name = null, $params = null, $type = null) {}
+function cubrid_fetch_object($result, $class_name = null, $params = null, $type = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -677,7 +739,9 @@ function cubrid_fetch_object ($result, $class_name = null, $params = null, $type
  * Returns TRUE on success or FALSE on failure.
  * </p>
  */
-function cubrid_data_seek ($result, $row_number) {}
+function cubrid_data_seek($result, $row_number)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -692,7 +756,9 @@ function cubrid_data_seek ($result, $row_number) {}
  * or false on failure.
  * </p>
  */
-function cubrid_fetch_lengths ($result) {}
+function cubrid_fetch_lengths($result)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -702,8 +768,8 @@ function cubrid_fetch_lengths ($result) {}
  * result comes from a call to cubrid_execute()
  * </p>
  * @param int $field_offset [optional] <p>
- * The numerical field offset. If the field offset is not specified, the 
- * next field that was not yet retrieved by this function is retrieved. 
+ * The numerical field offset. If the field offset is not specified, the
+ * next field that was not yet retrieved by this function is retrieved.
  * The field_offset starts at 0.
  * </p>
  * @return object <p>
@@ -726,7 +792,9 @@ function cubrid_fetch_lengths ($result) {}
  * <li>zerofill - 1 if the column is zero-filled</li>
  * </ul>
  */
-function cubrid_fetch_field ($result, $field_offset = 0) {}
+function cubrid_fetch_field($result, $field_offset = 0)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -740,7 +808,9 @@ function cubrid_fetch_field ($result, $field_offset = 0) {}
  * when process is successful. FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_column_names ($req_identifier) {}
+function cubrid_column_names($req_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -754,7 +824,9 @@ function cubrid_column_names ($req_identifier) {}
  * when process is successful. FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_column_types ($req_identifier) {}
+function cubrid_column_types($req_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -772,7 +844,9 @@ function cubrid_column_types ($req_identifier) {}
  * Returns true on success or false on failure.
  * </p>
  */
-function cubrid_field_seek ($result, $field_offset) {}
+function cubrid_field_seek($result, $field_offset)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -790,7 +864,9 @@ function cubrid_field_seek ($result, $field_offset) {}
  * cubrid_close_request().
  * </p>
  */
-function cubrid_free_result ($req_identifier) {}
+function cubrid_free_result($req_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -808,7 +884,9 @@ function cubrid_free_result ($req_identifier) {}
  * success or false on failure.
  * </p>
  */
-function cubrid_field_name ($result, $field_offset) {}
+function cubrid_field_name($result, $field_offset)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -827,7 +905,9 @@ function cubrid_field_name ($result, $field_offset) {}
  * -1 if SQL sentence is not SELECT.
  * </p>
  */
-function cubrid_field_table ($result, $field_offset) {}
+function cubrid_field_table($result, $field_offset)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -844,7 +924,9 @@ function cubrid_field_table ($result, $field_offset) {}
  * Maximum length, when process is successful. FALSE on failure.
  * </p>
  */
-function cubrid_field_len ($result, $field_offset) {}
+function cubrid_field_len($result, $field_offset)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -865,7 +947,9 @@ function cubrid_field_len ($result, $field_offset) {}
  * is not SELECT.
  * </p>
  */
-function cubrid_field_type ($result, $field_offset) {}
+function cubrid_field_type($result, $field_offset)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -891,7 +975,9 @@ function cubrid_field_type ($result, $field_offset) {}
  * "reverse_index", "reverse_unique", and "timestamp".
  * </p>
  */
-function cubrid_field_flags ($result, $field_offset) {}
+function cubrid_field_flags($result, $field_offset)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -909,7 +995,9 @@ function cubrid_field_flags ($result, $field_offset) {}
  * FALSE on failure.
  * </p>
  */
-function cubrid_real_escape_string ($unescaped_string, $conn_identifier = null) {}
+function cubrid_real_escape_string($unescaped_string, $conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -924,7 +1012,9 @@ function cubrid_real_escape_string ($unescaped_string, $conn_identifier = null) 
  * FALSE on failure.
  * </p>
  */
-function cubrid_client_encoding ($conn_identifier = null) {}
+function cubrid_client_encoding($conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -940,7 +1030,9 @@ function cubrid_client_encoding ($conn_identifier = null) {}
  * otherwise false.
  * </p>
  */
-function cubrid_ping ($conn_identifier = null) {}
+function cubrid_ping($conn_identifier = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -951,7 +1043,9 @@ function cubrid_ping ($conn_identifier = null) {}
  * FALSE on failure.
  * </p>
  */
-function cubrid_get_client_info () {}
+function cubrid_get_client_info()
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -963,7 +1057,9 @@ function cubrid_get_client_info () {}
  * FALSE on failure.
  * </p>
  */
-function cubrid_get_server_info ($conn_identifier) {}
+function cubrid_get_server_info($conn_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -977,7 +1073,9 @@ function cubrid_get_server_info ($conn_identifier) {}
  * FALSE on failure.
  * </p>
  */
-function cubrid_get_db_parameter ($conn_identifier) {}
+function cubrid_get_db_parameter($conn_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.0)<br/>
@@ -991,7 +1089,9 @@ function cubrid_get_db_parameter ($conn_identifier) {}
  * NULL on error.
  * </p>
  */
-function cubrid_get_autocommit ($conn_identifier) {}
+function cubrid_get_autocommit($conn_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1005,7 +1105,9 @@ function cubrid_get_autocommit ($conn_identifier) {}
  * FALSE on failure.
  * </p>
  */
-function cubrid_get_charset ($conn_identifier) {}
+function cubrid_get_charset($conn_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.0)<br/>
@@ -1023,7 +1125,9 @@ function cubrid_get_charset ($conn_identifier) {}
  * process is unsuccessful.
  * </p>
  */
-function cubrid_set_autocommit ($conn_identifier, $mode) {}
+function cubrid_set_autocommit($conn_identifier, $mode)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -1041,7 +1145,9 @@ function cubrid_set_autocommit ($conn_identifier, $mode) {}
  * of the error.
  * </p>
  */
-function cubrid_db_name ($result, $index) {}
+function cubrid_db_name($result, $index)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -1056,7 +1162,9 @@ function cubrid_db_name ($result, $index) {}
  * parameters; on success. FALSE on failure.
  * </p>
  */
-function cubrid_db_parameter ($conn_identifier) {}
+function cubrid_db_parameter($conn_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.0)<br/>
@@ -1077,7 +1185,9 @@ function cubrid_db_parameter ($conn_identifier) {}
  * TRUE on success. FALSE on failure.
  * </p>
  */
-function cubrid_set_db_parameter ($conn_identifier, $param_type, $param_value) {}
+function cubrid_set_db_parameter($conn_identifier, $param_type, $param_value)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1091,7 +1201,9 @@ function cubrid_set_db_parameter ($conn_identifier, $param_type, $param_value) {
  * Units of msec. Failure: FALSE
  * </p>
  */
-function cubrid_get_query_timeout ($req_identifier) {}
+function cubrid_get_query_timeout($req_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1108,7 +1220,9 @@ function cubrid_get_query_timeout ($req_identifier) {}
  * process is unsuccessful.
  * </p>
  */
-function cubrid_set_query_timeout ($req_identifier, $timeout) {}
+function cubrid_set_query_timeout($req_identifier, $timeout)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1127,7 +1241,9 @@ function cubrid_set_query_timeout ($req_identifier, $timeout) {}
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_get_class_name ($conn_identifier, $oid) {}
+function cubrid_get_class_name($conn_identifier, $oid)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1159,7 +1275,9 @@ function cubrid_get_class_name ($conn_identifier, $oid) {}
  * error by using cubrid_error_code()).
  * </p>
  */
-function cubrid_get ($conn_identifier, $oid, $attr = null) {}
+function cubrid_get($conn_identifier, $oid, $attr = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1178,7 +1296,9 @@ function cubrid_get ($conn_identifier, $oid, $attr = null) {}
  * does not exist; -1, in case of error
  * </p>
  */
-function cubrid_is_instance ($conn_identifier, $oid) {}
+function cubrid_is_instance($conn_identifier, $oid)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1192,7 +1312,9 @@ function cubrid_is_instance ($conn_identifier, $oid) {}
  * process is unsuccessful.
  * </p>
  */
-function cubrid_commit ($conn_identifier) {}
+function cubrid_commit($conn_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1206,7 +1328,9 @@ function cubrid_commit ($conn_identifier) {}
  * process is unsuccessful.
  * </p>
  */
-function cubrid_rollback ($conn_identifier) {}
+function cubrid_rollback($conn_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1220,7 +1344,9 @@ function cubrid_rollback ($conn_identifier) {}
  * is successful. FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_current_oid ($req_identifier) {}
+function cubrid_current_oid($req_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1237,7 +1363,9 @@ function cubrid_current_oid ($req_identifier) {}
  * when process is unsuccessful.
  * </p>
  */
-function cubrid_drop ($conn_identifier, $oid) {}
+function cubrid_drop($conn_identifier, $oid)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1249,7 +1377,9 @@ function cubrid_drop ($conn_identifier, $oid) {}
  * CUBRID_FACILITY_CCI, CUBRID_FACILITY_CLIENT
  * </p>
  */
-function cubrid_error_code_facility () {}
+function cubrid_error_code_facility()
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -1263,7 +1393,9 @@ function cubrid_error_code_facility () {}
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_lob_close ($lob_identifier_array) {}
+function cubrid_lob_close($lob_identifier_array)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -1283,7 +1415,9 @@ function cubrid_lob_close ($lob_identifier_array) {}
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_lob_export ($conn_identifier, $lob_identifier, $path_name) {}
+function cubrid_lob_export($conn_identifier, $lob_identifier, $path_name)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -1305,7 +1439,9 @@ function cubrid_lob_export ($conn_identifier, $lob_identifier, $path_name) {}
  * is successful. FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_lob_get ($conn_identifier, $sql) {}
+function cubrid_lob_get($conn_identifier, $sql)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -1322,7 +1458,9 @@ function cubrid_lob_get ($conn_identifier, $sql) {}
  * process is unsuccessful.
  * </p>
  */
-function cubrid_lob_send ($conn_identifier, $lob_identifier) {}
+function cubrid_lob_send($conn_identifier, $lob_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.1)<br/>
@@ -1336,7 +1474,9 @@ function cubrid_lob_send ($conn_identifier, $lob_identifier) {}
  * process is successful. FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_lob_size ($lob_identifier) {}
+function cubrid_lob_size($lob_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1361,7 +1501,9 @@ function cubrid_lob_size ($lob_identifier) {}
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_lob2_bind ($req_identifier, $bind_index, $bind_value, $bind_value_type = NULL) {}
+function cubrid_lob2_bind($req_identifier, $bind_index, $bind_value, $bind_value_type = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1376,7 +1518,9 @@ function cubrid_lob2_bind ($req_identifier, $bind_index, $bind_value, $bind_valu
  * FALSE, on failure.
  * </p>
  */
-function cubrid_lob2_close ($lob_identifier) {}
+function cubrid_lob2_close($lob_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1394,7 +1538,9 @@ function cubrid_lob2_close ($lob_identifier) {}
  * TRUE if the process is successful and FALSE for failure.
  * </p>
  */
-function cubrid_lob2_export ($lob_identifier, $file_name) {}
+function cubrid_lob2_export($lob_identifier, $file_name)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1412,7 +1558,9 @@ function cubrid_lob2_export ($lob_identifier, $file_name) {}
  * TRUE if the process is successful and FALSE for failure.
  * </p>
  */
-function cubrid_lob2_import ($lob_identifier, $file_name) {}
+function cubrid_lob2_import($lob_identifier, $file_name)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1431,7 +1579,9 @@ function cubrid_lob2_import ($lob_identifier, $file_name) {}
  * Lob identifier when it is successful. FALSE on failure.
  * </p>
  */
-function cubrid_lob2_new ($conn_identifier = NULL, $type = "BLOB") {}
+function cubrid_lob2_new($conn_identifier = null, $type = "BLOB")
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1450,7 +1600,9 @@ function cubrid_lob2_new ($conn_identifier = NULL, $type = "BLOB") {}
  * NULL on failure.
  * </p>
  */
-function cubrid_lob2_read ($lob_identifier, $len) {}
+function cubrid_lob2_read($lob_identifier, $len)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1477,7 +1629,9 @@ function cubrid_lob2_read ($lob_identifier, $len) {}
  * TRUE if the process is successful and FALSE for failure.
  * </p>
  */
-function cubrid_lob2_seek64 ($lob_identifier, $offset, $origin = CUBRID_CURSOR_CURRENT) {}
+function cubrid_lob2_seek64($lob_identifier, $offset, $origin = CUBRID_CURSOR_CURRENT)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1504,7 +1658,9 @@ function cubrid_lob2_seek64 ($lob_identifier, $offset, $origin = CUBRID_CURSOR_C
  * TRUE if the process is successful and FALSE for failure.
  * </p>
  */
-function cubrid_lob2_seek ($lob_identifier, $offset, $origin = CUBRID_CURSOR_CURRENT) {}
+function cubrid_lob2_seek($lob_identifier, $offset, $origin = CUBRID_CURSOR_CURRENT)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1519,7 +1675,9 @@ function cubrid_lob2_seek ($lob_identifier, $offset, $origin = CUBRID_CURSOR_CUR
  * when it processes successfully. FALSE on failure.
  * </p>
  */
-function cubrid_lob2_size64 ($lob_identifier) {}
+function cubrid_lob2_size64($lob_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1534,7 +1692,9 @@ function cubrid_lob2_size64 ($lob_identifier) {}
  * when it processes successfully. FALSE on failure.
  * </p>
  */
-function cubrid_lob2_size ($lob_identifier) {}
+function cubrid_lob2_size($lob_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1549,7 +1709,9 @@ function cubrid_lob2_size ($lob_identifier) {}
  * string when it processes successfully. FALSE on failure.
  * </p>
  */
-function cubrid_lob2_tell64 ($lob_identifier) {}
+function cubrid_lob2_tell64($lob_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.1)<br/>
@@ -1564,7 +1726,9 @@ function cubrid_lob2_tell64 ($lob_identifier) {}
  * string when it processes successfully. FALSE on failure.
  * </p>
  */
-function cubrid_lob2_tell ($lob_identifier) {}
+function cubrid_lob2_tell($lob_identifier)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1581,7 +1745,9 @@ function cubrid_lob2_tell ($lob_identifier) {}
  * process is unsuccessful.
  * </p>
  */
-function cubrid_lock_read ($conn_identifier, $oid) {}
+function cubrid_lock_read($conn_identifier, $oid)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1598,7 +1764,9 @@ function cubrid_lock_read ($conn_identifier, $oid) {}
  * process is unsuccessful.
  * </p>
  */
-function cubrid_lock_write ($conn_identifier, $oid) {}
+function cubrid_lock_write($conn_identifier, $oid)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1620,7 +1788,9 @@ function cubrid_lock_write ($conn_identifier, $oid) {}
  * CUBRID_CURSOR_ERROR, in case of error.
  * </p>
  */
-function cubrid_move_cursor ($req_identifier, $offset, $origin = CUBRID_CURSOR_CURRENT) {}
+function cubrid_move_cursor($req_identifier, $offset, $origin = CUBRID_CURSOR_CURRENT)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.4.0)<br/>
@@ -1634,7 +1804,9 @@ function cubrid_move_cursor ($req_identifier, $offset, $origin = CUBRID_CURSOR_C
  * process is unsuccessful.
  * </p>
  */
-function cubrid_next_result ($result) {}
+function cubrid_next_result($result)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1654,7 +1826,9 @@ function cubrid_next_result ($result) {}
  * FALSE, if process is unsuccessful.
  * </p>
  */
-function cubrid_prepare ($conn_identifier, $prepare_stmt, $option = 0) {}
+function cubrid_prepare($conn_identifier, $prepare_stmt, $option = 0)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1677,7 +1851,9 @@ function cubrid_prepare ($conn_identifier, $prepare_stmt, $option = 0) {}
  * FALSE, when process is unsuccessful.
  * </p>
  */
-function cubrid_put ($conn_identifier, $oid, $attr = null, $value) {}
+function cubrid_put($conn_identifier, $oid, $attr = null, $value)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1701,7 +1877,9 @@ function cubrid_put ($conn_identifier, $oid, $attr = null, $value) {}
  * unsuccessful.
  * </p>
  */
-function cubrid_schema ($conn_identifier, $schema_type, $class_name = null, $attr_name = null) {}
+function cubrid_schema($conn_identifier, $schema_type, $class_name = null, $attr_name = null)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1724,7 +1902,9 @@ function cubrid_schema ($conn_identifier, $schema_type, $class_name = null, $att
  * when process is unsuccessful.
  * </p>
  */
-function cubrid_seq_drop ($conn_identifier, $oid, $attr_name, $index) {}
+function cubrid_seq_drop($conn_identifier, $oid, $attr_name, $index)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1750,7 +1930,9 @@ function cubrid_seq_drop ($conn_identifier, $oid, $attr_name, $index) {}
  * when process is unsuccessful.
  * </p>
  */
-function cubrid_seq_insert ($conn_identifier, $oid, $attr_name, $index, $seq_element) {}
+function cubrid_seq_insert($conn_identifier, $oid, $attr_name, $index, $seq_element)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1776,7 +1958,9 @@ function cubrid_seq_insert ($conn_identifier, $oid, $attr_name, $index, $seq_ele
  * when process is unsuccessful.
  * </p>
  */
-function cubrid_seq_put ($conn_identifier, $oid, $attr_name, $index, $seq_element) {}
+function cubrid_seq_put($conn_identifier, $oid, $attr_name, $index, $seq_element)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1799,7 +1983,9 @@ function cubrid_seq_put ($conn_identifier, $oid, $attr_name, $index, $seq_elemen
  * when process is unsuccessful.
  * </p>
  */
-function cubrid_seq_add ($conn_identifier, $oid, $attr_name, $seq_element) {}
+function cubrid_seq_add($conn_identifier, $oid, $attr_name, $seq_element)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1822,7 +2008,9 @@ function cubrid_seq_add ($conn_identifier, $oid, $attr_name, $seq_element) {}
  * when process is unsuccessful.
  * </p>
  */
-function cubrid_set_add ($conn_identifier, $oid, $attr_name, $set_element) {}
+function cubrid_set_add($conn_identifier, $oid, $attr_name, $set_element)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1845,7 +2033,9 @@ function cubrid_set_add ($conn_identifier, $oid, $attr_name, $set_element) {}
  * when process is unsuccessful.
  * </p>
  */
-function cubrid_set_drop ($conn_identifier, $oid, $attr_name, $set_element) {}
+function cubrid_set_drop($conn_identifier, $oid, $attr_name, $set_element)
+{
+}
 
 /**
  * (PHP 5, CUBRID &gt;= 8.3.0)<br/>
@@ -1855,105 +2045,107 @@ function cubrid_set_drop ($conn_identifier, $oid, $attr_name, $set_element) {}
  * Version information (eg. "8.4.1.0001").
  * </p>
  */
-function cubrid_version () {}
+function cubrid_version()
+{
+}
 
 /**
  * Columns are returned into the array having a numerical index to the
  * fields. This index starts with 0, the first field in the result.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_NUM', 1);
+define('CUBRID_NUM', 1);
 
 /**
  * Columns are returned into the array having the fieldname as the array
  * index.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_ASSOC', 2);
+define('CUBRID_ASSOC', 2);
 
 /**
  * Columns are returned into the array having both a numerical index
  * and the fieldname as the array index.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_BOTH', 3);
+define('CUBRID_BOTH', 3);
 
 /**
  * Get query result as an object.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_OBJECT', 4);
+define('CUBRID_OBJECT', 4);
 
 /**
  * Determine whether to get OID during query execution.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_INCLUDE_OID', 1);
+define('CUBRID_INCLUDE_OID', 1);
 
 /**
  * Execute the query in asynchronous mode.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_ASYNC', 2);
+define('CUBRID_ASYNC', 2);
 
 /**
  * Execute the query in synchronous mode.
  * This flag must be set when executing multiple SQL statements.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_EXEC_QUERY_ALL', 4);
+define('CUBRID_EXEC_QUERY_ALL', 4);
 
 /**
  * Returned value of cubrid_move_cursor() function
  * in case of success.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_CURSOR_SUCCESS', 1);
+define('CUBRID_CURSOR_SUCCESS', 1);
 
 /**
  * Returned value of cubrid_move_cursor() function in case
  * of failure.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_NO_MORE_DATA', 0);
+define('CUBRID_NO_MORE_DATA', 0);
 
 /**
  * Returned value of cubrid_move_cursor() function in case
  * of failure.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_CURSOR_ERROR', -1);
+define('CUBRID_CURSOR_ERROR', -1);
 
 /**
  * Enable the auto-commit mode.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_AUTOCOMMIT_TRUE', 1);
+define('CUBRID_AUTOCOMMIT_TRUE', 1);
 
 /**
  * Disable the auto-commit mode.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_AUTOCOMMIT_FALSE', 0);
+define('CUBRID_AUTOCOMMIT_FALSE', 0);
 
 /**
  * Move current cursor to the first position in the result.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_CURSOR_FIRST', 0);
+define('CUBRID_CURSOR_FIRST', 0);
 
 /**
  * Move current cursor as a default value if the origin is
  * not specified.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_CURSOR_CURRENT', 1);
+define('CUBRID_CURSOR_CURRENT', 1);
 
 /**
  * Move current cursor to the last position in the result.
  * @link http://php.net/manual/en/cubrid.constants.php
  */
-define ('CUBRID_CURSOR_LAST', 2);
+define('CUBRID_CURSOR_LAST', 2);
 
 // End of cubrid v.1.0
 ?>

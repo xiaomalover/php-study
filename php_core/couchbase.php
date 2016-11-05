@@ -63,106 +63,127 @@ define("COUCHBASE_VALUE_F_JSON", 0x01);
  *   - configNodeTimeout
  *   - htconfigIdleTimeout
  */
-class CouchbaseBucket {
+class CouchbaseBucket
+{
 
     /**
      * Constructs a bucket connection.
      *
-     * @param string $connstr  A cluster connection string to connect with.
-     * @param string $name  The name of the bucket to connect to.
-     * @param string $password  The password to authenticate with.
+     * @param string $connstr A cluster connection string to connect with.
+     * @param string $name The name of the bucket to connect to.
+     * @param string $password The password to authenticate with.
      */
-    public function __construct($connstr, $name, $password) { }
+    public function __construct($connstr, $name, $password)
+    {
+    }
 
     /**
      * Returns an instance of a CouchbaseBucketManager for performing management operations against a bucket.
      *
      * @return CouchbaseBucketManager
      */
-    public function manager() { }
+    public function manager()
+    {
+    }
 
     /**
      * Enables N1QL support on the client.  A cbq-server URI must be passed. This method will be deprecated in the
      * future in favor of automatic configuration through the connected cluster.
      *
-     * @param string|array $hosts  one or more hosts
+     * @param string|array $hosts one or more hosts
      */
-    public function enableN1ql($hosts) { }
+    public function enableN1ql($hosts)
+    {
+    }
 
     /**
      * Inserts a document.  This operation will fail if the document already exists on the cluster.
      *
-     * @param string|array $ids  one or more ids
+     * @param string|array $ids one or more ids
      * @param mixed $val
-     * @param array $options  expiry, flags
+     * @param array $options expiry, flags
      *
      * @return mixed
      */
-    public function insert($ids, $val = null, $options = array()) { }
+    public function insert($ids, $val = null, $options = array())
+    {
+    }
 
     /**
      * Inserts or updates a document, depending on whether the document already exists on the cluster.
      *
-     * @param string|array $ids  one or more ids
+     * @param string|array $ids one or more ids
      * @param mixed $val
-     * @param array $options  expiry, flags
+     * @param array $options expiry, flags
      *
      * @return mixed
      */
-    public function upsert($ids, $val = null, $options = array()) { }
+    public function upsert($ids, $val = null, $options = array())
+    {
+    }
 
     /**
      * Replaces a document.
      *
-     * @param string|array $ids  one or more ids
+     * @param string|array $ids one or more ids
      * @param mixed $val
-     * @param array $options  cas, expiry, flags
+     * @param array $options cas, expiry, flags
      *
      * @return mixed
      */
-    public function replace($ids, $val = null, $options = array()) { }
+    public function replace($ids, $val = null, $options = array())
+    {
+    }
 
     /**
      * Appends content to a document.
      *
-     * @param string|array $ids  one or more ids
+     * @param string|array $ids one or more ids
      * @param mixed $val
-     * @param array $options  cas
+     * @param array $options cas
      *
      * @return mixed
      */
-    public function append($ids, $val = null, $options = array()) { }
+    public function append($ids, $val = null, $options = array())
+    {
+    }
 
     /**
      * Prepends content to a document.
      *
-     * @param string|array $ids  one or more ids
+     * @param string|array $ids one or more ids
      * @param mixed $val
-     * @param array $options  cas
+     * @param array $options cas
      *
      * @return mixed
      */
-    public function prepend($ids, $val = null, $options = array()) { }
+    public function prepend($ids, $val = null, $options = array())
+    {
+    }
 
     /**
      * Deletes a document.
      *
-     * @param string|array $ids  one or more ids
-     * @param array $options  cas
+     * @param string|array $ids one or more ids
+     * @param array $options cas
      *
      * @return mixed
      */
-    public function remove($ids, $options = array()) { }
+    public function remove($ids, $options = array())
+    {
+    }
 
     /**
      * Retrieves a document.
      *
-     * @param string|array $ids  one or more ids
-     * @param array $options  lock
+     * @param string|array $ids one or more ids
+     * @param array $options lock
      *
      * @return mixed
      */
-    public function get($ids, $options = array()) { }
+    public function get($ids, $options = array())
+    {
+    }
 
     /**
      * Retrieves a document and simultaneously updates its expiry.
@@ -173,7 +194,9 @@ class CouchbaseBucket {
      *
      * @return mixed
      */
-    public function getAndTouch($id, $expiry, $options = array()) { }
+    public function getAndTouch($id, $expiry, $options = array())
+    {
+    }
 
     /**
      * Retrieves a document and locks it.
@@ -184,7 +207,9 @@ class CouchbaseBucket {
      *
      * @return mixed
      */
-    public function getAndLock($id, $lockTime, $options = array()) { }
+    public function getAndLock($id, $lockTime, $options = array())
+    {
+    }
 
     /**
      * Retrieves a document from a replica.
@@ -194,7 +219,9 @@ class CouchbaseBucket {
      *
      * @return mixed
      */
-    public function getFromReplica($id, $options = array()) { }
+    public function getFromReplica($id, $options = array())
+    {
+    }
 
     /**
      * Updates a documents expiry.
@@ -205,28 +232,34 @@ class CouchbaseBucket {
      *
      * @return mixed
      */
-    public function touch($id, $expiry, $options = array()) { }
+    public function touch($id, $expiry, $options = array())
+    {
+    }
 
     /**
      * Increment or decrements a key (based on $delta).
      *
-     * @param string|array $ids  one or more ids
+     * @param string|array $ids one or more ids
      * @param integer $delta
-     * @param array $options  initial, expiry
+     * @param array $options initial, expiry
      *
      * @return mixed
      */
-    public function counter($ids, $delta, $options = array()) { }
+    public function counter($ids, $delta, $options = array())
+    {
+    }
 
     /**
      * Unlocks a key previous locked with a call to get().
      *
-     * @param string|array $ids  one or more ids
-     * @param array $options  cas
+     * @param string|array $ids one or more ids
+     * @param array $options cas
      *
      * @return mixed
      */
-    public function unlock($ids, $options = array()) { }
+    public function unlock($ids, $options = array())
+    {
+    }
 
     /**
      * Executes a view query.
@@ -235,16 +268,20 @@ class CouchbaseBucket {
      *
      * @return mixed  results
      */
-    public function _view($queryObj) { }
+    public function _view($queryObj)
+    {
+    }
 
     /**
      * Performs a N1QL query.
      *
-     * @param CouchbaseN1qlQuery $queryObj  N1QL query object
+     * @param CouchbaseN1qlQuery $queryObj N1QL query object
      *
      * @return mixed  results
      */
-    public function _n1ql($queryObj) { }
+    public function _n1ql($queryObj)
+    {
+    }
 
     /**
      * Performs a query (either ViewQuery or N1qlQuery).
@@ -253,30 +290,38 @@ class CouchbaseBucket {
      *
      * @return mixed  results
      */
-    public function query($query) { }
+    public function query($query)
+    {
+    }
 
     /**
      * Sets custom encoder and decoder functions for handling serialization.
      *
-     * @param string $encoder  The encoder function name
-     * @param string $decoder  The decoder function name
+     * @param string $encoder The encoder function name
+     * @param string $decoder The decoder function name
      */
-    public function setTranscoder($encoder, $decoder) { }
+    public function setTranscoder($encoder, $decoder)
+    {
+    }
 
     /**
      * Magic function to handle the retrieval of various properties.
      *
-     * @param string $name  property name; @see CouchbaseBucket
+     * @param string $name property name; @see CouchbaseBucket
      */
-    public function __get($name) { }
+    public function __get($name)
+    {
+    }
 
     /**
      * Magic function to handle the setting of various properties.
      *
-     * @param string $name  property name; @see CouchbaseBucket
+     * @param string $name property name; @see CouchbaseBucket
      * @param mixed $value
      */
-    public function __set($name, $value) { }
+    public function __set($name, $value)
+    {
+    }
 
 }
 
@@ -285,63 +330,78 @@ class CouchbaseBucket {
  *
  * Class exposing the various available management operations that can be performed on a bucket.
  */
-class CouchbaseBucketManager {
+class CouchbaseBucketManager
+{
 
     /**
      * @param $binding
      * @param string $name
      */
-    public function __construct($binding, $name) { }
+    public function __construct($binding, $name)
+    {
+    }
 
     /**
      * Returns all the design documents for this bucket.
      *
      * @return mixed
      */
-    public function getDesignDocuments() { }
+    public function getDesignDocuments()
+    {
+    }
 
     /**
      * Inserts a design document to this bucket.  Failing if a design document with the same name already exists.
      *
-     * @param string $name  Name of the design document.
-     * @param mixed $data  The design document data.
+     * @param string $name Name of the design document.
+     * @param mixed $data The design document data.
      *
      * @returns bool
      */
-    public function insertDesignDocument($name, $data) { }
+    public function insertDesignDocument($name, $data)
+    {
+    }
 
     /**
      * Inserts a design document to this bucket.  Overwriting any existing design document with the same name.
      *
-     * @param string $name  Name of the design document.
-     * @param mixed $data  The design document data.
+     * @param string $name Name of the design document.
+     * @param mixed $data The design document data.
      *
      * @returns bool
      */
-    public function upsertDesignDocument($name, $data) { }
+    public function upsertDesignDocument($name, $data)
+    {
+    }
 
     /**
      * Retrieves a design documents from the bucket.
      *
-     * @param string $name  Name of the design document.
+     * @param string $name Name of the design document.
      *
      * @return mixed
      */
-    public function getDesignDocument($name) { }
+    public function getDesignDocument($name)
+    {
+    }
 
     /**
      * Deletes a design document from the bucket.
      *
-     * @param string $name  Name of the design document.
+     * @param string $name Name of the design document.
      *
      * @return mixed
      */
-    public function removeDesignDocument($name) { }
+    public function removeDesignDocument($name)
+    {
+    }
 
     /**
      * Flushes this bucket (clears all data).
      */
-    public function flush() { }
+    public function flush()
+    {
+    }
 
     /**
      * Retrieves bucket status information
@@ -351,7 +411,9 @@ class CouchbaseBucketManager {
      *
      * @return mixed  The status information.
      */
-    public function info() { }
+    public function info()
+    {
+    }
 
 }
 
@@ -360,34 +422,41 @@ class CouchbaseBucketManager {
  *
  * Represents a cluster connection.
  */
-class CouchbaseCluster {
+class CouchbaseCluster
+{
 
     /**
-     * @param string $dsn  A cluster DSn to connect with.
-     * @param string $username  The username for the cluster.
-     * @param string $password  The password for the cluster.
+     * @param string $dsn A cluster DSn to connect with.
+     * @param string $username The username for the cluster.
+     * @param string $password The password for the cluster.
      */
-    public function __construct($dsn = 'http://127.0.0.1/', $username = '', $password = '') { }
+    public function __construct($dsn = 'http://127.0.0.1/', $username = '', $password = '')
+    {
+    }
 
     /**
      * Constructs a connection to a bucket.
      *
-     * @param string $name  The name of the bucket to open.
-     * @param string $password  The bucket password to authenticate with.
+     * @param string $name The name of the bucket to open.
+     * @param string $password The bucket password to authenticate with.
      *
      * @return CouchbaseBucket
      */
-    public function openBucket($name = 'default', $password = '') { }
+    public function openBucket($name = 'default', $password = '')
+    {
+    }
 
     /**
      * Creates a manager allowing the management of a Couchbase cluster.
      *
-     * @param string $username  The administration username.
-     * @param string $password  The administration password.
+     * @param string $username The administration username.
+     * @param string $password The administration password.
      *
      * @return  CouchbaseClusterManager
      */
-    public function manager($username, $password) { }
+    public function manager($username, $password)
+    {
+    }
 
 }
 
@@ -396,42 +465,51 @@ class CouchbaseCluster {
  *
  * Class exposing the various available management operations that can be performed on a cluster.
  */
-class CouchbaseClusterManager {
+class CouchbaseClusterManager
+{
 
     /**
      * Constructs a cluster manager connection.
      *
-     * @param string $connstr  A connection string to connect with.
-     * @param string $username  The username to authenticate with.
-     * @param string $password  The password to authenticate with.
+     * @param string $connstr A connection string to connect with.
+     * @param string $username The username to authenticate with.
+     * @param string $password The password to authenticate with.
      */
-    public function __construct($connstr, $username, $password) { }
+    public function __construct($connstr, $username, $password)
+    {
+    }
 
     /**
      * Lists all buckets on this cluster.
      *
      * @return mixed
      */
-    public function listBuckets() { }
+    public function listBuckets()
+    {
+    }
 
     /**
      * Creates a new bucket on this cluster.
      *
-     * @param string $name  The bucket name.
-     * @param array $opts  The options for this bucket.
+     * @param string $name The bucket name.
+     * @param array $opts The options for this bucket.
      *
      * @return mixed
      */
-    public function createBucket($name, $opts = array()) { }
+    public function createBucket($name, $opts = array())
+    {
+    }
 
     /**
      * Deletes a bucket from the cluster.
      *
-     * @param string $name  The bucket name.
+     * @param string $name The bucket name.
      *
      * @return mixed
      */
-    public function removeBucket($name) { }
+    public function removeBucket($name)
+    {
+    }
 
     /**
      * Retrieves cluster status information
@@ -441,7 +519,9 @@ class CouchbaseClusterManager {
      *
      * @return mixed  The status information.
      */
-    public function info() { }
+    public function info()
+    {
+    }
 
 }
 
@@ -450,7 +530,8 @@ class CouchbaseClusterManager {
  *
  * Represents a N1QL query to be executed against a Couchbase bucket.
  */
-class CouchbaseN1qlQuery {
+class CouchbaseN1qlQuery
+{
 
     /** @var array */
     public $options = array();
@@ -466,30 +547,38 @@ class CouchbaseN1qlQuery {
      *
      * @return CouchbaseN1qlQuery
      */
-    public static function fromString($str) { }
+    public static function fromString($str)
+    {
+    }
 
     /**
      * Specify the consistency level for this query.
      *
-     * @param int $consistency  consistency level; use constants NOT_BOUNDED, REQUEST_PLUS, STATEMENT_PLUS
+     * @param int $consistency consistency level; use constants NOT_BOUNDED, REQUEST_PLUS, STATEMENT_PLUS
      *
      * @return CouchbaseN1qlQuery
      */
-    public function consistency($consistency) { }
+    public function consistency($consistency)
+    {
+    }
 
     /**
      * Generates the N1QL object as it will be passed to the server.
      *
      * @return object
      */
-    public function toObject() { }
+    public function toObject()
+    {
+    }
 
     /**
      * Returns the string representation of this N1ql query (the statement).
      *
      * @return string
      */
-    public function toString() { }
+    public function toString()
+    {
+    }
 
 }
 
@@ -498,7 +587,8 @@ class CouchbaseN1qlQuery {
  *
  * Represents a view query to be executed against a Couchbase bucket.
  */
-class CouchbaseViewQuery {
+class CouchbaseViewQuery
+{
 
     /** @var string */
     public $ddoc = '';
@@ -519,63 +609,77 @@ class CouchbaseViewQuery {
     /**
      * private constructor
      */
-    private function __construct() { }
+    private function __construct()
+    {
+    }
 
     /**
      * Creates a new Couchbase ViewQuery instance for performing a view query.
      *
-     * @param string $ddoc  The name of the design document to query.
-     * @param string $name  The name of the view to query.
+     * @param string $ddoc The name of the design document to query.
+     * @param string $name The name of the view to query.
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public static function from($ddoc, $name) { }
+    public static function from($ddoc, $name)
+    {
+    }
 
     /**
      * Creates a new Couchbase ViewQuery instance for performing a spatial query.
      *
-     * @param string $ddoc  The name of the design document to query.
-     * @param string $name  The name of the view to query.
+     * @param string $ddoc The name of the design document to query.
+     * @param string $name The name of the view to query.
      *
      * @return _CouchbaseSpatialViewQuery
      */
-    public static function fromSpatial($ddoc, $name) { }
+    public static function fromSpatial($ddoc, $name)
+    {
+    }
 
     /**
      * Specifies the mode of updating to perform before and after executing this query.
      *
-     * @param int $stale  use constants UPDATE_BEFORE, UPDATE_NONE, UPDATE_AFTER
+     * @param int $stale use constants UPDATE_BEFORE, UPDATE_NONE, UPDATE_AFTER
      *
      * @return CouchbaseViewQuery
      */
-    public function stale($stale) { }
+    public function stale($stale)
+    {
+    }
 
     /**
      * Skips a number of records from the beginning of the result set.
      *
-     * @param int $skip  number of records to skip
+     * @param int $skip number of records to skip
      *
      * @return CouchbaseViewQuery
      */
-    public function skip($skip) { }
+    public function skip($skip)
+    {
+    }
 
     /**
      * Limits the result set to a restricted number of results.
      *
-     * @param int $limit  max number of records in returned result set
+     * @param int $limit max number of records in returned result set
      *
      * @return CouchbaseViewQuery
      */
-    public function limit($limit) { }
+    public function limit($limit)
+    {
+    }
 
     /**
      * Specifies custom options to pass to the server.  Note that these options are expected to be already encoded.
      *
-     * @param array $opts  key-value pairs of custom options to pass to the server
+     * @param array $opts key-value pairs of custom options to pass to the server
      *
      * @return CouchbaseViewQuery
      */
-    public function custom(array $opts) { }
+    public function custom(array $opts)
+    {
+    }
 
 }
 
@@ -585,21 +689,26 @@ class CouchbaseViewQuery {
  * Represents a regular view query to perform against the server. Note that this object should never be instantiated
  * directly, but instead through the CouchbaseViewQuery::from method.
  */
-class _CouchbaseDefaultViewQuery extends CouchbaseViewQuery {
+class _CouchbaseDefaultViewQuery extends CouchbaseViewQuery
+{
 
     /**
      * public constructor
      */
-    public function __construct() { }
+    public function __construct()
+    {
+    }
 
     /**
      * Orders the results by key as specified.
      *
-     * @param int $order  use constants ORDER_ASCENDING, ORDER_DESCENDING
+     * @param int $order use constants ORDER_ASCENDING, ORDER_DESCENDING
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public function order($order) { }
+    public function order($order)
+    {
+    }
 
     /**
      * Specifies a reduction function to apply to the index.
@@ -608,25 +717,31 @@ class _CouchbaseDefaultViewQuery extends CouchbaseViewQuery {
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public function reduce($reduce) { }
+    public function reduce($reduce)
+    {
+    }
 
     /**
      * Specifies the level of grouping to use on the results.
      *
-     * @param int|bool $group  enable/disable grouping or specify level of grouping
+     * @param int|bool $group enable/disable grouping or specify level of grouping
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public function group($group) { }
+    public function group($group)
+    {
+    }
 
     /**
      * Specifies the level at which to perform view grouping.
      *
-     * @param int $group_level  specify level of grouping
+     * @param int $group_level specify level of grouping
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public function group_level($group_level) { }
+    public function group_level($group_level)
+    {
+    }
 
     /**
      * Specifies a specific key to return from the index.
@@ -635,7 +750,9 @@ class _CouchbaseDefaultViewQuery extends CouchbaseViewQuery {
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public function key($key) { }
+    public function key($key)
+    {
+    }
 
     /**
      * Specifies a list of keys to return from the index.
@@ -644,35 +761,43 @@ class _CouchbaseDefaultViewQuery extends CouchbaseViewQuery {
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public function keys(array $keys) { }
+    public function keys(array $keys)
+    {
+    }
 
     /**
      * Specifies a range of keys to return from the index.
      *
-     * @param mixed|null $start  start key
-     * @param mixed|null $end  end key
-     * @param bool $inclusive_end  whether to include the end key
+     * @param mixed|null $start start key
+     * @param mixed|null $end end key
+     * @param bool $inclusive_end whether to include the end key
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public function range($start = null, $end = null, $inclusive_end = false) { }
+    public function range($start = null, $end = null, $inclusive_end = false)
+    {
+    }
 
     /**
      * Specifies a range of document ids to return from the index.
      *
-     * @param mixed|null $start  start of range document id
-     * @param mixed|null $end  end of range document id
+     * @param mixed|null $start start of range document id
+     * @param mixed|null $end end of range document id
      *
      * @return _CouchbaseDefaultViewQuery
      */
-    public function id_range($start = null, $end = null) { }
+    public function id_range($start = null, $end = null)
+    {
+    }
 
     /**
      * Generates the view query as it will be passed to the server.
      *
      * @return string
      */
-    public function toString() { }
+    public function toString()
+    {
+    }
 
 }
 
@@ -682,29 +807,38 @@ class _CouchbaseDefaultViewQuery extends CouchbaseViewQuery {
  * Represents a spatial view query to perform against the server.  Note that this object should never be instantiated
  * directly, but instead through the CouchbaseViewQuery::fromSpatial method.
  */
-class _CouchbaseSpatialViewQuery extends CouchbaseViewQuery {
+class _CouchbaseSpatialViewQuery extends CouchbaseViewQuery
+{
 
     /**
      * public constructor
      */
-    public function __construct() { }
+    public function __construct()
+    {
+    }
 
     /**
      * Specifies the bounding box to search within.
      *
-     * @param array $bbox  bounding box coordinates expressed as a list of numeric values
+     * @param array $bbox bounding box coordinates expressed as a list of numeric values
      *
      * @return _CouchbaseSpatialViewQuery
      */
-    public function bbox($bbox) { }
+    public function bbox($bbox)
+    {
+    }
 
     /**
      * Generates the view query as it will be passed to the server.
      *
      * @return string
      */
-    public function toString() { }
+    public function toString()
+    {
+    }
 
 }
 
-class CouchbaseException extends Exception { }
+class CouchbaseException extends Exception
+{
+}

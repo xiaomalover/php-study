@@ -8,48 +8,62 @@
  * <b>json_encode</b>.
  * @link http://php.net/manual/en/class.jsonserializable.php
  */
-interface JsonSerializable  {
+interface JsonSerializable
+{
 
-	/**
-	 * Specify data which should be serialized to JSON
-	 * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
-	 * @return mixed data which can be serialized by <b>json_encode</b>,
-	 * which is a value of any type other than a resource.
-	 * @since 5.4.0
-	 */
-    function jsonSerialize ();
+    /**
+     * Specify data which should be serialized to JSON
+     * @link http://php.net/manual/en/jsonserializable.jsonserialize.php
+     * @return mixed data which can be serialized by <b>json_encode</b>,
+     * which is a value of any type other than a resource.
+     * @since 5.4.0
+     */
+    function jsonSerialize();
 
 }
 
-class JsonIncrementalParser  {
-	const JSON_PARSER_SUCCESS = 0;
-	const JSON_PARSER_CONTINUE = 1;
+class JsonIncrementalParser
+{
+    const JSON_PARSER_SUCCESS = 0;
+    const JSON_PARSER_CONTINUE = 1;
 
 
-	/**
-	 * @param $depth [optional]
-	 * @param $options [optional]
-	 */
-	public function __construct ($depth, $options) {}
+    /**
+     * @param $depth [optional]
+     * @param $options [optional]
+     */
+    public function __construct($depth, $options)
+    {
+    }
 
-	public function getError () {}
+    public function getError()
+    {
+    }
 
-	public function reset () {}
+    public function reset()
+    {
+    }
 
-	/**
-	 * @param $json
-	 */
-	public function parse ($json) {}
+    /**
+     * @param $json
+     */
+    public function parse($json)
+    {
+    }
 
-	/**
-	 * @param $filename
-	 */
-	public function parseFile ($filename) {}
+    /**
+     * @param $filename
+     */
+    public function parseFile($filename)
+    {
+    }
 
-	/**
-	 * @param $options [optional]
-	 */
-	public function get ($options) {}
+    /**
+     * @param $options [optional]
+     */
+    public function get($options)
+    {
+    }
 
 }
 
@@ -86,7 +100,9 @@ class JsonIncrementalParser  {
  * </p>
  * @return string a JSON encoded string on success or <b>FALSE</b> on failure.
  */
-function json_encode ($value, $options = 0, $depth = 512) {}
+function json_encode($value, $options = 0, $depth = 512)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.2.0, PECL json &gt;= 1.2.0)<br/>
@@ -121,7 +137,9 @@ function json_encode ($value, $options = 0, $depth = 512) {}
  * <i>json</i> cannot be decoded or if the encoded
  * data is deeper than the recursion limit.
  */
-function json_decode ($json, $assoc = false, $depth = 512, $options = 0) {}
+function json_decode($json, $assoc = false, $depth = 512, $options = 0)
+{
+}
 
 /**
  * Returns the last error occurred
@@ -130,7 +148,9 @@ function json_decode ($json, $assoc = false, $depth = 512, $options = 0) {}
  * constants:
  * @since 5.3.0
  */
-function json_last_error () {}
+function json_last_error()
+{
+}
 
 /**
  * Returns the error string of the last json_encode() or json_decode() call
@@ -138,7 +158,9 @@ function json_last_error () {}
  * @return string the error message on success or <b>NULL</b> with wrong parameters.
  * @since 5.5.0
  */
-function json_last_error_msg () {}
+function json_last_error_msg()
+{
+}
 
 
 /**
@@ -146,28 +168,28 @@ function json_last_error_msg () {}
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_HEX_TAG', 1);
+define('JSON_HEX_TAG', 1);
 
 /**
  * All &#38;#38;s are converted to \u0026.
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_HEX_AMP', 2);
+define('JSON_HEX_AMP', 2);
 
 /**
  * All ' are converted to \u0027.
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_HEX_APOS', 4);
+define('JSON_HEX_APOS', 4);
 
 /**
  * All " are converted to \u0022.
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_HEX_QUOT', 8);
+define('JSON_HEX_QUOT', 8);
 
 /**
  * Outputs an object rather than an array when a non-associative array is
@@ -176,57 +198,57 @@ define ('JSON_HEX_QUOT', 8);
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_FORCE_OBJECT', 16);
+define('JSON_FORCE_OBJECT', 16);
 
 /**
  * Encodes numeric strings as numbers.
  * @since 5.3.3
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_NUMERIC_CHECK', 32);
+define('JSON_NUMERIC_CHECK', 32);
 
 /**
  * Don't escape /.
  * @since 5.4.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_UNESCAPED_SLASHES', 64);
+define('JSON_UNESCAPED_SLASHES', 64);
 
 /**
  * Use whitespace in returned data to format it.
  * @since 5.4.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_PRETTY_PRINT', 128);
+define('JSON_PRETTY_PRINT', 128);
 
 /**
  * Encode multibyte Unicode characters literally (default is to escape as \uXXXX).
  * @since 5.4.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_UNESCAPED_UNICODE', 256);
-define ('JSON_PARTIAL_OUTPUT_ON_ERROR', 512);
+define('JSON_UNESCAPED_UNICODE', 256);
+define('JSON_PARTIAL_OUTPUT_ON_ERROR', 512);
 
 /**
  * Occurs with underflow or with the modes mismatch.
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_STATE_MISMATCH', 2);
+define('JSON_ERROR_STATE_MISMATCH', 2);
 
 /**
  * Control character error, possibly incorrectly encoded.
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_CTRL_CHAR', 3);
+define('JSON_ERROR_CTRL_CHAR', 3);
 
 /**
  * Malformed UTF-8 characters, possibly incorrectly encoded. This
  * constant is available as of PHP 5.3.3.
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_UTF8', 5);
+define('JSON_ERROR_UTF8', 5);
 
 /**
  * <p>
@@ -240,7 +262,7 @@ define ('JSON_ERROR_UTF8', 5);
  * </p>
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_RECURSION', 6);
+define('JSON_ERROR_RECURSION', 6);
 
 /**
  * <p>
@@ -256,7 +278,7 @@ define ('JSON_ERROR_RECURSION', 6);
  * </p>
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_INF_OR_NAN', 7);
+define('JSON_ERROR_INF_OR_NAN', 7);
 
 /**
  * <p>
@@ -270,44 +292,44 @@ define ('JSON_ERROR_INF_OR_NAN', 7);
  * </p>
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_UNSUPPORTED_TYPE', 8);
+define('JSON_ERROR_UNSUPPORTED_TYPE', 8);
 
 /**
  * No error has occurred.
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_NONE', 0);
+define('JSON_ERROR_NONE', 0);
 
 /**
  * The maximum stack depth has been exceeded.
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_DEPTH', 1);
+define('JSON_ERROR_DEPTH', 1);
 
 /**
  * Syntax error.
  * @since 5.3.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_ERROR_SYNTAX', 4);
-define ('JSON_OBJECT_AS_ARRAY', 1);
-define ('JSON_PARSER_NOTSTRICT', 4);
+define('JSON_ERROR_SYNTAX', 4);
+define('JSON_OBJECT_AS_ARRAY', 1);
+define('JSON_PARSER_NOTSTRICT', 4);
 
 /**
  * Encodes large integers as their original string value.
  * @since 5.4.0
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_BIGINT_AS_STRING', 2);
+define('JSON_BIGINT_AS_STRING', 2);
 
 /**
  * Ensures that float values are always encoded as a float value.
  * @since 5.6.6
  * @link http://php.net/manual/en/json.constants.php
  */
-define ('JSON_PRESERVE_ZERO_FRACTION', 1024);
+define('JSON_PRESERVE_ZERO_FRACTION', 1024);
 
 // End of json v.1.3.1
 ?>

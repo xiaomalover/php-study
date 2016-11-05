@@ -11,7 +11,9 @@
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_alnum ($text) {}
+function ctype_alnum($text)
+{
+}
 
 /**
  * Check for alphabetic character(s)
@@ -24,7 +26,9 @@ function ctype_alnum ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_alpha ($text) {}
+function ctype_alpha($text)
+{
+}
 
 /**
  * Check for control character(s)
@@ -37,7 +41,9 @@ function ctype_alpha ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_cntrl ($text) {}
+function ctype_cntrl($text)
+{
+}
 
 /**
  * Check for numeric character(s)
@@ -50,7 +56,9 @@ function ctype_cntrl ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_digit ($text) {}
+function ctype_digit($text)
+{
+}
 
 /**
  * Check for lowercase character(s)
@@ -63,7 +71,9 @@ function ctype_digit ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_lower ($text) {}
+function ctype_lower($text)
+{
+}
 
 /**
  * Check for any printable character(s) except space
@@ -77,7 +87,9 @@ function ctype_lower ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_graph ($text) {}
+function ctype_graph($text)
+{
+}
 
 /**
  * Check for printable character(s)
@@ -92,13 +104,15 @@ function ctype_graph ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_print ($text) {}
+function ctype_print($text)
+{
+}
 
 /**
  * Check for any printable character which is not whitespace or an
  * @since 4.0.4
  * @since 5.0
-alphanumeric character
+ * alphanumeric character
  * @link http://php.net/manual/en/function.ctype-punct.php
  * @param string $text <p>
  * The tested string.
@@ -106,7 +120,9 @@ alphanumeric character
  * @return bool <b>TRUE</b> if every character in <i>text</i>
  * is printable, but neither letter, digit or blank, <b>FALSE</b> otherwise.
  */
-function ctype_punct ($text) {}
+function ctype_punct($text)
+{
+}
 
 /**
  * Check for whitespace character(s)
@@ -121,7 +137,9 @@ function ctype_punct ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_space ($text) {}
+function ctype_space($text)
+{
+}
 
 /**
  * Check for uppercase character(s)
@@ -134,7 +152,9 @@ function ctype_space ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_upper ($text) {}
+function ctype_upper($text)
+{
+}
 
 /**
  * Check for character(s) representing a hexadecimal digit
@@ -148,4 +168,6 @@ function ctype_upper ($text) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ctype_xdigit ($text) {}
+function ctype_xdigit($text)
+{
+}

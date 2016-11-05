@@ -13,7 +13,9 @@
  * @since 4.0
  * @since 5.0
  */
-function readline ($prompt = null) {}
+function readline($prompt = null)
+{
+}
 
 /**
  * Gets/sets various internal readline variables
@@ -35,7 +37,9 @@ function readline ($prompt = null) {}
  * @since 4.0
  * @since 5.0
  */
-function readline_info ($varname = null, $newvalue = null) {}
+function readline_info($varname = null, $newvalue = null)
+{
+}
 
 /**
  * Adds a line to the history
@@ -47,7 +51,9 @@ function readline_info ($varname = null, $newvalue = null) {}
  * @since 4.0
  * @since 5.0
  */
-function readline_add_history ($line) {}
+function readline_add_history($line)
+{
+}
 
 /**
  * Clears the history
@@ -56,7 +62,9 @@ function readline_add_history ($line) {}
  * @since 4.0
  * @since 5.0
  */
-function readline_clear_history () {}
+function readline_clear_history()
+{
+}
 
 /**
  * Lists the history
@@ -66,7 +74,9 @@ function readline_clear_history () {}
  * @since 4.0
  * @since 5.0
  */
-function readline_list_history () {}
+function readline_list_history()
+{
+}
 
 /**
  * Reads the history
@@ -78,7 +88,9 @@ function readline_list_history () {}
  * @since 4.0
  * @since 5.0
  */
-function readline_read_history ($filename = null) {}
+function readline_read_history($filename = null)
+{
+}
 
 /**
  * Writes the history
@@ -90,7 +102,9 @@ function readline_read_history ($filename = null) {}
  * @since 4.0
  * @since 5.0
  */
-function readline_write_history ($filename = null) {}
+function readline_write_history($filename = null)
+{
+}
 
 /**
  * Registers a completion function
@@ -103,7 +117,9 @@ function readline_write_history ($filename = null) {}
  * @since 4.0
  * @since 5.0
  */
-function readline_completion_function (callable $function) {}
+function readline_completion_function(callable $function)
+{
+}
 
 /**
  * Initializes the readline callback interface and terminal, prints the prompt and returns immediately
@@ -118,7 +134,9 @@ function readline_completion_function (callable $function) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.1.0
  */
-function readline_callback_handler_install ($prompt, callable $callback) {}
+function readline_callback_handler_install($prompt, callable $callback)
+{
+}
 
 /**
  * Reads a character and informs the readline callback interface when a line is received
@@ -126,7 +144,9 @@ function readline_callback_handler_install ($prompt, callable $callback) {}
  * @return void No value is returned.
  * @since 5.1.0
  */
-function readline_callback_read_char () {}
+function readline_callback_read_char()
+{
+}
 
 /**
  * Removes a previously installed callback handler and restores terminal settings
@@ -135,7 +155,9 @@ function readline_callback_read_char () {}
  * <b>FALSE</b> if one could not be found.
  * @since 5.1.0
  */
-function readline_callback_handler_remove () {}
+function readline_callback_handler_remove()
+{
+}
 
 /**
  * Redraws the display
@@ -143,7 +165,9 @@ function readline_callback_handler_remove () {}
  * @return void No value is returned.
  * @since 5.1.0
  */
-function readline_redisplay () {}
+function readline_redisplay()
+{
+}
 
 /**
  * Inform readline that the cursor has moved to a new line
@@ -151,9 +175,11 @@ function readline_redisplay () {}
  * @return void No value is returned.
  * @since 5.1.0
  */
-function readline_on_new_line () {}
+function readline_on_new_line()
+{
+}
 
-define ('READLINE_LIB', "libedit");
+define('READLINE_LIB', "libedit");
 
 // End of readline v.5.5.3-1ubuntu2.1
 ?>

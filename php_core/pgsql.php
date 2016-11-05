@@ -38,7 +38,9 @@
  * @since 4.0
  * @since 5.0
  */
-function pg_connect ($connection_string, $connect_type = null) {}
+function pg_connect($connection_string, $connect_type = null)
+{
+}
 
 /**
  * Open a persistent PostgreSQL connection
@@ -71,7 +73,9 @@ function pg_connect ($connection_string, $connect_type = null) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_pconnect ($connection_string, $connect_type = null) {}
+function pg_pconnect($connection_string, $connect_type = null)
+{
+}
 
 /**
  * Closes a PostgreSQL connection
@@ -86,7 +90,9 @@ function pg_pconnect ($connection_string, $connect_type = null) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_close ($connection = null) {}
+function pg_close($connection = null)
+{
+}
 
 /**
  * Get connection status
@@ -99,7 +105,9 @@ function pg_close ($connection = null) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_connection_status ($connection) {}
+function pg_connection_status($connection)
+{
+}
 
 /**
  * Get connection is busy or not
@@ -111,7 +119,9 @@ function pg_connection_status ($connection) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_connection_busy ($connection) {}
+function pg_connection_busy($connection)
+{
+}
 
 /**
  * Reset connection (reconnect)
@@ -123,7 +133,9 @@ function pg_connection_busy ($connection) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_connection_reset ($connection) {}
+function pg_connection_reset($connection)
+{
+}
 
 /**
  * Returns the host name associated with the connection
@@ -139,7 +151,9 @@ function pg_connection_reset ($connection) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_host ($connection = null) {}
+function pg_host($connection = null)
+{
+}
 
 /**
  * Get the database name
@@ -155,7 +169,9 @@ function pg_host ($connection = null) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_dbname ($connection = null) {}
+function pg_dbname($connection = null)
+{
+}
 
 /**
  * Return the port number associated with the connection
@@ -172,7 +188,9 @@ function pg_dbname ($connection = null) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_port ($connection = null) {}
+function pg_port($connection = null)
+{
+}
 
 /**
  * Return the TTY name associated with the connection
@@ -188,7 +206,9 @@ function pg_port ($connection = null) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_tty ($connection = null) {}
+function pg_tty($connection = null)
+{
+}
 
 /**
  * Get the options associated with the connection
@@ -204,7 +224,9 @@ function pg_tty ($connection = null) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_options ($connection = null) {}
+function pg_options($connection = null)
+{
+}
 
 /**
  * Returns an array with client, protocol and server version (when available)
@@ -220,7 +242,9 @@ function pg_options ($connection = null) {}
  * <b>FALSE</b> on error or invalid connection.
  * @since 5.0
  */
-function pg_version ($connection = null) {}
+function pg_version($connection = null)
+{
+}
 
 /**
  * Ping database connection
@@ -235,7 +259,9 @@ function pg_version ($connection = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_ping ($connection = null) {}
+function pg_ping($connection = null)
+{
+}
 
 /**
  * Looks up a current parameter setting of the server.
@@ -257,7 +283,9 @@ function pg_ping ($connection = null) {}
  * <i>param_name</i>.
  * @since 5.0
  */
-function pg_parameter_status ($connection = null, $param_name) {}
+function pg_parameter_status($connection = null, $param_name)
+{
+}
 
 /**
  * Returns the current in-transaction status of the server.
@@ -274,7 +302,9 @@ function pg_parameter_status ($connection = null, $param_name) {}
  * has been sent to the server and not yet completed.
  * @since 5.1.0
  */
-function pg_transaction_status ($connection) {}
+function pg_transaction_status($connection)
+{
+}
 
 /**
  * Execute a query
@@ -306,7 +336,9 @@ function pg_transaction_status ($connection) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_query ($connection = null, $query) {}
+function pg_query($connection = null, $query)
+{
+}
 
 /**
  * Submits a command to the server and waits for the result, with the ability to pass parameters separately from the SQL command text.
@@ -343,12 +375,14 @@ function pg_query ($connection = null, $query) {}
  * @return resource A query result resource on success or <b>FALSE</b> on failure.
  * @since 5.1.0
  */
-function pg_query_params ($connection = null, $query, array $params) {}
+function pg_query_params($connection = null, $query, array $params)
+{
+}
 
 /**
- * Submits a request to create a prepared statement with the 
+ * Submits a request to create a prepared statement with the
  * @since 5.1.0
-given parameters, and waits for completion.
+ * given parameters, and waits for completion.
  * @link http://php.net/manual/en/function.pg-prepare.php
  * @param resource $connection [optional] <p>
  * PostgreSQL database connection resource. When
@@ -368,7 +402,9 @@ given parameters, and waits for completion.
  * </p>
  * @return resource A query result resource on success or <b>FALSE</b> on failure.
  */
-function pg_prepare ($connection = null, $stmtname, $query) {}
+function pg_prepare($connection = null, $stmtname, $query)
+{
+}
 
 /**
  * Sends a request to execute a prepared statement with given parameters, and waits for the result.
@@ -397,7 +433,9 @@ function pg_prepare ($connection = null, $stmtname, $query) {}
  * @return resource A query result resource on success or <b>FALSE</b> on failure.
  * @since 5.1.0
  */
-function pg_execute ($connection = null, $stmtname, array $params) {}
+function pg_execute($connection = null, $stmtname, array $params)
+{
+}
 
 /**
  * Sends asynchronous query
@@ -417,7 +455,9 @@ function pg_execute ($connection = null, $stmtname, array $params) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_send_query ($connection, $query) {}
+function pg_send_query($connection, $query)
+{
+}
 
 /**
  * Submits a command and separate parameters to the server without waiting for the result(s).
@@ -440,7 +480,9 @@ function pg_send_query ($connection, $query) {}
  * Use <b>pg_get_result</b> to determine the query result.
  * @since 5.1.0
  */
-function pg_send_query_params ($connection, $query, array $params) {}
+function pg_send_query_params($connection, $query, array $params)
+{
+}
 
 /**
  * Sends a request to create a prepared statement with the given parameters, without waiting for completion.
@@ -465,7 +507,9 @@ function pg_send_query_params ($connection, $query, array $params) {}
  * to determine the query result.
  * @since 5.1.0
  */
-function pg_send_prepare ($connection, $stmtname, $query) {}
+function pg_send_prepare($connection, $stmtname, $query)
+{
+}
 
 /**
  * Sends a request to execute a prepared statement with given parameters, without waiting for the result(s).
@@ -492,7 +536,9 @@ function pg_send_prepare ($connection, $stmtname, $query) {}
  * to determine the query result.
  * @since 5.1.0
  */
-function pg_send_execute ($connection, $stmtname, array $params) {}
+function pg_send_execute($connection, $stmtname, array $params)
+{
+}
 
 /**
  * Cancel an asynchronous query
@@ -504,7 +550,9 @@ function pg_send_execute ($connection, $stmtname, array $params) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_cancel_query ($connection) {}
+function pg_cancel_query($connection)
+{
+}
 
 /**
  * Returns values from a result resource
@@ -535,7 +583,9 @@ function pg_cancel_query ($connection) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_fetch_result ($result, $row = null, $field) {}
+function pg_fetch_result($result, $row = null, $field)
+{
+}
 
 /**
  * Get a row as an enumerated array
@@ -560,7 +610,9 @@ function pg_fetch_result ($result, $row = null, $field) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_fetch_row ($result, $row = null, $result_type = null) {}
+function pg_fetch_row($result, $row = null, $result_type = null)
+{
+}
 
 /**
  * Fetch a row as an associative array
@@ -585,7 +637,9 @@ function pg_fetch_row ($result, $row = null, $result_type = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_fetch_assoc ($result, $row = null) {}
+function pg_fetch_assoc($result, $row = null)
+{
+}
 
 /**
  * Fetch a row as an array
@@ -623,7 +677,9 @@ function pg_fetch_assoc ($result, $row = null) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_fetch_array ($result, $row = null, $result_type = PGSQL_BOTH) {}
+function pg_fetch_array($result, $row = null, $result_type = PGSQL_BOTH)
+{
+}
 
 /**
  * Fetch a row as an object
@@ -650,7 +706,9 @@ function pg_fetch_array ($result, $row = null, $result_type = PGSQL_BOTH) {}
  * @since 4.0
  * @since 5.0
  */
-function pg_fetch_object ($result, $row = null, $result_type = PGSQL_ASSOC) {}
+function pg_fetch_object($result, $row = null, $result_type = PGSQL_ASSOC)
+{
+}
 
 /**
  * Fetches all rows from a result as an array
@@ -669,7 +727,9 @@ function pg_fetch_object ($result, $row = null, $result_type = PGSQL_ASSOC) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_fetch_all ($result) {}
+function pg_fetch_all($result)
+{
+}
 
 /**
  * Fetches all rows in a particular result column as an array
@@ -690,7 +750,9 @@ function pg_fetch_all ($result) {}
  * of columns in the result, or on any other error.
  * @since 5.1.0
  */
-function pg_fetch_all_columns ($result, $column = 0) {}
+function pg_fetch_all_columns($result, $column = 0)
+{
+}
 
 /**
  * Returns number of affected records (tuples)
@@ -705,7 +767,9 @@ function pg_fetch_all_columns ($result, $column = 0) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_affected_rows ($result) {}
+function pg_affected_rows($result)
+{
+}
 
 /**
  * Get asynchronous query result
@@ -717,7 +781,9 @@ function pg_affected_rows ($result) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_get_result ($connection = null) {}
+function pg_get_result($connection = null)
+{
+}
 
 /**
  * Set internal row offset in result resource
@@ -735,7 +801,9 @@ function pg_get_result ($connection = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_result_seek ($result, $offset) {}
+function pg_result_seek($result, $offset)
+{
+}
 
 /**
  * Get status of query result
@@ -759,7 +827,9 @@ function pg_result_seek ($result, $offset) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_result_status ($result, $type = PGSQL_STATUS_LONG) {}
+function pg_result_status($result, $type = PGSQL_STATUS_LONG)
+{
+}
 
 /**
  * Free result memory
@@ -773,7 +843,9 @@ function pg_result_status ($result, $type = PGSQL_STATUS_LONG) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_free_result ($result) {}
+function pg_free_result($result)
+{
+}
 
 /**
  * Returns the last row's OID
@@ -789,7 +861,9 @@ function pg_free_result ($result) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_last_oid ($result) {}
+function pg_last_oid($result)
+{
+}
 
 /**
  * Returns the number of rows in a result
@@ -803,7 +877,9 @@ function pg_last_oid ($result) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_num_rows ($result) {}
+function pg_num_rows($result)
+{
+}
 
 /**
  * Returns the number of fields in a result
@@ -817,7 +893,9 @@ function pg_num_rows ($result) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_num_fields ($result) {}
+function pg_num_fields($result)
+{
+}
 
 /**
  * Returns the name of a field
@@ -834,7 +912,9 @@ function pg_num_fields ($result) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_field_name ($result, $field_number) {}
+function pg_field_name($result, $field_number)
+{
+}
 
 /**
  * Returns the field number of the named field
@@ -851,7 +931,9 @@ function pg_field_name ($result, $field_number) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_field_num ($result, $field_name) {}
+function pg_field_num($result, $field_name)
+{
+}
 
 /**
  * Returns the internal storage size of the named field
@@ -869,7 +951,9 @@ function pg_field_num ($result, $field_name) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_field_size ($result, $field_number) {}
+function pg_field_size($result, $field_number)
+{
+}
 
 /**
  * Returns the type name for the corresponding field number
@@ -887,7 +971,9 @@ function pg_field_size ($result, $field_number) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_field_type ($result, $field_number) {}
+function pg_field_type($result, $field_number)
+{
+}
 
 /**
  * Returns the type ID (OID) for the corresponding field number
@@ -903,7 +989,9 @@ function pg_field_type ($result, $field_number) {}
  * @return int The OID of the field's base type. <b>FALSE</b> is returned on error.
  * @since 5.1.0
  */
-function pg_field_type_oid ($result, $field_number) {}
+function pg_field_type_oid($result, $field_number)
+{
+}
 
 /**
  * Returns the printed length
@@ -919,7 +1007,9 @@ function pg_field_type_oid ($result, $field_number) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_field_prtlen ($result, $row_number, $field_name_or_number) {}
+function pg_field_prtlen($result, $row_number, $field_name_or_number)
+{
+}
 
 /**
  * Test if a field is SQL NULL
@@ -942,7 +1032,9 @@ function pg_field_prtlen ($result, $row_number, $field_name_or_number) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_field_is_null ($result, $row, $field) {}
+function pg_field_is_null($result, $row, $field)
+{
+}
 
 /**
  * Returns the name or oid of the tables field
@@ -963,7 +1055,9 @@ function pg_field_is_null ($result, $row, $field) {}
  * @return mixed On success either the fields table name or oid. Or, <b>FALSE</b> on failure.
  * @since 5.2.0
  */
-function pg_field_table ($result, $field_number, $oid_only = false) {}
+function pg_field_table($result, $field_number, $oid_only = false)
+{
+}
 
 /**
  * Gets SQL NOTIFY message
@@ -988,7 +1082,9 @@ function pg_field_table ($result, $field_number, $oid_only = false) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_get_notify ($connection, $result_type = null) {}
+function pg_get_notify($connection, $result_type = null)
+{
+}
 
 /**
  * Gets the backend's process ID
@@ -1000,7 +1096,9 @@ function pg_get_notify ($connection, $result_type = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_get_pid ($connection) {}
+function pg_get_pid($connection)
+{
+}
 
 /**
  * Get error message associated with result
@@ -1015,7 +1113,9 @@ function pg_get_pid ($connection) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_result_error ($result) {}
+function pg_result_error($result)
+{
+}
 
 /**
  * Returns an individual field of an error report.
@@ -1039,7 +1139,9 @@ function pg_result_error ($result) {}
  * on failure.
  * @since 5.1.0
  */
-function pg_result_error_field ($result, $fieldcode) {}
+function pg_result_error_field($result, $fieldcode)
+{
+}
 
 /**
  * Get the last error message string of a connection
@@ -1055,7 +1157,9 @@ function pg_result_error_field ($result, $fieldcode) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_last_error ($connection = null) {}
+function pg_last_error($connection = null)
+{
+}
 
 /**
  * Returns the last notice message from PostgreSQL server
@@ -1068,7 +1172,9 @@ function pg_last_error ($connection = null) {}
  * @since 4.0.6
  * @since 5.0
  */
-function pg_last_notice ($connection) {}
+function pg_last_notice($connection)
+{
+}
 
 /**
  * Send a NULL-terminated string to PostgreSQL backend
@@ -1087,7 +1193,9 @@ function pg_last_notice ($connection) {}
  * @since 4.0.3
  * @since 5.0
  */
-function pg_put_line ($connection = null, $data) {}
+function pg_put_line($connection = null, $data)
+{
+}
 
 /**
  * Sync with PostgreSQL backend
@@ -1102,7 +1210,9 @@ function pg_put_line ($connection = null, $data) {}
  * @since 4.0.3
  * @since 5.0
  */
-function pg_end_copy ($connection = null) {}
+function pg_end_copy($connection = null)
+{
+}
 
 /**
  * Copy a table to an array
@@ -1126,7 +1236,9 @@ function pg_end_copy ($connection = null) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_copy_to ($connection, $table_name, $delimiter = null, $null_as = null) {}
+function pg_copy_to($connection, $table_name, $delimiter = null, $null_as = null)
+{
+}
 
 /**
  * Insert records into a table from an array
@@ -1155,7 +1267,9 @@ function pg_copy_to ($connection, $table_name, $delimiter = null, $null_as = nul
  * @since 4.2.0
  * @since 5.0
  */
-function pg_copy_from ($connection, $table_name, array $rows, $delimiter = null, $null_as = null) {}
+function pg_copy_from($connection, $table_name, array $rows, $delimiter = null, $null_as = null)
+{
+}
 
 /**
  * Enable tracing a PostgreSQL connection
@@ -1178,7 +1292,9 @@ function pg_copy_from ($connection, $table_name, array $rows, $delimiter = null,
  * @since 4.0.1
  * @since 5.0
  */
-function pg_trace ($pathname, $mode = "w", $connection = null) {}
+function pg_trace($pathname, $mode = "w", $connection = null)
+{
+}
 
 /**
  * Disable tracing of a PostgreSQL connection
@@ -1193,7 +1309,9 @@ function pg_trace ($pathname, $mode = "w", $connection = null) {}
  * @since 4.0.1
  * @since 5.0
  */
-function pg_untrace ($connection = null) {}
+function pg_untrace($connection = null)
+{
+}
 
 /**
  * Create a large object
@@ -1215,7 +1333,9 @@ function pg_untrace ($connection = null) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_create ($connection = null, $object_id = null) {}
+function pg_lo_create($connection = null, $object_id = null)
+{
+}
 
 /**
  * Delete a large object
@@ -1233,7 +1353,9 @@ function pg_lo_create ($connection = null, $object_id = null) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_unlink ($connection, $oid) {}
+function pg_lo_unlink($connection, $oid)
+{
+}
 
 /**
  * Open a large object
@@ -1255,7 +1377,9 @@ function pg_lo_unlink ($connection, $oid) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_open ($connection, $oid, $mode) {}
+function pg_lo_open($connection, $oid, $mode)
+{
+}
 
 /**
  * Close a large object
@@ -1265,7 +1389,9 @@ function pg_lo_open ($connection, $oid, $mode) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_close ($large_object) {}
+function pg_lo_close($large_object)
+{
+}
 
 /**
  * Read a large object
@@ -1281,7 +1407,9 @@ function pg_lo_close ($large_object) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_read ($large_object, $len = 8192) {}
+function pg_lo_read($large_object, $len = 8192)
+{
+}
 
 /**
  * Write to a large object
@@ -1303,7 +1431,9 @@ function pg_lo_read ($large_object, $len = 8192) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_write ($large_object, $data, $len = null) {}
+function pg_lo_write($large_object, $data, $len = null)
+{
+}
 
 /**
  * Reads an entire large object and send straight to browser
@@ -1315,7 +1445,9 @@ function pg_lo_write ($large_object, $data, $len = null) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_read_all ($large_object) {}
+function pg_lo_read_all($large_object)
+{
+}
 
 /**
  * Import a large object from file
@@ -1342,7 +1474,9 @@ function pg_lo_read_all ($large_object) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_import ($connection = null, $pathname, $object_id = null) {}
+function pg_lo_import($connection = null, $pathname, $object_id = null)
+{
+}
 
 /**
  * Export a large object to file
@@ -1364,7 +1498,9 @@ function pg_lo_import ($connection = null, $pathname, $object_id = null) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_export ($connection = null, $oid, $pathname) {}
+function pg_lo_export($connection = null, $oid, $pathname)
+{
+}
 
 /**
  * Seeks position within a large object
@@ -1384,7 +1520,9 @@ function pg_lo_export ($connection = null, $oid, $pathname) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_seek ($large_object, $offset, $whence = PGSQL_SEEK_CUR) {}
+function pg_lo_seek($large_object, $offset, $whence = PGSQL_SEEK_CUR)
+{
+}
 
 /**
  * Returns current seek position a of large object
@@ -1397,7 +1535,9 @@ function pg_lo_seek ($large_object, $offset, $whence = PGSQL_SEEK_CUR) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_lo_tell ($large_object) {}
+function pg_lo_tell($large_object)
+{
+}
 
 /**
  * Escape a string for query
@@ -1415,7 +1555,9 @@ function pg_lo_tell ($large_object) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_escape_string ($connection = null, $data) {}
+function pg_escape_string($connection = null, $data)
+{
+}
 
 /**
  * Escape a string for insertion into a bytea field
@@ -1434,7 +1576,9 @@ function pg_escape_string ($connection = null, $data) {}
  * @since 4.2.0
  * @since 5.0
  */
-function pg_escape_bytea ($connection = null, $data) {}
+function pg_escape_bytea($connection = null, $data)
+{
+}
 
 /**
  * Escape a identifier for insertion into a text field
@@ -1451,7 +1595,9 @@ function pg_escape_bytea ($connection = null, $data) {}
  * @return string A string containing the escaped data.
  * @since 5.4.4
  */
-function pg_escape_identifier ($connection = null, $data) {}
+function pg_escape_identifier($connection = null, $data)
+{
+}
 
 /**
  * Escape a literal for insertion into a text field
@@ -1468,7 +1614,9 @@ function pg_escape_identifier ($connection = null, $data) {}
  * @return string A string containing the escaped data.
  * @since 5.4.4
  */
-function pg_escape_literal ($connection = null, $data) {}
+function pg_escape_literal($connection = null, $data)
+{
+}
 
 /**
  * Unescape binary for bytea type
@@ -1481,12 +1629,14 @@ function pg_escape_literal ($connection = null, $data) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_unescape_bytea ($data) {}
+function pg_unescape_bytea($data)
+{
+}
 
 /**
- * Determines the verbosity of messages returned by <b>pg_last_error</b> 
+ * Determines the verbosity of messages returned by <b>pg_last_error</b>
  * @since 5.1.0
-and <b>pg_result_error</b>.
+ * and <b>pg_result_error</b>.
  * @link http://php.net/manual/en/function.pg-set-error-verbosity.php
  * @param resource $connection [optional] <p>
  * PostgreSQL database connection resource. When
@@ -1503,7 +1653,9 @@ and <b>pg_result_error</b>.
  * <b>PGSQL_ERRORS_DEFAULT</b>
  * or <b>PGSQL_ERRORS_VERBOSE</b>.
  */
-function pg_set_error_verbosity ($connection = null, $verbosity) {}
+function pg_set_error_verbosity($connection = null, $verbosity)
+{
+}
 
 /**
  * Gets the client encoding
@@ -1518,7 +1670,9 @@ function pg_set_error_verbosity ($connection = null, $verbosity) {}
  * @since 4.0.3
  * @since 5.0
  */
-function pg_client_encoding ($connection = null) {}
+function pg_client_encoding($connection = null)
+{
+}
 
 /**
  * Set the client encoding
@@ -1544,7 +1698,9 @@ function pg_client_encoding ($connection = null) {}
  * @since 4.0.3
  * @since 5.0
  */
-function pg_set_client_encoding ($connection = null, $encoding) {}
+function pg_set_client_encoding($connection = null, $encoding)
+{
+}
 
 /**
  * Get meta data for table
@@ -1559,7 +1715,9 @@ function pg_set_client_encoding ($connection = null, $encoding) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_meta_data ($connection, $table_name) {}
+function pg_meta_data($connection, $table_name)
+{
+}
 
 /**
  * Convert associative array values into suitable for SQL statement
@@ -1582,7 +1740,9 @@ function pg_meta_data ($connection, $table_name) {}
  * @since 4.3.0
  * @since 5.0
  */
-function pg_convert ($connection, $table_name, array $assoc_array, $options = 0) {}
+function pg_convert($connection, $table_name, array $assoc_array, $options = 0)
+{
+}
 
 /**
  * Insert array into table
@@ -1611,7 +1771,9 @@ function pg_convert ($connection, $table_name, array $assoc_array, $options = 0)
  * @since 4.3.0
  * @since 5.0
  */
-function pg_insert ($connection, $table_name, array $assoc_array, $options = PGSQL_DML_EXEC) {}
+function pg_insert($connection, $table_name, array $assoc_array, $options = PGSQL_DML_EXEC)
+{
+}
 
 /**
  * Update table
@@ -1642,7 +1804,9 @@ function pg_insert ($connection, $table_name, array $assoc_array, $options = PGS
  * @since 4.3.0
  * @since 5.0
  */
-function pg_update ($connection, $table_name, array $data, array $condition, $options = PGSQL_DML_EXEC) {}
+function pg_update($connection, $table_name, array $data, array $condition, $options = PGSQL_DML_EXEC)
+{
+}
 
 /**
  * Deletes records
@@ -1669,7 +1833,9 @@ function pg_update ($connection, $table_name, array $data, array $condition, $op
  * @since 4.3.0
  * @since 5.0
  */
-function pg_delete ($connection, $table_name, array $assoc_array, $options = PGSQL_DML_EXEC) {}
+function pg_delete($connection, $table_name, array $assoc_array, $options = PGSQL_DML_EXEC)
+{
+}
 
 /**
  * Select records
@@ -1697,71 +1863,93 @@ function pg_delete ($connection, $table_name, array $assoc_array, $options = PGS
  * @since 4.3.0
  * @since 5.0
  */
-function pg_select ($connection, $table_name, array $assoc_array, $options = PGSQL_DML_EXEC) {}
+function pg_select($connection, $table_name, array $assoc_array, $options = PGSQL_DML_EXEC)
+{
+}
 
 /**
  * @param $connection [optional]
  * @param $query [optional]
  * @return mixed
  */
-function pg_exec ($connection, $query) {}
+function pg_exec($connection, $query)
+{
+}
 
 /**
  * @param $result
  * @return string
  */
-function pg_getlastoid ($result) {}
+function pg_getlastoid($result)
+{
+}
 
 /**
  * @param $result
  */
-function pg_cmdtuples ($result) {} // TODO remove
+function pg_cmdtuples($result)
+{
+} // TODO remove
 
 /**
  * @param $connection [optional]
  * @return string
  */
-function pg_errormessage ($connection) {}
+function pg_errormessage($connection)
+{
+}
 
 /**
  * @param $result
  * @return int
  */
-function pg_numrows ($result) {}
+function pg_numrows($result)
+{
+}
 
 /**
  * @param $result
  * @return int
  */
-function pg_numfields ($result) {}
+function pg_numfields($result)
+{
+}
 
 /**
  * @param $result
  * @param $field_number
  * @return string
  */
-function pg_fieldname ($result, $field_number) {}
+function pg_fieldname($result, $field_number)
+{
+}
 
 /**
  * @param $result
  * @param $field_number
  * @return int
  */
-function pg_fieldsize ($result, $field_number) {}
+function pg_fieldsize($result, $field_number)
+{
+}
 
 /**
  * @param $result
  * @param $field_number
  * @return string
  */
-function pg_fieldtype ($result, $field_number) {}
+function pg_fieldtype($result, $field_number)
+{
+}
 
 /**
  * @param $result
  * @param $field_name
  * @return int
  */
-function pg_fieldnum ($result, $field_name) {}
+function pg_fieldnum($result, $field_name)
+{
+}
 
 /**
  * @param $result
@@ -1769,7 +1957,9 @@ function pg_fieldnum ($result, $field_name) {}
  * @param $field_name_or_number [optional]
  * @return int
  */
-function pg_fieldprtlen ($result, $row, $field_name_or_number) {}
+function pg_fieldprtlen($result, $row, $field_name_or_number)
+{
+}
 
 /**
  * @param $result
@@ -1777,37 +1967,49 @@ function pg_fieldprtlen ($result, $row, $field_name_or_number) {}
  * @param $field_name_or_number [optional]
  * @return int
  */
-function pg_fieldisnull ($result, $row, $field_name_or_number) {}
+function pg_fieldisnull($result, $row, $field_name_or_number)
+{
+}
 
 /**
  * @param $result
  * @return bool
  */
-function pg_freeresult ($result) {}
+function pg_freeresult($result)
+{
+}
 
 /**
  * @param $connection
  */
-function pg_result ($connection) {} // TODO remove
+function pg_result($connection)
+{
+} // TODO remove
 
 /**
  * @param $large_object
  */
-function pg_loreadall ($large_object) {} // TODO remove
+function pg_loreadall($large_object)
+{
+} // TODO remove
 
 /**
  * @param $connection [optional]
  * @param $large_object_id [optional]
  * @return int
  */
-function pg_locreate ($connection, $large_object_id) {}
+function pg_locreate($connection, $large_object_id)
+{
+}
 
 /**
  * @param $connection [optional]
  * @param $large_object_oid [optional]
  * @return bool
  */
-function pg_lounlink ($connection, $large_object_oid) {}
+function pg_lounlink($connection, $large_object_oid)
+{
+}
 
 /**
  * @param $connection [optional]
@@ -1815,20 +2017,26 @@ function pg_lounlink ($connection, $large_object_oid) {}
  * @param $mode [optional]
  * @return resource
  */
-function pg_loopen ($connection, $large_object_oid, $mode) {}
+function pg_loopen($connection, $large_object_oid, $mode)
+{
+}
 
 /**
  * @param $large_object
  * @return bool
  */
-function pg_loclose ($large_object) {}
+function pg_loclose($large_object)
+{
+}
 
 /**
  * @param $large_object
  * @param $len [optional]
  * @return string
  */
-function pg_loread ($large_object, $len) {}
+function pg_loread($large_object, $len)
+{
+}
 
 /**
  * @param $large_object
@@ -1836,7 +2044,9 @@ function pg_loread ($large_object, $len) {}
  * @param $len [optional]
  * @return int
  */
-function pg_lowrite ($large_object, $buf, $len) {}
+function pg_lowrite($large_object, $buf, $len)
+{
+}
 
 /**
  * @param $connection [optional]
@@ -1844,7 +2054,9 @@ function pg_lowrite ($large_object, $buf, $len) {}
  * @param $large_object_oid [optional]
  * @return int
  */
-function pg_loimport ($connection, $filename, $large_object_oid) {}
+function pg_loimport($connection, $filename, $large_object_oid)
+{
+}
 
 /**
  * @param $connection [optional]
@@ -1852,72 +2064,79 @@ function pg_loimport ($connection, $filename, $large_object_oid) {}
  * @param $filename [optional]
  * @return bool
  */
-function pg_loexport ($connection, $objoid, $filename) {}
+function pg_loexport($connection, $objoid, $filename)
+{
+}
 
 /**
  * @param $connection [optional]
  * @return string
  */
-function pg_clientencoding ($connection) {}
+function pg_clientencoding($connection)
+{
+}
 
 /**
  * @param $connection [optional]
  * @param $encoding [optional]
  * @return int
  */
-function pg_setclientencoding ($connection, $encoding) {}
+function pg_setclientencoding($connection, $encoding)
+{
+}
 
-define ('PGSQL_LIBPQ_VERSION', "9.1.10");
-define ('PGSQL_LIBPQ_VERSION_STR', "PostgreSQL 9.1.10 on x86_64-unknown-linux-gnu, compiled by gcc (Ubuntu/Linaro 4.8.1-10ubuntu7) 4.8.1, 64-bit");
+define('PGSQL_LIBPQ_VERSION', "9.1.10");
+define('PGSQL_LIBPQ_VERSION_STR',
+    "PostgreSQL 9.1.10 on x86_64-unknown-linux-gnu, compiled by gcc (Ubuntu/Linaro 4.8.1-10ubuntu7) 4.8.1, 64-bit");
 
 /**
  * Passed to <b>pg_connect</b> to force the creation of a new connection,
  * rather than re-using an existing identical connection.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_CONNECT_FORCE_NEW', 2);
+define('PGSQL_CONNECT_FORCE_NEW', 2);
 
 /**
  * Passed to <b>pg_fetch_array</b>. Return an associative array of field
  * names and values.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_ASSOC', 1);
+define('PGSQL_ASSOC', 1);
 
 /**
  * Passed to <b>pg_fetch_array</b>. Return a numerically indexed array of field
  * numbers and values.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_NUM', 2);
+define('PGSQL_NUM', 2);
 
 /**
  * Passed to <b>pg_fetch_array</b>. Return an array of field values
  * that is both numerically indexed (by field number) and associated (by field name).
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_BOTH', 3);
+define('PGSQL_BOTH', 3);
 
 /**
  * Returned by <b>pg_connection_status</b> indicating that the database
  * connection is in an invalid state.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_CONNECTION_BAD', 1);
+define('PGSQL_CONNECTION_BAD', 1);
 
 /**
  * Returned by <b>pg_connection_status</b> indicating that the database
  * connection is in a valid state.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_CONNECTION_OK', 0);
+define('PGSQL_CONNECTION_OK', 0);
 
 /**
  * Returned by <b>pg_transaction_status</b>. Connection is
  * currently idle, not in a transaction.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_TRANSACTION_IDLE', 0);
+define('PGSQL_TRANSACTION_IDLE', 0);
 
 /**
  * Returned by <b>pg_transaction_status</b>. A command
@@ -1925,28 +2144,28 @@ define ('PGSQL_TRANSACTION_IDLE', 0);
  * and not yet completed.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_TRANSACTION_ACTIVE', 1);
+define('PGSQL_TRANSACTION_ACTIVE', 1);
 
 /**
  * Returned by <b>pg_transaction_status</b>. The connection
  * is idle, in a transaction block.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_TRANSACTION_INTRANS', 2);
+define('PGSQL_TRANSACTION_INTRANS', 2);
 
 /**
  * Returned by <b>pg_transaction_status</b>. The connection
  * is idle, in a failed transaction block.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_TRANSACTION_INERROR', 3);
+define('PGSQL_TRANSACTION_INERROR', 3);
 
 /**
  * Returned by <b>pg_transaction_status</b>. The connection
  * is bad.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_TRANSACTION_UNKNOWN', 4);
+define('PGSQL_TRANSACTION_UNKNOWN', 4);
 
 /**
  * Passed to <b>pg_set_error_verbosity</b>.
@@ -1954,7 +2173,7 @@ define ('PGSQL_TRANSACTION_UNKNOWN', 4);
  * and position only; this will normally fit on a single line.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_ERRORS_TERSE', 0);
+define('PGSQL_ERRORS_TERSE', 0);
 
 /**
  * Passed to <b>pg_set_error_verbosity</b>.
@@ -1963,105 +2182,105 @@ define ('PGSQL_ERRORS_TERSE', 0);
  * multiple lines).
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_ERRORS_DEFAULT', 1);
+define('PGSQL_ERRORS_DEFAULT', 1);
 
 /**
  * Passed to <b>pg_set_error_verbosity</b>.
  * The verbose mode includes all available fields.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_ERRORS_VERBOSE', 2);
+define('PGSQL_ERRORS_VERBOSE', 2);
 
 /**
  * Passed to <b>pg_lo_seek</b>. Seek operation is to begin
  * from the start of the object.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_SEEK_SET', 0);
+define('PGSQL_SEEK_SET', 0);
 
 /**
  * Passed to <b>pg_lo_seek</b>. Seek operation is to begin
  * from the current position.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_SEEK_CUR', 1);
+define('PGSQL_SEEK_CUR', 1);
 
 /**
  * Passed to <b>pg_lo_seek</b>. Seek operation is to begin
  * from the end of the object.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_SEEK_END', 2);
+define('PGSQL_SEEK_END', 2);
 
 /**
  * Passed to <b>pg_result_status</b>. Indicates that
  * numerical result code is desired.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_STATUS_LONG', 1);
+define('PGSQL_STATUS_LONG', 1);
 
 /**
  * Passed to <b>pg_result_status</b>. Indicates that
  * textual result command tag is desired.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_STATUS_STRING', 2);
+define('PGSQL_STATUS_STRING', 2);
 
 /**
  * Returned by <b>pg_result_status</b>. The string sent to the server
  * was empty.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_EMPTY_QUERY', 0);
+define('PGSQL_EMPTY_QUERY', 0);
 
 /**
  * Returned by <b>pg_result_status</b>. Successful completion of a
  * command returning no data.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_COMMAND_OK', 1);
+define('PGSQL_COMMAND_OK', 1);
 
 /**
  * Returned by <b>pg_result_status</b>. Successful completion of a command
  * returning data (such as a SELECT or SHOW).
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_TUPLES_OK', 2);
+define('PGSQL_TUPLES_OK', 2);
 
 /**
  * Returned by <b>pg_result_status</b>. Copy Out (from server) data
  * transfer started.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_COPY_OUT', 3);
+define('PGSQL_COPY_OUT', 3);
 
 /**
  * Returned by <b>pg_result_status</b>. Copy In (to server) data
  * transfer started.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_COPY_IN', 4);
+define('PGSQL_COPY_IN', 4);
 
 /**
  * Returned by <b>pg_result_status</b>. The server's response
  * was not understood.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_BAD_RESPONSE', 5);
+define('PGSQL_BAD_RESPONSE', 5);
 
 /**
  * Returned by <b>pg_result_status</b>. A nonfatal error
  * (a notice or warning) occurred.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_NONFATAL_ERROR', 6);
+define('PGSQL_NONFATAL_ERROR', 6);
 
 /**
  * Returned by <b>pg_result_status</b>. A fatal error
  * occurred.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_FATAL_ERROR', 7);
+define('PGSQL_FATAL_ERROR', 7);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2072,7 +2291,7 @@ define ('PGSQL_FATAL_ERROR', 7);
  * translation of one of these. Always present.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_SEVERITY', 83);
+define('PGSQL_DIAG_SEVERITY', 83);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2082,21 +2301,21 @@ define ('PGSQL_DIAG_SEVERITY', 83);
  * This field is not localizable, and is always present.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_SQLSTATE', 67);
+define('PGSQL_DIAG_SQLSTATE', 67);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
  * The primary human-readable error message (typically one line). Always present.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_MESSAGE_PRIMARY', 77);
+define('PGSQL_DIAG_MESSAGE_PRIMARY', 77);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
  * Detail: an optional secondary error message carrying more detail about the problem. May run to multiple lines.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_MESSAGE_DETAIL', 68);
+define('PGSQL_DIAG_MESSAGE_DETAIL', 68);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2104,7 +2323,7 @@ define ('PGSQL_DIAG_MESSAGE_DETAIL', 68);
  * offers advice (potentially inappropriate) rather than hard facts. May run to multiple lines.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_MESSAGE_HINT', 72);
+define('PGSQL_DIAG_MESSAGE_HINT', 72);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2112,7 +2331,7 @@ define ('PGSQL_DIAG_MESSAGE_HINT', 72);
  * statement string. The first character has index 1, and positions are measured in characters not bytes.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_STATEMENT_POSITION', 80);
+define('PGSQL_DIAG_STATEMENT_POSITION', 80);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2123,7 +2342,7 @@ define ('PGSQL_DIAG_STATEMENT_POSITION', 80);
  * field appears.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_INTERNAL_POSITION', 112);
+define('PGSQL_DIAG_INTERNAL_POSITION', 112);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2131,7 +2350,7 @@ define ('PGSQL_DIAG_INTERNAL_POSITION', 112);
  * SQL query issued by a PL/pgSQL function.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_INTERNAL_QUERY', 113);
+define('PGSQL_DIAG_INTERNAL_QUERY', 113);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2141,7 +2360,7 @@ define ('PGSQL_DIAG_INTERNAL_QUERY', 113);
  * per line, most recent first.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_CONTEXT', 87);
+define('PGSQL_DIAG_CONTEXT', 87);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2149,7 +2368,7 @@ define ('PGSQL_DIAG_CONTEXT', 87);
  * was reported.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_SOURCE_FILE', 70);
+define('PGSQL_DIAG_SOURCE_FILE', 70);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
@@ -2157,39 +2376,39 @@ define ('PGSQL_DIAG_SOURCE_FILE', 70);
  * error was reported.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_SOURCE_LINE', 76);
+define('PGSQL_DIAG_SOURCE_LINE', 76);
 
 /**
  * Passed to <b>pg_result_error_field</b>.
  * The name of the PostgreSQL source-code function reporting the error.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_DIAG_SOURCE_FUNCTION', 82);
+define('PGSQL_DIAG_SOURCE_FUNCTION', 82);
 
 /**
  * Passed to <b>pg_convert</b>.
  * Ignore default values in the table during conversion.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_CONV_IGNORE_DEFAULT', 2);
+define('PGSQL_CONV_IGNORE_DEFAULT', 2);
 
 /**
  * Passed to <b>pg_convert</b>.
  * Use SQL NULL in place of an empty string.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_CONV_FORCE_NULL', 4);
+define('PGSQL_CONV_FORCE_NULL', 4);
 
 /**
  * Passed to <b>pg_convert</b>.
  * Ignore conversion of <b>NULL</b> into SQL NOT NULL columns.
  * @link http://php.net/manual/en/pgsql.constants.php
  */
-define ('PGSQL_CONV_IGNORE_NOT_NULL', 8);
-define ('PGSQL_DML_NO_CONV', 256);
-define ('PGSQL_DML_EXEC', 512);
-define ('PGSQL_DML_ASYNC', 1024);
-define ('PGSQL_DML_STRING', 2048);
+define('PGSQL_CONV_IGNORE_NOT_NULL', 8);
+define('PGSQL_DML_NO_CONV', 256);
+define('PGSQL_DML_EXEC', 512);
+define('PGSQL_DML_ASYNC', 1024);
+define('PGSQL_DML_STRING', 2048);
 
 const PGSQL_CONNECT_ASYNC = 4;
 const PGSQL_CONNECTION_AUTH_OK = 5;

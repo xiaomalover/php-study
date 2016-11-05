@@ -15,7 +15,9 @@
  * @since 4.0
  * @since 5.0
  */
-function posix_kill ($pid, $sig) {}
+function posix_kill($pid, $sig)
+{
+}
 
 /**
  * Return the current process identifier
@@ -24,7 +26,9 @@ function posix_kill ($pid, $sig) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getpid () {}
+function posix_getpid()
+{
+}
 
 /**
  * Return the parent process identifier
@@ -33,7 +37,9 @@ function posix_getpid () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getppid () {}
+function posix_getppid()
+{
+}
 
 /**
  * Return the real user ID of the current process
@@ -42,7 +48,9 @@ function posix_getppid () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getuid () {}
+function posix_getuid()
+{
+}
 
 /**
  * Set the UID of the current process
@@ -54,7 +62,9 @@ function posix_getuid () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_setuid ($uid) {}
+function posix_setuid($uid)
+{
+}
 
 /**
  * Return the effective user ID of the current process
@@ -63,7 +73,9 @@ function posix_setuid ($uid) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_geteuid () {}
+function posix_geteuid()
+{
+}
 
 /**
  * Set the effective UID of the current process
@@ -75,7 +87,9 @@ function posix_geteuid () {}
  * @since 4.0.2
  * @since 5.0
  */
-function posix_seteuid ($uid) {}
+function posix_seteuid($uid)
+{
+}
 
 /**
  * Set system resource limits
@@ -90,7 +104,10 @@ function posix_seteuid ($uid) {}
  * @return bool Returns TRUE on success or FALSE on failure.
  * @since 7.0
  */
-function posix_setrlimit ($resource, $softlimit, $hardlimit ) {}
+function posix_setrlimit($resource, $softlimit, $hardlimit)
+{
+}
+
 /**
  * Return the real group ID of the current process
  * @link http://php.net/manual/en/function.posix-getgid.php
@@ -98,7 +115,9 @@ function posix_setrlimit ($resource, $softlimit, $hardlimit ) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getgid () {}
+function posix_getgid()
+{
+}
 
 /**
  * Set the GID of the current process
@@ -110,7 +129,9 @@ function posix_getgid () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_setgid ($gid) {}
+function posix_setgid($gid)
+{
+}
 
 /**
  * Return the effective group ID of the current process
@@ -119,7 +140,9 @@ function posix_setgid ($gid) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getegid () {}
+function posix_getegid()
+{
+}
 
 /**
  * Set the effective GID of the current process
@@ -131,7 +154,9 @@ function posix_getegid () {}
  * @since 4.0.2
  * @since 5.0
  */
-function posix_setegid ($gid) {}
+function posix_setegid($gid)
+{
+}
 
 /**
  * Return the group set of the current process
@@ -141,7 +166,9 @@ function posix_setegid ($gid) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getgroups () {}
+function posix_getgroups()
+{
+}
 
 /**
  * Return login name
@@ -150,7 +177,9 @@ function posix_getgroups () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getlogin () {}
+function posix_getlogin()
+{
+}
 
 /**
  * Return the current process group identifier
@@ -159,7 +188,9 @@ function posix_getlogin () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getpgrp () {}
+function posix_getpgrp()
+{
+}
 
 /**
  * Make the current process a session leader
@@ -168,7 +199,9 @@ function posix_getpgrp () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_setsid () {}
+function posix_setsid()
+{
+}
 
 /**
  * Set process group id for job control
@@ -183,7 +216,9 @@ function posix_setsid () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_setpgid ($pid, $pgid) {}
+function posix_setpgid($pid, $pgid)
+{
+}
 
 /**
  * Get process group id for job control
@@ -195,7 +230,9 @@ function posix_setpgid ($pid, $pgid) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getpgid ($pid) {}
+function posix_getpgid($pid)
+{
+}
 
 /**
  * Get the current sid of the process
@@ -210,7 +247,9 @@ function posix_getpgid ($pid) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getsid ($pid) {}
+function posix_getsid($pid)
+{
+}
 
 /**
  * Get system name
@@ -232,7 +271,9 @@ function posix_getsid ($pid) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_uname () {}
+function posix_uname()
+{
+}
 
 /**
  * Get process times
@@ -248,7 +289,9 @@ function posix_uname () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_times () {}
+function posix_times()
+{
+}
 
 /**
  * Get path name of controlling terminal
@@ -259,7 +302,9 @@ function posix_times () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_ctermid () {}
+function posix_ctermid()
+{
+}
 
 /**
  * Determine terminal device name
@@ -272,7 +317,9 @@ function posix_ctermid () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_ttyname ($fd) {}
+function posix_ttyname($fd)
+{
+}
 
 /**
  * Determine if a file descriptor is an interactive terminal
@@ -288,7 +335,9 @@ function posix_ttyname ($fd) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_isatty ($fd) {}
+function posix_isatty($fd)
+{
+}
 
 /**
  * Pathname of current directory
@@ -299,7 +348,9 @@ function posix_isatty ($fd) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getcwd () {}
+function posix_getcwd()
+{
+}
 
 /**
  * Create a fifo special file (a named pipe)
@@ -318,7 +369,9 @@ function posix_getcwd () {}
  * @since 4.0
  * @since 5.0
  */
-function posix_mkfifo ($pathname, $mode) {}
+function posix_mkfifo($pathname, $mode)
+{
+}
 
 /**
  * Create a special or ordinary file (POSIX.1)
@@ -343,7 +396,9 @@ function posix_mkfifo ($pathname, $mode) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.1.0
  */
-function posix_mknod ($pathname, $mode, $major = 0, $minor = 0) {}
+function posix_mknod($pathname, $mode, $major = 0, $minor = 0)
+{
+}
 
 /**
  * Determine accessibility of a file
@@ -366,7 +421,9 @@ function posix_mknod ($pathname, $mode, $major = 0, $minor = 0) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.1.0
  */
-function posix_access ($file, $mode = POSIX_F_OK) {}
+function posix_access($file, $mode = POSIX_F_OK)
+{
+}
 
 /**
  * Return info about a group by name
@@ -414,7 +471,9 @@ function posix_access ($file, $mode = POSIX_F_OK) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getgrnam ($name) {}
+function posix_getgrnam($name)
+{
+}
 
 /**
  * Return info about a group by group id
@@ -464,7 +523,9 @@ function posix_getgrnam ($name) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getgrgid ($gid) {}
+function posix_getgrgid($gid)
+{
+}
 
 /**
  * Return info about a user by username
@@ -542,7 +603,9 @@ function posix_getgrgid ($gid) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getpwnam ($username) {}
+function posix_getpwnam($username)
+{
+}
 
 /**
  * Return info about a user by user id
@@ -619,7 +682,9 @@ function posix_getpwnam ($username) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getpwuid ($uid) {}
+function posix_getpwuid($uid)
+{
+}
 
 /**
  * Return info about system resource limits
@@ -705,7 +770,9 @@ function posix_getpwuid ($uid) {}
  * @since 4.0
  * @since 5.0
  */
-function posix_getrlimit () {}
+function posix_getrlimit()
+{
+}
 
 /**
  * Retrieve the error number set by the last posix function that failed
@@ -715,7 +782,9 @@ function posix_getrlimit () {}
  * @since 4.2.0
  * @since 5.0
  */
-function posix_get_last_error () {}
+function posix_get_last_error()
+{
+}
 
 /**
  * Alias of <b>posix_get_last_error</b>
@@ -723,7 +792,9 @@ function posix_get_last_error () {}
  * @since 4.2.0
  * @since 5.0
  */
-function posix_errno () {}
+function posix_errno()
+{
+}
 
 /**
  * Retrieve the system error message associated with the given errno
@@ -737,7 +808,9 @@ function posix_errno () {}
  * @since 4.2.0
  * @since 5.0
  */
-function posix_strerror ($errno) {}
+function posix_strerror($errno)
+{
+}
 
 /**
  * Calculate the group access list
@@ -751,65 +824,64 @@ function posix_strerror ($errno) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.2.0
  */
-function posix_initgroups ($name, $base_group_id) {}
+function posix_initgroups($name, $base_group_id)
+{
+}
 
 
 /**
  * Check whether the file exists.
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_F_OK', 0);
+define('POSIX_F_OK', 0);
 
 /**
  * Check whether the file exists and has execute permissions.
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_X_OK', 1);
+define('POSIX_X_OK', 1);
 
 /**
  * Check whether the file exists and has write permissions.
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_W_OK', 2);
+define('POSIX_W_OK', 2);
 
 /**
  * Check whether the file exists and has read permissions.
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_R_OK', 4);
+define('POSIX_R_OK', 4);
 
 /**
  * Normal file
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_S_IFREG', 32768);
+define('POSIX_S_IFREG', 32768);
 
 /**
  * Character special file
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_S_IFCHR', 8192);
+define('POSIX_S_IFCHR', 8192);
 
 /**
  * Block special file
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_S_IFBLK', 24576);
+define('POSIX_S_IFBLK', 24576);
 
 /**
  * FIFO (named pipe) special file
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_S_IFIFO', 4096);
+define('POSIX_S_IFIFO', 4096);
 
 /**
  * Socket
  * @link http://php.net/manual/en/posix.constants.php
  */
-define ('POSIX_S_IFSOCK', 49152);
-
-
-
+define('POSIX_S_IFSOCK', 49152);
 
 
 // End of posix v.

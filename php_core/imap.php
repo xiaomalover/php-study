@@ -15,11 +15,11 @@
  * <p>
  * The server part, which is enclosed in '{' and '}', consists of the servers
  * name or ip address, an optional port (prefixed by ':'), and an optional
- * protocol specification (prefixed by '/'). 
+ * protocol specification (prefixed by '/').
  * </p>
  * <p>
  * The server part is mandatory in all mailbox
- * parameters. 
+ * parameters.
  * </p>
  * <p>
  * All names which start with { are remote names, and are
@@ -48,12 +48,14 @@
  * @since 4.0
  * @since 5.0
  */
-function imap_open ($mailbox, $username, $password, $options = 0, $n_retries = 0, array $params = null) {}
+function imap_open($mailbox, $username, $password, $options = 0, $n_retries = 0, array $params = null)
+{
+}
 
 /**
  * Reopen IMAP stream to new mailbox
  * @link http://php.net/manual/en/function.imap-reopen.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information
@@ -69,12 +71,14 @@ function imap_open ($mailbox, $username, $password, $options = 0, $n_retries = 0
  * @since 4.0
  * @since 5.0
  */
-function imap_reopen ($imap_stream, $mailbox, $options = 0, $n_retries = 0) {}
+function imap_reopen($imap_stream, $mailbox, $options = 0, $n_retries = 0)
+{
+}
 
 /**
  * Close an IMAP stream
  * @link http://php.net/manual/en/function.imap-close.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $flag [optional] <p>
  * If set to <b>CL_EXPUNGE</b>, the function will silently
  * expunge the mailbox before closing, removing all messages marked for
@@ -85,39 +89,47 @@ function imap_reopen ($imap_stream, $mailbox, $options = 0, $n_retries = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_close ($imap_stream, $flag = 0) {}
+function imap_close($imap_stream, $flag = 0)
+{
+}
 
 /**
  * Gets the number of messages in the current mailbox
  * @link http://php.net/manual/en/function.imap-num-msg.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @return int Return the number of messages in the current mailbox, as an integer.
  * @since 4.0
  * @since 5.0
  */
-function imap_num_msg ($imap_stream) {}
+function imap_num_msg($imap_stream)
+{
+}
 
 /**
  * Gets the number of recent messages in current mailbox
  * @link http://php.net/manual/en/function.imap-num-recent.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @return int the number of recent messages in the current mailbox, as an
  * integer.
  * @since 4.0
  * @since 5.0
  */
-function imap_num_recent ($imap_stream) {}
+function imap_num_recent($imap_stream)
+{
+}
 
 /**
  * Returns headers for all messages in a mailbox
  * @link http://php.net/manual/en/function.imap-headers.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @return array an array of string formatted with header info. One
  * element per mail message.
  * @since 4.0
  * @since 5.0
  */
-function imap_headers ($imap_stream) {}
+function imap_headers($imap_stream)
+{
+}
 
 /**
  * Read the header of the message
@@ -169,7 +181,9 @@ function imap_headers ($imap_stream) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_headerinfo ($stream_id, $msg_no, $from_length = 0, $subject_length = 0, $default_host = null) {}
+function imap_headerinfo($stream_id, $msg_no, $from_length = 0, $subject_length = 0, $default_host = null)
+{
+}
 
 /**
  * Parse mail headers from a string
@@ -186,7 +200,9 @@ function imap_headerinfo ($stream_id, $msg_no, $from_length = 0, $subject_length
  * @since 4.0
  * @since 5.0
  */
-function imap_rfc822_parse_headers ($headers, $defaulthost = "UNKNOWN") {}
+function imap_rfc822_parse_headers($headers, $defaulthost = "UNKNOWN")
+{
+}
 
 /**
  * Returns a properly formatted email address given the mailbox, host, and personal info
@@ -205,7 +221,9 @@ function imap_rfc822_parse_headers ($headers, $defaulthost = "UNKNOWN") {}
  * @since 4.0
  * @since 5.0
  */
-function imap_rfc822_write_address ($mailbox, $host, $personal) {}
+function imap_rfc822_write_address($mailbox, $host, $personal)
+{
+}
 
 /**
  * Parses an address string
@@ -226,12 +244,14 @@ function imap_rfc822_write_address ($mailbox, $host, $personal) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_rfc822_parse_adrlist ($address, $default_host) {}
+function imap_rfc822_parse_adrlist($address, $default_host)
+{
+}
 
 /**
  * Read the message body
  * @link http://php.net/manual/en/function.imap-body.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $msg_number <p>
  * The message number
  * </p>
@@ -243,12 +263,14 @@ function imap_rfc822_parse_adrlist ($address, $default_host) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_body ($imap_stream, $msg_number, $options = 0) {}
+function imap_body($imap_stream, $msg_number, $options = 0)
+{
+}
 
 /**
  * Read the structure of a specified body section of a specific message
  * @link http://php.net/manual/en/function.imap-bodystruct.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $msg_number <p>
  * The message number
  * </p>
@@ -256,17 +278,19 @@ function imap_body ($imap_stream, $msg_number, $options = 0) {}
  * The body section to read
  * </p>
  * @return object the information in an object, for a detailed description
- * of the object structure and properties see 
+ * of the object structure and properties see
  * <b>imap_fetchstructure</b>.
  * @since 4.0
  * @since 5.0
  */
-function imap_bodystruct ($imap_stream, $msg_number, $section) {}
+function imap_bodystruct($imap_stream, $msg_number, $section)
+{
+}
 
 /**
  * Fetch a particular section of the body of the message
  * @link http://php.net/manual/en/function.imap-fetchbody.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $msg_number <p>
  * The message number
  * </p>
@@ -282,7 +306,9 @@ function imap_bodystruct ($imap_stream, $msg_number, $section) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_fetchbody ($imap_stream, $msg_number, $section, $options = 0) {}
+function imap_fetchbody($imap_stream, $msg_number, $section, $options = 0)
+{
+}
 
 /**
  * Fetch MIME headers for a particular section of the message
@@ -302,12 +328,14 @@ function imap_fetchbody ($imap_stream, $msg_number, $section, $options = 0) {}
  * text string.
  * @since 5.3.6
  */
-function imap_fetchmime ($imap_stream, $msg_number, $section, $options = 0) {}
+function imap_fetchmime($imap_stream, $msg_number, $section, $options = 0)
+{
+}
 
 /**
  * Save a specific body section to a file
  * @link http://php.net/manual/en/function.imap-savebody.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param mixed $file <p>
  * The path to the saved file as a string, or a valid file descriptor
  * returned by <b>fopen</b>.
@@ -325,12 +353,14 @@ function imap_fetchmime ($imap_stream, $msg_number, $section, $options = 0) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.1.3
  */
-function imap_savebody ($imap_stream, $file, $msg_number, $part_number = "", $options = 0) {}
+function imap_savebody($imap_stream, $file, $msg_number, $part_number = "", $options = 0)
+{
+}
 
 /**
  * Returns header for a message
  * @link http://php.net/manual/en/function.imap-fetchheader.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $msg_number <p>
  * The message number
  * </p>
@@ -342,17 +372,19 @@ function imap_savebody ($imap_stream, $file, $msg_number, $part_number = "", $op
  * @since 4.0
  * @since 5.0
  */
-function imap_fetchheader ($imap_stream, $msg_number, $options = 0) {}
+function imap_fetchheader($imap_stream, $msg_number, $options = 0)
+{
+}
 
 /**
  * Read the structure of a particular message
  * @link http://php.net/manual/en/function.imap-fetchstructure.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $msg_number <p>
  * The message number
  * </p>
  * @param int $options [optional] <p>
- * This optional parameter only has a single option, 
+ * This optional parameter only has a single option,
  * <b>FT_UID</b>, which tells the function to treat the
  * <i>msg_number</i> argument as a
  * UID.
@@ -468,15 +500,17 @@ function imap_fetchheader ($imap_stream, $msg_number, $options = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_fetchstructure ($imap_stream, $msg_number, $options = 0) {}
+function imap_fetchstructure($imap_stream, $msg_number, $options = 0)
+{
+}
 
 /**
  * Clears IMAP cache
  * @link http://php.net/manual/en/function.imap-gc.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $caches <p>
  * Specifies the cache to purge. It may one or a combination
- * of the following constants: 
+ * of the following constants:
  * <b>IMAP_GC_ELT</b> (message cache elements),
  * <b>IMAP_GC_ENV</b> (enveloppe and bodies),
  * <b>IMAP_GC_TEXTS</b> (texts).
@@ -484,22 +518,26 @@ function imap_fetchstructure ($imap_stream, $msg_number, $options = 0) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.3.0
  */
-function imap_gc ($imap_stream, $caches) {}
+function imap_gc($imap_stream, $caches)
+{
+}
 
 /**
  * Delete all messages marked for deletion
  * @link http://php.net/manual/en/function.imap-expunge.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @return bool <b>TRUE</b>.
  * @since 4.0
  * @since 5.0
  */
-function imap_expunge ($imap_stream) {}
+function imap_expunge($imap_stream)
+{
+}
 
 /**
  * Mark a message for deletion from current mailbox
  * @link http://php.net/manual/en/function.imap-delete.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $msg_number <p>
  * The message number
  * </p>
@@ -512,12 +550,14 @@ function imap_expunge ($imap_stream) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_delete ($imap_stream, $msg_number, $options = 0) {}
+function imap_delete($imap_stream, $msg_number, $options = 0)
+{
+}
 
 /**
  * Unmark the message which is marked deleted
  * @link http://php.net/manual/en/function.imap-undelete.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $msg_number <p>
  * The message number
  * </p>
@@ -526,12 +566,14 @@ function imap_delete ($imap_stream, $msg_number, $options = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_undelete ($imap_stream, $msg_number, $flags = 0) {}
+function imap_undelete($imap_stream, $msg_number, $flags = 0)
+{
+}
 
 /**
  * Check current mailbox
  * @link http://php.net/manual/en/function.imap-check.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @return object the information in an object with following properties:
  * <b>Date</b> - current system time formatted according to RFC2822
  * <b>Driver</b> - protocol used to access this mailbox:
@@ -540,17 +582,19 @@ function imap_undelete ($imap_stream, $msg_number, $flags = 0) {}
  * <b>Nmsgs</b> - number of messages in the mailbox
  * <b>Recent</b> - number of recent messages in the mailbox
  * </p>
- * <p> 
+ * <p>
  * Returns <b>FALSE</b> on failure.
  * @since 4.0
  * @since 5.0
  */
-function imap_check ($imap_stream) {}
+function imap_check($imap_stream)
+{
+}
 
 /**
  * Returns the list of mailboxes that matches the given text
  * @link http://php.net/manual/en/function.imap-listscan.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $ref <p>
  * <i>ref</i> should normally be just the server
  * specification as described in <b>imap_open</b>
@@ -575,12 +619,14 @@ function imap_check ($imap_stream) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_listscan ($imap_stream, $ref, $pattern, $content) {}
+function imap_listscan($imap_stream, $ref, $pattern, $content)
+{
+}
 
 /**
  * Copy specified messages to a mailbox
  * @link http://php.net/manual/en/function.imap-mail-copy.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $msglist <p>
  * <i>msglist</i> is a range not just message
  * numbers (as described in RFC2060).
@@ -596,12 +642,14 @@ function imap_listscan ($imap_stream, $ref, $pattern, $content) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_mail_copy ($imap_stream, $msglist, $mailbox, $options = 0) {}
+function imap_mail_copy($imap_stream, $msglist, $mailbox, $options = 0)
+{
+}
 
 /**
  * Move specified messages to a mailbox
  * @link http://php.net/manual/en/function.imap-mail-move.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $msglist <p>
  * <i>msglist</i> is a range not just message numbers
  * (as described in RFC2060).
@@ -617,7 +665,9 @@ function imap_mail_copy ($imap_stream, $msglist, $mailbox, $options = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_mail_move ($imap_stream, $msglist, $mailbox, $options = 0) {}
+function imap_mail_move($imap_stream, $msglist, $mailbox, $options = 0)
+{
+}
 
 /**
  * Create a MIME message based on given envelope and body sections
@@ -641,12 +691,14 @@ function imap_mail_move ($imap_stream, $msglist, $mailbox, $options = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_mail_compose (array $envelope, array $body) {}
+function imap_mail_compose(array $envelope, array $body)
+{
+}
 
 /**
  * Create a new mailbox
  * @link http://php.net/manual/en/function.imap-createmailbox.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information. Names containing international characters should be
@@ -656,12 +708,14 @@ function imap_mail_compose (array $envelope, array $body) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_createmailbox ($imap_stream, $mailbox) {}
+function imap_createmailbox($imap_stream, $mailbox)
+{
+}
 
 /**
  * Rename an old mailbox to new mailbox
  * @link http://php.net/manual/en/function.imap-renamemailbox.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $old_mbox <p>
  * The old mailbox name, see <b>imap_open</b> for more
  * information
@@ -674,12 +728,14 @@ function imap_createmailbox ($imap_stream, $mailbox) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_renamemailbox ($imap_stream, $old_mbox, $new_mbox) {}
+function imap_renamemailbox($imap_stream, $old_mbox, $new_mbox)
+{
+}
 
 /**
  * Delete a mailbox
  * @link http://php.net/manual/en/function.imap-deletemailbox.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information
@@ -688,12 +744,14 @@ function imap_renamemailbox ($imap_stream, $old_mbox, $new_mbox) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_deletemailbox ($imap_stream, $mailbox) {}
+function imap_deletemailbox($imap_stream, $mailbox)
+{
+}
 
 /**
  * Subscribe to a mailbox
  * @link http://php.net/manual/en/function.imap-subscribe.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information
@@ -702,12 +760,14 @@ function imap_deletemailbox ($imap_stream, $mailbox) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_subscribe ($imap_stream, $mailbox) {}
+function imap_subscribe($imap_stream, $mailbox)
+{
+}
 
 /**
  * Unsubscribe from a mailbox
  * @link http://php.net/manual/en/function.imap-unsubscribe.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information
@@ -716,12 +776,14 @@ function imap_subscribe ($imap_stream, $mailbox) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_unsubscribe ($imap_stream, $mailbox) {}
+function imap_unsubscribe($imap_stream, $mailbox)
+{
+}
 
 /**
  * Append a string message to a specified mailbox
  * @link http://php.net/manual/en/function.imap-append.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information
@@ -745,17 +807,21 @@ function imap_unsubscribe ($imap_stream, $mailbox) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_append ($imap_stream, $mailbox, $message, $options = null, $internal_date = null) {}
+function imap_append($imap_stream, $mailbox, $message, $options = null, $internal_date = null)
+{
+}
 
 /**
  * Check if the IMAP stream is still active
  * @link http://php.net/manual/en/function.imap-ping.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @return bool <b>TRUE</b> if the stream is still alive, <b>FALSE</b> otherwise.
  * @since 4.0
  * @since 5.0
  */
-function imap_ping ($imap_stream) {}
+function imap_ping($imap_stream)
+{
+}
 
 /**
  * Decode BASE64 encoded text
@@ -767,7 +833,9 @@ function imap_ping ($imap_stream) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_base64 ($text) {}
+function imap_base64($text)
+{
+}
 
 /**
  * Convert a quoted-printable string to an 8 bit string
@@ -779,7 +847,9 @@ function imap_base64 ($text) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_qprint ($string) {}
+function imap_qprint($string)
+{
+}
 
 /**
  * Convert an 8bit string to a quoted-printable string
@@ -791,7 +861,9 @@ function imap_qprint ($string) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_8bit ($string) {}
+function imap_8bit($string)
+{
+}
 
 /**
  * Convert an 8bit string to a base64 string
@@ -803,25 +875,29 @@ function imap_8bit ($string) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_binary ($string) {}
+function imap_binary($string)
+{
+}
 
 /**
  * Converts MIME-encoded text to UTF-8
  * @link http://php.net/manual/en/function.imap-utf8.php
  * @param string $mime_encoded_text <p>
- * A MIME encoded string. MIME encoding method and the UTF-8 
+ * A MIME encoded string. MIME encoding method and the UTF-8
  * specification are described in RFC2047 and RFC2044 respectively.
  * </p>
  * @return string an UTF-8 encoded string.
  * @since 4.0
  * @since 5.0
  */
-function imap_utf8 ($mime_encoded_text) {}
+function imap_utf8($mime_encoded_text)
+{
+}
 
 /**
  * Returns status information on a mailbox
  * @link http://php.net/manual/en/function.imap-status.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information
@@ -832,8 +908,8 @@ function imap_utf8 ($mime_encoded_text) {}
  * number of messages in the mailbox
  * @return object This function returns an object containing status information.
  * The object has the following properties: messages,
- * recent, unseen, 
- * uidnext, and uidvalidity. 
+ * recent, unseen,
+ * uidnext, and uidvalidity.
  * </p>
  * <p>
  * flags is also set, which contains a bitmask which can
@@ -841,18 +917,22 @@ function imap_utf8 ($mime_encoded_text) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_status ($imap_stream, $mailbox, $options) {}
+function imap_status($imap_stream, $mailbox, $options)
+{
+}
 
 /**
  * @param $stream_id
  * @param $options
  */
-function imap_status_current ($stream_id, $options) {}
+function imap_status_current($stream_id, $options)
+{
+}
 
 /**
  * Get information about the current mailbox
  * @link http://php.net/manual/en/function.imap-mailboxmsginfo.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @return object the information in an object with following properties:
  * <table>
  * Mailbox properties
@@ -895,19 +975,21 @@ function imap_status_current ($stream_id, $options) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_mailboxmsginfo ($imap_stream) {}
+function imap_mailboxmsginfo($imap_stream)
+{
+}
 
 /**
  * Sets flags on messages
  * @link http://php.net/manual/en/function.imap-setflag-full.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $sequence <p>
  * A sequence of message numbers. You can enumerate desired messages
- * with the X,Y syntax, or retrieve all messages 
+ * with the X,Y syntax, or retrieve all messages
  * within an interval with the X:Y syntax
  * </p>
  * @param string $flag <p>
- * The flags which you can set are \Seen, 
+ * The flags which you can set are \Seen,
  * \Answered, \Flagged,
  * \Deleted, and \Draft as
  * defined by RFC2060.
@@ -920,15 +1002,17 @@ function imap_mailboxmsginfo ($imap_stream) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_setflag_full ($imap_stream, $sequence, $flag, $options = NIL) {}
+function imap_setflag_full($imap_stream, $sequence, $flag, $options = NIL)
+{
+}
 
 /**
  * Clears flags on messages
  * @link http://php.net/manual/en/function.imap-clearflag-full.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $sequence <p>
  * A sequence of message numbers. You can enumerate desired messages
- * with the X,Y syntax, or retrieve all messages 
+ * with the X,Y syntax, or retrieve all messages
  * within an interval with the X:Y syntax
  * </p>
  * @param string $flag <p>
@@ -944,12 +1028,14 @@ function imap_setflag_full ($imap_stream, $sequence, $flag, $options = NIL) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_clearflag_full ($imap_stream, $sequence, $flag, $options = 0) {}
+function imap_clearflag_full($imap_stream, $sequence, $flag, $options = 0)
+{
+}
 
 /**
  * Gets and sort messages
  * @link http://php.net/manual/en/function.imap-sort.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $criteria <p>
  * Criteria can be one (and only one) of the following:
  * <b>SORTDATE</b> - message Date
@@ -967,12 +1053,14 @@ function imap_clearflag_full ($imap_stream, $sequence, $flag, $options = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_sort ($imap_stream, $criteria, $reverse, $options = 0, $search_criteria = null, $charset = 'NIL') {}
+function imap_sort($imap_stream, $criteria, $reverse, $options = 0, $search_criteria = null, $charset = 'NIL')
+{
+}
 
 /**
  * This function returns the UID for the given message sequence number
  * @link http://php.net/manual/en/function.imap-uid.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $msg_number <p>
  * The message number.
  * </p>
@@ -980,26 +1068,30 @@ function imap_sort ($imap_stream, $criteria, $reverse, $options = 0, $search_cri
  * @since 4.0
  * @since 5.0
  */
-function imap_uid ($imap_stream, $msg_number) {}
+function imap_uid($imap_stream, $msg_number)
+{
+}
 
 /**
  * Gets the message sequence number for the given UID
  * @link http://php.net/manual/en/function.imap-msgno.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $uid <p>
  * The message UID
  * </p>
- * @return int the message sequence number for the given 
+ * @return int the message sequence number for the given
  * <i>uid</i>.
  * @since 4.0
  * @since 5.0
  */
-function imap_msgno ($imap_stream, $uid) {}
+function imap_msgno($imap_stream, $uid)
+{
+}
 
 /**
  * Read the list of mailboxes
  * @link http://php.net/manual/en/function.imap-list.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $ref <p>
  * <i>ref</i> should normally be just the server
  * specification as described in <b>imap_open</b>.
@@ -1020,12 +1112,14 @@ function imap_msgno ($imap_stream, $uid) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_list ($imap_stream, $ref, $pattern) {}
+function imap_list($imap_stream, $ref, $pattern)
+{
+}
 
 /**
  * List all the subscribed mailboxes
  * @link http://php.net/manual/en/function.imap-lsub.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $ref <p>
  * <i>ref</i> should normally be just the server
  * specification as described in <b>imap_open</b>
@@ -1046,20 +1140,22 @@ function imap_list ($imap_stream, $ref, $pattern) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_lsub ($imap_stream, $ref, $pattern) {}
+function imap_lsub($imap_stream, $ref, $pattern)
+{
+}
 
 /**
  * Read an overview of the information in the headers of the given message
  * @link http://php.net/manual/en/function.imap-fetch-overview.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $sequence <p>
  * A message sequence description. You can enumerate desired messages
- * with the X,Y syntax, or retrieve all messages 
+ * with the X,Y syntax, or retrieve all messages
  * within an interval with the X:Y syntax
  * </p>
  * @param int $options [optional] <p>
  * <i>sequence</i> will contain a sequence of message
- * indices or UIDs, if this parameter is set to 
+ * indices or UIDs, if this parameter is set to
  * <b>FT_UID</b>.
  * </p>
  * @return array an array of objects describing one message header each.
@@ -1084,7 +1180,9 @@ function imap_lsub ($imap_stream, $ref, $pattern) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_fetch_overview ($imap_stream, $sequence, $options = 0) {}
+function imap_fetch_overview($imap_stream, $sequence, $options = 0)
+{
+}
 
 /**
  * Returns all IMAP alert messages that have occurred
@@ -1094,7 +1192,9 @@ function imap_fetch_overview ($imap_stream, $sequence, $options = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_alerts () {}
+function imap_alerts()
+{
+}
 
 /**
  * Returns all of the IMAP errors that have occurred
@@ -1106,7 +1206,9 @@ function imap_alerts () {}
  * @since 4.0
  * @since 5.0
  */
-function imap_errors () {}
+function imap_errors()
+{
+}
 
 /**
  * Gets the last IMAP error that occurred during this page request
@@ -1116,12 +1218,14 @@ function imap_errors () {}
  * @since 4.0
  * @since 5.0
  */
-function imap_last_error () {}
+function imap_last_error()
+{
+}
 
 /**
  * This function returns an array of messages matching the given search criteria
  * @link http://php.net/manual/en/function.imap-search.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $criteria <p>
  * A string, delimited by spaces, in which the following keywords are
  * allowed. Any multi-word arguments (e.g.
@@ -1142,7 +1246,9 @@ function imap_last_error () {}
  * @since 4.0
  * @since 5.0
  */
-function imap_search ($imap_stream, $criteria, $options = SE_FREE, $charset = NIL) {}
+function imap_search($imap_stream, $criteria, $options = SE_FREE, $charset = NIL)
+{
+}
 
 /**
  * Decodes a modified UTF-7 encoded string
@@ -1159,7 +1265,9 @@ function imap_search ($imap_stream, $criteria, $options = SE_FREE, $charset = NI
  * @since 4.0
  * @since 5.0
  */
-function imap_utf7_decode ($text) {}
+function imap_utf7_decode($text)
+{
+}
 
 /**
  * Converts ISO-8859-1 string to modified UTF-7 text
@@ -1168,12 +1276,14 @@ function imap_utf7_decode ($text) {}
  * An ISO-8859-1 string.
  * </p>
  * @return string <i>data</i> encoded with the modified UTF-7
- * encoding as defined in RFC 2060, 
+ * encoding as defined in RFC 2060,
  * section 5.1.3 (original UTF-7 was defined in RFC1642).
  * @since 4.0
  * @since 5.0
  */
-function imap_utf7_encode ($data) {}
+function imap_utf7_encode($data)
+{
+}
 
 /**
  * Decode MIME header elements
@@ -1182,7 +1292,7 @@ function imap_utf7_encode ($data) {}
  * The MIME text
  * </p>
  * @return array The decoded elements are returned in an array of objects, where each
- * object has two properties, charset and 
+ * object has two properties, charset and
  * text.
  * </p>
  * <p>
@@ -1192,12 +1302,14 @@ function imap_utf7_encode ($data) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_mime_header_decode ($text) {}
+function imap_mime_header_decode($text)
+{
+}
 
 /**
  * Returns a tree of threaded message
  * @link http://php.net/manual/en/function.imap-thread.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param int $options [optional]
  * @return array <b>imap_thread</b> returns an associative array containing
  * a tree of messages threaded by REFERENCES, or <b>FALSE</b>
@@ -1218,7 +1330,9 @@ function imap_mime_header_decode ($text) {}
  * @since 4.0.7
  * @since 5.0
  */
-function imap_thread ($imap_stream, $options = SE_FREE) {}
+function imap_thread($imap_stream, $options = SE_FREE)
+{
+}
 
 /**
  * Set or fetch imap timeout
@@ -1243,12 +1357,14 @@ function imap_thread ($imap_stream, $options = SE_FREE) {}
  * @since 4.3.3
  * @since 5.0
  */
-function imap_timeout ($timeout_type, $timeout = -1) {}
+function imap_timeout($timeout_type, $timeout = -1)
+{
+}
 
 /**
  * Retrieve the quota level settings, and usage statics per mailbox
  * @link http://php.net/manual/en/function.imap-get-quota.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $quota_root <p>
  * <i>quota_root</i> should normally be in the form of
  * user.name where name is the mailbox you wish to
@@ -1262,7 +1378,7 @@ function imap_timeout ($timeout_type, $timeout = -1) {}
  * <p>
  * As of PHP 4.3, the function more properly reflects the
  * functionality as dictated by the RFC2087.
- * The array return value has changed to support an unlimited number of returned 
+ * The array return value has changed to support an unlimited number of returned
  * resources (i.e. messages, or sub-folders) with each named resource receiving
  * an individual array key. Each key value then contains an another array with
  * the usage and limit values within it.
@@ -1273,12 +1389,14 @@ function imap_timeout ($timeout_type, $timeout = -1) {}
  * @since 4.0.5
  * @since 5.0
  */
-function imap_get_quota ($imap_stream, $quota_root) {}
+function imap_get_quota($imap_stream, $quota_root)
+{
+}
 
 /**
  * Retrieve the quota settings per user
  * @link http://php.net/manual/en/function.imap-get-quotaroot.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $quota_root <p>
  * <i>quota_root</i> should normally be in the form of
  * which mailbox (i.e. INBOX).
@@ -1294,12 +1412,14 @@ function imap_get_quota ($imap_stream, $quota_root) {}
  * @since 4.3.0
  * @since 5.0
  */
-function imap_get_quotaroot ($imap_stream, $quota_root) {}
+function imap_get_quotaroot($imap_stream, $quota_root)
+{
+}
 
 /**
  * Sets a quota for a given mailbox
  * @link http://php.net/manual/en/function.imap-set-quota.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $quota_root <p>
  * The mailbox to have a quota set. This should follow the IMAP standard
  * format for a mailbox: user.name.
@@ -1311,12 +1431,14 @@ function imap_get_quotaroot ($imap_stream, $quota_root) {}
  * @since 4.0.5
  * @since 5.0
  */
-function imap_set_quota ($imap_stream, $quota_root, $quota_limit) {}
+function imap_set_quota($imap_stream, $quota_root, $quota_limit)
+{
+}
 
 /**
  * Sets the ACL for a given mailbox
  * @link http://php.net/manual/en/function.imap-setacl.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information
@@ -1332,12 +1454,14 @@ function imap_set_quota ($imap_stream, $quota_root, $quota_limit) {}
  * @since 4.0.7
  * @since 5.0
  */
-function imap_setacl ($imap_stream, $mailbox, $id, $rights) {}
+function imap_setacl($imap_stream, $mailbox, $id, $rights)
+{
+}
 
 /**
  * Gets the ACL for a given mailbox
  * @link http://php.net/manual/en/function.imap-getacl.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $mailbox <p>
  * The mailbox name, see <b>imap_open</b> for more
  * information
@@ -1345,13 +1469,17 @@ function imap_setacl ($imap_stream, $mailbox, $id, $rights) {}
  * @return array an associative array of "folder" => "acl" pairs.
  * @since 5.0
  */
-function imap_getacl ($imap_stream, $mailbox) {}
+function imap_getacl($imap_stream, $mailbox)
+{
+}
 
 /**
  * @param $stream_id
  * @param $mailbox
  */
-function imap_myrights ($stream_id, $mailbox) {}
+function imap_myrights($stream_id, $mailbox)
+{
+}
 
 /**
  * @param $stream_id
@@ -1360,7 +1488,9 @@ function imap_myrights ($stream_id, $mailbox) {}
  * @param $attr
  * @param $value
  */
-function imap_setannotation ($stream_id, $mailbox, $entry, $attr, $value) {}
+function imap_setannotation($stream_id, $mailbox, $entry, $attr, $value)
+{
+}
 
 /**
  * @param $stream_id
@@ -1368,7 +1498,9 @@ function imap_setannotation ($stream_id, $mailbox, $entry, $attr, $value) {}
  * @param $entry
  * @param $attr
  */
-function imap_getannotation ($stream_id, $mailbox, $entry, $attr) {}
+function imap_getannotation($stream_id, $mailbox, $entry, $attr)
+{
+}
 
 /**
  * Send an email message
@@ -1398,7 +1530,9 @@ function imap_getannotation ($stream_id, $mailbox, $entry, $attr) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_mail ($to, $subject, $message, $additional_headers = null, $cc = null, $bcc = null, $rpath = null) {}
+function imap_mail($to, $subject, $message, $additional_headers = null, $cc = null, $bcc = null, $rpath = null)
+{
+}
 
 /**
  * Alias of <b>imap_headerinfo</b>
@@ -1450,7 +1584,9 @@ function imap_mail ($to, $subject, $message, $additional_headers = null, $cc = n
  * @since 4.0
  * @since 5.0
  */
-function imap_header ($stream_id, $msg_no, $from_length = 0, $subject_length = 0, $default_host = null) {}
+function imap_header($stream_id, $msg_no, $from_length = 0, $subject_length = 0, $default_host = null)
+{
+}
 
 /**
  * Alias of <b>imap_list</b>
@@ -1461,12 +1597,14 @@ function imap_header ($stream_id, $msg_no, $from_length = 0, $subject_length = 0
  * @since 4.0
  * @since 5.0
  */
-function imap_listmailbox ($stream_id, $ref, $pattern) {}
+function imap_listmailbox($stream_id, $ref, $pattern)
+{
+}
 
 /**
  * Read the list of mailboxes, returning detailed information on each one
  * @link http://php.net/manual/en/function.imap-getmailboxes.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $ref <p>
  * <i>ref</i> should normally be just the server
  * specification as described in <b>imap_open</b>
@@ -1492,7 +1630,7 @@ function imap_listmailbox ($stream_id, $ref, $pattern) {}
  * is a bitmask that can be tested against:
  * <p>
  * <b>LATT_NOINFERIORS</b> - This mailbox contains, and may not contain any
- * "children" (there are no mailboxes below this one). Calling 
+ * "children" (there are no mailboxes below this one). Calling
  * <b>imap_createmailbox</b> will not work on this mailbox.
  * </p>
  * <p>
@@ -1512,7 +1650,9 @@ function imap_listmailbox ($stream_id, $ref, $pattern) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_getmailboxes ($imap_stream, $ref, $pattern) {}
+function imap_getmailboxes($imap_stream, $ref, $pattern)
+{
+}
 
 /**
  * Alias of <b>imap_listscan</b>
@@ -1524,7 +1664,9 @@ function imap_getmailboxes ($imap_stream, $ref, $pattern) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_scanmailbox ($stream_id, $ref, $pattern, $content) {}
+function imap_scanmailbox($stream_id, $ref, $pattern, $content)
+{
+}
 
 /**
  * Alias of <b>imap_lsub</b>
@@ -1535,12 +1677,14 @@ function imap_scanmailbox ($stream_id, $ref, $pattern, $content) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_listsubscribed ($stream_id, $ref, $pattern) {}
+function imap_listsubscribed($stream_id, $ref, $pattern)
+{
+}
 
 /**
  * List all the subscribed mailboxes
  * @link http://php.net/manual/en/function.imap-getsubscribed.php
- * @param resource $imap_stream 
+ * @param resource $imap_stream
  * @param string $ref <p>
  * <i>ref</i> should normally be just the server
  * specification as described in <b>imap_open</b>
@@ -1575,7 +1719,9 @@ function imap_listsubscribed ($stream_id, $ref, $pattern) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_getsubscribed ($imap_stream, $ref, $pattern) {}
+function imap_getsubscribed($imap_stream, $ref, $pattern)
+{
+}
 
 /**
  * (PHP 4, PHP 5)</br>
@@ -1588,7 +1734,9 @@ function imap_getsubscribed ($imap_stream, $ref, $pattern) {}
  * <li>FT_INTERNAL - The return string is in internal format, will not canonicalize to CRLF.</ul><p>
  * @return string body of the specified message
  */
-function imap_fetchtext ($stream, $msg_no, $options = 0) {}
+function imap_fetchtext($stream, $msg_no, $options = 0)
+{
+}
 
 /**
  * Alias of <b>imap_listscan</b>
@@ -1600,7 +1748,9 @@ function imap_fetchtext ($stream, $msg_no, $options = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_scan ($stream_id, $ref, $pattern, $content) {}
+function imap_scan($stream_id, $ref, $pattern, $content)
+{
+}
 
 /**
  * Alias of <b>imap_createmailbox</b>
@@ -1610,7 +1760,9 @@ function imap_scan ($stream_id, $ref, $pattern, $content) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_create ($stream_id, $mailbox) {}
+function imap_create($stream_id, $mailbox)
+{
+}
 
 /**
  * Alias of <b>imap_renamemailbox</b>
@@ -1621,218 +1773,220 @@ function imap_create ($stream_id, $mailbox) {}
  * @since 4.0
  * @since 5.0
  */
-function imap_rename ($stream_id, $old_name, $new_name) {}
+function imap_rename($stream_id, $old_name, $new_name)
+{
+}
 
-define ('NIL', 0);
-define ('IMAP_OPENTIMEOUT', 1);
-define ('IMAP_READTIMEOUT', 2);
-define ('IMAP_WRITETIMEOUT', 3);
-define ('IMAP_CLOSETIMEOUT', 4);
-define ('OP_DEBUG', 1);
+define('NIL', 0);
+define('IMAP_OPENTIMEOUT', 1);
+define('IMAP_READTIMEOUT', 2);
+define('IMAP_WRITETIMEOUT', 3);
+define('IMAP_CLOSETIMEOUT', 4);
+define('OP_DEBUG', 1);
 
 /**
  * Open mailbox read-only
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('OP_READONLY', 2);
+define('OP_READONLY', 2);
 
 /**
- * Don't use or update a .newsrc for news 
+ * Don't use or update a .newsrc for news
  * (NNTP only)
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('OP_ANONYMOUS', 4);
-define ('OP_SHORTCACHE', 8);
-define ('OP_SILENT', 16);
-define ('OP_PROTOTYPE', 32);
+define('OP_ANONYMOUS', 4);
+define('OP_SHORTCACHE', 8);
+define('OP_SILENT', 16);
+define('OP_PROTOTYPE', 32);
 
 /**
  * For IMAP and NNTP
  * names, open a connection but don't open a mailbox.
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('OP_HALFOPEN', 64);
-define ('OP_EXPUNGE', 128);
-define ('OP_SECURE', 256);
+define('OP_HALFOPEN', 64);
+define('OP_EXPUNGE', 128);
+define('OP_SECURE', 256);
 
 /**
  * silently expunge the mailbox before closing when
  * calling <b>imap_close</b>
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('CL_EXPUNGE', 32768);
+define('CL_EXPUNGE', 32768);
 
 /**
  * The parameter is a UID
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('FT_UID', 1);
+define('FT_UID', 1);
 
 /**
  * Do not set the \Seen flag if not already set
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('FT_PEEK', 2);
-define ('FT_NOT', 4);
+define('FT_PEEK', 2);
+define('FT_NOT', 4);
 
 /**
  * The return string is in internal format, will not canonicalize to CRLF.
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('FT_INTERNAL', 8);
-define ('FT_PREFETCHTEXT', 32);
+define('FT_INTERNAL', 8);
+define('FT_PREFETCHTEXT', 32);
 
 /**
  * The sequence argument contains UIDs instead of sequence numbers
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('ST_UID', 1);
-define ('ST_SILENT', 2);
-define ('ST_SET', 4);
+define('ST_UID', 1);
+define('ST_SILENT', 2);
+define('ST_SET', 4);
 
 /**
  * the sequence numbers contain UIDS
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('CP_UID', 1);
+define('CP_UID', 1);
 
 /**
  * Delete the messages from the current mailbox after copying
  * with <b>imap_mail_copy</b>
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('CP_MOVE', 2);
+define('CP_MOVE', 2);
 
 /**
  * Return UIDs instead of sequence numbers
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SE_UID', 1);
-define ('SE_FREE', 2);
+define('SE_UID', 1);
+define('SE_FREE', 2);
 
 /**
  * Don't prefetch searched messages
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SE_NOPREFETCH', 4);
-define ('SO_FREE', 8);
-define ('SO_NOSERVER', 16);
-define ('SA_MESSAGES', 1);
-define ('SA_RECENT', 2);
-define ('SA_UNSEEN', 4);
-define ('SA_UIDNEXT', 8);
-define ('SA_UIDVALIDITY', 16);
-define ('SA_ALL', 31);
+define('SE_NOPREFETCH', 4);
+define('SO_FREE', 8);
+define('SO_NOSERVER', 16);
+define('SA_MESSAGES', 1);
+define('SA_RECENT', 2);
+define('SA_UNSEEN', 4);
+define('SA_UIDNEXT', 8);
+define('SA_UIDVALIDITY', 16);
+define('SA_ALL', 31);
 
 /**
  * This mailbox has no "children" (there are no
  * mailboxes below this one).
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('LATT_NOINFERIORS', 1);
+define('LATT_NOINFERIORS', 1);
 
 /**
  * This is only a container, not a mailbox - you
  * cannot open it.
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('LATT_NOSELECT', 2);
+define('LATT_NOSELECT', 2);
 
 /**
  * This mailbox is marked. Only used by UW-IMAPD.
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('LATT_MARKED', 4);
+define('LATT_MARKED', 4);
 
 /**
  * This mailbox is not marked. Only used by
  * UW-IMAPD.
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('LATT_UNMARKED', 8);
-define ('LATT_REFERRAL', 16);
-define ('LATT_HASCHILDREN', 32);
-define ('LATT_HASNOCHILDREN', 64);
+define('LATT_UNMARKED', 8);
+define('LATT_REFERRAL', 16);
+define('LATT_HASCHILDREN', 32);
+define('LATT_HASNOCHILDREN', 64);
 
 /**
  * Sort criteria for <b>imap_sort</b>:
  * message Date
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SORTDATE', 0);
+define('SORTDATE', 0);
 
 /**
  * Sort criteria for <b>imap_sort</b>:
  * arrival date
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SORTARRIVAL', 1);
+define('SORTARRIVAL', 1);
 
 /**
  * Sort criteria for <b>imap_sort</b>:
  * mailbox in first From address
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SORTFROM', 2);
+define('SORTFROM', 2);
 
 /**
  * Sort criteria for <b>imap_sort</b>:
  * message subject
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SORTSUBJECT', 3);
+define('SORTSUBJECT', 3);
 
 /**
  * Sort criteria for <b>imap_sort</b>:
  * mailbox in first To address
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SORTTO', 4);
+define('SORTTO', 4);
 
 /**
  * Sort criteria for <b>imap_sort</b>:
  * mailbox in first cc address
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SORTCC', 5);
+define('SORTCC', 5);
 
 /**
  * Sort criteria for <b>imap_sort</b>:
  * size of message in octets
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('SORTSIZE', 6);
-define ('TYPETEXT', 0);
-define ('TYPEMULTIPART', 1);
-define ('TYPEMESSAGE', 2);
-define ('TYPEAPPLICATION', 3);
-define ('TYPEAUDIO', 4);
-define ('TYPEIMAGE', 5);
-define ('TYPEVIDEO', 6);
-define ('TYPEMODEL', 7);
-define ('TYPEOTHER', 8);
-define ('ENC7BIT', 0);
-define ('ENC8BIT', 1);
-define ('ENCBINARY', 2);
-define ('ENCBASE64', 3);
-define ('ENCQUOTEDPRINTABLE', 4);
-define ('ENCOTHER', 5);
+define('SORTSIZE', 6);
+define('TYPETEXT', 0);
+define('TYPEMULTIPART', 1);
+define('TYPEMESSAGE', 2);
+define('TYPEAPPLICATION', 3);
+define('TYPEAUDIO', 4);
+define('TYPEIMAGE', 5);
+define('TYPEVIDEO', 6);
+define('TYPEMODEL', 7);
+define('TYPEOTHER', 8);
+define('ENC7BIT', 0);
+define('ENC8BIT', 1);
+define('ENCBINARY', 2);
+define('ENCBASE64', 3);
+define('ENCQUOTEDPRINTABLE', 4);
+define('ENCOTHER', 5);
 
 /**
  * Garbage collector, clear message cache elements.
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('IMAP_GC_ELT', 1);
+define('IMAP_GC_ELT', 1);
 
 /**
  * Garbage collector, clear envelopes and bodies.
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('IMAP_GC_ENV', 2);
+define('IMAP_GC_ENV', 2);
 
 /**
  * Garbage collector, clear texts.
  * @link http://php.net/manual/en/imap.constants.php
  */
-define ('IMAP_GC_TEXTS', 4);
+define('IMAP_GC_TEXTS', 4);
 

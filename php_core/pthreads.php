@@ -64,7 +64,8 @@ define('PTHREADS_ALLOW_HEADERS', 16777216);
  * including the management of references in the way required by pthreads.
  * @link http://www.php.net/manual/en/class.pool.php
  */
-class Pool {
+class Pool
+{
     /**
      * Maximum number of Workers this Pool can use
      * @var integer
@@ -110,7 +111,9 @@ class Pool {
      * @param array $ctor <p>An array of arguments to be passed to new Workers</p>
      * @return Pool <p>the new Pool</p>
      */
-    public function __construct( $size, $class, $ctor=[] ) {}
+    public function __construct($size, $class, $ctor = [])
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -120,7 +123,9 @@ class Pool {
      * @param Callable $collector
      * @return void
      */
-    public function collect( $collector ) {}
+    public function collect($collector)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -129,7 +134,9 @@ class Pool {
      * @param integer $size <p>The maximum number of Workers this Pool can create</p>
      * @return void
      */
-    public function resize( $size ) {}
+    public function resize($size)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -137,7 +144,9 @@ class Pool {
      * @link http://www.php.net/manual/en/pool.shutdown.php
      * @return void
      */
-    public function shutdown() {}
+    public function shutdown()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -146,7 +155,9 @@ class Pool {
      * @param Threaded $task
      * @return integer <p>the identifier of the Worker executing the object</p>
      */
-    public function submit( $task ) {}
+    public function submit($task)
+    {
+    }
 
     /**
      * Submit the object to the specified Worker in the Pool
@@ -155,7 +166,9 @@ class Pool {
      * @param Threaded $task <p>The task for execution</p>
      * @return integer <p>the identifier of the Worker that accepted the object</p>
      */
-    public function submitTo( $worker, $task ) {}
+    public function submitTo($worker, $task)
+    {
+    }
 }
 
 /**
@@ -164,7 +177,8 @@ class Pool {
  * useful interfaces.
  * @link http://www.php.net/manual/en/class.threaded.php
  */
-class Threaded implements Traversable, Countable, ArrayAccess {
+class Threaded implements Traversable, Countable, ArrayAccess
+{
     /**
      * Worker object in which this Threaded is being executed
      * @var Worker
@@ -180,7 +194,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @param boolean $preserve <p>Preserve the keys of members, by default false</p>
      * @return array <p>An array of items from the objects property table</p>
      */
-    public function chunk( $size, $preserve ) {}
+    public function chunk($size, $preserve)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -188,7 +204,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.count.php
      * @return int <p>Returns the number of properties for this object</p>
      */
-    public function count() {}
+    public function count()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -196,7 +214,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.getterminationinfo.php
      * @return array <p>array containing the termination conditions of the referenced object</p>
      */
-    public function getTerminationInfo() {}
+    public function getTerminationInfo()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -204,7 +224,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.isrunning.php
      * @return boolean
      */
-    public function isRunning() {}
+    public function isRunning()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -213,7 +235,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.isterminated.php
      * @return boolean
      */
-    public function isTerminated() {}
+    public function isTerminated()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -221,7 +245,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.iswaiting.php
      * @return boolean <p>A boolean indication of state</p>
      */
-    public function isWaiting() {}
+    public function isWaiting()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -230,7 +256,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.lock.php
      * @return boolean
      */
-    public function lock() {}
+    public function lock()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -240,7 +268,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @var mixed $overwrite [optional]
      * @return boolean
      */
-    public function merge( $from, $overwrite = null ) {}
+    public function merge($from, $overwrite = null)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -248,7 +278,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.notify.php
      * @return boolean
      */
-    public function notify() {}
+    public function notify()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -256,7 +288,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.pop.php
      * @return boolean
      */
-    public function pop() {}
+    public function pop()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -265,7 +299,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.run.php
      * @return void
      */
-    public function run() {}
+    public function run()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -273,7 +309,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.shift.php
      * @return boolean
      */
-    public function shift() {}
+    public function shift()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -284,7 +322,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @param mixed $_ [optional]
      * @return mixed
      */
-    public function synchronized( $block, $_ = null ) {}
+    public function synchronized($block, $_ = null)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -292,7 +332,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/threaded.unlock.php
      * @return boolean
      */
-    public function unlock() {}
+    public function unlock()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -302,7 +344,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @param int $timeout [optional]
      * @return boolean
      */
-    public function wait( $timeout = 0 ) {}
+    public function wait($timeout = 0)
+    {
+    }
 
 
     /**
@@ -317,7 +361,8 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * The return value will be casted to boolean if non-boolean was returned.
      * @since 5.0.0
      */
-    public function offsetExists($offset) {
+    public function offsetExists($offset)
+    {
     }
 
     /**
@@ -329,7 +374,8 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @return mixed Can return all value types.
      * @since 5.0.0
      */
-    public function offsetGet($offset) {
+    public function offsetGet($offset)
+    {
     }
 
     /**
@@ -344,7 +390,8 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @return void
      * @since 5.0.0
      */
-    public function offsetSet($offset, $value) {
+    public function offsetSet($offset, $value)
+    {
     }
 
     /**
@@ -356,10 +403,9 @@ class Threaded implements Traversable, Countable, ArrayAccess {
      * @return void
      * @since 5.0.0
      */
-    public function offsetUnset($offset) {
+    public function offsetUnset($offset)
+    {
     }
-
-
 
 
 }
@@ -369,7 +415,8 @@ class Threaded implements Traversable, Countable, ArrayAccess {
  * version 2.0.0
  * @link http://www.php.net/manual/en/class.threaded.php
  */
-class Stackable extends Threaded implements Traversable, Countable, ArrayAccess {
+class Stackable extends Threaded implements Traversable, Countable, ArrayAccess
+{
 
 }
 
@@ -380,14 +427,17 @@ class Stackable extends Threaded implements Traversable, Countable, ArrayAccess 
  * the creating Thread at the approriate time.
  * @link http://www.php.net/manual/en/class.thread.php
  */
-class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
+class Thread extends Threaded implements Traversable, Countable, ArrayAccess
+{
     /**
      * (PECL pthreads &gt;= 2.0.0)
      * Detaches the referenced Thread from the calling context, dangerously!
      * @link http://www.php.net/manual/en/thread.detach.php
      * @return void
      */
-    public function detach() {}
+    public function detach()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -395,7 +445,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.getcreatorid.php
      * @return int <p>A numeric identity</p>
      */
-    public function getCreatorId() {}
+    public function getCreatorId()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -403,7 +455,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.getcurrentthread.php
      * @return Thread <p>An object representing the currently executing Thread</p>
      */
-    public static function getCurrentThread() {}
+    public static function getCurrentThread()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -411,7 +465,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.getcurrentthreadid.php
      * @return int <p>A numeric identity</p>
      */
-    public static function getCurrentThreadId() {}
+    public static function getCurrentThreadId()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -419,7 +475,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.getthreadid.php
      * @return int <p>A numeric identity</p>
      */
-    public function getThreadId() {}
+    public function getThreadId()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.1)
@@ -427,7 +485,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.globally.php
      * @return mixed <p>The return value of the Callable</p>
      */
-    public static function globally() {}
+    public static function globally()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -435,7 +495,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.isjoined.php
      * @return boolean <p>A boolean indication of state</p>
      */
-    public function isJoined() {}
+    public function isJoined()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -443,7 +505,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.isstarted.php
      * @return boolean <p>A boolean indication of state</p>
      */
-    public function isStarted() {}
+    public function isStarted()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -451,7 +515,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.join.php
      * @return boolean <p>A boolean indication of success</p>
      */
-    public function join() {}
+    public function join()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -459,7 +525,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/thread.kill.php
      * @return bool <p>A boolean indication of success</p>
      */
-    public function kill() {}
+    public function kill()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -468,7 +536,9 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
      * @param integer $options [optional] An optional mask of inheritance constants, by default <b>PTHREADS_INHERIT_ALL</b>
      * @return boolean <p>A boolean indication of success</p>
      */
-    public function start( $options = 0 ) {}
+    public function start($options = 0)
+    {
+    }
 
 }
 
@@ -485,14 +555,17 @@ class Thread extends Threaded implements Traversable, Countable, ArrayAccess {
  * objects run method.
  * @link http://www.php.net/manual/en/class.worker.php
  */
-class Worker extends Thread implements Traversable, Countable, ArrayAccess {
+class Worker extends Thread implements Traversable, Countable, ArrayAccess
+{
     /**
      * (PECL pthreads &gt;= 2.0.0)
      * Returns the number of objects waiting to be executed by the referenced Worker
      * @link http://www.php.net/manual/en/worker.getstacked.php
      * @return int <p>An numeric value</p>
      */
-    public function getStacked() {}
+    public function getStacked()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -500,7 +573,9 @@ class Worker extends Thread implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/worker.isshutdown.php
      * @return boolean <p>A boolean indication of state</p>
      */
-    public function isShutdown() {}
+    public function isShutdown()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -508,7 +583,9 @@ class Worker extends Thread implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/worker.isworking.php
      * @return boolean <p>A boolean indication of state</p>
      */
-    public function isWorking() {}
+    public function isWorking()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -516,7 +593,9 @@ class Worker extends Thread implements Traversable, Countable, ArrayAccess {
      * @link http://www.php.net/manual/en/worker.shutdown.php
      * @return boolean
      */
-    public function shutdown() {}
+    public function shutdown()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -525,7 +604,9 @@ class Worker extends Thread implements Traversable, Countable, ArrayAccess {
      * @param Threaded $work <p>Threaded object to be executed by the referenced Worker</p>
      * @return int <p>The new length of the stack</p>
      */
-    public function stack( &$work ) {}
+    public function stack(&$work)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -535,7 +616,9 @@ class Worker extends Thread implements Traversable, Countable, ArrayAccess {
      * @param Threaded $work [optional] <p>Threaded object previously stacked onto Worker</p>
      * @return int <p>The new length of the stack</p>
      */
-    public function unstack( &$work = null ) {}
+    public function unstack(&$work = null)
+    {
+    }
 
 }
 
@@ -544,14 +627,17 @@ class Worker extends Thread implements Traversable, Countable, ArrayAccess {
  * Mutex functionality.
  * @link http://www.php.net/manual/en/class.mutex.php
  */
-class Mutex {
+class Mutex
+{
     /**
      * Create, and optionally lock a new Mutex for the caller
      * @link http://www.php.net/manual/en/mutex.create.php
      * @param boolean $lock [optional] <p>Setting lock to true will lock the Mutex for the caller before returning the handle</p>
      * @return int <p>A newly created and optionally locked Mutex handle</p>
      */
-    final public static function create ( $lock = false ) {}
+    final public static function create($lock = false)
+    {
+    }
 
     /**
      * Destroying Mutex handles must be carried out explicitly by the programmer when
@@ -562,7 +648,9 @@ class Mutex {
      * {@see Mutex::destroy()} is called.</p>
      * @return boolean <p>A boolean indication of success.</p>
      */
-    final public static function destroy( $mutex ) {}
+    final public static function destroy($mutex)
+    {
+    }
 
     /**
      * Attempt to lock the Mutex for the caller.<br/>
@@ -573,7 +661,9 @@ class Mutex {
      * {@see Mutex::create()}.</p>
      * @return boolean <p>A boolean indication of success.</p>
      */
-    final public static function lock( $mutex ) {}
+    final public static function lock($mutex)
+    {
+    }
 
     /**
      * Attempt to lock the Mutex for the caller without blocking if the Mutex is
@@ -583,7 +673,9 @@ class Mutex {
      * {@see Mutex::create()}.</p>
      * @return boolean <p>A boolean indication of success.</p>
      */
-    final public static function trylock( $mutex ) {}
+    final public static function trylock($mutex)
+    {
+    }
 
     /**
      * Attempts to unlock the Mutex for the caller, optionally destroying the Mutex
@@ -595,7 +687,9 @@ class Mutex {
      * <p>When true pthreads will destroy the Mutex after a successful unlock.</p>
      * @return boolean <p>A boolean indication of success.</p>
      */
-    final public static function unlock( $mutex, $destroy = false ) {}
+    final public static function unlock($mutex, $destroy = false)
+    {
+    }
 }
 
 /**
@@ -603,7 +697,8 @@ class Mutex {
  * Condition Variables.
  * @link http://www.php.net/manual/en/class.cond.php
  */
-class Cond {
+class Cond
+{
     /**
      * (PECL pthreads &gt;= 2.0.0)
      * Broadcast to all Threads blocking on a call to Cond::wait().
@@ -612,7 +707,9 @@ class Cond {
      * {@see Cond::create()}</p>
      * @return boolean <p>A boolean indication of success.</p>
      */
-    final public static function broadcast( $condition ) {}
+    final public static function broadcast($condition)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -620,7 +717,9 @@ class Cond {
      * @link http://www.php.net/manual/en/cond.create.php
      * @return int <p>A handle to a Condition Variable</p>
      */
-    final public static function create() {}
+    final public static function create()
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -632,7 +731,9 @@ class Cond {
      * {@see Cond::create()}</p>
      * @return boolean <p>A boolean indication of success.</p>
      */
-    final public static function destroy( $condition ) {}
+    final public static function destroy($condition)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -642,7 +743,9 @@ class Cond {
      * {@see Cond::create()}</p>
      * @return boolean <p>A boolean indication of success.</p>
      */
-    final public static function signal( $condition ) {}
+    final public static function signal($condition)
+    {
+    }
 
     /**
      * (PECL pthreads &gt;= 2.0.0)
@@ -656,5 +759,7 @@ class Cond {
      * @param int $timeout [optional] <p>An optional timeout, in microseconds ( millionths of a second ).</p>
      * @return boolean <p>A boolean indication of success.</p>
      */
-    final public static function wait( $condition, $mutex, $timeout = 0 ) {}
+    final public static function wait($condition, $mutex, $timeout = 0)
+    {
+    }
 }

@@ -88,7 +88,9 @@ define('APC_ITER_ALL', -1);
  *
  * @return bool Returns TRUE always.
  */
-function apcu_clear_cache(){}
+function apcu_clear_cache()
+{
+}
 
 /**
  * Retrieves APCu Shared Memory Allocation information
@@ -98,7 +100,9 @@ function apcu_clear_cache(){}
  *
  * @return array|bool Array of Shared Memory Allocation data; FALSE on failure.
  */
-function apcu_sma_info($limited = false){}
+function apcu_sma_info($limited = false)
+{
+}
 
 /**
  * Cache a variable in the data store
@@ -113,7 +117,9 @@ function apcu_sma_info($limited = false){}
  * or otherwise fails to exist in the cache (clear, restart, etc.).
  * @return bool|array Returns TRUE on success or FALSE on failure | array with error keys.
  */
-function apcu_store($key, $var, $ttl = 0){}
+function apcu_store($key, $var, $ttl = 0)
+{
+}
 
 /**
  * Fetch a stored variable from the cache
@@ -123,7 +129,9 @@ function apcu_store($key, $var, $ttl = 0){}
  * @param bool $success Set to TRUE in success and FALSE in failure.
  * @return mixed The stored variable or array of variables on success; FALSE on failure.
  */
-function apcu_fetch($key, &$success = null){}
+function apcu_fetch($key, &$success = null)
+{
+}
 
 /**
  * Removes a stored variable from the cache
@@ -131,7 +139,9 @@ function apcu_fetch($key, &$success = null){}
  * @param string|string[]|APCUIterator $key The key used to store the value (with apcu_store()).
  * @return bool|string[] Returns TRUE on success or FALSE on failure. For array of keys returns list of failed keys.
  */
-function apcu_delete($key){}
+function apcu_delete($key)
+{
+}
 
 /**
  * Caches a variable in the data store, only if it's not already stored
@@ -147,7 +157,9 @@ function apcu_delete($key){}
  * or otherwise fails to exist in the cache (clear, restart, etc.).
  * @return bool
  */
-function apcu_add($key, $var, $ttl = 0){}
+function apcu_add($key, $var, $ttl = 0)
+{
+}
 
 /**
  * Checks if APCu key exists
@@ -157,7 +169,9 @@ function apcu_add($key, $var, $ttl = 0){}
  * Or if an array was passed to keys, then an array is returned that
  * contains all existing keys, or an empty array if none exist.
  */
-function apcu_exists($keys){}
+function apcu_exists($keys)
+{
+}
 
 /**
  * Increase a stored number
@@ -167,7 +181,9 @@ function apcu_exists($keys){}
  * @param bool $success Optionally pass the success or fail boolean value to this referenced variable.
  * @return int|bool Returns the current value of key's value on success, or FALSE on failure.
  */
-function apcu_inc($key, $step = 1, &$success = null){}
+function apcu_inc($key, $step = 1, &$success = null)
+{
+}
 
 /**
  * Decrease a stored number
@@ -177,7 +193,9 @@ function apcu_inc($key, $step = 1, &$success = null){}
  * @param bool $success Optionally pass the success or fail boolean value to this referenced variable.
  * @return int|bool Returns the current value of key's value on success, or FALSE on failure.
  */
-function apcu_dec($key, $step = 1, &$success = null){}
+function apcu_dec($key, $step = 1, &$success = null)
+{
+}
 
 /**
  * Updates an old value with a new value
@@ -191,7 +209,9 @@ function apcu_dec($key, $step = 1, &$success = null){}
  * @param int $new The new value to update to.
  * @return bool Returns TRUE on success or FALSE on failure.
  */
-function apcu_cas($key, $old, $new){}
+function apcu_cas($key, $old, $new)
+{
+}
 
 /**
  * Atomically fetch or generate a cache entry
@@ -221,7 +241,9 @@ function apcu_cas($key, $old, $new){}
  * @return mixed Returns the cached value
  * @since APCu 5.1.0
  */
-function apcu_entry($key, callable $generator, $ttl = 0){}
+function apcu_entry($key, callable $generator, $ttl = 0)
+{
+}
 
 /**
  * The APCUIterator class
@@ -237,70 +259,88 @@ function apcu_entry($key, callable $generator, $ttl = 0){}
  */
 class APCUIterator implements Iterator
 {
-	/**
-	 * Constructs an APCUIterator iterator object
-	 * @link http://php.net/manual/en/apcuiterator.construct.php
-	 * @param string|string[]|null $search A PCRE regular expression that matches against APCu key names,
-	 * either as a string for a single regular expression, or as an array of regular expressions.
-	 * Or, optionally pass in NULL to skip the search.
-	 * @param int $format The desired format, as configured with one ore more of the APC_ITER_* constants.
-	 * @param int $chunk_size The chunk size. Must be a value greater than 0. The default value is 100.
-	 * @param int $list The type to list. Either pass in APC_LIST_ACTIVE  or APC_LIST_DELETED.
-	 */
-	public function __construct($search = null, $format = APC_ITER_ALL, $chunk_size = 100, $list = APC_LIST_ACTIVE){}
+    /**
+     * Constructs an APCUIterator iterator object
+     * @link http://php.net/manual/en/apcuiterator.construct.php
+     * @param string|string[]|null $search A PCRE regular expression that matches against APCu key names,
+     * either as a string for a single regular expression, or as an array of regular expressions.
+     * Or, optionally pass in NULL to skip the search.
+     * @param int $format The desired format, as configured with one ore more of the APC_ITER_* constants.
+     * @param int $chunk_size The chunk size. Must be a value greater than 0. The default value is 100.
+     * @param int $list The type to list. Either pass in APC_LIST_ACTIVE  or APC_LIST_DELETED.
+     */
+    public function __construct($search = null, $format = APC_ITER_ALL, $chunk_size = 100, $list = APC_LIST_ACTIVE)
+    {
+    }
 
-	/**
-	 * Rewinds back the iterator to the first element
-	 * @link http://php.net/manual/en/apcuiterator.rewind.php
-	 */
-	public function rewind(){}
+    /**
+     * Rewinds back the iterator to the first element
+     * @link http://php.net/manual/en/apcuiterator.rewind.php
+     */
+    public function rewind()
+    {
+    }
 
-	/**
-	 * Checks if the current iterator position is valid
-	 * @link http://php.net/manual/en/apcuiterator.valid.php
-	 * @return bool Returns TRUE if the current iterator position is valid, otherwise FALSE.
-	 */
-	public function valid(){}
+    /**
+     * Checks if the current iterator position is valid
+     * @link http://php.net/manual/en/apcuiterator.valid.php
+     * @return bool Returns TRUE if the current iterator position is valid, otherwise FALSE.
+     */
+    public function valid()
+    {
+    }
 
-	/**
-	 * Gets the current item from the APCUIterator stack
-	 * @link http://php.net/manual/en/apcuiterator.current.php
-	 * @return mixed Returns the current item on success, or FALSE if no more items or exist, or on failure.
-	 */
-	public function current(){}
+    /**
+     * Gets the current item from the APCUIterator stack
+     * @link http://php.net/manual/en/apcuiterator.current.php
+     * @return mixed Returns the current item on success, or FALSE if no more items or exist, or on failure.
+     */
+    public function current()
+    {
+    }
 
-	/**
-	 * Gets the current iterator key
-	 * @link http://php.net/manual/en/apcuiterator.key.php
-	 * @return string|int|bool Returns the key on success, or FALSE upon failure.
-	 */
-	public function key(){}
+    /**
+     * Gets the current iterator key
+     * @link http://php.net/manual/en/apcuiterator.key.php
+     * @return string|int|bool Returns the key on success, or FALSE upon failure.
+     */
+    public function key()
+    {
+    }
 
-	/**
-	 * Moves the iterator pointer to the next element
-	 * @link http://php.net/manual/en/apcuiterator.next.php
-	 * @return bool Returns TRUE on success or FALSE on failure.
-	 */
-	public function next(){}
+    /**
+     * Moves the iterator pointer to the next element
+     * @link http://php.net/manual/en/apcuiterator.next.php
+     * @return bool Returns TRUE on success or FALSE on failure.
+     */
+    public function next()
+    {
+    }
 
-	/**
-	 * Gets the total number of cache hits
-	 * @link http://php.net/manual/en/apcuiterator.gettotalhits.php
-	 * @return int|bool The number of hits on success, or FALSE on failure.
-	 */
-	public function getTotalHits(){}
+    /**
+     * Gets the total number of cache hits
+     * @link http://php.net/manual/en/apcuiterator.gettotalhits.php
+     * @return int|bool The number of hits on success, or FALSE on failure.
+     */
+    public function getTotalHits()
+    {
+    }
 
-	/**
-	 * Gets the total cache size
-	 * @link http://php.net/manual/en/apcuiterator.gettotalsize.php
-	 * @return int|bool The total cache size.
-	 */
-	public function getTotalSize(){}
+    /**
+     * Gets the total cache size
+     * @link http://php.net/manual/en/apcuiterator.gettotalsize.php
+     * @return int|bool The total cache size.
+     */
+    public function getTotalSize()
+    {
+    }
 
-	/**
-	 * Get the total count
-	 * @link http://php.net/manual/en/apcuiterator.gettotalcount.php
-	 * @return int|bool The total count.
-	 */
-	public function getTotalCount(){}
+    /**
+     * Get the total count
+     * @link http://php.net/manual/en/apcuiterator.gettotalcount.php
+     * @return int|bool The total count.
+     */
+    public function getTotalCount()
+    {
+    }
 }

@@ -10,7 +10,7 @@
  * database file on the server it resides on. If the server is not local,
  * it must be prefixed with either 'hostname:' (TCP/IP), '//hostname/'
  * (NetBEUI) or 'hostname@' (IPX/SPX), depending on the connection
- * protocol used. 
+ * protocol used.
  * </p>
  * @param string $username [optional] <p>
  * The user name. Can be set with the
@@ -44,7 +44,17 @@
  * @since 4.0
  * @since 5.0
  */
-function ibase_connect ($database = null, $username = null, $password = null, $charset = null, $buffers = null, $dialect = null, $role = null, $sync = null) {}
+function ibase_connect(
+    $database = null,
+    $username = null,
+    $password = null,
+    $charset = null,
+    $buffers = null,
+    $dialect = null,
+    $role = null,
+    $sync = null
+) {
+}
 
 /**
  * Open a persistent connection to an InterBase database
@@ -54,7 +64,7 @@ function ibase_connect ($database = null, $username = null, $password = null, $c
  * database file on the server it resides on. If the server is not local,
  * it must be prefixed with either 'hostname:' (TCP/IP), '//hostname/'
  * (NetBEUI) or 'hostname@' (IPX/SPX), depending on the connection
- * protocol used. 
+ * protocol used.
  * </p>
  * @param string $username [optional] <p>
  * The user name. Can be set with the
@@ -88,7 +98,17 @@ function ibase_connect ($database = null, $username = null, $password = null, $c
  * @since 4.0
  * @since 5.0
  */
-function ibase_pconnect ($database = null, $username = null, $password = null, $charset = null, $buffers = null, $dialect = null, $role = null, $sync = null) {}
+function ibase_pconnect(
+    $database = null,
+    $username = null,
+    $password = null,
+    $charset = null,
+    $buffers = null,
+    $dialect = null,
+    $role = null,
+    $sync = null
+) {
+}
 
 /**
  * Close a connection to an InterBase database
@@ -102,7 +122,9 @@ function ibase_pconnect ($database = null, $username = null, $password = null, $
  * @since 4.0
  * @since 5.0
  */
-function ibase_close ($connection_id = null) {}
+function ibase_close($connection_id = null)
+{
+}
 
 /**
  * Drops a database
@@ -114,7 +136,9 @@ function ibase_close ($connection_id = null) {}
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function ibase_drop_db ($connection = null) {}
+function ibase_drop_db($connection = null)
+{
+}
 
 /**
  * Execute a query on an InterBase database
@@ -141,7 +165,9 @@ function ibase_drop_db ($connection = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_query ($link_identifier = null, $query, $bind_args = null) {}
+function ibase_query($link_identifier = null, $query, $bind_args = null)
+{
+}
 
 /**
  * Fetch a row from an InterBase database
@@ -163,7 +189,9 @@ function ibase_query ($link_identifier = null, $query, $bind_args = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_fetch_row ($result_identifier, $fetch_flag = null) {}
+function ibase_fetch_row($result_identifier, $fetch_flag = null)
+{
+}
 
 /**
  * Fetch a result row from a query as an associative array
@@ -185,7 +213,9 @@ function ibase_fetch_row ($result_identifier, $fetch_flag = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function ibase_fetch_assoc ($result, $fetch_flag = null) {}
+function ibase_fetch_assoc($result, $fetch_flag = null)
+{
+}
 
 /**
  * Get an object from a InterBase database
@@ -207,7 +237,9 @@ function ibase_fetch_assoc ($result, $fetch_flag = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_fetch_object ($result_id, $fetch_flag = null) {}
+function ibase_fetch_object($result_id, $fetch_flag = null)
+{
+}
 
 /**
  * Free a result set
@@ -220,7 +252,9 @@ function ibase_fetch_object ($result_id, $fetch_flag = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_free_result ($result_identifier) {}
+function ibase_free_result($result_identifier)
+{
+}
 
 /**
  * Assigns a name to a result set
@@ -234,7 +268,9 @@ function ibase_free_result ($result_identifier) {}
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function ibase_name_result ($result, $name) {}
+function ibase_name_result($result, $name)
+{
+}
 
 /**
  * Prepare a query for later binding of parameter placeholders and execution
@@ -246,7 +282,9 @@ function ibase_name_result ($result, $name) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_prepare ($query) {}
+function ibase_prepare($query)
+{
+}
 
 /**
  * Execute a previously prepared query
@@ -256,7 +294,7 @@ function ibase_prepare ($query) {}
  * </p>
  * @param mixed $bind_arg [optional] <p>
  * </p>
- * @param mixed $_ [optional] 
+ * @param mixed $_ [optional]
  * @return resource If the query raises an error, returns false. If it is successful and
  * there is a (possibly empty) result set (such as with a SELECT query),
  * returns a result identifier. If the query was successful and there were
@@ -270,7 +308,9 @@ function ibase_prepare ($query) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_execute ($query, $bind_arg = null, $_ = null) {}
+function ibase_execute($query, $bind_arg = null, $_ = null)
+{
+}
 
 /**
  * Free memory allocated by a prepared query
@@ -282,18 +322,22 @@ function ibase_execute ($query, $bind_arg = null, $_ = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_free_query ($query) {}
+function ibase_free_query($query)
+{
+}
 
 /**
  * Increments the named generator and returns its new value
  * @link http://php.net/manual/en/function.ibase-gen-id.php
- * @param string $generator 
- * @param int $increment [optional] 
- * @param resource $link_identifier [optional] 
+ * @param string $generator
+ * @param int $increment [optional]
+ * @param resource $link_identifier [optional]
  * @return mixed new generator value as integer, or as string if the value is too big.
  * @since 5.0
  */
-function ibase_gen_id ($generator, $increment = null, $link_identifier = null) {}
+function ibase_gen_id($generator, $increment = null, $link_identifier = null)
+{
+}
 
 /**
  * Get the number of fields in a result set
@@ -305,7 +349,9 @@ function ibase_gen_id ($generator, $increment = null, $link_identifier = null) {
  * @since 4.0
  * @since 5.0
  */
-function ibase_num_fields ($result_id) {}
+function ibase_num_fields($result_id)
+{
+}
 
 /**
  * Return the number of parameters in a prepared query
@@ -316,7 +362,9 @@ function ibase_num_fields ($result_id) {}
  * @return int the number of parameters as an integer.
  * @since 5.0
  */
-function ibase_num_params ($query) {}
+function ibase_num_params($query)
+{
+}
 
 /**
  * Return the number of rows that were affected by the previous query
@@ -328,7 +376,9 @@ function ibase_num_params ($query) {}
  * @return int the number of rows as an integer.
  * @since 5.0
  */
-function ibase_affected_rows ($link_identifier = null) {}
+function ibase_affected_rows($link_identifier = null)
+{
+}
 
 /**
  * Get information about a field
@@ -345,7 +395,9 @@ function ibase_affected_rows ($link_identifier = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_field_info ($result, $field_number) {}
+function ibase_field_info($result, $field_number)
+{
+}
 
 /**
  * Return information about a parameter in a prepared query
@@ -361,7 +413,9 @@ function ibase_field_info ($result, $field_number) {}
  * length and type.
  * @since 5.0
  */
-function ibase_param_info ($query, $param_number) {}
+function ibase_param_info($query, $param_number)
+{
+}
 
 /**
  * Begin a transaction
@@ -370,12 +424,12 @@ function ibase_param_info ($query, $param_number) {}
  * trans_args can be a combination of
  * IBASE_READ,
  * IBASE_WRITE,
- * IBASE_COMMITTED, 
+ * IBASE_COMMITTED,
  * IBASE_CONSISTENCY,
- * IBASE_CONCURRENCY, 
- * IBASE_REC_VERSION, 
+ * IBASE_CONCURRENCY,
+ * IBASE_REC_VERSION,
  * IBASE_REC_NO_VERSION,
- * IBASE_WAIT and 
+ * IBASE_WAIT and
  * IBASE_NOWAIT.
  * </p>
  * @param resource $link_identifier [optional] <p>
@@ -386,7 +440,9 @@ function ibase_param_info ($query, $param_number) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_trans ($trans_args = null, $link_identifier = null) {}
+function ibase_trans($trans_args = null, $link_identifier = null)
+{
+}
 
 /**
  * Commit a transaction
@@ -402,7 +458,9 @@ function ibase_trans ($trans_args = null, $link_identifier = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_commit ($link_or_trans_identifier = null) {}
+function ibase_commit($link_or_trans_identifier = null)
+{
+}
 
 /**
  * Roll back a transaction
@@ -418,7 +476,9 @@ function ibase_commit ($link_or_trans_identifier = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_rollback ($link_or_trans_identifier = null) {}
+function ibase_rollback($link_or_trans_identifier = null)
+{
+}
 
 /**
  * Commit a transaction without closing it
@@ -435,7 +495,9 @@ function ibase_rollback ($link_or_trans_identifier = null) {}
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function ibase_commit_ret ($link_or_trans_identifier = null) {}
+function ibase_commit_ret($link_or_trans_identifier = null)
+{
+}
 
 /**
  * Roll back a transaction without closing it
@@ -452,7 +514,9 @@ function ibase_commit_ret ($link_or_trans_identifier = null) {}
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function ibase_rollback_ret ($link_or_trans_identifier = null) {}
+function ibase_rollback_ret($link_or_trans_identifier = null)
+{
+}
 
 /**
  * Return blob length and other useful info
@@ -470,7 +534,9 @@ function ibase_rollback_ret ($link_or_trans_identifier = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_info ($link_identifier, $blob_id) {}
+function ibase_blob_info($link_identifier, $blob_id)
+{
+}
 
 /**
  * Create a new blob for adding data
@@ -484,7 +550,9 @@ function ibase_blob_info ($link_identifier, $blob_id) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_create ($link_identifier = null) {}
+function ibase_blob_create($link_identifier = null)
+{
+}
 
 /**
  * Add data into a newly created blob
@@ -495,11 +563,13 @@ function ibase_blob_create ($link_identifier = null) {}
  * @param string $data <p>
  * The data to be added.
  * </p>
- * @return void 
+ * @return void
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_add ($blob_handle, $data) {}
+function ibase_blob_add($blob_handle, $data)
+{
+}
 
 /**
  * Cancel creating blob
@@ -511,7 +581,9 @@ function ibase_blob_add ($blob_handle, $data) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_cancel ($blob_handle) {}
+function ibase_blob_cancel($blob_handle)
+{
+}
 
 /**
  * Close blob
@@ -527,7 +599,9 @@ function ibase_blob_cancel ($blob_handle) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_close ($blob_handle) {}
+function ibase_blob_close($blob_handle)
+{
+}
 
 /**
  * Open blob for retrieving data parts
@@ -539,12 +613,14 @@ function ibase_blob_close ($blob_handle) {}
  * @param string $blob_id <p>
  * A BLOB id.
  * </p>
- * @return resource a BLOB handle for later use with 
+ * @return resource a BLOB handle for later use with
  * ibase_blob_get or false on failure.
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_open ($link_identifier, $blob_id) {}
+function ibase_blob_open($link_identifier, $blob_id)
+{
+}
 
 /**
  * Get len bytes data from open blob
@@ -560,7 +636,9 @@ function ibase_blob_open ($link_identifier, $blob_id) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_get ($blob_handle, $len) {}
+function ibase_blob_get($blob_handle, $len)
+{
+}
 
 /**
  * Output blob contents to browser
@@ -571,7 +649,9 @@ function ibase_blob_get ($blob_handle, $len) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_echo ($blob_id) {}
+function ibase_blob_echo($blob_id)
+{
+}
 
 /**
  * Create blob, copy file in it, and close it
@@ -587,7 +667,9 @@ function ibase_blob_echo ($blob_id) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_blob_import ($link_identifier, $file_handle) {}
+function ibase_blob_import($link_identifier, $file_handle)
+{
+}
 
 /**
  * Return error messages
@@ -596,7 +678,9 @@ function ibase_blob_import ($link_identifier, $file_handle) {}
  * @since 4.0
  * @since 5.0
  */
-function ibase_errmsg () {}
+function ibase_errmsg()
+{
+}
 
 /**
  * Return an error code
@@ -604,128 +688,162 @@ function ibase_errmsg () {}
  * @return int the error code as an integer, or false if no error occurred.
  * @since 5.0
  */
-function ibase_errcode () {}
+function ibase_errcode()
+{
+}
 
 /**
  * Add a user to a security database (only for IB6 or later)
  * @link http://php.net/manual/en/function.ibase-add-user.php
- * @param resource $service_handle 
- * @param string $user_name 
- * @param string $password 
- * @param string $first_name [optional] 
- * @param string $middle_name [optional] 
- * @param string $last_name [optional] 
+ * @param resource $service_handle
+ * @param string $user_name
+ * @param string $password
+ * @param string $first_name [optional]
+ * @param string $middle_name [optional]
+ * @param string $last_name [optional]
  * @return bool true on success or false on failure.
  * @since 4.2.0
  * @since 5.0
  */
-function ibase_add_user ($service_handle, $user_name, $password, $first_name = null, $middle_name = null, $last_name = null) {}
+function ibase_add_user(
+    $service_handle,
+    $user_name,
+    $password,
+    $first_name = null,
+    $middle_name = null,
+    $last_name = null
+) {
+}
 
 /**
  * Modify a user to a security database (only for IB6 or later)
  * @link http://php.net/manual/en/function.ibase-modify-user.php
- * @param resource $service_handle 
- * @param string $user_name 
- * @param string $password 
- * @param string $first_name [optional] 
- * @param string $middle_name [optional] 
- * @param string $last_name [optional] 
+ * @param resource $service_handle
+ * @param string $user_name
+ * @param string $password
+ * @param string $first_name [optional]
+ * @param string $middle_name [optional]
+ * @param string $last_name [optional]
  * @return bool true on success or false on failure.
  * @since 4.2.0
  * @since 5.0
  */
-function ibase_modify_user ($service_handle, $user_name, $password, $first_name = null, $middle_name = null, $last_name = null) {}
+function ibase_modify_user(
+    $service_handle,
+    $user_name,
+    $password,
+    $first_name = null,
+    $middle_name = null,
+    $last_name = null
+) {
+}
 
 /**
  * Delete a user from a security database (only for IB6 or later)
  * @link http://php.net/manual/en/function.ibase-delete-user.php
- * @param resource $service_handle 
- * @param string $user_name 
+ * @param resource $service_handle
+ * @param string $user_name
  * @return bool true on success or false on failure.
  * @since 4.2.0
  * @since 5.0
  */
-function ibase_delete_user ($service_handle, $user_name) {}
+function ibase_delete_user($service_handle, $user_name)
+{
+}
 
 /**
  * Connect to the service manager
  * @link http://php.net/manual/en/function.ibase-service-attach.php
- * @param string $host 
- * @param string $dba_username 
- * @param string $dba_password 
- * @return resource 
+ * @param string $host
+ * @param string $dba_username
+ * @param string $dba_password
+ * @return resource
  * @since 5.0
  */
-function ibase_service_attach ($host, $dba_username, $dba_password) {}
+function ibase_service_attach($host, $dba_username, $dba_password)
+{
+}
 
 /**
  * Disconnect from the service manager
  * @link http://php.net/manual/en/function.ibase-service-detach.php
- * @param resource $service_handle 
+ * @param resource $service_handle
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function ibase_service_detach ($service_handle) {}
+function ibase_service_detach($service_handle)
+{
+}
 
 /**
  * Initiates a backup task in the service manager and returns immediately
  * @link http://php.net/manual/en/function.ibase-backup.php
- * @param resource $service_handle 
- * @param string $source_db 
- * @param string $dest_file 
- * @param int $options [optional] 
- * @param bool $verbose [optional] 
- * @return mixed 
+ * @param resource $service_handle
+ * @param string $source_db
+ * @param string $dest_file
+ * @param int $options [optional]
+ * @param bool $verbose [optional]
+ * @return mixed
  * @since 5.0
  */
-function ibase_backup ($service_handle, $source_db, $dest_file, $options = null, $verbose = null) {}
+function ibase_backup($service_handle, $source_db, $dest_file, $options = null, $verbose = null)
+{
+}
 
 /**
  * Initiates a restore task in the service manager and returns immediately
  * @link http://php.net/manual/en/function.ibase-restore.php
- * @param resource $service_handle 
- * @param string $source_file 
- * @param string $dest_db 
- * @param int $options [optional] 
- * @param bool $verbose [optional] 
- * @return mixed 
+ * @param resource $service_handle
+ * @param string $source_file
+ * @param string $dest_db
+ * @param int $options [optional]
+ * @param bool $verbose [optional]
+ * @return mixed
  * @since 5.0
  */
-function ibase_restore ($service_handle, $source_file, $dest_db, $options = null, $verbose = null) {}
+function ibase_restore($service_handle, $source_file, $dest_db, $options = null, $verbose = null)
+{
+}
 
 /**
  * Execute a maintenance command on the database server
  * @link http://php.net/manual/en/function.ibase-maintain-db.php
- * @param resource $service_handle 
- * @param string $db 
- * @param int $action 
- * @param int $argument [optional] 
+ * @param resource $service_handle
+ * @param string $db
+ * @param int $action
+ * @param int $argument [optional]
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function ibase_maintain_db ($service_handle, $db, $action, $argument = null) {}
+function ibase_maintain_db($service_handle, $db, $action, $argument = null)
+{
+}
 
 /**
  * Request statistics about a database
  * @link http://php.net/manual/en/function.ibase-db-info.php
- * @param resource $service_handle 
- * @param string $db 
- * @param int $action 
- * @param int $argument [optional] 
- * @return string 
+ * @param resource $service_handle
+ * @param string $db
+ * @param int $action
+ * @param int $argument [optional]
+ * @return string
  * @since 5.0
  */
-function ibase_db_info ($service_handle, $db, $action, $argument = null) {}
+function ibase_db_info($service_handle, $db, $action, $argument = null)
+{
+}
 
 /**
  * Request information about a database server
  * @link http://php.net/manual/en/function.ibase-server-info.php
- * @param resource $service_handle 
- * @param int $action 
- * @return string 
+ * @param resource $service_handle
+ * @param int $action
+ * @return string
  * @since 5.0
  */
-function ibase_server_info ($service_handle, $action) {}
+function ibase_server_info($service_handle, $action)
+{
+}
 
 /**
  * Wait for an event to be posted by the database
@@ -735,11 +853,13 @@ function ibase_server_info ($service_handle, $action) {}
  * </p>
  * @param string $event_name2 [optional] <p>
  * </p>
- * @param string $_ [optional] 
+ * @param string $_ [optional]
  * @return string the name of the event that was posted.
  * @since 5.0
  */
-function ibase_wait_event ($event_name1, $event_name2 = null, $_ = null) {}
+function ibase_wait_event($event_name1, $event_name2 = null, $_ = null)
+{
+}
 
 /**
  * Register a callback function to be called when events are posted
@@ -760,12 +880,14 @@ function ibase_wait_event ($event_name1, $event_name2 = null, $_ = null) {}
  * @param string $event_name2 [optional] <p>
  * At most 15 events allowed.
  * </p>
- * @param string $_ [optional] 
+ * @param string $_ [optional]
  * @return resource The return value is an event resource. This resource can be used to free
  * the event handler using ibase_free_event_handler.
  * @since 5.0
  */
-function ibase_set_event_handler ($event_handler, $event_name1, $event_name2 = null, $_ = null) {}
+function ibase_set_event_handler($event_handler, $event_name1, $event_name2 = null, $_ = null)
+{
+}
 
 /**
  * Cancels a registered event handler
@@ -777,195 +899,293 @@ function ibase_set_event_handler ($event_handler, $event_name1, $event_name2 = n
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function ibase_free_event_handler ($event) {}
+function ibase_free_event_handler($event)
+{
+}
 
-function fbird_connect () {}
+function fbird_connect()
+{
+}
 
-function fbird_pconnect () {}
+function fbird_pconnect()
+{
+}
 
-function fbird_close () {}
+function fbird_close()
+{
+}
 
-function fbird_drop_db () {}
+function fbird_drop_db()
+{
+}
 
-function fbird_query () {}
+function fbird_query()
+{
+}
 
-function fbird_fetch_row () {}
+function fbird_fetch_row()
+{
+}
 
-function fbird_fetch_assoc () {}
+function fbird_fetch_assoc()
+{
+}
 
-function fbird_fetch_object () {}
+function fbird_fetch_object()
+{
+}
 
-function fbird_free_result () {}
+function fbird_free_result()
+{
+}
 
-function fbird_name_result () {}
+function fbird_name_result()
+{
+}
 
-function fbird_prepare () {}
+function fbird_prepare()
+{
+}
 
-function fbird_execute () {}
+function fbird_execute()
+{
+}
 
-function fbird_free_query () {}
+function fbird_free_query()
+{
+}
 
-function fbird_gen_id () {}
+function fbird_gen_id()
+{
+}
 
-function fbird_num_fields () {}
+function fbird_num_fields()
+{
+}
 
-function fbird_num_params () {}
+function fbird_num_params()
+{
+}
 
-function fbird_affected_rows () {}
+function fbird_affected_rows()
+{
+}
 
-function fbird_field_info () {}
+function fbird_field_info()
+{
+}
 
-function fbird_param_info () {}
+function fbird_param_info()
+{
+}
 
-function fbird_trans () {}
+function fbird_trans()
+{
+}
 
-function fbird_commit () {}
+function fbird_commit()
+{
+}
 
-function fbird_rollback () {}
+function fbird_rollback()
+{
+}
 
-function fbird_commit_ret () {}
+function fbird_commit_ret()
+{
+}
 
-function fbird_rollback_ret () {}
+function fbird_rollback_ret()
+{
+}
 
-function fbird_blob_info () {}
+function fbird_blob_info()
+{
+}
 
-function fbird_blob_create () {}
+function fbird_blob_create()
+{
+}
 
-function fbird_blob_add () {}
+function fbird_blob_add()
+{
+}
 
-function fbird_blob_cancel () {}
+function fbird_blob_cancel()
+{
+}
 
-function fbird_blob_close () {}
+function fbird_blob_close()
+{
+}
 
-function fbird_blob_open () {}
+function fbird_blob_open()
+{
+}
 
-function fbird_blob_get () {}
+function fbird_blob_get()
+{
+}
 
-function fbird_blob_echo () {}
+function fbird_blob_echo()
+{
+}
 
-function fbird_blob_import () {}
+function fbird_blob_import()
+{
+}
 
-function fbird_errmsg () {}
+function fbird_errmsg()
+{
+}
 
-function fbird_errcode () {}
+function fbird_errcode()
+{
+}
 
-function fbird_add_user () {}
+function fbird_add_user()
+{
+}
 
-function fbird_modify_user () {}
+function fbird_modify_user()
+{
+}
 
-function fbird_delete_user () {}
+function fbird_delete_user()
+{
+}
 
-function fbird_service_attach () {}
+function fbird_service_attach()
+{
+}
 
-function fbird_service_detach () {}
+function fbird_service_detach()
+{
+}
 
-function fbird_backup () {}
+function fbird_backup()
+{
+}
 
-function fbird_restore () {}
+function fbird_restore()
+{
+}
 
-function fbird_maintain_db () {}
+function fbird_maintain_db()
+{
+}
 
-function fbird_db_info () {}
+function fbird_db_info()
+{
+}
 
-function fbird_server_info () {}
+function fbird_server_info()
+{
+}
 
-function fbird_wait_event () {}
+function fbird_wait_event()
+{
+}
 
-function fbird_set_event_handler () {}
+function fbird_set_event_handler()
+{
+}
 
-function fbird_free_event_handler () {}
+function fbird_free_event_handler()
+{
+}
 
-define ('IBASE_DEFAULT', 0);
-define ('IBASE_CREATE', 0);
-define ('IBASE_TEXT', 1);
-define ('IBASE_FETCH_BLOBS', 1);
-define ('IBASE_FETCH_ARRAYS', 2);
-define ('IBASE_UNIXTIME', 4);
-define ('IBASE_WRITE', 1);
-define ('IBASE_READ', 2);
-define ('IBASE_COMMITTED', 8);
-define ('IBASE_CONSISTENCY', 16);
-define ('IBASE_CONCURRENCY', 4);
-define ('IBASE_REC_VERSION', 64);
-define ('IBASE_REC_NO_VERSION', 32);
-define ('IBASE_NOWAIT', 256);
-define ('IBASE_WAIT', 128);
-define ('IBASE_BKP_IGNORE_CHECKSUMS', 1);
-define ('IBASE_BKP_IGNORE_LIMBO', 2);
-define ('IBASE_BKP_METADATA_ONLY', 4);
-define ('IBASE_BKP_NO_GARBAGE_COLLECT', 8);
-define ('IBASE_BKP_OLD_DESCRIPTIONS', 16);
-define ('IBASE_BKP_NON_TRANSPORTABLE', 32);
+define('IBASE_DEFAULT', 0);
+define('IBASE_CREATE', 0);
+define('IBASE_TEXT', 1);
+define('IBASE_FETCH_BLOBS', 1);
+define('IBASE_FETCH_ARRAYS', 2);
+define('IBASE_UNIXTIME', 4);
+define('IBASE_WRITE', 1);
+define('IBASE_READ', 2);
+define('IBASE_COMMITTED', 8);
+define('IBASE_CONSISTENCY', 16);
+define('IBASE_CONCURRENCY', 4);
+define('IBASE_REC_VERSION', 64);
+define('IBASE_REC_NO_VERSION', 32);
+define('IBASE_NOWAIT', 256);
+define('IBASE_WAIT', 128);
+define('IBASE_BKP_IGNORE_CHECKSUMS', 1);
+define('IBASE_BKP_IGNORE_LIMBO', 2);
+define('IBASE_BKP_METADATA_ONLY', 4);
+define('IBASE_BKP_NO_GARBAGE_COLLECT', 8);
+define('IBASE_BKP_OLD_DESCRIPTIONS', 16);
+define('IBASE_BKP_NON_TRANSPORTABLE', 32);
 
 /**
  * Options to ibase_backup
  * @link http://php.net/manual/en/ibase.constants.php
  */
-define ('IBASE_BKP_CONVERT', 64);
-define ('IBASE_RES_DEACTIVATE_IDX', 256);
-define ('IBASE_RES_NO_SHADOW', 512);
-define ('IBASE_RES_NO_VALIDITY', 1024);
-define ('IBASE_RES_ONE_AT_A_TIME', 2048);
-define ('IBASE_RES_REPLACE', 4096);
-define ('IBASE_RES_CREATE', 8192);
+define('IBASE_BKP_CONVERT', 64);
+define('IBASE_RES_DEACTIVATE_IDX', 256);
+define('IBASE_RES_NO_SHADOW', 512);
+define('IBASE_RES_NO_VALIDITY', 1024);
+define('IBASE_RES_ONE_AT_A_TIME', 2048);
+define('IBASE_RES_REPLACE', 4096);
+define('IBASE_RES_CREATE', 8192);
 
 /**
  * Options to ibase_restore
  * @link http://php.net/manual/en/ibase.constants.php
  */
-define ('IBASE_RES_USE_ALL_SPACE', 16384);
-define ('IBASE_PRP_PAGE_BUFFERS', 5);
-define ('IBASE_PRP_SWEEP_INTERVAL', 6);
-define ('IBASE_PRP_SHUTDOWN_DB', 7);
-define ('IBASE_PRP_DENY_NEW_TRANSACTIONS', 10);
-define ('IBASE_PRP_DENY_NEW_ATTACHMENTS', 9);
-define ('IBASE_PRP_RESERVE_SPACE', 11);
-define ('IBASE_PRP_RES_USE_FULL', 35);
-define ('IBASE_PRP_RES', 36);
-define ('IBASE_PRP_WRITE_MODE', 12);
-define ('IBASE_PRP_WM_ASYNC', 37);
-define ('IBASE_PRP_WM_SYNC', 38);
-define ('IBASE_PRP_ACCESS_MODE', 13);
-define ('IBASE_PRP_AM_READONLY', 39);
-define ('IBASE_PRP_AM_READWRITE', 40);
-define ('IBASE_PRP_SET_SQL_DIALECT', 14);
-define ('IBASE_PRP_ACTIVATE', 256);
-define ('IBASE_PRP_DB_ONLINE', 512);
-define ('IBASE_RPR_CHECK_DB', 16);
-define ('IBASE_RPR_IGNORE_CHECKSUM', 32);
-define ('IBASE_RPR_KILL_SHADOWS', 64);
-define ('IBASE_RPR_MEND_DB', 4);
-define ('IBASE_RPR_VALIDATE_DB', 1);
-define ('IBASE_RPR_FULL', 128);
+define('IBASE_RES_USE_ALL_SPACE', 16384);
+define('IBASE_PRP_PAGE_BUFFERS', 5);
+define('IBASE_PRP_SWEEP_INTERVAL', 6);
+define('IBASE_PRP_SHUTDOWN_DB', 7);
+define('IBASE_PRP_DENY_NEW_TRANSACTIONS', 10);
+define('IBASE_PRP_DENY_NEW_ATTACHMENTS', 9);
+define('IBASE_PRP_RESERVE_SPACE', 11);
+define('IBASE_PRP_RES_USE_FULL', 35);
+define('IBASE_PRP_RES', 36);
+define('IBASE_PRP_WRITE_MODE', 12);
+define('IBASE_PRP_WM_ASYNC', 37);
+define('IBASE_PRP_WM_SYNC', 38);
+define('IBASE_PRP_ACCESS_MODE', 13);
+define('IBASE_PRP_AM_READONLY', 39);
+define('IBASE_PRP_AM_READWRITE', 40);
+define('IBASE_PRP_SET_SQL_DIALECT', 14);
+define('IBASE_PRP_ACTIVATE', 256);
+define('IBASE_PRP_DB_ONLINE', 512);
+define('IBASE_RPR_CHECK_DB', 16);
+define('IBASE_RPR_IGNORE_CHECKSUM', 32);
+define('IBASE_RPR_KILL_SHADOWS', 64);
+define('IBASE_RPR_MEND_DB', 4);
+define('IBASE_RPR_VALIDATE_DB', 1);
+define('IBASE_RPR_FULL', 128);
 
 /**
  * Options to ibase_maintain_db
  * @link http://php.net/manual/en/ibase.constants.php
  */
-define ('IBASE_RPR_SWEEP_DB', 2);
-define ('IBASE_STS_DATA_PAGES', 1);
-define ('IBASE_STS_DB_LOG', 2);
-define ('IBASE_STS_HDR_PAGES', 4);
-define ('IBASE_STS_IDX_PAGES', 8);
+define('IBASE_RPR_SWEEP_DB', 2);
+define('IBASE_STS_DATA_PAGES', 1);
+define('IBASE_STS_DB_LOG', 2);
+define('IBASE_STS_HDR_PAGES', 4);
+define('IBASE_STS_IDX_PAGES', 8);
 
 /**
  * Options to ibase_db_info
  * @link http://php.net/manual/en/ibase.constants.php
  */
-define ('IBASE_STS_SYS_RELATIONS', 16);
-define ('IBASE_SVC_SERVER_VERSION', 55);
-define ('IBASE_SVC_IMPLEMENTATION', 56);
-define ('IBASE_SVC_GET_ENV', 59);
-define ('IBASE_SVC_GET_ENV_LOCK', 60);
-define ('IBASE_SVC_GET_ENV_MSG', 61);
-define ('IBASE_SVC_USER_DBPATH', 58);
-define ('IBASE_SVC_SVR_DB_INFO', 50);
+define('IBASE_STS_SYS_RELATIONS', 16);
+define('IBASE_SVC_SERVER_VERSION', 55);
+define('IBASE_SVC_IMPLEMENTATION', 56);
+define('IBASE_SVC_GET_ENV', 59);
+define('IBASE_SVC_GET_ENV_LOCK', 60);
+define('IBASE_SVC_GET_ENV_MSG', 61);
+define('IBASE_SVC_USER_DBPATH', 58);
+define('IBASE_SVC_SVR_DB_INFO', 50);
 
 /**
  * Options to ibase_server_info
  * @link http://php.net/manual/en/ibase.constants.php
  */
-define ('IBASE_SVC_GET_USERS', 68);
+define('IBASE_SVC_GET_USERS', 68);
 
 // End of interbase v.
 ?>

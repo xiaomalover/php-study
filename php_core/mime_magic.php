@@ -8,9 +8,11 @@
  * @param $filename string <p>
  * Path to the tested file.
  * </p>
- * @return string the content type in MIME format, like 
+ * @return string the content type in MIME format, like
  * text/plain or application/octet-stream.
  * </p>
  */
-function mime_content_type ($filename) {}
+function mime_content_type($filename)
+{
+}
 

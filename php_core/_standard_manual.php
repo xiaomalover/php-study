@@ -5,7 +5,11 @@
  * @param array $replace_pairs The replace_pairs parameter may be used as a substitute for to and from in which case it's an array in the form array('from' => 'to', ...).
  * @return string A copy of str, translating all occurrences of each character in from to the corresponding character in to.
  */
-function strtr ($str, array $replace_pairs) {};
+function strtr($str, array $replace_pairs)
+{
+}
+
+;
 
 /**
  * (PHP 5.1)<br/>
@@ -16,7 +20,9 @@ function strtr ($str, array $replace_pairs) {};
  * @link http://php.net/manual/en/function.halt-compiler.php
  * @return void
  */
-function __halt_compiler(){}
+function __halt_compiler()
+{
+}
 
 /**
  * (PHP 5.1)<br/>
@@ -24,7 +30,7 @@ function __halt_compiler(){}
  * @link http://php.net/manual/en/function.halt-compiler.php
  * @return void
  */
-define("__COMPILER_HALT_OFFSET__",0);
+define("__COMPILER_HALT_OFFSET__", 0);
 
 
 /**
@@ -35,7 +41,11 @@ define("__COMPILER_HALT_OFFSET__",0);
  * @see bin2hex(), unpack()
  * @since 5.4.0
  */
-function hex2bin($data) {};
+function hex2bin($data)
+{
+}
+
+;
 
 /**
  * This function flushes all response data to the client and finishes the request.
@@ -44,11 +54,17 @@ function hex2bin($data) {};
  * @link http://php.net/manual/en/install.fpm.php
  * @since 5.3.3
  */
-function fastcgi_finish_request() {};
+function fastcgi_finish_request()
+{
+}
+
+;
 
 /**
  * Get or Set the HTTP response code
  * @param int $response_code [optional] The optional response_code will set the response code.
  * @return int The current response code. By default the return value is int(200).
  */
-function http_response_code($response_code) {}
+function http_response_code($response_code)
+{
+}

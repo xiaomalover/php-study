@@ -6,21 +6,24 @@
  * Created by typecasting to object.
  * @link http://php.net/manual/en/reserved.classes.php
  */
-class stdClass {
+class stdClass
+{
 }
 
 /**
  * Interface to detect if a class is traversable using &foreach;.
  * @link http://php.net/manual/en/class.traversable.php
  */
-interface Traversable {
+interface Traversable
+{
 }
 
 /**
  * Interface to create an external Iterator.
  * @link http://php.net/manual/en/class.iteratoraggregate.php
  */
-interface IteratorAggregate extends Traversable {
+interface IteratorAggregate extends Traversable
+{
 
     /**
      * Retrieve an external iterator
@@ -37,7 +40,8 @@ interface IteratorAggregate extends Traversable {
  * themselves internally.
  * @link http://php.net/manual/en/class.iterator.php
  */
-interface Iterator extends Traversable {
+interface Iterator extends Traversable
+{
 
     /**
      * Return the current element
@@ -85,7 +89,8 @@ interface Iterator extends Traversable {
  * Interface to provide accessing objects as arrays.
  * @link http://php.net/manual/en/class.arrayaccess.php
  */
-interface ArrayAccess {
+interface ArrayAccess
+{
 
     /**
      * Whether a offset exists
@@ -142,7 +147,8 @@ interface ArrayAccess {
  * Interface for customized serializing.
  * @link http://php.net/manual/en/class.serializable.php
  */
-interface Serializable {
+interface Serializable
+{
 
     /**
      * String representation of object
@@ -246,12 +252,14 @@ interface Throwable
      */
     public function __toString();
 }
+
 /**
  * Exception is the base class for
  * all Exceptions.
  * @link http://php.net/manual/en/class.exception.php
  */
-class Exception implements Throwable {
+class Exception implements Throwable
+{
     protected $message;
     protected $code;
     protected $file;
@@ -264,7 +272,9 @@ class Exception implements Throwable {
      * @return void
      * @since 5.1.0
      */
-    final private function __clone() { }
+    final private function __clone()
+    {
+    }
 
     /**
      * Construct the exception. Note: The message is NOT binary safe.
@@ -274,7 +284,9 @@ class Exception implements Throwable {
      * @param Exception $previous [optional] The previous exception used for the exception chaining. Since 5.3.0
      * @since 5.1.0
      */
-    public function __construct($message = "", $code = 0, Exception $previous = null) { }
+    public function __construct($message = "", $code = 0, Exception $previous = null)
+    {
+    }
 
     /**
      * Gets the Exception message
@@ -282,7 +294,9 @@ class Exception implements Throwable {
      * @return string the Exception message as a string.
      * @since 5.1.0
      */
-    final public function getMessage() { }
+    final public function getMessage()
+    {
+    }
 
     /**
      * Gets the Exception code
@@ -293,7 +307,9 @@ class Exception implements Throwable {
      * string in <b>PDOException</b>).
      * @since 5.1.0
      */
-    final public function getCode() { }
+    final public function getCode()
+    {
+    }
 
     /**
      * Gets the file in which the exception occurred
@@ -301,7 +317,9 @@ class Exception implements Throwable {
      * @return string the filename in which the exception was created.
      * @since 5.1.0
      */
-    final public function getFile() { }
+    final public function getFile()
+    {
+    }
 
     /**
      * Gets the line in which the exception occurred
@@ -309,7 +327,9 @@ class Exception implements Throwable {
      * @return int the line number where the exception was created.
      * @since 5.1.0
      */
-    final public function getLine() { }
+    final public function getLine()
+    {
+    }
 
     /**
      * Gets the stack trace
@@ -317,7 +337,9 @@ class Exception implements Throwable {
      * @return array the Exception stack trace as an array.
      * @since 5.1.0
      */
-    final public function getTrace() { }
+    final public function getTrace()
+    {
+    }
 
     /**
      * Returns previous Exception
@@ -326,7 +348,9 @@ class Exception implements Throwable {
      * or null otherwise.
      * @since 5.3.0
      */
-    final public function getPrevious() { }
+    final public function getPrevious()
+    {
+    }
 
     /**
      * Gets the stack trace as a string
@@ -334,7 +358,9 @@ class Exception implements Throwable {
      * @return string the Exception stack trace as a string.
      * @since 5.1.0
      */
-    final public function getTraceAsString() { }
+    final public function getTraceAsString()
+    {
+    }
 
     /**
      * String representation of the exception
@@ -342,7 +368,9 @@ class Exception implements Throwable {
      * @return string the string representation of the exception.
      * @since 5.1.0
      */
-    public function __toString() { }
+    public function __toString()
+    {
+    }
 }
 
 /**
@@ -350,7 +378,8 @@ class Exception implements Throwable {
  * @link http://php.net/manual/en/class.error.php
  * @since 7.0
  */
-class Error implements Throwable {
+class Error implements Throwable
+{
 
     /***
      * Gets the message
@@ -373,7 +402,9 @@ class Error implements Throwable {
      * </p>
      * @since 7.0
      */
-    public function getCode(){}
+    public function getCode()
+    {
+    }
 
 
     /**
@@ -382,7 +413,9 @@ class Error implements Throwable {
      * @return string Returns the name of the file from which the object was thrown.
      * @since 7.0
      */
-    public function getFile(){}
+    public function getFile()
+    {
+    }
 
 
     /**
@@ -391,7 +424,9 @@ class Error implements Throwable {
      * @return int Returns the line number where the thrown object was instantiated.
      * @since 7.0
      */
-    public  function getLine(){}
+    public function getLine()
+    {
+    }
 
 
     /**
@@ -403,7 +438,9 @@ class Error implements Throwable {
      * </p>
      * @since 7.0
      */
-    public function getTrace(){}
+    public function getTrace()
+    {
+    }
 
     /**
      * Gets the stack trace as a string
@@ -411,7 +448,9 @@ class Error implements Throwable {
      * @return string Returns the stack trace as a string.
      * @since 7.0
      */
-    public function getTraceAsString(){}
+    public function getTraceAsString()
+    {
+    }
 
     /**
      * Returns the previous Throwable
@@ -419,14 +458,19 @@ class Error implements Throwable {
      * @return Throwable Returns the previous {@see Throwable} if available, or <b>NULL</b> otherwise.
      * @since 7.0
      */
-    public function getPrevious(){}
+    public function getPrevious()
+    {
+    }
+
     /**
      * Gets a string representation of the thrown object
      * @link http://php.net/manual/en/throwable.tostring.php
      * @return string <p>Returns the string representation of the thrown object.</p>
      * @since 7.0
      */
-    public function __toString(){}
+    public function __toString()
+    {
+    }
 }
 
 /**
@@ -437,7 +481,8 @@ class Error implements Throwable {
  * @link http://php.net/manual/en/class.typeerror.php
  * @since 7.0
  */
-class TypeError extends Error {
+class TypeError extends Error
+{
 
 }
 
@@ -446,7 +491,8 @@ class TypeError extends Error {
  * @link http://php.net/manual/en/class.parseerror.php
  * @since 7.0
  */
-class ParseError extends Error {
+class ParseError extends Error
+{
 
 }
 
@@ -455,7 +501,8 @@ class ParseError extends Error {
  * @link http://php.net/manual/en/class.assertionerror.php
  * @since 7.0
  */
-class AssertionError extends Error {
+class AssertionError extends Error
+{
 
 }
 
@@ -466,7 +513,8 @@ class AssertionError extends Error {
  * @link http://php.net/manual/en/class.arithmeticerror.php
  * @since 7.0
  */
-class ArithmeticError extends Error {
+class ArithmeticError extends Error
+{
 
 }
 
@@ -475,7 +523,8 @@ class ArithmeticError extends Error {
  * @link http://php.net/manual/en/class.divisionbyzeroerror.php
  * @since 7.0
  */
-class DivisionByZeroError extends Error {
+class DivisionByZeroError extends Error
+{
 
 }
 
@@ -483,7 +532,8 @@ class DivisionByZeroError extends Error {
  * An Error Exception.
  * @link http://php.net/manual/en/class.errorexception.php
  */
-class ErrorException extends Exception {
+class ErrorException extends Exception
+{
 
     protected $severity;
 
@@ -499,7 +549,15 @@ class ErrorException extends Exception {
      * @param Exception $previous [optional] The previous exception used for the exception chaining.
      * @since 5.1.0
      */
-    public function __construct($message = "", $code = 0, $severity = 1, $filename = __FILE__, $lineno = __LINE__, $previous) { }
+    public function __construct(
+        $message = "",
+        $code = 0,
+        $severity = 1,
+        $filename = __FILE__,
+        $lineno = __LINE__,
+        $previous
+    ) {
+    }
 
     /**
      * Gets the exception severity
@@ -507,7 +565,9 @@ class ErrorException extends Exception {
      * @return int the severity level of the exception.
      * @since 5.1.0
      */
-    final public function getSeverity() { }
+    final public function getSeverity()
+    {
+    }
 }
 
 /**
@@ -519,14 +579,17 @@ class ErrorException extends Exception {
  * This is for consistency with other classes that implement calling magic, as this method is not used for calling the function.
  * @link http://www.php.net/manual/en/class.closure.php
  */
-final class Closure {
+final class Closure
+{
 
     /**
      * This method exists only to disallow instantiation of the Closure class.
      * Objects of this class are created in the fashion described on the anonymous functions page.
      * @link http://www.php.net/manual/en/closure.construct.php
      */
-    private function __construct() { }
+    private function __construct()
+    {
+    }
 
     /**
      * This is for consistency with other classes that implement calling magic,
@@ -535,7 +598,9 @@ final class Closure {
      * @return mixed
      * @link http://www.php.net/manual/en/class.closure.php
      */
-    public function __invoke(...$_) { }
+    public function __invoke(...$_)
+    {
+    }
 
     /**
      * Closure::bindTo � Duplicates the closure with a new bound object and class scope
@@ -546,7 +611,9 @@ final class Closure {
      * This determines the visibility of protected and private methods of the bound object.
      * @return Closure Returns the newly created Closure object or FALSE on failure
      */
-    function bindTo($newthis, $newscope = 'static') { }
+    function bindTo($newthis, $newscope = 'static')
+    {
+    }
 
     /**
      * This method is a static version of Closure::bindTo().
@@ -560,7 +627,9 @@ final class Closure {
      * This determines the visibility of protected and private methods of the bound object.
      * @return Closure Returns the newly created Closure object or FALSE on failure
      */
-    static function bind(Closure $closure, $newthis, $newscope = 'static') { }
+    static function bind(Closure $closure, $newthis, $newscope = 'static')
+    {
+    }
 
     /**
      * Temporarily binds the closure to newthis, and calls it with any given parameters.
@@ -570,6 +639,8 @@ final class Closure {
      * @return mixed
      * @since 7.0
      */
-    function call ($newThis, ...$parameters) {}
+    function call($newThis, ...$parameters)
+    {
+    }
 
 }

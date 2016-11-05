@@ -9,12 +9,12 @@
  * @link http://php.net/manual/en/function.inotify-add-watch.php
  *
  * @param resource $inotify_instance <p>resource returned by {@link http://php.net/manual/en/function.inotify-init.php inotify_init()}</p>
- * @param string   $pathname         <p>File or directory to watch</p>
- * @param int      $mask             <p>Events to watch for. See {@link http://php.net/manual/en/inotify.constants.php Predefined Constants}.</p>
+ * @param string $pathname <p>File or directory to watch</p>
+ * @param int $mask <p>Events to watch for. See {@link http://php.net/manual/en/inotify.constants.php Predefined Constants}.</p>
  *
  * @return int a unique (<i>inotify</i> instance-wide) watch descriptor.
  */
-function inotify_add_watch( $inotify_instance, $pathname, $mask )
+function inotify_add_watch($inotify_instance, $pathname, $mask)
 {
 }
 
@@ -41,7 +41,7 @@ function inotify_init()
  *
  * @return int a number greater than zero if events are pending, otherwise zero.
  */
-function inotify_queue_len( $inotify_instance )
+function inotify_queue_len($inotify_instance)
 {
 }
 
@@ -64,7 +64,7 @@ function inotify_queue_len( $inotify_instance )
  *  <li><b>name</b> is the name of a file (e.g. if a file was modified in a watched directory)
  * </ul>
  */
-function inotify_read( $inotify_instance )
+function inotify_read($inotify_instance)
 {
 }
 
@@ -75,11 +75,11 @@ function inotify_read( $inotify_instance )
  * @link     http://php.net/manual/en/function.inotify-rm-watch.php
  *
  * @param resource $inotify_instance <p>resource returned by {@link http://php.net/manual/en/function.inotify-init.php inotify_init()}</p>
- * @param int      $watch_descriptor <p>watch to remove from the instance</p>
+ * @param int $watch_descriptor <p>watch to remove from the instance</p>
  *
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  */
-function inotify_rm_watch( $inotify_instance, $watch_descriptor )
+function inotify_rm_watch($inotify_instance, $watch_descriptor)
 {
 }
 

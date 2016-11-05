@@ -105,7 +105,9 @@ define('APC_BIN_VERIFY_CRC32', 2);
  * of cache entries. This is useful when trying to optimize calls for statistics gathering.
  * @return array|bool Array of cached data (and meta-data) or FALSE on failure.
  */
-function apc_cache_info($type = '', $limited = false){}
+function apc_cache_info($type = '', $limited = false)
+{
+}
 
 /**
  * Clears the APC cache
@@ -114,7 +116,9 @@ function apc_cache_info($type = '', $limited = false){}
  * otherwise, the system cache (cached files) will be cleared.
  * @return bool Returns TRUE on success or FALSE on failure.
  */
-function apc_clear_cache($cache_type = ''){}
+function apc_clear_cache($cache_type = '')
+{
+}
 
 /**
  * Retrieves APC's Shared Memory Allocation information
@@ -123,7 +127,9 @@ function apc_clear_cache($cache_type = ''){}
  * return a detailed information about each segment.
  * @return array|bool Array of Shared Memory Allocation data; FALSE on failure.
  */
-function apc_sma_info($limited = false){}
+function apc_sma_info($limited = false)
+{
+}
 
 /**
  * Cache a variable in the data store
@@ -138,7 +144,9 @@ function apc_sma_info($limited = false){}
  * or otherwise fails to exist in the cache (clear, restart, etc.).
  * @return bool|array Returns TRUE on success or FALSE on failure | array with error keys.
  */
-function apc_store($key, $var, $ttl = 0){}
+function apc_store($key, $var, $ttl = 0)
+{
+}
 
 /**
  * Fetch a stored variable from the cache
@@ -148,7 +156,9 @@ function apc_store($key, $var, $ttl = 0){}
  * @param bool $success Set to TRUE in success and FALSE in failure.
  * @return mixed The stored variable or array of variables on success; FALSE on failure.
  */
-function apc_fetch($key, &$success = null){}
+function apc_fetch($key, &$success = null)
+{
+}
 
 /**
  * Removes a stored variable from the cache
@@ -156,7 +166,9 @@ function apc_fetch($key, &$success = null){}
  * @param string|string[]|APCIterator $key The key used to store the value (with apc_store()).
  * @return bool|string[] Returns TRUE on success or FALSE on failure. For array of keys returns list of failed keys.
  */
-function apc_delete($key){}
+function apc_delete($key)
+{
+}
 
 /**
  * Defines a set of constants for retrieval and mass-definition
@@ -176,7 +188,9 @@ function apc_delete($key){}
  * the constants will be declared as case-insensitive symbols.
  * @return bool Returns TRUE on success or FALSE on failure.
  */
-function apc_define_constants($key, array $constants, $case_sensitive = true){}
+function apc_define_constants($key, array $constants, $case_sensitive = true)
+{
+}
 
 /**
  * Caches a variable in the data store, only if it's not already stored
@@ -192,7 +206,9 @@ function apc_define_constants($key, array $constants, $case_sensitive = true){}
  * or otherwise fails to exist in the cache (clear, restart, etc.).
  * @return bool
  */
-function apc_add($key, $var, $ttl = 0){}
+function apc_add($key, $var, $ttl = 0)
+{
+}
 
 /**
  * Stores a file in the bytecode cache, bypassing all filters
@@ -202,7 +218,9 @@ function apc_add($key, $var, $ttl = 0){}
  * @param bool $atomic
  * @return bool Returns TRUE on success or FALSE on failure.
  */
-function apc_compile_file($filename, $atomic = true){}
+function apc_compile_file($filename, $atomic = true)
+{
+}
 
 /**
  * Loads a set of constants from the cache
@@ -214,7 +232,9 @@ function apc_compile_file($filename, $atomic = true){}
  * the constants will be declared as case-insensitive symbols.
  * @return bool Returns TRUE on success or FALSE on failure.
  */
-function apc_load_constants($key, $case_sensitive = true){}
+function apc_load_constants($key, $case_sensitive = true)
+{
+}
 
 /**
  * Checks if APC key exists
@@ -224,7 +244,9 @@ function apc_load_constants($key, $case_sensitive = true){}
  * Or if an array was passed to keys, then an array is returned that
  * contains all existing keys, or an empty array if none exist.
  */
-function apc_exists($keys){}
+function apc_exists($keys)
+{
+}
 
 /**
  * Deletes the given files from the opcode cache
@@ -236,7 +258,9 @@ function apc_exists($keys){}
  * @param string|string[]|APCIterator $keys
  * @return bool|string[]
  */
-function apc_delete_file($keys){}
+function apc_delete_file($keys)
+{
+}
 
 /**
  * Increase a stored number
@@ -246,7 +270,9 @@ function apc_delete_file($keys){}
  * @param bool $success Optionally pass the success or fail boolean value to this referenced variable.
  * @return int|bool Returns the current value of key's value on success, or FALSE on failure.
  */
-function apc_inc($key, $step = 1, &$success = null){}
+function apc_inc($key, $step = 1, &$success = null)
+{
+}
 
 /**
  * Decrease a stored number
@@ -256,7 +282,9 @@ function apc_inc($key, $step = 1, &$success = null){}
  * @param bool $success Optionally pass the success or fail boolean value to this referenced variable.
  * @return int|bool Returns the current value of key's value on success, or FALSE on failure.
  */
-function apc_dec($key, $step = 1, &$success = null){}
+function apc_dec($key, $step = 1, &$success = null)
+{
+}
 
 /**
  * @link http://php.net/manual/en/function.apc-cas.php
@@ -265,7 +293,9 @@ function apc_dec($key, $step = 1, &$success = null){}
  * @param int $new
  * @return bool
  */
-function apc_cas($key, $old, $new){}
+function apc_cas($key, $old, $new)
+{
+}
 
 /**
  * Returns a binary dump of the given files and user variables from the APC cache
@@ -277,7 +307,9 @@ function apc_cas($key, $old, $new){}
  * @param string[]|null $user_vars The user vars. Passing in NULL signals a dump of every entry, while passing in array() will dump nothing.
  * @return string|bool|null Returns a binary dump of the given files and user variables from the APC cache, FALSE if APC is not enabled, or NULL if an unknown error is encountered.
  */
-function apc_bin_dump($files = null, $user_vars = null){}
+function apc_bin_dump($files = null, $user_vars = null)
+{
+}
 
 /**
  * Output a binary dump of the given files and user variables from the APC cache to the named file
@@ -292,7 +324,9 @@ function apc_bin_dump($files = null, $user_vars = null){}
  * the file dump can't be completed (e.g., the hard drive is out of disk space),
  * or an unknown error was encountered.
  */
-function apc_bin_dumpfile($files, $user_vars, $filename, $flags = 0, $context = null){}
+function apc_bin_dumpfile($files, $user_vars, $filename, $flags = 0, $context = null)
+{
+}
 
 /**
  * Load the given binary dump into the APC file/user cache
@@ -302,7 +336,9 @@ function apc_bin_dumpfile($files, $user_vars, $filename, $flags = 0, $context = 
  * @return bool Returns TRUE if the binary dump data was loaded with success, otherwise FALSE is returned.
  * FALSE is returned if APC is not enabled, or if the data is not a valid APC binary dump (e.g., unexpected size).
  */
-function apc_bin_load($data, $flags = 0){}
+function apc_bin_load($data, $flags = 0)
+{
+}
 
 /**
  * Load the given binary dump from the named file into the APC file/user cache
@@ -314,7 +350,9 @@ function apc_bin_load($data, $flags = 0){}
  * is not enabled, filename is an invalid file name or empty, filename can't be opened,
  * the file dump can't be completed, or if the data is not a valid APC binary dump (e.g., unexpected size).
  */
-function apc_bin_loadfile($filename, $context = null, $flags = 0){}
+function apc_bin_loadfile($filename, $context = null, $flags = 0)
+{
+}
 
 /**
  * The APCIterator class
@@ -329,71 +367,94 @@ function apc_bin_loadfile($filename, $context = null, $flags = 0){}
  */
 class APCIterator implements Iterator
 {
-	/**
-	 * Constructs an APCIterator iterator object
-	 * @link http://php.net/manual/en/apciterator.construct.php
-	 * @param string $cache The cache type, which will be 'user' or 'file'.
-	 * @param string|string[]|null $search A PCRE regular expression that matches against APC key names,
-	 * either as a string for a single regular expression, or as an array of regular expressions.
-	 * Or, optionally pass in NULL to skip the search.
-	 * @param int $format The desired format, as configured with one ore more of the APC_ITER_* constants.
-	 * @param int $chunk_size The chunk size. Must be a value greater than 0. The default value is 100.
-	 * @param int $list The type to list. Either pass in APC_LIST_ACTIVE  or APC_LIST_INACTIVE.
-	 */
-	public function __construct($cache, $search = null, $format = APC_ITER_ALL, $chunk_size = 100, $list = APC_LIST_ACTIVE){}
+    /**
+     * Constructs an APCIterator iterator object
+     * @link http://php.net/manual/en/apciterator.construct.php
+     * @param string $cache The cache type, which will be 'user' or 'file'.
+     * @param string|string[]|null $search A PCRE regular expression that matches against APC key names,
+     * either as a string for a single regular expression, or as an array of regular expressions.
+     * Or, optionally pass in NULL to skip the search.
+     * @param int $format The desired format, as configured with one ore more of the APC_ITER_* constants.
+     * @param int $chunk_size The chunk size. Must be a value greater than 0. The default value is 100.
+     * @param int $list The type to list. Either pass in APC_LIST_ACTIVE  or APC_LIST_INACTIVE.
+     */
+    public function __construct(
+        $cache,
+        $search = null,
+        $format = APC_ITER_ALL,
+        $chunk_size = 100,
+        $list = APC_LIST_ACTIVE
+    ) {
+    }
 
-	/**
-	 * Rewinds back the iterator to the first element
-	 * @link http://php.net/manual/en/apciterator.rewind.php
-	 */
-	public function rewind(){}
+    /**
+     * Rewinds back the iterator to the first element
+     * @link http://php.net/manual/en/apciterator.rewind.php
+     */
+    public function rewind()
+    {
+    }
 
-	/**
-	 * Checks if the current iterator position is valid
-	 * @link http://php.net/manual/en/apciterator.valid.php
-	 * @return bool Returns TRUE if the current iterator position is valid, otherwise FALSE.
-	 */
-	public function valid(){}
+    /**
+     * Checks if the current iterator position is valid
+     * @link http://php.net/manual/en/apciterator.valid.php
+     * @return bool Returns TRUE if the current iterator position is valid, otherwise FALSE.
+     */
+    public function valid()
+    {
+    }
 
-	/**
-	 * Gets the current item from the APCIterator stack
-	 * @link http://php.net/manual/en/apciterator.current.php
-	 * @return mixed Returns the current item on success, or FALSE if no more items or exist, or on failure.
-	 */
-	public function current(){}
+    /**
+     * Gets the current item from the APCIterator stack
+     * @link http://php.net/manual/en/apciterator.current.php
+     * @return mixed Returns the current item on success, or FALSE if no more items or exist, or on failure.
+     */
+    public function current()
+    {
+    }
 
-	/**
-	 * Gets the current iterator key
-	 * @link http://php.net/manual/en/apciterator.key.php
-	 * @return string|int|bool Returns the key on success, or FALSE upon failure.
-	 */
-	public function key(){}
+    /**
+     * Gets the current iterator key
+     * @link http://php.net/manual/en/apciterator.key.php
+     * @return string|int|bool Returns the key on success, or FALSE upon failure.
+     */
+    public function key()
+    {
+    }
 
-	/**
-	 * Moves the iterator pointer to the next element
-	 * @link http://php.net/manual/en/apciterator.next.php
-	 * @return bool Returns TRUE on success or FALSE on failure.
-	 */
-	public function next(){}
+    /**
+     * Moves the iterator pointer to the next element
+     * @link http://php.net/manual/en/apciterator.next.php
+     * @return bool Returns TRUE on success or FALSE on failure.
+     */
+    public function next()
+    {
+    }
 
-	/**
-	 * Gets the total number of cache hits
-	 * @link http://php.net/manual/en/apciterator.gettotalhits.php
-	 * @return int|bool The number of hits on success, or FALSE on failure.
-	 */
-	public function getTotalHits(){}
+    /**
+     * Gets the total number of cache hits
+     * @link http://php.net/manual/en/apciterator.gettotalhits.php
+     * @return int|bool The number of hits on success, or FALSE on failure.
+     */
+    public function getTotalHits()
+    {
+    }
 
-	/**
-	 * Gets the total cache size
-	 * @link http://php.net/manual/en/apciterator.gettotalsize.php
-	 * @return int|bool The total cache size.
-	 */
-	public function getTotalSize(){}
+    /**
+     * Gets the total cache size
+     * @link http://php.net/manual/en/apciterator.gettotalsize.php
+     * @return int|bool The total cache size.
+     */
+    public function getTotalSize()
+    {
+    }
 
-	/**
-	 * Get the total count
-	 * @link http://php.net/manual/en/apciterator.gettotalcount.php
-	 * @return int|bool The total count.
-	 */
-	public function getTotalCount(){}
+    /**
+     * Get the total count
+     * @link http://php.net/manual/en/apciterator.gettotalcount.php
+     * @return int|bool The total count.
+     */
+    public function getTotalCount()
+    {
+    }
 }

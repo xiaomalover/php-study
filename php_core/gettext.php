@@ -14,7 +14,9 @@
  * @since 4.0
  * @since 5.0
  */
-function textdomain ($text_domain) {}
+function textdomain($text_domain)
+{
+}
 
 /**
  * Lookup a message in the current domain
@@ -27,7 +29,9 @@ function textdomain ($text_domain) {}
  * @since 4.0
  * @since 5.0
  */
-function gettext ($message) {}
+function gettext($message)
+{
+}
 
 /**
  * Lookup a message in the current domain
@@ -40,7 +44,9 @@ function gettext ($message) {}
  * @since 4.0
  * @since 5.0
  */
-function _ ($message) {}
+function _($message)
+{
+}
 
 /**
  * Override the current domain
@@ -55,7 +61,9 @@ function _ ($message) {}
  * @since 4.0
  * @since 5.0
  */
-function dgettext ($domain, $message) {}
+function dgettext($domain, $message)
+{
+}
 
 /**
  * Overrides the domain for a single lookup
@@ -73,7 +81,9 @@ function dgettext ($domain, $message) {}
  * @since 4.0
  * @since 5.0
  */
-function dcgettext ($domain, $message, $category) {}
+function dcgettext($domain, $message, $category)
+{
+}
 
 /**
  * Sets the path for a domain
@@ -88,7 +98,9 @@ function dcgettext ($domain, $message, $category) {}
  * @since 4.0
  * @since 5.0
  */
-function bindtextdomain ($domain, $directory) {}
+function bindtextdomain($domain, $directory)
+{
+}
 
 /**
  * Plural version of gettext
@@ -102,7 +114,9 @@ function bindtextdomain ($domain, $directory) {}
  * @since 4.2.0
  * @since 5.0
  */
-function ngettext ($msgid1, $msgid2, $n) {}
+function ngettext($msgid1, $msgid2, $n)
+{
+}
 
 /**
  * Plural version of dgettext
@@ -117,7 +131,9 @@ function ngettext ($msgid1, $msgid2, $n) {}
  * @since 4.2.0
  * @since 5.0
  */
-function dngettext ($domain, $msgid1, $msgid2, $n) {}
+function dngettext($domain, $msgid1, $msgid2, $n)
+{
+}
 
 /**
  * Plural version of dcgettext
@@ -133,7 +149,9 @@ function dngettext ($domain, $msgid1, $msgid2, $n) {}
  * @since 4.2.0
  * @since 5.0
  */
-function dcngettext ($domain, $msgid1, $msgid2, $n, $category) {}
+function dcngettext($domain, $msgid1, $msgid2, $n, $category)
+{
+}
 
 /**
  * Specify the character encoding in which the messages from the DOMAIN message catalog will be returned
@@ -148,7 +166,9 @@ function dcngettext ($domain, $msgid1, $msgid2, $n, $category) {}
  * @since 4.2.0
  * @since 5.0
  */
-function bind_textdomain_codeset ($domain, $codeset) {}
+function bind_textdomain_codeset($domain, $codeset)
+{
+}
 
 // End of gettext v.
 ?>

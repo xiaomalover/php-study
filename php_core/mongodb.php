@@ -296,7 +296,7 @@ namespace MongoDB {
              * @link http://php.net/manual/en/mongodb-driver-readpreference.getmode.php
              * @return integer
              */
-            final public function  getMode ()
+            final public function getMode()
             {
             }
 
@@ -304,7 +304,7 @@ namespace MongoDB {
              * @link http://php.net/manual/en/mongodb-driver-readpreference.gettagsets.php
              * @return array
              */
-            final public function getTagSets ()
+            final public function getTagSets()
             {
             }
         }
@@ -331,7 +331,7 @@ namespace MongoDB {
              * @link http://php.net/manual/en/mongodb-driver-readconcern.getlevel.php
              * @return string|null
              */
-            final public function getLevel ()
+            final public function getLevel()
             {
             }
         }
@@ -729,7 +729,7 @@ namespace MongoDB {
             /**
              * @return WriteResult for the failed write operation
              */
-            final public function  getWriteResult()
+            final public function getWriteResult()
             {
             }
         }
@@ -1056,7 +1056,7 @@ namespace MongoDB {
              * @link http://php.net/manual/en/mongodb-bson-serializable.bsonserialize.php
              * @return array|object An array or stdClass to be serialized as a BSON array or document.
              */
-            public function  bsonSerialize();
+            public function bsonSerialize();
         }
 
         /**
@@ -1073,7 +1073,7 @@ namespace MongoDB {
              * @link http://php.net/manual/en/mongodb-bson-unserializable.bsonunserialize.php
              * @param array $data Properties within the BSON array or document.
              */
-            public function  bsonUnserialize(array $data);
+            public function bsonUnserialize(array $data);
         }
 
         /**

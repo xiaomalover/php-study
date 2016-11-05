@@ -39,7 +39,9 @@ define('OAUTH_SIGNATURE_METHOD_REJECTED', 8192);
  * @param array $request_parameters
  * @return string
  */
-function oauth_get_sbs($http_method, $uri, $request_parameters = array()) { }
+function oauth_get_sbs($http_method, $uri, $request_parameters = array())
+{
+}
 
 /**
  * Encode a URI to RFC 3986
@@ -47,12 +49,15 @@ function oauth_get_sbs($http_method, $uri, $request_parameters = array()) { }
  * @param string $uri
  * @return string
  */
-function oauth_urlencode($uri) { }
+function oauth_urlencode($uri)
+{
+}
 
 /**
  * The OAuth extension provides a simple interface to interact with data providers using the OAuth HTTP specification to protect private resources.
  */
-class OAuth {
+class OAuth
+{
 
     /**
      * @var bool
@@ -77,50 +82,70 @@ class OAuth {
      * @param string $signature_method
      * @param int $auth_type
      */
-    public function __construct($consumer_key, $consumer_secret, $signature_method = OAUTH_SIG_METHOD_HMACSHA1, $auth_type = OAUTH_AUTH_TYPE_AUTHORIZATION) { }
+    public function __construct(
+        $consumer_key,
+        $consumer_secret,
+        $signature_method = OAUTH_SIG_METHOD_HMACSHA1,
+        $auth_type = OAUTH_AUTH_TYPE_AUTHORIZATION
+    ) {
+    }
 
     /**
      * Turn off verbose debugging
      * @return bool
      */
-    public function disableDebug() { }
+    public function disableDebug()
+    {
+    }
 
     /**
      * Turn off redirects
      * @return void
      */
-    public function disableRedirects() { }
+    public function disableRedirects()
+    {
+    }
 
     /**
      * Turn off SSL checks
      * @return bool
      */
-    public function disableSSLChecks() { }
+    public function disableSSLChecks()
+    {
+    }
 
     /**
      * Turn on verbose debugging
      * @return bool
      */
-    public function enableDebug() { }
+    public function enableDebug()
+    {
+    }
 
     /**
      * Turn on redirects
      * @return bool
      */
-    public function enableRedirects() { }
+    public function enableRedirects()
+    {
+    }
 
     /**
      * Turn on SSL checks
      * @return bool
      */
-    public function enableSSLChecks() { }
+    public function enableSSLChecks()
+    {
+    }
 
     /**
      * Set the timeout
      * @param int $timeout Time in milliseconds
      * @return void
      */
-    public function setTimeout($timeout) { }
+    public function setTimeout($timeout)
+    {
+    }
 
     /**
      * Fetch an OAuth-protected resource
@@ -130,7 +155,13 @@ class OAuth {
      * @param array $http_headers
      * @return mixed
      */
-    public function fetch($protected_resource_url, $extra_parameters = array(), $http_method = null, $http_headers = array()) { }
+    public function fetch(
+        $protected_resource_url,
+        $extra_parameters = array(),
+        $http_method = null,
+        $http_headers = array()
+    ) {
+    }
 
     /**
      * Fetch an access token
@@ -139,40 +170,52 @@ class OAuth {
      * @param string $verifier_token
      * @return array
      */
-    public function getAccessToken($access_token_url, $auth_session_handle = null, $verifier_token = null) { }
+    public function getAccessToken($access_token_url, $auth_session_handle = null, $verifier_token = null)
+    {
+    }
 
     /**
      * Get CA information
      * @return array
      */
-    public function getCAPath() { }
+    public function getCAPath()
+    {
+    }
 
     /**
      * Get the last response
      * @return string
      */
-    public function getLastResponse() { }
+    public function getLastResponse()
+    {
+    }
 
     /**
      * Get headers for last response
      * @return string|false
      */
-    public function getLastResponseHeaders() { }
+    public function getLastResponseHeaders()
+    {
+    }
 
     /**
      * Get HTTP information about the last response
      * @return array
      */
-    public function getLastResponseInfo() { }
+    public function getLastResponseInfo()
+    {
+    }
 
     /**
      * Generate OAuth header string signature
      * @param string $http_method
      * @param string $url
-     * @param mixed  $extra_parameters
+     * @param mixed $extra_parameters
      * @return string|false
      */
-    public function getRequestHeader($http_method, $url, $extra_parameters = '') { }
+    public function getRequestHeader($http_method, $url, $extra_parameters = '')
+    {
+    }
 
     /**
      * Fetch a request token
@@ -180,14 +223,18 @@ class OAuth {
      * @param string $callback_url
      * @return array
      */
-    public function getRequestToken($request_token_url, $callback_url = null) { }
+    public function getRequestToken($request_token_url, $callback_url = null)
+    {
+    }
 
     /**
      * Set authorization type
      * @param int $auth_type
      * @return bool
      */
-    public function setAuthType($auth_type) { }
+    public function setAuthType($auth_type)
+    {
+    }
 
     /**
      * Set CA path and info
@@ -195,35 +242,45 @@ class OAuth {
      * @param string $ca_info
      * @return mixed
      */
-    public function setCAPath($ca_path = null, $ca_info = null) { }
+    public function setCAPath($ca_path = null, $ca_info = null)
+    {
+    }
 
     /**
      * Set the nonce for subsequent requests
      * @param string $nonce
      * @return mixed
      */
-    public function setNonce($nonce) { }
+    public function setNonce($nonce)
+    {
+    }
 
     /**
      *
      * @param int $reqengine
      * @return void
      */
-    public function setRequestEngine($reqengine) { }
+    public function setRequestEngine($reqengine)
+    {
+    }
 
     /**
      * Set the RSA certificate
      * @param string $cert
      * @return mixed
      */
-    public function setRSACertificate($cert) { }
+    public function setRSACertificate($cert)
+    {
+    }
 
     /**
      * Set the timestamp
      * @param string $timestamp
      * @return mixed
      */
-    public function setTimestamp($timestamp) { }
+    public function setTimestamp($timestamp)
+    {
+    }
 
     /**
      * Set the token and secret
@@ -231,20 +288,25 @@ class OAuth {
      * @param string $token_secret
      * @return bool
      */
-    public function setToken($token, $token_secret) { }
+    public function setToken($token, $token_secret)
+    {
+    }
 
     /**
      * Set the OAuth version
      * @param string $version
      * @return bool
      */
-    public function setVersion($version) { }
+    public function setVersion($version)
+    {
+    }
 }
 
 /**
- * 
+ *
  */
-class OAuthException extends Exception {
+class OAuthException extends Exception
+{
 
     /**
      * The response of the exception which occurred, if any
@@ -263,47 +325,62 @@ class OAuthException extends Exception {
 /**
  * Manages an OAuth provider class.
  */
-class OAuthProvider {
+class OAuthProvider
+{
 
     /**
      * @param string $req_params
      * @return bool
      */
-    final public function addRequiredParameter($req_params) { }
+    final public function addRequiredParameter($req_params)
+    {
+    }
 
     /**
      * @return void
      */
-    public function callconsumerHandler() { }
+    public function callconsumerHandler()
+    {
+    }
 
     /**
      * @return void
      */
-    public function callTimestampNonceHandler() { }
+    public function callTimestampNonceHandler()
+    {
+    }
 
     /**
      * @return void
      */
-    public function calltokenHandler() { }
+    public function calltokenHandler()
+    {
+    }
 
     /**
      * @param string $uri
      * @param string $method
      * @return void
      */
-    public function checkOAuthRequest($uri = '', $method = '') { }
+    public function checkOAuthRequest($uri = '', $method = '')
+    {
+    }
 
     /**
      * @param array $params_array
      * @return OAuthProvider
      */
-    public function __construct($params_array) { }
+    public function __construct($params_array)
+    {
+    }
 
     /**
      * @param callback $callback_function
      * @return void
      */
-    public function consumerHandler($callback_function) { }
+    public function consumerHandler($callback_function)
+    {
+    }
 
     /**
      * @param int $size
@@ -312,26 +389,34 @@ class OAuthProvider {
      * @static
      * @final
      */
-    final public static function generateToken($size, $strong = false) { }
+    final public static function generateToken($size, $strong = false)
+    {
+    }
 
     /**
      * @param mixed $params_array
      * @return void
      */
-    public function is2LeggedEndpoint($params_array) { }
+    public function is2LeggedEndpoint($params_array)
+    {
+    }
 
     /**
      * @param bool $will_issue_request_token
      * @return void
      */
-    public function isRequestTokenEndpoint($will_issue_request_token) { }
+    public function isRequestTokenEndpoint($will_issue_request_token)
+    {
+    }
 
     /**
      * @param string
      * @return bool
      * @final
      */
-    final public function removeRequiredParameter($req_params) { }
+    final public function removeRequiredParameter($req_params)
+    {
+    }
 
     /**
      * @param string $oauthexception
@@ -340,7 +425,9 @@ class OAuthProvider {
      * @return string
      * @final
      */
-    final public static function reportProblem($oauthexception, $send_headers = true) { }
+    final public static function reportProblem($oauthexception, $send_headers = true)
+    {
+    }
 
     /**
      * @param string $param_key
@@ -348,7 +435,9 @@ class OAuthProvider {
      * @return bool
      * @final
      */
-    final public function setParam($param_key, $param_val = null) { }
+    final public function setParam($param_key, $param_val = null)
+    {
+    }
 
 
     /**
@@ -356,17 +445,23 @@ class OAuthProvider {
      * @return bool
      * @final
      */
-    final public function setRequestTokenPath($path) { }
+    final public function setRequestTokenPath($path)
+    {
+    }
 
     /**
      * @param callback $callback_function
      * @return void
      */
-    public function timestampNonceHandler($callback_function) { }
+    public function timestampNonceHandler($callback_function)
+    {
+    }
 
     /**
      * @param callback $callback_function
      * @return void
      */
-    public function tokenHandler($callback_function) { }
+    public function tokenHandler($callback_function)
+    {
+    }
 }

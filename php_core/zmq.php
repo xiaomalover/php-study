@@ -4,6 +4,7 @@
  * @author Boris Gorbylev <ekho@ekho.name>
  * @link https://github.com/i-ekho/zmq-phpdoc
  */
+
 /**
  * Class ZMQ
  * @link http://www.php.net/manual/en/class.zmq.php
@@ -272,6 +273,7 @@ class ZMQ
      * The context has been terminated
      */
     const ERR_ETERM = 156384765;
+
     /**
      * Private constructor to prevent direct initialization. This class holds the constants for ZMQ extension.
      * @link http://www.php.net/manual/en/zmq.construct.php
@@ -280,6 +282,7 @@ class ZMQ
     {
     }
 }
+
 /**
  * Class ZMQContext
  * @link http://www.php.net/manual/en/class.zmqcontext.php
@@ -298,6 +301,7 @@ class ZMQContext
     public function __construct($io_threads = 1, $is_persistent = true)
     {
     }
+
     /**
      * (PECL zmq &gt;= 1.0.4)
      * Returns the value of a context option.
@@ -311,6 +315,7 @@ class ZMQContext
     public function getOpt($key)
     {
     }
+
     /**
      * (PECL zmq &gt;= 0.5.0)
      * Shortcut for creating new sockets from the context.
@@ -329,6 +334,7 @@ class ZMQContext
     public function getSocket($type, $persistent_id = null, $on_new_socket = null)
     {
     }
+
     /**
      * (PECL zmq &gt;= 0.5.0)
      * Whether the context is persistent.
@@ -341,6 +347,7 @@ class ZMQContext
     public function isPersistent()
     {
     }
+
     /**
      * (PECL zmq &gt;= 1.0.4)
      * Sets a ZMQ context option. The type of the value depends on the key.
@@ -357,6 +364,7 @@ class ZMQContext
     {
     }
 }
+
 /**
  * Class ZMQSocket
  * @link http://www.php.net/manual/en/class.zmqsocket.php
@@ -383,6 +391,7 @@ class ZMQSocket
     public function __construct(ZMQContext $context, $type, $persistent_id = null, $on_new_socket = null)
     {
     }
+
     /**
      * (PECL zmq &gt;= 0.5.0)
      * Bind the socket to an endpoint.
@@ -400,6 +409,7 @@ class ZMQSocket
     public function bind($dsn, $force = false)
     {
     }
+
     /**
      * (PECL zmq &gt;= 0.5.0)
      * Connect the socket to a remote endpoint.
@@ -417,6 +427,7 @@ class ZMQSocket
     public function connect($dsn, $force = false)
     {
     }
+
     /**
      * (PECL zmq &gt;= 1.0.4)
      * Disconnect the socket from a previously connected remote endpoint.
@@ -433,6 +444,7 @@ class ZMQSocket
     public function disconnect($dsn)
     {
     }
+
     /**
      * Returns a list of endpoints where the socket is connected or bound to.
      *
@@ -444,6 +456,7 @@ class ZMQSocket
     public function getEndpoints()
     {
     }
+
     /**
      * Returns the persistent id string assigned of the object and NULL if socket is not persistent.
      *
@@ -456,6 +469,7 @@ class ZMQSocket
     public function getPersistentId()
     {
     }
+
     /**
      * Returns the value of a socket option.
      * This method is available if ZMQ extension has been compiled against ZMQ version 2.0.7 or higher
@@ -474,6 +488,7 @@ class ZMQSocket
     public function getSockOpt($key)
     {
     }
+
     /**
      * Return the socket type.
      * The socket type can be compared against ZMQ::SOCKET_* constants.
@@ -488,6 +503,7 @@ class ZMQSocket
     public function getSocketType()
     {
     }
+
     /**
      * Check whether the socket is persistent.
      *
@@ -498,6 +514,7 @@ class ZMQSocket
     public function isPersistent()
     {
     }
+
     /**
      * Receive a message from a socket.
      * By default receiving will block until a message is available unless <b>ZMQ::MODE_NOBLOCK</b> flag is used.
@@ -516,6 +533,7 @@ class ZMQSocket
     public function recv($mode = 0)
     {
     }
+
     /**
      * Receive an array multipart message from a socket.
      * By default receiving will block until a message is available unless ZMQ::MODE_NOBLOCK flag is used.
@@ -532,6 +550,7 @@ class ZMQSocket
     public function recvMulti($mode = 0)
     {
     }
+
     /**
      * Send a message using the socket. The operation can block unless ZMQ::MODE_NOBLOCK is used.
      * If <b>ZMQ::MODE_NOBLOCK</b> is used and the operation would block bool false shall be returned.
@@ -547,6 +566,7 @@ class ZMQSocket
     public function send($message, $mode = 0)
     {
     }
+
     /**
      * Send a multipart message using the socket. The operation can block unless ZMQ::MODE_NOBLOCK is used.
      * If <b>ZMQ::MODE_NOBLOCK</b> is used and the operation would block bool false shall be returned.
@@ -562,6 +582,7 @@ class ZMQSocket
     public function sendmulti(array $message, $mode = 0)
     {
     }
+
     /**
      * Sets a ZMQ socket option. The type of the value depends on the key.
      * @see ZMQ Constant Types for more information.
@@ -577,6 +598,7 @@ class ZMQSocket
     public function setSockOpt($key, $value)
     {
     }
+
     /**
      * Unbind the socket from an endpoint.
      * The endpoint is defined in format transport://address
@@ -593,6 +615,7 @@ class ZMQSocket
     {
     }
 }
+
 /**
  * Class ZMQPoll
  * @link http://www.php.net/manual/en/class.zmqpoll.php
@@ -616,6 +639,7 @@ class ZMQPoll
     public function add(ZMQSocket $entry, $type)
     {
     }
+
     /**
      * (PECL zmq &gt;= 1.0.4)
      * Clears all elements from the poll set.
@@ -627,6 +651,7 @@ class ZMQPoll
     public function clear()
     {
     }
+
     /**
      * (PECL zmq &gt;= 0.5.0)
      * Count the items in the poll set.
@@ -638,6 +663,7 @@ class ZMQPoll
     public function count()
     {
     }
+
     /**
      * (PECL zmq &gt;= 0.5.0)
      * Returns the ids of the objects that had errors in the last poll.
@@ -651,6 +677,7 @@ class ZMQPoll
     public function getLastErrors()
     {
     }
+
     /**
      * (PECL zmq &gt;= 0.5.0)
      * Polls the items in the current poll set.
@@ -670,6 +697,7 @@ class ZMQPoll
     public function poll(array &$readable, array &$writable, $timeout = -1)
     {
     }
+
     /**
      * (PECL zmq &gt;= 0.5.0)
      * Remove item from the poll set.
@@ -685,6 +713,7 @@ class ZMQPoll
     {
     }
 }
+
 /**
  * Class ZMQDevice
  * @link http://www.php.net/manual/en/class.zmqdevice.php
@@ -707,6 +736,7 @@ class ZMQDevice
     public function __construct(ZMQSocket $frontend, ZMQSocket $backend, ZMQSocket $listener = null)
     {
     }
+
     /**
      * Gets the idle callback timeout value.
      * This method returns the idle callback timeout value.
@@ -719,6 +749,7 @@ class ZMQDevice
     public function getIdleTimeout()
     {
     }
+
     /**
      * Gets the timer callback timeout value.
      * Added in ZMQ extension version 1.1.0.
@@ -730,6 +761,7 @@ class ZMQDevice
     public function getTimerTimeout()
     {
     }
+
     /**
      * Runs the device.
      * Call to this method will block until the device is running.
@@ -742,6 +774,7 @@ class ZMQDevice
     public function run()
     {
     }
+
     /**
      * Sets the idle callback function.
      * If idle timeout is defined the idle callback function shall be called if the internal poll loop times out
@@ -759,6 +792,7 @@ class ZMQDevice
     public function setIdleCallback($cb_func, $timeout, $user_data)
     {
     }
+
     /**
      * Sets the idle callback timeout value. The idle callback is invoked periodically when the device is idle.
      * On success this method returns the current object.
@@ -772,6 +806,7 @@ class ZMQDevice
     public function setIdleTimeout($timeout)
     {
     }
+
     /**
      * Sets the timer callback function. The timer callback will be invoked after timeout has passed.
      * The difference between idle and timer callbacks are that idle callback is invoked only when the device is idle.
@@ -789,6 +824,7 @@ class ZMQDevice
     public function setTimerCallback($cb_func, $timeout, $user_data)
     {
     }
+
     /**
      * Sets the timer callback timeout value. The timer callback is invoked periodically if it's set.
      * Added in ZMQ extension version 1.1.0.
@@ -803,18 +839,23 @@ class ZMQDevice
     {
     }
 }
+
 class ZMQException extends Exception
 {
 }
+
 class ZMQContextException extends ZMQException
 {
 }
+
 class ZMQSocketException extends ZMQException
 {
 }
+
 class ZMQPollException extends ZMQException
 {
 }
+
 class ZMQDeviceException extends ZMQException
 {
 }

@@ -5,7 +5,8 @@
  * <p>The methods and constants adhere closely to the names and behavior used by the underlying ICU library.</p>
  * @since 7.0
  */
-class IntlChar {
+class IntlChar
+{
     const UNICODE_VERSION = 6.3;
     const CODEPOINT_MIN = 0;
     const CODEPOINT_MAX = 1114111;
@@ -678,7 +679,9 @@ class IntlChar {
      * Also FALSE if property is out of bounds or if the Unicode version does not have data for the property at all, or not for this code point.
      * @since 7.0
      */
-    static public function hasBinaryProperty($codepoint, $property){}
+    static public function hasBinaryProperty($codepoint, $property)
+    {
+    }
 
     /**
      * @link http://php.net/manual/ru/intlchar.charage.php
@@ -687,7 +690,9 @@ class IntlChar {
      * @return array The Unicode version number, as an array. For example, version 1.3.31.2 would be represented as [1, 3, 31, 2].
      * @since 7.0
      */
-    public static function charAge($codepoint) {}
+    public static function charAge($codepoint)
+    {
+    }
 
     /**
      * @link http://php.net/manual/ru/intlchar.chardigitvalue.php
@@ -696,7 +701,9 @@ class IntlChar {
      * @return int The decimal digit value of codepoint, or -1 if it is not a decimal digit character.
      * @since 7.0
      */
-    public static function charDigitValue($codepoint){}
+    public static function charDigitValue($codepoint)
+    {
+    }
 
     /**
      * Get bidirectional category value for a code point
@@ -731,7 +738,9 @@ class IntlChar {
      * <li><b> IntlChar::CHAR_DIRECTION_CHAR_DIRECTION_COUNT </b></p>
      * @since 7.0
      */
-    public static function charDirection($codepoint) {}
+    public static function charDirection($codepoint)
+    {
+    }
 
     /**
      * @link http://php.net/manual/en/intlchar.charfromname.php
@@ -749,7 +758,9 @@ class IntlChar {
      * @return int The Unicode value of the code point with the given name (as an integer), or FALSE if there is no such code point.
      * @since 7.0
      */
-    public static function charFromName($characterName, $nameChoice = IntlChar::UNICODE_CHAR_NAME) {}
+    public static function charFromName($characterName, $nameChoice = IntlChar::UNICODE_CHAR_NAME)
+    {
+    }
 
     /**
      * @link http://php.net/manual/ru/intlchar.charmirror.php
@@ -758,7 +769,9 @@ class IntlChar {
      * @return mixed Returns another Unicode code point that may serve as a mirror-image substitute, or codepoint itself if there is no such mapping or codepoint does not have the Bidi_Mirrored property.
      * The return type will be integer unless the code point was passed as a UTF-8 string, in which case a string will be returned.
      */
-    public static function charMirror($codePoint) {}
+    public static function charMirror($codePoint)
+    {
+    }
 
     /**
      * Retrieve the name of a Unicode character
@@ -775,7 +788,9 @@ class IntlChar {
      * @return string The corresponding name, or an empty string if there is no name for this character.
      * @since 7.0
      */
-    public static function charName($codepoint, $nameChoice = IntlChar::UNICODE_CHAR_NAME) {}
+    public static function charName($codepoint, $nameChoice = IntlChar::UNICODE_CHAR_NAME)
+    {
+    }
 
     /**
      * Get the general category value for a code point
@@ -828,7 +843,7 @@ class IntlChar {
      * @return string A string containing the single character specified by the Unicode code point value.
      * @since 7.0
      */
-    public static function chr ($codepoint)
+    public static function chr($codepoint)
     {
 
     }
@@ -841,14 +856,16 @@ class IntlChar {
      * @return int Returns the numeric value represented by the character in the specified radix, or <b>FALSE</b> if there is no value or if the value exceeds the radix.
      * @since 7.0
      */
-    public static function digit ($codepoint,$radix = 10 ) {}
+    public static function digit($codepoint, $radix = 10)
+    {
+    }
 
     /**
      * Enumerate all assigned Unicode characters within a range
      * @link http://php.net/manual/ru/intlchar.enumcharnames.php
      * @param mixed $start The first code point in the enumeration range.
      * @param mixed $limit One more than the last code point in the enumeration range (the first one after the range).
-     * @param callable $callback<p>
+     * @param callable $callback <p>
      * The function that is to be called for each character name.  The following three arguments will be passed into it:
      * </p><ul>
      * <li>integer</a> <em>$codepoint</em> - The numeric code point value</li>
@@ -866,7 +883,9 @@ class IntlChar {
      * </ul>
      * @since 7.0
      */
-    public static function enumCharNames ($start, $limit, $callback, $nameChoice = IntlChar::UNICODE_CHAR_NAME) {}
+    public static function enumCharNames($start, $limit, $callback, $nameChoice = IntlChar::UNICODE_CHAR_NAME)
+    {
+    }
 
     /**
      * Enumerate all code points with their Unicode general categories
@@ -881,7 +900,9 @@ class IntlChar {
      * </ul>
      * @since 7.0
      */
-    public static function enumCharTypes ($callable) {}
+    public static function enumCharTypes($callable)
+    {
+    }
 
     /**
      * Perform case folding on a code point
@@ -891,7 +912,9 @@ class IntlChar {
      * @return mixed Returns the Simple_Case_Folding of the code point, if any; otherwise the code point itself.
      * @since 7.0
      */
-    public static function foldCase ($codepoint, $options = IntlChar::FOLD_CASE_DEFAULT ) {}
+    public static function foldCase($codepoint, $options = IntlChar::FOLD_CASE_DEFAULT)
+    {
+    }
 
     /**
      * Get character representation for a given digit and radix
@@ -901,7 +924,9 @@ class IntlChar {
      * @return int The character representation (as a string) of the specified digit in the specified radix.
      * @since 7.0
      */
-    public static function forDigit ($digit, $radix = 10) {}
+    public static function forDigit($digit, $radix = 10)
+    {
+    }
 
     /**
      * Get the paired bracket character for a code point
@@ -911,7 +936,9 @@ class IntlChar {
      * The return type will be integer unless the code point was passed as a UTF-8 string, in which case a string will be returned.
      * @since 7.0
      */
-    public static function getBidiPairedBracket($codepoint) {}
+    public static function getBidiPairedBracket($codepoint)
+    {
+    }
 
     /**
      * Get the Unicode allocation block containing a code point
@@ -921,7 +948,9 @@ class IntlChar {
      * See the <em>IntlChar::BLOCK_CODE_*</em> constants for possible return values.
      * @since 7.0
      */
-    public static function getBlockCode($codepoint) {}
+    public static function getBlockCode($codepoint)
+    {
+    }
 
     /**
      * Get the combining class of a code point
@@ -930,7 +959,9 @@ class IntlChar {
      * @return int Returns the combining class of the character.
      * @since 7.0
      */
-    public static function getCombiningClass ($codepoint) {}
+    public static function getCombiningClass($codepoint)
+    {
+    }
 
     /**
      * Get the FC_NFKC_Closure property for a code point
@@ -939,7 +970,9 @@ class IntlChar {
      * @return string Returns the FC_NFKC_Closure property string for the codepoint, or an empty string if there is none.
      * @since 7.0
      */
-    public static function getFC_NFKC_Closure ($codepoint) {}
+    public static function getFC_NFKC_Closure($codepoint)
+    {
+    }
 
     /**
      * Get the max value for a Unicode property
@@ -948,7 +981,9 @@ class IntlChar {
      * @return int The maximum value returned by {@see IntlChar::getIntPropertyValue()} for a Unicode property. <=0 if the property selector is out of range.
      * @since 7.0
      */
-    public static function getIntPropertyMaxValue  ($property) {}
+    public static function getIntPropertyMaxValue($property)
+    {
+    }
 
     /**
      * Get the min value for a Unicode property
@@ -957,7 +992,9 @@ class IntlChar {
      * @return int The maximum value returned by {@see IntlChar::getIntPropertyValue()} for a Unicode property. 0 if the property selector is out of range.
      * @since 7.0
      */
-    public static function getIntPropertyMinValue  ($property) {}
+    public static function getIntPropertyMinValue($property)
+    {
+    }
 
     /**
      * Get the value for a Unicode property for a code point
@@ -980,7 +1017,9 @@ class IntlChar {
      * </p>
      * @since 7.0
      */
-    public static function getIntPropertyValue ($codepoint, $property ) {}
+    public static function getIntPropertyValue($codepoint, $property)
+    {
+    }
 
     /**
      * Get the numeric value for a Unicode code point
@@ -989,7 +1028,9 @@ class IntlChar {
      * @return float Numeric value of codepoint, or float(-123456789) if none is defined.
      * @since 7.0
      */
-    public static function getNumericValue ($codepoint) {}
+    public static function getNumericValue($codepoint)
+    {
+    }
 
     /**
      * Get the property constant value for a given property name
@@ -998,7 +1039,9 @@ class IntlChar {
      * @return int Returns an IntlChar::PROPERTY_ constant value, or <b>IntlChar::PROPERTY_INVALID_CODE</b> if the given name does not match any property.
      * @since 7.0
      */
-    public static function getPropertyEnum ($alias ) {}
+    public static function getPropertyEnum($alias)
+    {
+    }
 
     /**
      * Get the Unicode name for a property
@@ -1019,7 +1062,9 @@ class IntlChar {
      * </p>
      * @since 7.0
      */
-    public static function getPropertyName ($property, $nameChoice = IntlChar::LONG_PROPERTY_NAME) {}
+    public static function getPropertyName($property, $nameChoice = IntlChar::LONG_PROPERTY_NAME)
+    {
+    }
 
     /**
      * Get the property value for a given value name
@@ -1030,7 +1075,9 @@ class IntlChar {
      * @return int Returns the corresponding value integer, or IntlChar::PROPERTY_INVALID_CODE if the given name does not match any value of the given property, or if the property is invalid.
      * @since 7.0
      */
-    public static function getPropertyValueEnum ($property, $name) {}
+    public static function getPropertyValueEnum($property, $name)
+    {
+    }
 
     /**
      * Get the Unicode name for a property value
@@ -1060,7 +1107,9 @@ class IntlChar {
      * If a given nameChoice returns FALSE, then all larger values of nameChoice will return FALSE, with one exception: if FALSE is returned for IntlChar::SHORT_PROPERTY_NAME, then IntlChar::LONG_PROPERTY_NAME (and higher) may still return a non-FALSE value.
      * @since 7.0
      */
-    public static function getPropertyValueName ($property, $value, $nameChoice = IntlChar::LONG_PROPERTY_NAME) {}
+    public static function getPropertyValueName($property, $value, $nameChoice = IntlChar::LONG_PROPERTY_NAME)
+    {
+    }
 
     /**
      * Get the Unicode version
@@ -1068,7 +1117,9 @@ class IntlChar {
      * @return array An array containing the Unicode version number.
      * @since 7.0
      */
-    public static function getUnicodeVersion() {}
+    public static function getUnicodeVersion()
+    {
+    }
 
     /**
      * Check if code point is an alphanumeric character
@@ -1077,7 +1128,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is an alphanumeric character, FALSE if not.
      * @since 7.0
      */
-    public static function isalnum ($codepoint) {}
+    public static function isalnum($codepoint)
+    {
+    }
 
     /**
      * Check if code point is a letter character
@@ -1086,7 +1139,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a letter character, FALSE if not.
      * @since 7.0
      */
-    public static function isalpha ($codepoint) {}
+    public static function isalpha($codepoint)
+    {
+    }
+
     /**
      * Check if code point is a base character
      * @link http://php.net/manual/ru/intlchar.isbase.php
@@ -1094,7 +1150,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a base character, FALSE if not.
      * @since 7.0
      */
-    public static function isbase ($codepoint ){}
+    public static function isbase($codepoint)
+    {
+    }
+
     /**
      * Check if code point is a "blank" or "horizontal space" character
      * @link http://php.net/manual/ru/intlchar.isblank.php
@@ -1102,7 +1161,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is either a "blank" or "horizontal space" character, FALSE if not.
      * @since 7.0
      */
-    public static function isblank ($codepoint){}
+    public static function isblank($codepoint)
+    {
+    }
 
     /**
      * Check if code point is a control character
@@ -1111,7 +1172,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a control character, FALSE if not.
      * @since 7.0
      */
-    public static function iscntrl ($codepoint ) {}
+    public static function iscntrl($codepoint)
+    {
+    }
 
     /**
      * Check whether the code point is defined
@@ -1120,7 +1183,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a defined character, FALSE if not.
      * @since 7.0
      */
-    public static function isdefined ($codepoint ) {}
+    public static function isdefined($codepoint)
+    {
+    }
 
     /**
      * Check if code point is a digit character
@@ -1129,7 +1194,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a digit character, FALSE if not.
      * @since 7.0
      */
-    public static function isdigit ($codepoint) {}
+    public static function isdigit($codepoint)
+    {
+    }
+
     /**
      * Check if code point is a graphic character
      * @link http://php.net/manual/ru/intlchar.isgraph.php
@@ -1137,7 +1205,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a "graphic" character, FALSE if not.
      * @since 7.0
      */
-    public static function isgraph ($codepoint ) {}
+    public static function isgraph($codepoint)
+    {
+    }
+
     /**
      * Check if code point is an ignorable character
      * @link http://php.net/manual/ru/intlchar.isidignorable.php
@@ -1145,7 +1216,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is ignorable in identifiers, FALSE if not.
      * @since 7.0
      */
-    public static function isIDIgnorable ($codepoint ) {}
+    public static function isIDIgnorable($codepoint)
+    {
+    }
+
     /**
      * Check if code point is permissible in an identifier
      * @link http://php.net/manual/ru/intlchar.isidpart.php
@@ -1153,7 +1227,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is the code point may occur in an identifier, FALSE if not.
      * @since 7.0
      */
-    public static function isIDPart ($codepoint ) {}
+    public static function isIDPart($codepoint)
+    {
+    }
 
     /**
      * Check if code point is permissible as the first character in an identifier
@@ -1162,7 +1238,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint may start an identifier, FALSE if not.
      * @since 7.0
      */
-    public static function isIDStart ($codepoint ) {}
+    public static function isIDStart($codepoint)
+    {
+    }
+
     /**
      * Check if code point is an ISO control code
      * @link http://php.net/manual/ru/intlchar.isisocontrol.php
@@ -1170,7 +1249,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is an ISO control code, FALSE if not.
      * @since 7.0
      */
-    public static function isISOControl ($codepoint ) {}
+    public static function isISOControl($codepoint)
+    {
+    }
+
     /**
      * Check if code point is permissible in a Java identifier
      * @link http://php.net/manual/ru/intlchar.isjavaidpart.php
@@ -1178,7 +1260,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint may occur in a Java identifier, FALSE if not.
      * @since 7.0
      */
-    public static function isJavaIDPart ($codepoint ) {}
+    public static function isJavaIDPart($codepoint)
+    {
+    }
+
     /**
      * Check if code point is permissible as the first character in a Java identifier
      * @link http://php.net/manual/ru/intlchar.isjavaidstart.php
@@ -1186,7 +1271,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint may start a Java identifier, FALSE if not.
      * @since 7.0
      */
-    public static function isJavaIDStart ($codepoint ) {}
+    public static function isJavaIDStart($codepoint)
+    {
+    }
+
     /**
      * Check if code point is a space character according to Java
      * @link http://php.net/manual/ru/intlchar.isjavaspacechar.php
@@ -1194,7 +1282,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a space character according to Java, FALSE if not.
      * @since 7.0
      */
-    public static function isJavaSpaceChar ($codepoint ) {}
+    public static function isJavaSpaceChar($codepoint)
+    {
+    }
 
     /**
      * Check if code point is a lowercase letter
@@ -1204,7 +1294,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is an Ll lowercase letter, FALSE if not.
      * @since 7.0
      */
-    public static function islower ($codepoint ) {}
+    public static function islower($codepoint)
+    {
+    }
+
     /**
      * Check if code point has the Bidi_Mirrored property
      * @link http://php.net/manual/ru/intlchar.ismirrored.php
@@ -1212,7 +1305,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint has the Bidi_Mirrored property, FALSE if not.
      * @since 7.0
      */
-    public static function isMirrored ($codepoint ) {}
+    public static function isMirrored($codepoint)
+    {
+    }
 
     /**
      * Check if code point is a printable character
@@ -1221,7 +1316,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a printable character, FALSE if not.
      * @since 7.0
      */
-    public static function isprint ($codepoint ) {}
+    public static function isprint($codepoint)
+    {
+    }
 
     /**
      * Check if code point is punctuation character
@@ -1231,7 +1328,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a punctuation character, FALSE if not.
      * @since 7.0
      */
-    public static function ispunct ($codepoint ) {}
+    public static function ispunct($codepoint)
+    {
+    }
+
     /**
      * Check if code point is a space character
      * @link http://php.net/manual/ru/intlchar.isspace.php
@@ -1239,7 +1339,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a space character, FALSE if not.
      * @since 7.0
      */
-    public static function isspace ($codepoint ) {}
+    public static function isspace($codepoint)
+    {
+    }
+
     /**
      * Check if code point is a titlecase letter
      * @link http://php.net/manual/ru/intlchar.istitle.php
@@ -1247,7 +1350,9 @@ class IntlChar {
      * @return boolean Returns TRUE if codepoint is a titlecase letter, FALSE if not.
      * @since 7.0
      */
-    public static function istitle ($codepoint ){}
+    public static function istitle($codepoint)
+    {
+    }
 
     /**
      * Check if code point has the Alphabetic Unicode property
@@ -1256,7 +1361,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint has the Alphabetic Unicode property, FALSE if not.
      * @since 7.0
      */
-    public static function isUAlphabetic ($codepoint ) {}
+    public static function isUAlphabetic($codepoint)
+    {
+    }
+
     /**
      * Check if code point has the Lowercase Unicode property
      * @link http://php.net/manual/ru/intlchar.isulowercase.php
@@ -1264,7 +1372,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint has the Lowercase Unicode property, FALSE if not.
      * @since 7.0
      */
-    public static function isULowercase ($codepoint ) {}
+    public static function isULowercase($codepoint)
+    {
+    }
+
     /**
      * Check if code point has the general category "Lu" (uppercase letter)
      * @link http://php.net/manual/ru/intlchar.isupper.php
@@ -1273,7 +1384,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is an Lu uppercase letter, FALSE if not.
      * @since 7.0
      */
-    public static function isupper ($codepoint) {}
+    public static function isupper($codepoint)
+    {
+    }
+
     /**
      * Check if code point has the Uppercase Unicode property
      * @link http://php.net/manual/ru/intlchar.isuuppercase.php
@@ -1281,7 +1395,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint has the Uppercase Unicode property, FALSE if not.
      * @since 7.0
      */
-    public static function isUUppercase ($codepoint) {}
+    public static function isUUppercase($codepoint)
+    {
+    }
+
     /**
      * Check if code point has the White_Space Unicode property
      * @link http://php.net/manual/ru/intlchar.isuwhitespace.php
@@ -1289,7 +1406,10 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint has the White_Space Unicode property, FALSE if not.
      * @since 7.0
      */
-    public static function isUWhiteSpace ($codepoint ) {}
+    public static function isUWhiteSpace($codepoint)
+    {
+    }
+
     /**
      * Check if code point is a whitespace character according to ICU
      * @link http://php.net/manual/ru/intlchar.iswhitespace.php
@@ -1297,7 +1417,9 @@ class IntlChar {
      * @return bool
      * @since 7.0
      */
-    public static function isWhitespace($codepoint) {}
+    public static function isWhitespace($codepoint)
+    {
+    }
 
     /**
      * Check if code point is a hexadecimal digit
@@ -1305,7 +1427,9 @@ class IntlChar {
      * @return bool Returns TRUE if codepoint is a hexadecimal character, FALSE if not.
      * @since 7.0
      */
-    public static function isxdigit ($codepoint){}
+    public static function isxdigit($codepoint)
+    {
+    }
 
     /**
      * Return Unicode code point value of character
@@ -1314,7 +1438,9 @@ class IntlChar {
      * @return int Returns the Unicode code point value as an integer.
      * @since 7.0
      */
-    public static function ord ($character) {}
+    public static function ord($character)
+    {
+    }
 
     /**
      * Make Unicode character lowercase
@@ -1324,7 +1450,10 @@ class IntlChar {
      * The return type will be integer unless the code point was passed as a UTF-8 string, in which case a string will be returned.
      * @since 7.0
      */
-    public static function tolower($codepoint) {}
+    public static function tolower($codepoint)
+    {
+    }
+
     /**
      * Make Unicode character titlecase
      * @link http://php.net/manual/ru/intlchar.totitle.php
@@ -1333,7 +1462,9 @@ class IntlChar {
      * The return type will be integer unless the code point was passed as a UTF-8 string, in which case a string will be returned.
      * @since 7.0
      */
-    public static function totitle ($codepoint ) {}
+    public static function totitle($codepoint)
+    {
+    }
 
     /**
      * Make Unicode character uppercase
@@ -1341,5 +1472,7 @@ class IntlChar {
      * @param mixed $codepoint The integer codepoint value (e.g. 0x2603 for U+2603 SNOWMAN), or the character encoded as a UTF-8 string (e.g. "\u{2603}")
      * @since 7.0
      */
-    public static function toupper ($codepoint ) {}
+    public static function toupper($codepoint)
+    {
+    }
 }

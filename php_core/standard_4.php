@@ -8,7 +8,9 @@
  * yet.
  * @since 5.2.0
  */
-function error_get_last () {}
+function error_get_last()
+{
+}
 
 /**
  * Call a user function given by the first parameter
@@ -30,12 +32,14 @@ function error_get_last () {}
  * ]]>
  * &example.outputs;
  * </p>
- * @param mixed $_ [optional] 
+ * @param mixed $_ [optional]
  * @return mixed the function result, or false on error.
  * @since 4.0
  * @since 5.0
  */
-function call_user_func ($function, $parameter = null, $_ = null) {}
+function call_user_func($function, $parameter = null, $_ = null)
+{
+}
 
 /**
  * Call a user function given with an array of parameters
@@ -50,34 +54,40 @@ function call_user_func ($function, $parameter = null, $_ = null) {}
  * @since 4.0.4
  * @since 5.0
  */
-function call_user_func_array ($function, array $param_arr) {}
+function call_user_func_array($function, array $param_arr)
+{
+}
 
 /**
  * Call a user method on an specific object
  * @link http://php.net/manual/en/function.call-user-method.php
  * @deprecated 5.3 use call_user_func() instead
  * @param string $method_name
- * @param object $obj 
- * @param mixed $parameter [optional] 
- * @param mixed $_ [optional] 
- * @return mixed 
+ * @param object $obj
+ * @param mixed $parameter [optional]
+ * @param mixed $_ [optional]
+ * @return mixed
  * @since 4.0
  * @since 5.0
  */
-function call_user_method ($method_name, &$obj, $parameter = null, $_ = null) {}
+function call_user_method($method_name, &$obj, $parameter = null, $_ = null)
+{
+}
 
 /**
  * Call a user method given with an array of parameters
  * @link http://php.net/manual/en/function.call-user-method-array.php
  * @deprecated 5.3 use call_user_func_array() instead
  * @param string $method_name
- * @param object $obj 
- * @param array $params 
- * @return mixed 
+ * @param object $obj
+ * @param array $params
+ * @return mixed
  * @since 4.0.5
  * @since 5.0
  */
-function call_user_method_array ($method_name, &$obj, array $params) {}
+function call_user_method_array($method_name, &$obj, array $params)
+{
+}
 
 /**
  * Call a static method
@@ -90,11 +100,13 @@ function call_user_method_array ($method_name, &$obj, array $params) {}
  * @param mixed $parameter [optional] <p>
  * Zero or more parameters to be passed to the function.
  * </p>
- * @param mixed $_ [optional] 
+ * @param mixed $_ [optional]
  * @return mixed the function result, or false on error.
  * @since 5.3.0
  */
-function forward_static_call ($function, $parameter = null, $_ = null) {}
+function forward_static_call($function, $parameter = null, $_ = null)
+{
+}
 
 /**
  * Call a static method and pass the arguments as array
@@ -104,11 +116,13 @@ function forward_static_call ($function, $parameter = null, $_ = null) {}
  * with the name of the class, and the method, or a &string;, with a function
  * name.
  * </p>
- * @param array $parameters [optional] 
+ * @param array $parameters [optional]
  * @return mixed the function result, or false on error.
  * @since 5.3.0
  */
-function forward_static_call_array ($function, array $parameters = null) {}
+function forward_static_call_array($function, array $parameters = null)
+{
+}
 
 /**
  * Generates a storable representation of a value
@@ -117,15 +131,15 @@ function forward_static_call_array ($function, array $parameters = null) {}
  * The value to be serialized. serialize
  * handles all types, except the resource-type.
  * You can even serialize arrays that contain
- * references to itself. Circular references inside the array/object you 
- * are serializing will also be stored. Any other 
+ * references to itself. Circular references inside the array/object you
+ * are serializing will also be stored. Any other
  * reference will be lost.
  * </p>
  * <p>
  * When serializing objects, PHP will attempt to call the member function
- * __sleep prior to serialization. 
- * This is to allow the object to do any last minute clean-up, etc. prior 
- * to being serialized. Likewise, when the object is restored using 
+ * __sleep prior to serialization.
+ * This is to allow the object to do any last minute clean-up, etc. prior
+ * to being serialized. Likewise, when the object is restored using
  * unserialize the __wakeup member function is called.
  * </p>
  * <p>
@@ -133,12 +147,14 @@ function forward_static_call_array ($function, array $parameters = null) {}
  * name; protected members have a '*' prepended to the member name.
  * These prepended values have null bytes on either side.
  * </p>
- * @return string a string containing a byte-stream representation of 
+ * @return string a string containing a byte-stream representation of
  * value that can be stored anywhere.
  * @since 4.0
  * @since 5.0
  */
-function serialize ($value) {}
+function serialize($value)
+{
+}
 
 /**
  * Creates a PHP value from a stored representation
@@ -147,7 +163,7 @@ function serialize ($value) {}
  * The serialized string.
  * </p>
  * <p>
- * If the variable being unserialized is an object, after successfully 
+ * If the variable being unserialized is an object, after successfully
  * reconstructing the object PHP will automatically attempt to call the
  * __wakeup member function (if it exists).
  * </p>
@@ -157,7 +173,7 @@ function serialize ($value) {}
  * It's possible to set a callback-function which will be called,
  * if an undefined class should be instantiated during unserializing.
  * (to prevent getting an incomplete object "__PHP_Incomplete_Class".)
- * Use your &php.ini;, ini_set or &htaccess; 
+ * Use your &php.ini;, ini_set or &htaccess;
  * to define 'unserialize_callback_func'. Everytime an undefined class
  * should be instantiated, it'll be called. To disable this feature just
  * empty this setting.
@@ -173,7 +189,9 @@ function serialize ($value) {}
  * @since 4.0
  * @since 5.0
  */
-function unserialize ($str) {}
+function unserialize($str)
+{
+}
 
 /**
  * Dumps information about a variable
@@ -182,11 +200,13 @@ function unserialize ($str) {}
  * The variable you want to export.
  * </p>
  * @param mixed $_ [optional]
- * @return void 
+ * @return void
  * @since 4.0
  * @since 5.0
  */
-function var_dump ($expression, $_ = null) {}
+function var_dump($expression, $_ = null)
+{
+}
 
 /**
  * Outputs or returns a parsable string representation of a variable
@@ -199,13 +219,15 @@ function var_dump ($expression, $_ = null) {}
  * the variable representation instead of outputing it.
  * </p>
  * &note.uses-ob;
- * @return mixed the variable representation when the return 
+ * @return mixed the variable representation when the return
  * parameter is used and evaluates to true. Otherwise, this function will
  * return &null;.
  * @since 4.2.0
  * @since 5.0
  */
-function var_export ($expression, $return = null) {}
+function var_export($expression, $return = null)
+{
+}
 
 /**
  * Dumps a string representation of an internal zend value to output
@@ -213,11 +235,13 @@ function var_export ($expression, $return = null) {}
  * @param mixed $variable <p>
  * The variable being evaluated.
  * </p>
- * @return void 
+ * @return void
  * @since 4.2.0
  * @since 5.0
  */
-function debug_zval_dump ($variable) {}
+function debug_zval_dump($variable)
+{
+}
 
 /**
  * Prints human-readable information about a variable
@@ -226,7 +250,7 @@ function debug_zval_dump ($variable) {}
  * The expression to be printed.
  * </p>
  * @param bool $return [optional] <p>
- * If you would like to capture the output of print_r, 
+ * If you would like to capture the output of print_r,
  * use the return parameter. If this parameter is set
  * to true, print_r will return its output, instead of
  * printing it (which it does by default).
@@ -238,7 +262,9 @@ function debug_zval_dump ($variable) {}
  * @since 4.0
  * @since 5.0
  */
-function print_r ($expression, $return = null) {}
+function print_r($expression, $return = null)
+{
+}
 
 /**
  * Returns the amount of memory allocated to PHP
@@ -252,7 +278,9 @@ function print_r ($expression, $return = null) {}
  * @since 4.3.2
  * @since 5.0
  */
-function memory_get_usage ($real_usage = null) {}
+function memory_get_usage($real_usage = null)
+{
+}
 
 /**
  * Returns the peak of memory allocated by PHP
@@ -265,7 +293,9 @@ function memory_get_usage ($real_usage = null) {}
  * @return int the memory peak in bytes.
  * @since 5.2.0
  */
-function memory_get_peak_usage ($real_usage = null) {}
+function memory_get_peak_usage($real_usage = null)
+{
+}
 
 /**
  * Register a function for execution on shutdown
@@ -274,7 +304,7 @@ function memory_get_peak_usage ($real_usage = null) {}
  * The shutdown function to register.
  * </p>
  * <p>
- * The shutdown functions are called as the part of the request so that 
+ * The shutdown functions are called as the part of the request so that
  * it's possible to send the output from them. There is currently no way
  * to process the data with output buffering functions in the shutdown
  * function.
@@ -288,12 +318,14 @@ function memory_get_peak_usage ($real_usage = null) {}
  * It is possible to pass parameters to the shutdown function by passing
  * additional parameters.
  * </p>
- * @param mixed $_ [optional] 
- * @return void 
+ * @param mixed $_ [optional]
+ * @return void
  * @since 4.0
  * @since 5.0
  */
-function register_shutdown_function ($function, $parameter = null, $_ = null) {}
+function register_shutdown_function($function, $parameter = null, $_ = null)
+{
+}
 
 /**
  * Register a function for execution on each tick
@@ -304,12 +336,14 @@ function register_shutdown_function ($function, $parameter = null, $_ = null) {}
  * </p>
  * @param mixed $arg [optional] <p>
  * </p>
- * @param mixed $_ [optional] 
+ * @param mixed $_ [optional]
  * @return bool true on success or false on failure.
  * @since 4.0.3
  * @since 5.0
  */
-function register_tick_function ($function, $arg = null, $_ = null) {}
+function register_tick_function($function, $arg = null, $_ = null)
+{
+}
 
 /**
  * De-register a function for execution on each tick
@@ -317,11 +351,13 @@ function register_tick_function ($function, $arg = null, $_ = null) {}
  * @param string $function_name <p>
  * The function name, as a string.
  * </p>
- * @return void 
+ * @return void
  * @since 4.0.3
  * @since 5.0
  */
-function unregister_tick_function ($function_name) {}
+function unregister_tick_function($function_name)
+{
+}
 
 /**
  * Syntax highlighting of a file
@@ -339,7 +375,9 @@ function unregister_tick_function ($function_name) {}
  * @since 4.0
  * @since 5.0
  */
-function highlight_file ($filename, $return = null) {}
+function highlight_file($filename, $return = null)
+{
+}
 
 /**
  * &Alias; <function>highlight_file</function>
@@ -349,7 +387,9 @@ function highlight_file ($filename, $return = null) {}
  * @since 4.0
  * @since 5.0
  */
-function show_source ($file_name, $return) {}
+function show_source($file_name, $return)
+{
+}
 
 /**
  * Syntax highlighting of a string
@@ -367,7 +407,9 @@ function show_source ($file_name, $return) {}
  * @since 4.0
  * @since 5.0
  */
-function highlight_string ($str, $return = null) {}
+function highlight_string($str, $return = null)
+{
+}
 
 /**
  * Return source with stripped comments and whitespace
@@ -385,7 +427,9 @@ function highlight_string ($str, $return = null) {}
  * #29606.
  * @since 5.0
  */
-function php_strip_whitespace ($filename) {}
+function php_strip_whitespace($filename)
+{
+}
 
 /**
  * Gets the value of a configuration option
@@ -398,7 +442,9 @@ function php_strip_whitespace ($filename) {}
  * @since 4.0
  * @since 5.0
  */
-function ini_get ($varname) {}
+function ini_get($varname)
+{
+}
 
 /**
  * Gets all configuration options
@@ -434,7 +480,9 @@ function ini_get ($varname) {}
  * @since 4.2.0
  * @since 5.0
  */
-function ini_get_all ($extension = null, $details = null) {}
+function ini_get_all($extension = null, $details = null)
+{
+}
 
 /**
  * Sets the value of a configuration option
@@ -453,7 +501,9 @@ function ini_get_all ($extension = null, $details = null) {}
  * @since 4.0
  * @since 5.0
  */
-function ini_set ($varname, $newvalue) {}
+function ini_set($varname, $newvalue)
+{
+}
 
 /**
  * &Alias; <function>ini_set</function>
@@ -463,7 +513,9 @@ function ini_set ($varname, $newvalue) {}
  * @since 4.0
  * @since 5.0
  */
-function ini_alter ($varname, $newvalue) {}
+function ini_alter($varname, $newvalue)
+{
+}
 
 /**
  * Restores the value of a configuration option
@@ -471,11 +523,13 @@ function ini_alter ($varname, $newvalue) {}
  * @param string $varname <p>
  * The configuration option name.
  * </p>
- * @return void 
+ * @return void
  * @since 4.0
  * @since 5.0
  */
-function ini_restore ($varname) {}
+function ini_restore($varname)
+{
+}
 
 /**
  * Gets the current include_path configuration option
@@ -484,7 +538,9 @@ function ini_restore ($varname) {}
  * @since 4.3.0
  * @since 5.0
  */
-function get_include_path () {}
+function get_include_path()
+{
+}
 
 /**
  * Sets the include_path configuration option
@@ -497,16 +553,20 @@ function get_include_path () {}
  * @since 4.3.0
  * @since 5.0
  */
-function set_include_path ($new_include_path) {}
+function set_include_path($new_include_path)
+{
+}
 
 /**
  * Restores the value of the include_path configuration option
  * @link http://php.net/manual/en/function.restore-include-path.php
- * @return void 
+ * @return void
  * @since 4.3.0
  * @since 5.0
  */
-function restore_include_path () {}
+function restore_include_path()
+{
+}
 
 /**
  * Send a cookie
@@ -585,22 +645,33 @@ function restore_include_path () {}
  * @since 4.0
  * @since 5.0
  */
-function setcookie ($name, $value = null, $expire = null, $path = null, $domain = null, $secure = null, $httponly = null) {}
+function setcookie($name, $value = null, $expire = null, $path = null, $domain = null, $secure = null, $httponly = null)
+{
+}
 
 /**
  * Send a cookie without urlencoding the cookie value
  * @link http://php.net/manual/en/function.setrawcookie.php
- * @param string $name 
- * @param string $value [optional] 
- * @param int $expire [optional] 
- * @param string $path [optional] 
- * @param string $domain [optional] 
- * @param bool $secure [optional] 
- * @param bool $httponly [optional] 
+ * @param string $name
+ * @param string $value [optional]
+ * @param int $expire [optional]
+ * @param string $path [optional]
+ * @param string $domain [optional]
+ * @param bool $secure [optional]
+ * @param bool $httponly [optional]
  * @return bool true on success or false on failure.
  * @since 5.0
  */
-function setrawcookie ($name, $value = null, $expire = null, $path = null, $domain = null, $secure = null, $httponly = null) {}
+function setrawcookie(
+    $name,
+    $value = null,
+    $expire = null,
+    $path = null,
+    $domain = null,
+    $secure = null,
+    $httponly = null
+) {
+}
 
 /**
  * Send a raw HTTP header
@@ -643,11 +714,13 @@ function setrawcookie ($name, $value = null, $expire = null, $path = null, $doma
  * @param int $http_response_code [optional] <p>
  * Forces the HTTP response code to the specified value.
  * </p>
- * @return void 
+ * @return void
  * @since 4.0
  * @since 5.0
  */
-function header ($string, $replace = true, $http_response_code = null) {}
+function header($string, $replace = true, $http_response_code = null)
+{
+}
 
 /**
  * Remove previously set headers
@@ -656,17 +729,19 @@ function header ($string, $replace = true, $http_response_code = null) {}
  * The header name to be removed.
  * </p>
  * This parameter is case-insensitive.
- * @return void 
+ * @return void
  * @since 5.3.0
  */
-function header_remove ($name = null) {}
+function header_remove($name = null)
+{
+}
 
 /**
  * Checks if or where headers have been sent
  * @link http://php.net/manual/en/function.headers-sent.php
  * @param string $file [optional] <p>
  * If the optional file and
- * line parameters are set, 
+ * line parameters are set,
  * headers_sent will put the PHP source file name
  * and line number where output started in the file
  * and line variables.
@@ -679,7 +754,9 @@ function header_remove ($name = null) {}
  * @since 4.0
  * @since 5.0
  */
-function headers_sent (&$file = null, &$line = null) {}
+function headers_sent(&$file = null, &$line = null)
+{
+}
 
 /**
  * Returns a list of response headers sent (or ready to send)
@@ -687,7 +764,9 @@ function headers_sent (&$file = null, &$line = null) {}
  * @return array a numerically indexed array of headers.
  * @since 5.0
  */
-function headers_list () {}
+function headers_list()
+{
+}
 
 /**
  * Check whether client disconnected
@@ -696,7 +775,9 @@ function headers_list () {}
  * @since 4.0
  * @since 5.0
  */
-function connection_aborted () {}
+function connection_aborted()
+{
+}
 
 /**
  * Returns connection status bitfield
@@ -707,7 +788,9 @@ function connection_aborted () {}
  * @since 4.0
  * @since 5.0
  */
-function connection_status () {}
+function connection_status()
+{
+}
 
 /**
  * Set whether a client disconnect should abort script execution
@@ -721,7 +804,9 @@ function connection_status () {}
  * @since 4.0
  * @since 5.0
  */
-function ignore_user_abort ($value = null) {}
+function ignore_user_abort($value = null)
+{
+}
 
 /**
  * Parse a configuration file
@@ -733,11 +818,11 @@ function ignore_user_abort ($value = null) {}
  * By setting the process_sections
  * parameter to true, you get a multidimensional array, with
  * the section names and settings included. The default
- * for process_sections is false 
+ * for process_sections is false
  * </p>
  * @param int $scanner_mode [optional] <p>
- * Can either be INI_SCANNER_NORMAL (default) or 
- * INI_SCANNER_RAW. If INI_SCANNER_RAW 
+ * Can either be INI_SCANNER_NORMAL (default) or
+ * INI_SCANNER_RAW. If INI_SCANNER_RAW
  * is supplied, then option values will not be parsed.
  * </p>
  * <p>
@@ -753,7 +838,9 @@ function ignore_user_abort ($value = null) {}
  * @since 4.0
  * @since 5.0
  */
-function parse_ini_file ($filename, $process_sections = null, $scanner_mode = null) {}
+function parse_ini_file($filename, $process_sections = null, $scanner_mode = null)
+{
+}
 
 /**
  * Parse a configuration string
@@ -765,18 +852,20 @@ function parse_ini_file ($filename, $process_sections = null, $scanner_mode = nu
  * By setting the process_sections
  * parameter to true, you get a multidimensional array, with
  * the section names and settings included. The default
- * for process_sections is false 
+ * for process_sections is false
  * </p>
  * @param int $scanner_mode [optional] <p>
- * Can either be INI_SCANNER_NORMAL (default) or 
- * INI_SCANNER_RAW. If INI_SCANNER_RAW 
+ * Can either be INI_SCANNER_NORMAL (default) or
+ * INI_SCANNER_RAW. If INI_SCANNER_RAW
  * is supplied, then option values will not be parsed.
  * </p>
  * @return array The settings are returned as an associative array on success,
  * and false on failure.
  * @since 5.3.0
  */
-function parse_ini_string ($ini, $process_sections = null, $scanner_mode = null) {}
+function parse_ini_string($ini, $process_sections = null, $scanner_mode = null)
+{
+}
 
 /**
  * Tells whether the file was uploaded via HTTP POST
@@ -788,7 +877,9 @@ function parse_ini_string ($ini, $process_sections = null, $scanner_mode = null)
  * @since 4.0.3
  * @since 5.0
  */
-function is_uploaded_file ($filename) {}
+function is_uploaded_file($filename)
+{
+}
 
 /**
  * Moves an uploaded file to a new location
@@ -812,7 +903,9 @@ function is_uploaded_file ($filename) {}
  * @since 4.0.3
  * @since 5.0
  */
-function move_uploaded_file ($filename, $destination) {}
+function move_uploaded_file($filename, $destination)
+{
+}
 
 /**
  * Get the Internet host name corresponding to a given IP address
@@ -825,7 +918,9 @@ function move_uploaded_file ($filename, $destination) {}
  * @since 4.0
  * @since 5.0
  */
-function gethostbyaddr ($ip_address) {}
+function gethostbyaddr($ip_address)
+{
+}
 
 /**
  * Get the IPv4 address corresponding to a given Internet host name
@@ -838,13 +933,15 @@ function gethostbyaddr ($ip_address) {}
  * @since 4.0
  * @since 5.0
  */
-function gethostbyname ($hostname) {}
+function gethostbyname($hostname)
+{
+}
 
 /**
  * Get a list of IPv4 addresses corresponding to a given Internet host
  * @since 4.0
  * @since 5.0
-   name
+ * name
  * @link http://php.net/manual/en/function.gethostbynamel.php
  * @param string $hostname <p>
  * The host name.
@@ -852,16 +949,20 @@ function gethostbyname ($hostname) {}
  * @return array an array of IPv4 addresses or false if
  * hostname could not be resolved.
  */
-function gethostbynamel ($hostname) {}
+function gethostbynamel($hostname)
+{
+}
 
 /**
  * Gets the host name
  * @link http://php.net/manual/en/function.gethostname.php
- * @return string a string with the hostname on success, otherwise false is 
+ * @return string a string with the hostname on success, otherwise false is
  * returned.
  * @since 5.3.0
  */
-function gethostname () {}
+function gethostname()
+{
+}
 
 /**
  * &Alias; <function>checkdnsrr</function>
@@ -877,7 +978,9 @@ function gethostname () {}
  * @return bool Returns <b>TRUE</b> if any records are found; returns <b>FALSE</b> if no records were found or if an error occurred.
  * @since 5.0
  */
-function dns_check_record ($host, $type) {}
+function dns_check_record($host, $type)
+{
+}
 
 /**
  * Check DNS records corresponding to a given Internet host name or IP address
@@ -895,7 +998,9 @@ function dns_check_record ($host, $type) {}
  * @since 4.0
  * @since 5.0
  */
-function checkdnsrr ($host, $type = null) {}
+function checkdnsrr($host, $type = null)
+{
+}
 
 /**
  * &Alias; <function>getmxrr</function>
@@ -905,7 +1010,9 @@ function checkdnsrr ($host, $type = null) {}
  * @param $weight [optional]
  * @since 5.0
  */
-function dns_get_mx ($hostname, &$mxhosts, &$weight) {}
+function dns_get_mx($hostname, &$mxhosts, &$weight)
+{
+}
 
 /**
  * Get MX records corresponding to a given Internet host name
@@ -915,7 +1022,7 @@ function dns_get_mx ($hostname, &$mxhosts, &$weight) {}
  * </p>
  * @param array $mxhosts <p>
  * A list of the MX records found is placed into the array
- * mxhosts. 
+ * mxhosts.
  * </p>
  * @param array $weight [optional] <p>
  * If the weight array is given, it will be filled
@@ -926,7 +1033,9 @@ function dns_get_mx ($hostname, &$mxhosts, &$weight) {}
  * @since 4.0
  * @since 5.0
  */
-function getmxrr ($hostname, array &$mxhosts, array &$weight = null) {}
+function getmxrr($hostname, array &$mxhosts, array &$weight = null)
+{
+}
 
 /**
  * Fetch DNS Resource Records associated with a hostname
@@ -946,7 +1055,7 @@ function getmxrr ($hostname, array &$mxhosts, array &$weight = null) {}
  * </p>
  * @param int $type [optional] <p>
  * By default, dns_get_record will search for any
- * resource records associated with hostname. 
+ * resource records associated with hostname.
  * To limit the query, specify the optional type
  * parameter. May be any one of the following:
  * DNS_A, DNS_CNAME,
@@ -1132,4 +1241,6 @@ function getmxrr ($hostname, array &$mxhosts, array &$weight = null) {}
  * </table>
  * @since 5.0
  */
-function dns_get_record ($hostname, $type = null, array &$authns = null, array &$addtl = null) {}
+function dns_get_record($hostname, $type = null, array &$authns = null, array &$addtl = null)
+{
+}

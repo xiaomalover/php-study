@@ -36,7 +36,9 @@
  * @since 4.0
  * @since 5.0
  */
-function dl ($library) {}
+function dl($library)
+{
+}
 
 /**
  * Sets the process title
@@ -47,7 +49,9 @@ function dl ($library) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.5.0
  */
-function cli_set_process_title ($title) {}
+function cli_set_process_title($title)
+{
+}
 
 /**
  * Returns the current process title
@@ -55,7 +59,9 @@ function cli_set_process_title ($title) {}
  * @return string Return a string with the current process title or <b>NULL</b> on error.
  * @since 5.5.0
  */
-function cli_get_process_title () {}
+function cli_get_process_title()
+{
+}
 
 /**
  * Reclaims memory used by the Zend Engine memory manager
@@ -63,7 +69,9 @@ function cli_get_process_title () {}
  * @return int Returns the number of bytes freed.
  * @since 7.0
  */
-function gc_mem_caches () {}
+function gc_mem_caches()
+{
+}
 
 /**
  * Returns active resources
@@ -79,7 +87,9 @@ function gc_mem_caches () {}
  * @return array Returns an array of currently active resources, indexed by resource number.
  * @since 7.0
  */
-function get_resources ($type) {}
+function get_resources($type)
+{
+}
 
 
 /**
@@ -90,13 +100,13 @@ function get_resources ($type) {}
  * under some circumstances.
  * @link http://php.net/manual/en/language.constants.predefined.php
  */
-define ('__FILE__', '', true);
+define('__FILE__', '', true);
 
 /**
  * The current line number of the file.
  * @link http://php.net/manual/en/language.constants.predefined.php
  */
-define ('__LINE__', 0, true);
+define('__LINE__', 0, true);
 
 /**
  * The class name. (Added in PHP 4.3.0) As of PHP 5 this constant
@@ -108,7 +118,7 @@ define ('__LINE__', 0, true);
  * is used in.
  * @link http://php.net/manual/en/language.constants.predefined.php
  */
-define ('__CLASS__', '', true);
+define('__CLASS__', '', true);
 
 /**
  * The function name. (Added in PHP 4.3.0) As of PHP 5 this constant
@@ -116,14 +126,14 @@ define ('__CLASS__', '', true);
  * PHP 4 its value is always lowercased.
  * @link http://php.net/manual/en/language.constants.predefined.php
  */
-define ('__FUNCTION__', '', true);
+define('__FUNCTION__', '', true);
 
 /**
  * The class method name. (Added in PHP 5.0.0) The method name is
  * returned as it was declared (case-sensitive).
  * @link http://php.net/manual/en/language.constants.predefined.php
  */
-define ('__METHOD__', '', true);
+define('__METHOD__', '', true);
 
 /**
  * The trait name. (Added in PHP 5.4.0) As of PHP 5.4 this constant
@@ -132,7 +142,7 @@ define ('__METHOD__', '', true);
  * @since 5.4.0
  * @link http://php.net/manual/en/language.constants.predefined.php
  */
-define ('__TRAIT__', '', true);
+define('__TRAIT__', '', true);
 
 /**
  * The directory of the file. If used inside an include,
@@ -142,7 +152,7 @@ define ('__TRAIT__', '', true);
  * @since 5.3.0
  * @link http://php.net/manual/en/language.constants.predefined.php
  */
-define ('__DIR__', '', true);
+define('__DIR__', '', true);
 
 /**
  * The name of the current namespace (case-sensitive). This constant
@@ -150,5 +160,5 @@ define ('__DIR__', '', true);
  * @since 5.3.0
  * @link http://php.net/manual/en/language.constants.predefined.php
  */
-define ('__NAMESPACE__', '', true);
+define('__NAMESPACE__', '', true);
 

@@ -12,7 +12,9 @@
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_pkey_free($key) { }
+function openssl_pkey_free($key)
+{
+}
 
 /**
  * Generates a new private key
@@ -28,7 +30,9 @@ function openssl_pkey_free($key) { }
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_pkey_new(array $configargs = null) { }
+function openssl_pkey_new(array $configargs = null)
+{
+}
 
 /**
  * Gets an exportable representation of a key into a string
@@ -48,7 +52,9 @@ function openssl_pkey_new(array $configargs = null) { }
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_pkey_export($key, &$out, $passphrase = null, array $configargs = null) { }
+function openssl_pkey_export($key, &$out, $passphrase = null, array $configargs = null)
+{
+}
 
 /**
  * Gets an exportable representation of a key into a file
@@ -71,7 +77,9 @@ function openssl_pkey_export($key, &$out, $passphrase = null, array $configargs 
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_pkey_export_to_file($key, $outfilename, $passphrase = null, array $configargs = null) { }
+function openssl_pkey_export_to_file($key, $outfilename, $passphrase = null, array $configargs = null)
+{
+}
 
 /**
  * Get a private key
@@ -94,7 +102,9 @@ function openssl_pkey_export_to_file($key, $outfilename, $passphrase = null, arr
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_pkey_get_private($key, $passphrase = "") { }
+function openssl_pkey_get_private($key, $passphrase = "")
+{
+}
 
 /**
  * Extract public key from certificate and prepare it for use
@@ -113,7 +123,9 @@ function openssl_pkey_get_private($key, $passphrase = "") { }
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_pkey_get_public($certificate) { }
+function openssl_pkey_get_public($certificate)
+{
+}
 
 /**
  * Returns an array with the key details
@@ -135,7 +147,9 @@ function openssl_pkey_get_public($certificate) { }
  * some elements may not always be available.
  * @since 5.2.0
  */
-function openssl_pkey_get_details($key) { }
+function openssl_pkey_get_details($key)
+{
+}
 
 /**
  * Free key resource
@@ -145,7 +159,9 @@ function openssl_pkey_get_details($key) { }
  * @since 4.0.4
  * @since 5.0
  */
-function openssl_free_key($key_identifier) { }
+function openssl_free_key($key_identifier)
+{
+}
 
 /**
  * Alias of <b>openssl_pkey_get_private</b>
@@ -168,7 +184,9 @@ function openssl_free_key($key_identifier) { }
  * @since 4.0.4
  * @since 5.0
  */
-function openssl_get_privatekey($key, $passphrase) { }
+function openssl_get_privatekey($key, $passphrase)
+{
+}
 
 /**
  * Alias of <b>openssl_pkey_get_public</b>
@@ -188,7 +206,9 @@ function openssl_get_privatekey($key, $passphrase) { }
  * @since 4.0.4
  * @since 5.0
  */
-function openssl_get_publickey($certificate) { }
+function openssl_get_publickey($certificate)
+{
+}
 
 /**
  * Generate a new signed public key and challenge
@@ -205,7 +225,9 @@ function openssl_get_publickey($certificate) { }
  * @return string Returns a signed public key and challenge string or NULL on failure.
  * @since 5.6.0
  */
-function openssl_spki_new(&$privkey, &$challenge, $algorithm = 0) {}
+function openssl_spki_new(&$privkey, &$challenge, $algorithm = 0)
+{
+}
 
 
 /**
@@ -215,7 +237,9 @@ function openssl_spki_new(&$privkey, &$challenge, $algorithm = 0) {}
  * @return boolean Returns a boolean on success or failure.
  * @since 5.6.0
  */
-function openssl_spki_verify(&$spkac) {}
+function openssl_spki_verify(&$spkac)
+{
+}
 
 /**
  * Exports the challenge assoicated with a signed public key and challenge
@@ -224,7 +248,9 @@ function openssl_spki_verify(&$spkac) {}
  * @return string|NULL Returns the associated challenge string or NULL on failure.
  * @since 5.6.0
  */
-function openssl_spki_export_challenge (&$spkac ) {}
+function openssl_spki_export_challenge(&$spkac)
+{
+}
 
 /**
  * Exports a valid PEM formatted public key signed public key and challenge
@@ -233,17 +259,22 @@ function openssl_spki_export_challenge (&$spkac ) {}
  * @return string|NULL Returns the associated PEM formatted public key or NULL on failure.
  * @since 5.6.0
  */
-function openssl_spki_export (&$spkac ) {}
+function openssl_spki_export(&$spkac)
+{
+}
+
 /**
  * Parse an X.509 certificate and return a resource identifier for
  * @since 4.0.6
  * @since 5.0
-it
+ * it
  * @link http://php.net/manual/en/function.openssl-x509-read.php
  * @param mixed $x509certdata
  * @return resource a resource identifier on success or false on failure.
  */
-function openssl_x509_read($x509certdata) { }
+function openssl_x509_read($x509certdata)
+{
+}
 
 /**
  * @param string $x509
@@ -252,7 +283,10 @@ function openssl_x509_read($x509certdata) { }
  * @return string|boolean <b>FALSE</b> on failure
  * @since 5.6.0
  */
-function openssl_x509_fingerprint($x509, $type, $binary) {}
+function openssl_x509_fingerprint($x509, $type, $binary)
+{
+}
+
 /**
  * Free certificate resource
  * @link http://php.net/manual/en/function.openssl-x509-free.php
@@ -261,7 +295,9 @@ function openssl_x509_fingerprint($x509, $type, $binary) {}
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_x509_free($x509cert) { }
+function openssl_x509_free($x509cert)
+{
+}
 
 /**
  * Parse an X509 certificate and return the information as an array
@@ -278,7 +314,9 @@ function openssl_x509_free($x509cert) { }
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_x509_parse($x509cert, $shortnames = true) { }
+function openssl_x509_parse($x509cert, $shortnames = true)
+{
+}
 
 /**
  * Verifies if a certificate can be used for a particular purpose
@@ -342,7 +380,9 @@ function openssl_x509_parse($x509cert, $shortnames = true) { }
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_x509_checkpurpose($x509cert, $purpose, array $cainfo = null, $untrustedfile = null) { }
+function openssl_x509_checkpurpose($x509cert, $purpose, array $cainfo = null, $untrustedfile = null)
+{
+}
 
 /**
  * Checks if a private key corresponds to a certificate
@@ -358,7 +398,9 @@ function openssl_x509_checkpurpose($x509cert, $purpose, array $cainfo = null, $u
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_x509_check_private_key($cert, $key) { }
+function openssl_x509_check_private_key($cert, $key)
+{
+}
 
 /**
  * Exports a certificate as a string
@@ -372,7 +414,9 @@ function openssl_x509_check_private_key($cert, $key) { }
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_x509_export($x509, &$output, $notext = true) { }
+function openssl_x509_export($x509, &$output, $notext = true)
+{
+}
 
 /**
  * Exports a certificate to file
@@ -386,7 +430,9 @@ function openssl_x509_export($x509, &$output, $notext = true) { }
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_x509_export_to_file($x509, $outfilename, $notext = true) { }
+function openssl_x509_export_to_file($x509, $outfilename, $notext = true)
+{
+}
 
 /**
  * Exports a PKCS#12 Compatible Certificate Store File to variable.
@@ -405,7 +451,9 @@ function openssl_x509_export_to_file($x509, $outfilename, $notext = true) { }
  * @return bool true on success or false on failure.
  * @since 5.2.2
  */
-function openssl_pkcs12_export($x509, &$out, $priv_key, $pass, array $args = null) { }
+function openssl_pkcs12_export($x509, &$out, $priv_key, $pass, array $args = null)
+{
+}
 
 /**
  * Exports a PKCS#12 Compatible Certificate Store File
@@ -424,7 +472,9 @@ function openssl_pkcs12_export($x509, &$out, $priv_key, $pass, array $args = nul
  * @return bool true on success or false on failure.
  * @since 5.2.2
  */
-function openssl_pkcs12_export_to_file($x509, $filename, $priv_key, $pass, array $args = null) { }
+function openssl_pkcs12_export_to_file($x509, $filename, $priv_key, $pass, array $args = null)
+{
+}
 
 /**
  * Parse a PKCS#12 Certificate Store into an array
@@ -439,7 +489,9 @@ function openssl_pkcs12_export_to_file($x509, $filename, $priv_key, $pass, array
  * @return bool true on success or false on failure.
  * @since 5.2.2
  */
-function openssl_pkcs12_read($pkcs12, array &$certs, $pass) { }
+function openssl_pkcs12_read($pkcs12, array &$certs, $pass)
+{
+}
 
 /**
  * Generates a CSR
@@ -536,7 +588,9 @@ function openssl_pkcs12_read($pkcs12, array &$certs, $pass) { }
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_csr_new(array $dn, &$privkey, array $configargs = null, array $extraattribs = null) { }
+function openssl_csr_new(array $dn, &$privkey, array $configargs = null, array $extraattribs = null)
+{
+}
 
 /**
  * Exports a CSR as a string
@@ -548,7 +602,9 @@ function openssl_csr_new(array $dn, &$privkey, array $configargs = null, array $
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_csr_export($csr, &$out, $notext = true) { }
+function openssl_csr_export($csr, &$out, $notext = true)
+{
+}
 
 /**
  * Exports a CSR to a file
@@ -562,7 +618,9 @@ function openssl_csr_export($csr, &$out, $notext = true) { }
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_csr_export_to_file($csr, $outfilename, $notext = true) { }
+function openssl_csr_export_to_file($csr, $outfilename, $notext = true)
+{
+}
 
 /**
  * Sign a CSR with another certificate (or itself) and generate a certificate
@@ -599,7 +657,9 @@ function openssl_csr_export_to_file($csr, $outfilename, $notext = true) { }
  * @since 4.2.0
  * @since 5.0
  */
-function openssl_csr_sign($csr, $cacert, $priv_key, $days, array $configargs = null, $serial = 0) { }
+function openssl_csr_sign($csr, $cacert, $priv_key, $days, array $configargs = null, $serial = 0)
+{
+}
 
 /**
  * Returns the subject of a CERT
@@ -609,7 +669,9 @@ function openssl_csr_sign($csr, $cacert, $priv_key, $days, array $configargs = n
  * @return array
  * @since 5.2.0
  */
-function openssl_csr_get_subject($csr, $use_shortnames = true) { }
+function openssl_csr_get_subject($csr, $use_shortnames = true)
+{
+}
 
 /**
  * Returns the public key of a CERT
@@ -619,7 +681,9 @@ function openssl_csr_get_subject($csr, $use_shortnames = true) { }
  * @return resource
  * @since 5.2.0
  */
-function openssl_csr_get_public_key($csr, $use_shortnames = true) { }
+function openssl_csr_get_public_key($csr, $use_shortnames = true)
+{
+}
 
 /**
  * Computes a digest
@@ -637,7 +701,9 @@ function openssl_csr_get_public_key($csr, $use_shortnames = true) { }
  * @return string the digested hash value on success or false on failure.
  * @since 5.3.0
  */
-function openssl_digest($data, $method, $raw_output = false) { }
+function openssl_digest($data, $method, $raw_output = false)
+{
+}
 
 /**
  * Encrypts data
@@ -661,7 +727,9 @@ function openssl_digest($data, $method, $raw_output = false) { }
  * @return string the encrypted string on success or false on failure.
  * @since 5.3.0
  */
-function openssl_encrypt($data, $method, $password, $options = 0, $iv = "") { }
+function openssl_encrypt($data, $method, $password, $options = 0, $iv = "")
+{
+}
 
 /**
  * Decrypts data
@@ -686,7 +754,9 @@ function openssl_encrypt($data, $method, $password, $options = 0, $iv = "") { }
  * @return string The decrypted string on success or false on failure.
  * @since 5.3.0
  */
-function openssl_decrypt($data, $method, $password, $options = 1, $iv = "") { }
+function openssl_decrypt($data, $method, $password, $options = 1, $iv = "")
+{
+}
 
 /**
  * (PHP 5 &gt;= PHP 5.3.3)<br/>
@@ -697,7 +767,9 @@ function openssl_decrypt($data, $method, $password, $options = 1, $iv = "") { }
  * </p>
  * @return int the cipher length on success, or false on failure.
  */
-function openssl_cipher_iv_length($method) { }
+function openssl_cipher_iv_length($method)
+{
+}
 
 /**
  * Generate signature
@@ -715,7 +787,9 @@ function openssl_cipher_iv_length($method) { }
  * @since 4.0.4
  * @since 5.0
  */
-function openssl_sign($data, &$signature, $priv_key_id, $signature_alg = OPENSSL_ALGO_SHA1) { }
+function openssl_sign($data, &$signature, $priv_key_id, $signature_alg = OPENSSL_ALGO_SHA1)
+{
+}
 
 /**
  * Verify signature
@@ -731,7 +805,9 @@ function openssl_sign($data, &$signature, $priv_key_id, $signature_alg = OPENSSL
  * @since 4.0.4
  * @since 5.0
  */
-function openssl_verify($data, $signature, $pub_key_id, $signature_alg = OPENSSL_ALGO_SHA1) { }
+function openssl_verify($data, $signature, $pub_key_id, $signature_alg = OPENSSL_ALGO_SHA1)
+{
+}
 
 /**
  * Seal (encrypt) data
@@ -748,7 +824,9 @@ function openssl_verify($data, $signature, $pub_key_id, $signature_alg = OPENSSL
  * @since 4.0.4
  * @since 5.0
  */
-function openssl_seal($data, &$sealed_data, array &$env_keys, array $pub_key_ids, $method = null) { }
+function openssl_seal($data, &$sealed_data, array &$env_keys, array $pub_key_ids, $method = null)
+{
+}
 
 /**
  * Open sealed data
@@ -765,7 +843,9 @@ function openssl_seal($data, &$sealed_data, array &$env_keys, array $pub_key_ids
  * @since 4.0.4
  * @since 5.0
  */
-function openssl_open($sealed_data, &$open_data, $env_key, $priv_key_id, $method = null) { }
+function openssl_open($sealed_data, &$open_data, $env_key, $priv_key_id, $method = null)
+{
+}
 
 /**
  * Generates a PKCS5 v2 PBKDF2 string, defaults to SHA-1
@@ -778,7 +858,9 @@ function openssl_open($sealed_data, &$open_data, $env_key, $priv_key_id, $method
  * @return string|bool Returns string or FALSE on failure.
  * @since 5.5.0
  */
-function openssl_pbkdf2($password, $salt, $key_length, $iterations, $digest_algorithm) { }
+function openssl_pbkdf2($password, $salt, $key_length, $iterations, $digest_algorithm)
+{
+}
 
 /**
  * Verifies the signature of an S/MIME signed message
@@ -817,7 +899,15 @@ function openssl_pbkdf2($password, $salt, $key_length, $iterations, $digest_algo
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_pkcs7_verify($filename, $flags, $outfilename = null, array $cainfo = null, $extracerts = null, $content = null) { }
+function openssl_pkcs7_verify(
+    $filename,
+    $flags,
+    $outfilename = null,
+    array $cainfo = null,
+    $extracerts = null,
+    $content = null
+) {
+}
 
 /**
  * Decrypts an S/MIME encrypted message
@@ -833,7 +923,9 @@ function openssl_pkcs7_verify($filename, $flags, $outfilename = null, array $cai
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_pkcs7_decrypt($infilename, $outfilename, $recipcert, $recipkey = null) { }
+function openssl_pkcs7_decrypt($infilename, $outfilename, $recipcert, $recipkey = null)
+{
+}
 
 /**
  * Sign an S/MIME message
@@ -860,7 +952,16 @@ function openssl_pkcs7_decrypt($infilename, $outfilename, $recipcert, $recipkey 
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_pkcs7_sign($infilename, $outfilename, $signcert, $privkey, array $headers, $flags = PKCS7_DETACHED, $extracerts = null) { }
+function openssl_pkcs7_sign(
+    $infilename,
+    $outfilename,
+    $signcert,
+    $privkey,
+    array $headers,
+    $flags = PKCS7_DETACHED,
+    $extracerts = null
+) {
+}
 
 /**
  * Encrypt an S/MIME message
@@ -891,7 +992,15 @@ function openssl_pkcs7_sign($infilename, $outfilename, $signcert, $privkey, arra
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_pkcs7_encrypt($infile, $outfile, $recipcerts, array $headers, $flags = 0, $cipherid = OPENSSL_CIPHER_RC2_40) { }
+function openssl_pkcs7_encrypt(
+    $infile,
+    $outfile,
+    $recipcerts,
+    array $headers,
+    $flags = 0,
+    $cipherid = OPENSSL_CIPHER_RC2_40
+) {
+}
 
 /**
  * Encrypts data with private key
@@ -908,7 +1017,9 @@ function openssl_pkcs7_encrypt($infile, $outfile, $recipcerts, array $headers, $
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_private_encrypt($data, &$crypted, $key, $padding = OPENSSL_PKCS1_PADDING) { }
+function openssl_private_encrypt($data, &$crypted, $key, $padding = OPENSSL_PKCS1_PADDING)
+{
+}
 
 /**
  * Decrypts data with private key
@@ -930,7 +1041,9 @@ function openssl_private_encrypt($data, &$crypted, $key, $padding = OPENSSL_PKCS
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_private_decrypt($data, &$decrypted, $key, $padding = OPENSSL_PKCS1_PADDING) { }
+function openssl_private_decrypt($data, &$decrypted, $key, $padding = OPENSSL_PKCS1_PADDING)
+{
+}
 
 /**
  * Encrypts data with public key
@@ -953,7 +1066,9 @@ function openssl_private_decrypt($data, &$decrypted, $key, $padding = OPENSSL_PK
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_public_encrypt($data, &$crypted, $key, $padding = OPENSSL_PKCS1_PADDING) { }
+function openssl_public_encrypt($data, &$crypted, $key, $padding = OPENSSL_PKCS1_PADDING)
+{
+}
 
 /**
  * Decrypts data with public key
@@ -973,7 +1088,9 @@ function openssl_public_encrypt($data, &$crypted, $key, $padding = OPENSSL_PKCS1
  * @since 4.0.6
  * @since 5.0
  */
-function openssl_public_decrypt($data, &$decrypted, $key, $padding = OPENSSL_PKCS1_PADDING) { }
+function openssl_public_decrypt($data, &$decrypted, $key, $padding = OPENSSL_PKCS1_PADDING)
+{
+}
 
 /**
  * Gets available digest methods
@@ -985,7 +1102,9 @@ function openssl_public_decrypt($data, &$decrypted, $key, $padding = OPENSSL_PKC
  * @return array An array of available digest methods.
  * @since 5.3.0
  */
-function openssl_get_md_methods($aliases = false) { }
+function openssl_get_md_methods($aliases = false)
+{
+}
 
 /**
  * Gets available cipher methods
@@ -997,7 +1116,9 @@ function openssl_get_md_methods($aliases = false) { }
  * @return array An array of available cipher methods.
  * @since 5.3.0
  */
-function openssl_get_cipher_methods($aliases = false) { }
+function openssl_get_cipher_methods($aliases = false)
+{
+}
 
 /**
  * (No version information available, might only be in SVN)<br/>
@@ -1011,7 +1132,9 @@ function openssl_get_cipher_methods($aliases = false) { }
  * </p>
  * @return string computed key on success or false on failure.
  */
-function openssl_dh_compute_key($pub_key, $dh_key) { }
+function openssl_dh_compute_key($pub_key, $dh_key)
+{
+}
 
 /**
  * Generates a string of pseudo-random bytes, with the number of bytes determined by the length parameter.
@@ -1030,7 +1153,9 @@ function openssl_dh_compute_key($pub_key, $dh_key) { }
  * @return string the generated &string; of bytes on success, or false on failure.
  * @since 5.3.0
  */
-function openssl_random_pseudo_bytes($length, &$crypto_strong = null) { }
+function openssl_random_pseudo_bytes($length, &$crypto_strong = null)
+{
+}
 
 /**
  * Return openSSL error message
@@ -1039,7 +1164,9 @@ function openssl_random_pseudo_bytes($length, &$crypto_strong = null) { }
  * messages to return.
  * @since 4.0.6
  */
-function openssl_error_string() { }
+function openssl_error_string()
+{
+}
 
 /**
  * Retrieve the available certificate locations
@@ -1047,33 +1174,35 @@ function openssl_error_string() { }
  * @return array an array with the available certificate locations
  * @since 5.6.0
  */
-function openssl_get_cert_locations() { }
+function openssl_get_cert_locations()
+{
+}
 
-define ('OPENSSL_VERSION_TEXT', "OpenSSL 1.0.0e 6 Sep 2011");
-define ('OPENSSL_VERSION_NUMBER', 268435551);
-define ('X509_PURPOSE_SSL_CLIENT', 1);
-define ('X509_PURPOSE_SSL_SERVER', 2);
-define ('X509_PURPOSE_NS_SSL_SERVER', 3);
-define ('X509_PURPOSE_SMIME_SIGN', 4);
-define ('X509_PURPOSE_SMIME_ENCRYPT', 5);
-define ('X509_PURPOSE_CRL_SIGN', 6);
-define ('X509_PURPOSE_ANY', 7);
+define('OPENSSL_VERSION_TEXT', "OpenSSL 1.0.0e 6 Sep 2011");
+define('OPENSSL_VERSION_NUMBER', 268435551);
+define('X509_PURPOSE_SSL_CLIENT', 1);
+define('X509_PURPOSE_SSL_SERVER', 2);
+define('X509_PURPOSE_NS_SSL_SERVER', 3);
+define('X509_PURPOSE_SMIME_SIGN', 4);
+define('X509_PURPOSE_SMIME_ENCRYPT', 5);
+define('X509_PURPOSE_CRL_SIGN', 6);
+define('X509_PURPOSE_ANY', 7);
 
 /**
  * Used as default algorithm by <b>openssl_sign</b> and
  * <b>openssl_verify</b>.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('OPENSSL_ALGO_SHA1', 1);
-define ('OPENSSL_ALGO_MD5', 2);
-define ('OPENSSL_ALGO_MD4', 3);
-define ('OPENSSL_ALGO_MD2', 4);
-define ('OPENSSL_ALGO_DSS1', 5);
-define ('OPENSSL_ALGO_SHA224', 6);
-define ('OPENSSL_ALGO_SHA256', 7);
-define ('OPENSSL_ALGO_SHA384', 8);
-define ('OPENSSL_ALGO_SHA512', 9);
-define ('OPENSSL_ALGO_RMD160', 10);
+define('OPENSSL_ALGO_SHA1', 1);
+define('OPENSSL_ALGO_MD5', 2);
+define('OPENSSL_ALGO_MD4', 3);
+define('OPENSSL_ALGO_MD2', 4);
+define('OPENSSL_ALGO_DSS1', 5);
+define('OPENSSL_ALGO_SHA224', 6);
+define('OPENSSL_ALGO_SHA256', 7);
+define('OPENSSL_ALGO_SHA384', 8);
+define('OPENSSL_ALGO_SHA512', 9);
+define('OPENSSL_ALGO_RMD160', 10);
 /**
  * When signing a message, use cleartext signing with the MIME
  * type "multipart/signed". This is the default
@@ -1084,7 +1213,7 @@ define ('OPENSSL_ALGO_RMD160', 10);
  * but cannot be read by mail agents that do not support S/MIME.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_DETACHED', 64);
+define('PKCS7_DETACHED', 64);
 
 /**
  * Adds text/plain content type headers to encrypted/signed
@@ -1093,7 +1222,7 @@ define ('PKCS7_DETACHED', 64);
  * text/plain then an error will occur.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_TEXT', 1);
+define('PKCS7_TEXT', 1);
 
 /**
  * When verifying a message, certificates (if
@@ -1105,21 +1234,21 @@ define ('PKCS7_TEXT', 1);
  * untrusted CAs however.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_NOINTERN', 16);
+define('PKCS7_NOINTERN', 16);
 
 /**
  * Do not verify the signers certificate of a signed
  * message.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_NOVERIFY', 32);
+define('PKCS7_NOVERIFY', 32);
 
 /**
  * Do not chain verification of signers certificates: that is
  * don't use the certificates in the signed message as untrusted CAs.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_NOCHAIN', 8);
+define('PKCS7_NOCHAIN', 8);
 
 /**
  * When signing a message the signer's certificate is normally
@@ -1130,7 +1259,7 @@ define ('PKCS7_NOCHAIN', 8);
  * <b>openssl_pkcs7_verify</b> for example).
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_NOCERTS', 2);
+define('PKCS7_NOCERTS', 2);
 
 /**
  * Normally when a message is signed, a set of attributes are
@@ -1138,7 +1267,7 @@ define ('PKCS7_NOCERTS', 2);
  * algorithms. With this option they are not included.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_NOATTR', 256);
+define('PKCS7_NOATTR', 256);
 
 /**
  * Normally the input message is converted to "canonical" format
@@ -1148,32 +1277,32 @@ define ('PKCS7_NOATTR', 256);
  * handling binary data which may not be in MIME format.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_BINARY', 128);
+define('PKCS7_BINARY', 128);
 
 /**
  * Don't try and verify the signatures on a message
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('PKCS7_NOSIGS', 4);
-define ('OPENSSL_PKCS1_PADDING', 1);
-define ('OPENSSL_SSLV23_PADDING', 2);
-define ('OPENSSL_NO_PADDING', 3);
-define ('OPENSSL_PKCS1_OAEP_PADDING', 4);
-define ('OPENSSL_CIPHER_RC2_40', 0);
-define ('OPENSSL_CIPHER_RC2_128', 1);
-define ('OPENSSL_CIPHER_RC2_64', 2);
-define ('OPENSSL_CIPHER_DES', 3);
-define ('OPENSSL_CIPHER_3DES', 4);
-define ('OPENSSL_KEYTYPE_RSA', 0);
-define ('OPENSSL_KEYTYPE_DSA', 1);
-define ('OPENSSL_KEYTYPE_DH', 2);
-define ('OPENSSL_KEYTYPE_EC', 3);
+define('PKCS7_NOSIGS', 4);
+define('OPENSSL_PKCS1_PADDING', 1);
+define('OPENSSL_SSLV23_PADDING', 2);
+define('OPENSSL_NO_PADDING', 3);
+define('OPENSSL_PKCS1_OAEP_PADDING', 4);
+define('OPENSSL_CIPHER_RC2_40', 0);
+define('OPENSSL_CIPHER_RC2_128', 1);
+define('OPENSSL_CIPHER_RC2_64', 2);
+define('OPENSSL_CIPHER_DES', 3);
+define('OPENSSL_CIPHER_3DES', 4);
+define('OPENSSL_KEYTYPE_RSA', 0);
+define('OPENSSL_KEYTYPE_DSA', 1);
+define('OPENSSL_KEYTYPE_DH', 2);
+define('OPENSSL_KEYTYPE_EC', 3);
 
 /**
  * Whether SNI support is available or not.
  * @link http://php.net/manual/en/openssl.constants.php
  */
-define ('OPENSSL_TLSEXT_SERVER_NAME', 1);
+define('OPENSSL_TLSEXT_SERVER_NAME', 1);
 
 // End of openssl v.
 
@@ -1188,21 +1317,21 @@ define('OPENSSL_RAW_DATA', 1);
 define('OPENSSL_ZERO_PADDING', 2);
 
 define('OPENSSL_DEFAULT_STREAM_CIPHERS', "ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:" .
-"ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:" .
-"DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:" .
-"ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:" .
-"ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:" .
-"DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:" .
-"AES256-GCM-SHA384:AES128:AES256:HIGH:!SSLv2:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!RC4:!ADH");
+    "ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:" .
+    "DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:" .
+    "ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:" .
+    "ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:" .
+    "DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:" .
+    "AES256-GCM-SHA384:AES128:AES256:HIGH:!SSLv2:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!RC4:!ADH");
 
-define ('STREAM_CRYPTO_METHOD_SSLv2_CLIENT', 0);
-define ('STREAM_CRYPTO_METHOD_SSLv3_CLIENT', 1);
-define ('STREAM_CRYPTO_METHOD_SSLv23_CLIENT', 2);
-define ('STREAM_CRYPTO_METHOD_TLS_CLIENT', 3);
-define ('STREAM_CRYPTO_METHOD_SSLv2_SERVER', 4);
-define ('STREAM_CRYPTO_METHOD_SSLv3_SERVER', 5);
-define ('STREAM_CRYPTO_METHOD_SSLv23_SERVER', 6);
-define ('STREAM_CRYPTO_METHOD_TLS_SERVER', 7);
+define('STREAM_CRYPTO_METHOD_SSLv2_CLIENT', 0);
+define('STREAM_CRYPTO_METHOD_SSLv3_CLIENT', 1);
+define('STREAM_CRYPTO_METHOD_SSLv23_CLIENT', 2);
+define('STREAM_CRYPTO_METHOD_TLS_CLIENT', 3);
+define('STREAM_CRYPTO_METHOD_SSLv2_SERVER', 4);
+define('STREAM_CRYPTO_METHOD_SSLv3_SERVER', 5);
+define('STREAM_CRYPTO_METHOD_SSLv23_SERVER', 6);
+define('STREAM_CRYPTO_METHOD_TLS_SERVER', 7);
 
 define("STREAM_CRYPTO_METHOD_ANY_CLIENT", 63);
 define("STREAM_CRYPTO_METHOD_ANY_SERVER", 62);

@@ -20,7 +20,9 @@
  * unless <i>raw_output</i> is set to true in which case the raw
  * binary representation of the message digest is returned.
  */
-function hash ($algo, $data, $raw_output = false) {}
+function hash($algo, $data, $raw_output = false)
+{
+}
 
 /**
  * Timing attack safe string comparison
@@ -30,7 +32,9 @@ function hash ($algo, $data, $raw_output = false) {}
  * @return boolean <p>Returns <b>TRUE</b> when the two strings are equal, <b>FALSE</b> otherwise.</p>
  * @since 5.6.0
  */
-function hash_equals($known_string, $user_string) {}
+function hash_equals($known_string, $user_string)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -50,7 +54,9 @@ function hash_equals($known_string, $user_string) {}
  * unless <i>raw_output</i> is set to true in which case the raw
  * binary representation of the message digest is returned.
  */
-function hash_file ($algo, $filename, $raw_output = false) {}
+function hash_file($algo, $filename, $raw_output = false)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -73,7 +79,9 @@ function hash_file ($algo, $filename, $raw_output = false) {}
  * unless <i>raw_output</i> is set to true in which case the raw
  * binary representation of the message digest is returned.
  */
-function hash_hmac ($algo, $data, $key, $raw_output = false) {}
+function hash_hmac($algo, $data, $key, $raw_output = false)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -96,7 +104,9 @@ function hash_hmac ($algo, $data, $key, $raw_output = false) {}
  * unless <i>raw_output</i> is set to true in which case the raw
  * binary representation of the message digest is returned.
  */
-function hash_hmac_file ($algo, $filename, $key, $raw_output = false) {}
+function hash_hmac_file($algo, $filename, $key, $raw_output = false)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -119,7 +129,9 @@ function hash_hmac_file ($algo, $filename, $key, $raw_output = false) {}
  * <b>hash_update_stream</b>, <b>hash_update_file</b>,
  * and <b>hash_final</b>.
  */
-function hash_init ($algo, $options = 0, $key = null) {}
+function hash_init($algo, $options = 0, $key = null)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -133,7 +145,9 @@ function hash_init ($algo, $options = 0, $key = null) {}
  * </p>
  * @return bool <b>TRUE</b>.
  */
-function hash_update ($context, $data) {}
+function hash_update($context, $data)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -151,7 +165,9 @@ function hash_update ($context, $data) {}
  * </p>
  * @return int Actual number of bytes added to the hashing context from <i>handle</i>.
  */
-function hash_update_stream ($context, $handle, $length = -1) {}
+function hash_update_stream($context, $handle, $length = -1)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -168,7 +184,9 @@ function hash_update_stream ($context, $handle, $length = -1) {}
  * </p>
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  */
-function hash_update_file ($hcontext, $filename, $scontext = null) {}
+function hash_update_file($hcontext, $filename, $scontext = null)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -185,7 +203,9 @@ function hash_update_file ($hcontext, $filename, $scontext = null) {}
  * unless <i>raw_output</i> is set to true in which case the raw
  * binary representation of the message digest is returned.
  */
-function hash_final ($context, $raw_output = false) {}
+function hash_final($context, $raw_output = false)
+{
+}
 
 /**
  * Copy hashing context
@@ -196,7 +216,9 @@ function hash_final ($context, $raw_output = false) {}
  * @return resource a copy of Hashing Context resource.
  * @since 5.3.0
  */
-function hash_copy ($context) {}
+function hash_copy($context)
+{
+}
 
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
@@ -205,7 +227,9 @@ function hash_copy ($context) {}
  * @return array a numerically indexed array containing the list of supported
  * hashing algorithms.
  */
-function hash_algos () {}
+function hash_algos()
+{
+}
 
 /**
  * Generate a PBKDF2 key derivation of a supplied password
@@ -221,7 +245,9 @@ function hash_algos () {}
  * binary representation of the derived key is returned.
  * @since 5.5.0
  */
-function hash_pbkdf2 ($algo, $password, $salt, $iterations, $length, $raw_output) {}
+function hash_pbkdf2($algo, $password, $salt, $iterations, $length, $raw_output)
+{
+}
 
 /**
  * Generates a key
@@ -247,7 +273,9 @@ function hash_pbkdf2 ($algo, $password, $salt, $iterations, $length, $raw_output
  * @since 4.0.4
  * @since 5.0
  */
-function mhash_keygen_s2k ($hash, $password, $salt, $bytes) {}
+function mhash_keygen_s2k($hash, $password, $salt, $bytes)
+{
+}
 
 /**
  * Gets the block size of the specified hash
@@ -260,7 +288,9 @@ function mhash_keygen_s2k ($hash, $password, $salt, $bytes) {}
  * @since 4.0
  * @since 5.0
  */
-function mhash_get_block_size ($hash) {}
+function mhash_get_block_size($hash)
+{
+}
 
 /**
  * Gets the name of the specified hash
@@ -272,7 +302,9 @@ function mhash_get_block_size ($hash) {}
  * @since 4.0
  * @since 5.0
  */
-function mhash_get_hash_name ($hash) {}
+function mhash_get_hash_name($hash)
+{
+}
 
 /**
  * Gets the highest available hash ID
@@ -282,7 +314,9 @@ function mhash_get_hash_name ($hash) {}
  * @since 4.0
  * @since 5.0
  */
-function mhash_count () {}
+function mhash_count()
+{
+}
 
 /**
  * Computes hash
@@ -304,7 +338,9 @@ function mhash_count () {}
  * @since 4.0
  * @since 5.0
  */
-function mhash ($hash, $data, $key = null) {}
+function mhash($hash, $data, $key = null)
+{
+}
 
 
 /**
@@ -313,38 +349,38 @@ function mhash ($hash, $data, $key = null) {}
  * applied to the current hashing context.
  * @link http://php.net/manual/en/hash.constants.php
  */
-define ('HASH_HMAC', 1);
-define ('MHASH_CRC32', 0);
-define ('MHASH_MD5', 1);
-define ('MHASH_SHA1', 2);
-define ('MHASH_HAVAL256', 3);
-define ('MHASH_RIPEMD160', 5);
-define ('MHASH_TIGER', 7);
-define ('MHASH_GOST', 8);
-define ('MHASH_CRC32B', 9);
-define ('MHASH_HAVAL224', 10);
-define ('MHASH_HAVAL192', 11);
-define ('MHASH_HAVAL160', 12);
-define ('MHASH_HAVAL128', 13);
-define ('MHASH_TIGER128', 14);
-define ('MHASH_TIGER160', 15);
-define ('MHASH_MD4', 16);
-define ('MHASH_SHA256', 17);
-define ('MHASH_ADLER32', 18);
-define ('MHASH_SHA224', 19);
-define ('MHASH_SHA512', 20);
-define ('MHASH_SHA384', 21);
-define ('MHASH_WHIRLPOOL', 22);
-define ('MHASH_RIPEMD128', 23);
-define ('MHASH_RIPEMD256', 24);
-define ('MHASH_RIPEMD320', 25);
-define ('MHASH_SNEFRU256', 27);
-define ('MHASH_MD2', 28);
-define ('MHASH_FNV132', 29);
-define ('MHASH_FNV1A32', 30);
-define ('MHASH_FNV164', 31);
-define ('MHASH_FNV1A64', 32);
-define ('MHASH_JOAAT', 33);
+define('HASH_HMAC', 1);
+define('MHASH_CRC32', 0);
+define('MHASH_MD5', 1);
+define('MHASH_SHA1', 2);
+define('MHASH_HAVAL256', 3);
+define('MHASH_RIPEMD160', 5);
+define('MHASH_TIGER', 7);
+define('MHASH_GOST', 8);
+define('MHASH_CRC32B', 9);
+define('MHASH_HAVAL224', 10);
+define('MHASH_HAVAL192', 11);
+define('MHASH_HAVAL160', 12);
+define('MHASH_HAVAL128', 13);
+define('MHASH_TIGER128', 14);
+define('MHASH_TIGER160', 15);
+define('MHASH_MD4', 16);
+define('MHASH_SHA256', 17);
+define('MHASH_ADLER32', 18);
+define('MHASH_SHA224', 19);
+define('MHASH_SHA512', 20);
+define('MHASH_SHA384', 21);
+define('MHASH_WHIRLPOOL', 22);
+define('MHASH_RIPEMD128', 23);
+define('MHASH_RIPEMD256', 24);
+define('MHASH_RIPEMD320', 25);
+define('MHASH_SNEFRU256', 27);
+define('MHASH_MD2', 28);
+define('MHASH_FNV132', 29);
+define('MHASH_FNV1A32', 30);
+define('MHASH_FNV164', 31);
+define('MHASH_FNV1A64', 32);
+define('MHASH_JOAAT', 33);
 
 // End of hash v.1.0
 ?>

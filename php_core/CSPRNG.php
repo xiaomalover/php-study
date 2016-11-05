@@ -6,7 +6,9 @@
  * @return string Returns a string containing the requested number of cryptographically secure random bytes.
  * @since 7.0
  */
-function random_bytes ($length) {}
+function random_bytes($length)
+{
+}
 
 /**
  * Generates cryptographically secure pseudo-random integers
@@ -16,4 +18,6 @@ function random_bytes ($length) {}
  * @return int Returns a cryptographically secure random integer in the range min to max, inclusive.
  * @since 7.0
  */
-function random_int ($min, $max) {}
+function random_int($min, $max)
+{
+}

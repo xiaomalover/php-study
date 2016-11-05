@@ -22,7 +22,9 @@
  * @since 4.0
  * @since 5.0
  */
-function xml_parser_create ($encoding = null) {}
+function xml_parser_create($encoding = null)
+{
+}
 
 /**
  * Create an XML parser with namespace support
@@ -47,7 +49,9 @@ function xml_parser_create ($encoding = null) {}
  * @since 4.0.5
  * @since 5.0
  */
-function xml_parser_create_ns ($encoding = null, $separator = ':') {}
+function xml_parser_create_ns($encoding = null, $separator = ':')
+{
+}
 
 /**
  * Use XML Parser within an object
@@ -62,7 +66,9 @@ function xml_parser_create_ns ($encoding = null, $separator = ':') {}
  * @since 4.0
  * @since 5.0
  */
-function xml_set_object ($parser, &$object) {}
+function xml_set_object($parser, &$object)
+{
+}
 
 /**
  * Set up start and end element handlers
@@ -93,7 +99,9 @@ function xml_set_object ($parser, &$object) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_set_element_handler ($parser, callable $start_element_handler, callable $end_element_handler) {}
+function xml_set_element_handler($parser, callable $start_element_handler, callable $end_element_handler)
+{
+}
 
 /**
  * Set up character data handler
@@ -119,7 +127,9 @@ function xml_set_element_handler ($parser, callable $start_element_handler, call
  * @since 4.0
  * @since 5.0
  */
-function xml_set_character_data_handler ($parser, callable $handler) {}
+function xml_set_character_data_handler($parser, callable $handler)
+{
+}
 
 /**
  * Set up processing instruction (PI) handler
@@ -146,7 +156,9 @@ function xml_set_character_data_handler ($parser, callable $handler) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_set_processing_instruction_handler ($parser, callable $handler) {}
+function xml_set_processing_instruction_handler($parser, callable $handler)
+{
+}
 
 /**
  * Set up default handler
@@ -172,7 +184,9 @@ function xml_set_processing_instruction_handler ($parser, callable $handler) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_set_default_handler ($parser, callable $handler) {}
+function xml_set_default_handler($parser, callable $handler)
+{
+}
 
 /**
  * Set up unparsed entity declaration handler
@@ -203,7 +217,9 @@ function xml_set_default_handler ($parser, callable $handler) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_set_unparsed_entity_decl_handler ($parser, callable $handler) {}
+function xml_set_unparsed_entity_decl_handler($parser, callable $handler)
+{
+}
 
 /**
  * Set up notation declaration handler
@@ -232,7 +248,9 @@ function xml_set_unparsed_entity_decl_handler ($parser, callable $handler) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_set_notation_decl_handler ($parser, callable $handler) {}
+function xml_set_notation_decl_handler($parser, callable $handler)
+{
+}
 
 /**
  * Set up external entity reference handler
@@ -265,7 +283,9 @@ function xml_set_notation_decl_handler ($parser, callable $handler) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_set_external_entity_ref_handler ($parser, callable $handler) {}
+function xml_set_external_entity_ref_handler($parser, callable $handler)
+{
+}
 
 /**
  * Set up start namespace declaration handler
@@ -296,7 +316,9 @@ function xml_set_external_entity_ref_handler ($parser, callable $handler) {}
  * @since 4.0.5
  * @since 5.0
  */
-function xml_set_start_namespace_decl_handler ($parser, callable $handler) {}
+function xml_set_start_namespace_decl_handler($parser, callable $handler)
+{
+}
 
 /**
  * Set up end namespace declaration handler
@@ -326,7 +348,9 @@ function xml_set_start_namespace_decl_handler ($parser, callable $handler) {}
  * @since 4.0.5
  * @since 5.0
  */
-function xml_set_end_namespace_decl_handler ($parser, callable $handler) {}
+function xml_set_end_namespace_decl_handler($parser, callable $handler)
+{
+}
 
 /**
  * Start parsing an XML document
@@ -360,7 +384,9 @@ function xml_set_end_namespace_decl_handler ($parser, callable $handler) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_parse ($parser, $data, $is_final = false) {}
+function xml_parse($parser, $data, $is_final = false)
+{
+}
 
 /**
  * Parse XML data into an array structure
@@ -383,7 +409,9 @@ function xml_parse ($parser, $data, $is_final = false) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_parse_into_struct ($parser, $data, array &$values, array &$index = null) {}
+function xml_parse_into_struct($parser, $data, array &$values, array &$index = null)
+{
+}
 
 /**
  * Get XML parser error code
@@ -398,7 +426,9 @@ function xml_parse_into_struct ($parser, $data, array &$values, array &$index = 
  * @since 4.0
  * @since 5.0
  */
-function xml_get_error_code ($parser) {}
+function xml_get_error_code($parser)
+{
+}
 
 /**
  * Get XML parser error string
@@ -411,7 +441,9 @@ function xml_get_error_code ($parser) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_error_string ($code) {}
+function xml_error_string($code)
+{
+}
 
 /**
  * Get current line number for an XML parser
@@ -425,7 +457,9 @@ function xml_error_string ($code) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_get_current_line_number ($parser) {}
+function xml_get_current_line_number($parser)
+{
+}
 
 /**
  * Get current column number for an XML parser
@@ -441,7 +475,9 @@ function xml_get_current_line_number ($parser) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_get_current_column_number ($parser) {}
+function xml_get_current_column_number($parser)
+{
+}
 
 /**
  * Get current byte index for an XML parser
@@ -455,7 +491,9 @@ function xml_get_current_column_number ($parser) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_get_current_byte_index ($parser) {}
+function xml_get_current_byte_index($parser)
+{
+}
 
 /**
  * Free an XML parser
@@ -466,7 +504,9 @@ function xml_get_current_byte_index ($parser) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_parser_free ($parser) {}
+function xml_parser_free($parser)
+{
+}
 
 /**
  * Set options in an XML parser
@@ -531,7 +571,9 @@ function xml_parser_free ($parser) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_parser_set_option ($parser, $option, $value) {}
+function xml_parser_set_option($parser, $option, $value)
+{
+}
 
 /**
  * Get options from an XML parser
@@ -547,7 +589,9 @@ function xml_parser_set_option ($parser, $option, $value) {}
  * @since 4.0
  * @since 5.0
  */
-function xml_parser_get_option ($parser, $option) {}
+function xml_parser_get_option($parser, $option)
+{
+}
 
 /**
  * Encodes an ISO-8859-1 string to UTF-8
@@ -559,54 +603,58 @@ function xml_parser_get_option ($parser, $option) {}
  * @since 4.0
  * @since 5.0
  */
-function utf8_encode ($data) {}
+function utf8_encode($data)
+{
+}
 
 /**
  * Converts a string with ISO-8859-1 characters encoded with UTF-8
  * @since 4.0
  * @since 5.0
-to single-byte ISO-8859-1
+ * to single-byte ISO-8859-1
  * @link http://php.net/manual/en/function.utf8-decode.php
  * @param string $data <p>
  * An UTF-8 encoded string.
  * </p>
  * @return string the ISO-8859-1 translation of <i>data</i>.
  */
-function utf8_decode ($data) {}
+function utf8_decode($data)
+{
+}
 
-define ('XML_ERROR_NONE', 0);
-define ('XML_ERROR_NO_MEMORY', 1);
-define ('XML_ERROR_SYNTAX', 2);
-define ('XML_ERROR_NO_ELEMENTS', 3);
-define ('XML_ERROR_INVALID_TOKEN', 4);
-define ('XML_ERROR_UNCLOSED_TOKEN', 5);
-define ('XML_ERROR_PARTIAL_CHAR', 6);
-define ('XML_ERROR_TAG_MISMATCH', 7);
-define ('XML_ERROR_DUPLICATE_ATTRIBUTE', 8);
-define ('XML_ERROR_JUNK_AFTER_DOC_ELEMENT', 9);
-define ('XML_ERROR_PARAM_ENTITY_REF', 10);
-define ('XML_ERROR_UNDEFINED_ENTITY', 11);
-define ('XML_ERROR_RECURSIVE_ENTITY_REF', 12);
-define ('XML_ERROR_ASYNC_ENTITY', 13);
-define ('XML_ERROR_BAD_CHAR_REF', 14);
-define ('XML_ERROR_BINARY_ENTITY_REF', 15);
-define ('XML_ERROR_ATTRIBUTE_EXTERNAL_ENTITY_REF', 16);
-define ('XML_ERROR_MISPLACED_XML_PI', 17);
-define ('XML_ERROR_UNKNOWN_ENCODING', 18);
-define ('XML_ERROR_INCORRECT_ENCODING', 19);
-define ('XML_ERROR_UNCLOSED_CDATA_SECTION', 20);
-define ('XML_ERROR_EXTERNAL_ENTITY_HANDLING', 21);
-define ('XML_OPTION_CASE_FOLDING', 1);
-define ('XML_OPTION_TARGET_ENCODING', 2);
-define ('XML_OPTION_SKIP_TAGSTART', 3);
-define ('XML_OPTION_SKIP_WHITE', 4);
+define('XML_ERROR_NONE', 0);
+define('XML_ERROR_NO_MEMORY', 1);
+define('XML_ERROR_SYNTAX', 2);
+define('XML_ERROR_NO_ELEMENTS', 3);
+define('XML_ERROR_INVALID_TOKEN', 4);
+define('XML_ERROR_UNCLOSED_TOKEN', 5);
+define('XML_ERROR_PARTIAL_CHAR', 6);
+define('XML_ERROR_TAG_MISMATCH', 7);
+define('XML_ERROR_DUPLICATE_ATTRIBUTE', 8);
+define('XML_ERROR_JUNK_AFTER_DOC_ELEMENT', 9);
+define('XML_ERROR_PARAM_ENTITY_REF', 10);
+define('XML_ERROR_UNDEFINED_ENTITY', 11);
+define('XML_ERROR_RECURSIVE_ENTITY_REF', 12);
+define('XML_ERROR_ASYNC_ENTITY', 13);
+define('XML_ERROR_BAD_CHAR_REF', 14);
+define('XML_ERROR_BINARY_ENTITY_REF', 15);
+define('XML_ERROR_ATTRIBUTE_EXTERNAL_ENTITY_REF', 16);
+define('XML_ERROR_MISPLACED_XML_PI', 17);
+define('XML_ERROR_UNKNOWN_ENCODING', 18);
+define('XML_ERROR_INCORRECT_ENCODING', 19);
+define('XML_ERROR_UNCLOSED_CDATA_SECTION', 20);
+define('XML_ERROR_EXTERNAL_ENTITY_HANDLING', 21);
+define('XML_OPTION_CASE_FOLDING', 1);
+define('XML_OPTION_TARGET_ENCODING', 2);
+define('XML_OPTION_SKIP_TAGSTART', 3);
+define('XML_OPTION_SKIP_WHITE', 4);
 
 /**
  * Holds the SAX implementation method.
  * Can be libxml or expat.
  * @link http://php.net/manual/en/xml.constants.php
  */
-define ('XML_SAX_IMPL', "libxml");
+define('XML_SAX_IMPL', "libxml");
 
 // End of xml v.
 ?>

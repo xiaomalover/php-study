@@ -27,7 +27,9 @@
  * @since 4.0
  * @since 5.0
  */
-function ldap_connect ($hostname = null, $port = 389) {}
+function ldap_connect($hostname = null, $port = 389)
+{
+}
 
 /**
  * Alias of <b>ldap_unbind</b>
@@ -36,7 +38,9 @@ function ldap_connect ($hostname = null, $port = 389) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_close ($link_identifier) {}
+function ldap_close($link_identifier)
+{
+}
 
 /**
  * Bind to LDAP directory
@@ -50,7 +54,9 @@ function ldap_close ($link_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_bind ($link_identifier, $bind_rdn = null, $bind_password = null) {}
+function ldap_bind($link_identifier, $bind_rdn = null, $bind_password = null)
+{
+}
 
 /**
  * Bind to LDAP directory using SASL
@@ -66,7 +72,17 @@ function ldap_bind ($link_identifier, $bind_rdn = null, $bind_password = null) {
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.0
  */
-function ldap_sasl_bind ($link, $binddn = null, $password = null, $sasl_mech = null, $sasl_realm = null, $sasl_authc_id = null, $sasl_authz_id = null, $props = null) {}
+function ldap_sasl_bind(
+    $link,
+    $binddn = null,
+    $password = null,
+    $sasl_mech = null,
+    $sasl_realm = null,
+    $sasl_authc_id = null,
+    $sasl_authz_id = null,
+    $props = null
+) {
+}
 
 /**
  * Unbind from LDAP directory
@@ -78,7 +94,9 @@ function ldap_sasl_bind ($link, $binddn = null, $password = null, $sasl_mech = n
  * @since 4.0
  * @since 5.0
  */
-function ldap_unbind ($link_identifier) {}
+function ldap_unbind($link_identifier)
+{
+}
 
 /**
  * Read an entry
@@ -143,7 +161,17 @@ function ldap_unbind ($link_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_read ($link_identifier, $base_dn, $filter, array $attributes = null, $attrsonly = null, $sizelimit = null, $timelimit = null, $deref = null) {}
+function ldap_read(
+    $link_identifier,
+    $base_dn,
+    $filter,
+    array $attributes = null,
+    $attrsonly = null,
+    $sizelimit = null,
+    $timelimit = null,
+    $deref = null
+) {
+}
 
 /**
  * Single-level search
@@ -202,7 +230,17 @@ function ldap_read ($link_identifier, $base_dn, $filter, array $attributes = nul
  * @since 4.0
  * @since 5.0
  */
-function ldap_list ($link_identifier, $base_dn, $filter, array $attributes = null, $attrsonly = null, $sizelimit = null, $timelimit = null, $deref = null) {}
+function ldap_list(
+    $link_identifier,
+    $base_dn,
+    $filter,
+    array $attributes = null,
+    $attrsonly = null,
+    $sizelimit = null,
+    $timelimit = null,
+    $deref = null
+) {
+}
 
 /**
  * Search LDAP tree
@@ -265,7 +303,17 @@ function ldap_list ($link_identifier, $base_dn, $filter, array $attributes = nul
  * @since 4.0
  * @since 5.0
  */
-function ldap_search ($link_identifier, $base_dn, $filter, array $attributes = null, $attrsonly = null, $sizelimit = null, $timelimit = null, $deref = null) {}
+function ldap_search(
+    $link_identifier,
+    $base_dn,
+    $filter,
+    array $attributes = null,
+    $attrsonly = null,
+    $sizelimit = null,
+    $timelimit = null,
+    $deref = null
+) {
+}
 
 /**
  * Free result memory
@@ -275,7 +323,9 @@ function ldap_search ($link_identifier, $base_dn, $filter, array $attributes = n
  * @since 4.0
  * @since 5.0
  */
-function ldap_free_result ($result_identifier) {}
+function ldap_free_result($result_identifier)
+{
+}
 
 /**
  * Count the number of entries in a search
@@ -290,7 +340,9 @@ function ldap_free_result ($result_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_count_entries ($link_identifier, $result_identifier) {}
+function ldap_count_entries($link_identifier, $result_identifier)
+{
+}
 
 /**
  * Return first result id
@@ -304,7 +356,9 @@ function ldap_count_entries ($link_identifier, $result_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_first_entry ($link_identifier, $result_identifier) {}
+function ldap_first_entry($link_identifier, $result_identifier)
+{
+}
 
 /**
  * Get next result entry
@@ -319,7 +373,9 @@ function ldap_first_entry ($link_identifier, $result_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_next_entry ($link_identifier, $result_entry_identifier) {}
+function ldap_next_entry($link_identifier, $result_entry_identifier)
+{
+}
 
 /**
  * Get all result entries
@@ -349,7 +405,9 @@ function ldap_next_entry ($link_identifier, $result_entry_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_get_entries ($link_identifier, $result_identifier) {}
+function ldap_get_entries($link_identifier, $result_identifier)
+{
+}
 
 /**
  * Return first attribute
@@ -363,7 +421,9 @@ function ldap_get_entries ($link_identifier, $result_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_first_attribute ($link_identifier, $result_entry_identifier) {}
+function ldap_first_attribute($link_identifier, $result_entry_identifier)
+{
+}
 
 /**
  * Get the next attribute in result
@@ -377,7 +437,9 @@ function ldap_first_attribute ($link_identifier, $result_entry_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_next_attribute ($link_identifier, $result_entry_identifier) {}
+function ldap_next_attribute($link_identifier, $result_entry_identifier)
+{
+}
 
 /**
  * Get attributes from a search result entry
@@ -391,7 +453,9 @@ function ldap_next_attribute ($link_identifier, $result_entry_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_get_attributes ($link_identifier, $result_entry_identifier) {}
+function ldap_get_attributes($link_identifier, $result_entry_identifier)
+{
+}
 
 /**
  * Get all values from a result entry
@@ -416,7 +480,9 @@ function ldap_get_attributes ($link_identifier, $result_entry_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_get_values ($link_identifier, $result_entry_identifier, $attribute) {}
+function ldap_get_values($link_identifier, $result_entry_identifier, $attribute)
+{
+}
 
 /**
  * Get all binary values from a result entry
@@ -433,7 +499,9 @@ function ldap_get_values ($link_identifier, $result_entry_identifier, $attribute
  * @since 4.0
  * @since 5.0
  */
-function ldap_get_values_len ($link_identifier, $result_entry_identifier, $attribute) {}
+function ldap_get_values_len($link_identifier, $result_entry_identifier, $attribute)
+{
+}
 
 /**
  * Get the DN of a result entry
@@ -446,7 +514,9 @@ function ldap_get_values_len ($link_identifier, $result_entry_identifier, $attri
  * @since 4.0
  * @since 5.0
  */
-function ldap_get_dn ($link_identifier, $result_entry_identifier) {}
+function ldap_get_dn($link_identifier, $result_entry_identifier)
+{
+}
 
 /**
  * Splits DN into its component parts
@@ -467,7 +537,9 @@ function ldap_get_dn ($link_identifier, $result_entry_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_explode_dn ($dn, $with_attrib) {}
+function ldap_explode_dn($dn, $with_attrib)
+{
+}
 
 /**
  * Convert DN to User Friendly Naming format
@@ -479,7 +551,9 @@ function ldap_explode_dn ($dn, $with_attrib) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_dn2ufn ($dn) {}
+function ldap_dn2ufn($dn)
+{
+}
 
 /**
  * Add entries to LDAP directory
@@ -505,7 +579,9 @@ function ldap_dn2ufn ($dn) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_add ($link_identifier, $dn, array $entry) {}
+function ldap_add($link_identifier, $dn, array $entry)
+{
+}
 
 /**
  * Delete an entry from a directory
@@ -520,7 +596,9 @@ function ldap_add ($link_identifier, $dn, array $entry) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_delete ($link_identifier, $dn) {}
+function ldap_delete($link_identifier, $dn)
+{
+}
 
 /**
  * Modify an LDAP entry
@@ -536,7 +614,9 @@ function ldap_delete ($link_identifier, $dn) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_modify ($link_identifier, $dn, array $entry) {}
+function ldap_modify($link_identifier, $dn, array $entry)
+{
+}
 
 /**
  * Add attribute values to current attributes
@@ -552,7 +632,9 @@ function ldap_modify ($link_identifier, $dn, array $entry) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_mod_add ($link_identifier, $dn, array $entry) {}
+function ldap_mod_add($link_identifier, $dn, array $entry)
+{
+}
 
 /**
  * Replace attribute values with new ones
@@ -568,7 +650,9 @@ function ldap_mod_add ($link_identifier, $dn, array $entry) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_mod_replace ($link_identifier, $dn, array $entry) {}
+function ldap_mod_replace($link_identifier, $dn, array $entry)
+{
+}
 
 /**
  * Delete attribute values from current attributes
@@ -584,7 +668,9 @@ function ldap_mod_replace ($link_identifier, $dn, array $entry) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_mod_del ($link_identifier, $dn, array $entry) {}
+function ldap_mod_del($link_identifier, $dn, array $entry)
+{
+}
 
 /**
  * Return the LDAP error number of the last LDAP command
@@ -597,7 +683,9 @@ function ldap_mod_del ($link_identifier, $dn, array $entry) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_errno ($link_identifier) {}
+function ldap_errno($link_identifier)
+{
+}
 
 /**
  * Convert LDAP error number into string error message
@@ -609,7 +697,9 @@ function ldap_errno ($link_identifier) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_err2str ($errno) {}
+function ldap_err2str($errno)
+{
+}
 
 /**
  * Return the LDAP error message of the last LDAP command
@@ -621,7 +711,9 @@ function ldap_err2str ($errno) {}
  * @since 4.0
  * @since 5.0
  */
-function ldap_error ($link_identifier) {}
+function ldap_error($link_identifier)
+{
+}
 
 /**
  * Compare value of attribute found in entry specified with DN
@@ -643,7 +735,9 @@ function ldap_error ($link_identifier) {}
  * @since 4.0.2
  * @since 5.0
  */
-function ldap_compare ($link_identifier, $dn, $attribute, $value) {}
+function ldap_compare($link_identifier, $dn, $attribute, $value)
+{
+}
 
 /**
  * Sort LDAP result entries
@@ -662,7 +756,9 @@ function ldap_compare ($link_identifier, $dn, $attribute, $value) {}
  * @since 4.2.0
  * @since 5.0
  */
-function ldap_sort ($link, $result, $sortfilter) {}
+function ldap_sort($link, $result, $sortfilter)
+{
+}
 
 /**
  * Modify the name of an entry
@@ -687,7 +783,9 @@ function ldap_sort ($link, $result, $sortfilter) {}
  * @since 4.0.5
  * @since 5.0
  */
-function ldap_rename ($link_identifier, $dn, $newrdn, $newparent, $deleteoldrdn) {}
+function ldap_rename($link_identifier, $dn, $newrdn, $newparent, $deleteoldrdn)
+{
+}
 
 /**
  * Get the current value for given option
@@ -761,7 +859,9 @@ function ldap_rename ($link_identifier, $dn, $newrdn, $newparent, $deleteoldrdn)
  * @since 4.0.4
  * @since 5.0
  */
-function ldap_get_option ($link_identifier, $option, &$retval) {}
+function ldap_get_option($link_identifier, $option, &$retval)
+{
+}
 
 /**
  * Set the value of the given option
@@ -864,7 +964,9 @@ function ldap_get_option ($link_identifier, $option, &$retval) {}
  * @since 4.0.4
  * @since 5.0
  */
-function ldap_set_option ($link_identifier, $option, $newval) {}
+function ldap_set_option($link_identifier, $option, $newval)
+{
+}
 
 /**
  * Return first reference
@@ -875,7 +977,9 @@ function ldap_set_option ($link_identifier, $option, $newval) {}
  * @since 4.0.5
  * @since 5.0
  */
-function ldap_first_reference ($link, $result) {}
+function ldap_first_reference($link, $result)
+{
+}
 
 /**
  * Get next reference
@@ -886,7 +990,9 @@ function ldap_first_reference ($link, $result) {}
  * @since 4.0.5
  * @since 5.0
  */
-function ldap_next_reference ($link, $entry) {}
+function ldap_next_reference($link, $entry)
+{
+}
 
 /**
  * Extract information from reference entry
@@ -898,7 +1004,9 @@ function ldap_next_reference ($link, $entry) {}
  * @since 4.0.5
  * @since 5.0
  */
-function ldap_parse_reference ($link, $entry, array &$referrals) {}
+function ldap_parse_reference($link, $entry, array &$referrals)
+{
+}
 
 /**
  * Extract information from result
@@ -913,7 +1021,9 @@ function ldap_parse_reference ($link, $entry, array &$referrals) {}
  * @since 4.0.5
  * @since 5.0
  */
-function ldap_parse_result ($link, $result, &$errcode, &$matcheddn = null, &$errmsg = null, array &$referrals = null) {}
+function ldap_parse_result($link, $result, &$errcode, &$matcheddn = null, &$errmsg = null, array &$referrals = null)
+{
+}
 
 /**
  * Start TLS
@@ -923,7 +1033,9 @@ function ldap_parse_result ($link, $result, &$errcode, &$matcheddn = null, &$err
  * @since 4.2.0
  * @since 5.0
  */
-function ldap_start_tls ($link) {}
+function ldap_start_tls($link)
+{
+}
 
 /**
  * Set a callback function to do re-binds on referral chasing
@@ -934,7 +1046,9 @@ function ldap_start_tls ($link) {}
  * @since 4.2.0
  * @since 5.0
  */
-function ldap_set_rebind_proc ($link, callable $callback) {}
+function ldap_set_rebind_proc($link, callable $callback)
+{
+}
 
 /**
  * Send LDAP pagination control
@@ -957,7 +1071,9 @@ function ldap_set_rebind_proc ($link, callable $callback) {}
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.4.0
  */
-function ldap_control_paged_result ($link, $pagesize, $iscritical = false, $cookie = "") {}
+function ldap_control_paged_result($link, $pagesize, $iscritical = false, $cookie = "")
+{
+}
 
 /**
  * Retrieve the LDAP pagination cookie
@@ -975,7 +1091,9 @@ function ldap_control_paged_result ($link, $pagesize, $iscritical = false, $cook
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.4.0
  */
-function ldap_control_paged_result_response ($link, $result, &$cookie = null, &$estimated = null) {}
+function ldap_control_paged_result_response($link, $result, &$cookie = null, &$estimated = null)
+{
+}
 
 /**
  * @param $subject
@@ -985,7 +1103,9 @@ function ldap_control_paged_result_response ($link, $result, &$cookie = null, &$
  * @since 5.6.0
  */
 
-function ldap_escape($subject, $ignore = null, $escape = null) {}
+function ldap_escape($subject, $ignore = null, $escape = null)
+{
+}
 
 /**
  * (PHP 5.4 &gt;= 5.4.26, PHP 5.5 &gt;= 5.5.10, PHP 5.6 &gt;= 5.6.0)
@@ -1063,15 +1183,17 @@ function ldap_escape($subject, $ignore = null, $escape = null) {}
  * <b>LDAP_MODIFY_BATCH_*</b> constants listed above.
  * </p></p>
  */
-function ldap_modify_batch ( $link_identifier , $dn , $entry) {}
+function ldap_modify_batch($link_identifier, $dn, $entry)
+{
+}
 
 define('LDAP_ESCAPE_FILTER', 1);
-define ('LDAP_ESCAPE_DN', 2);
-define ('LDAP_DEREF_NEVER', 0);
-define ('LDAP_DEREF_SEARCHING', 1);
-define ('LDAP_DEREF_FINDING', 2);
-define ('LDAP_DEREF_ALWAYS', 3);
-define ('LDAP_MODIFY_BATCH_REMOVE',2);
+define('LDAP_ESCAPE_DN', 2);
+define('LDAP_DEREF_NEVER', 0);
+define('LDAP_DEREF_SEARCHING', 1);
+define('LDAP_DEREF_FINDING', 2);
+define('LDAP_DEREF_ALWAYS', 3);
+define('LDAP_MODIFY_BATCH_REMOVE', 2);
 define('LDAP_MODIFY_BATCH_ADD', 1);
 define('LDAP_MODIFY_BATCH_REMOVE_ALL', 18);
 define('LDAP_MODIFY_BATCH_REPLACE', 3);
@@ -1080,7 +1202,7 @@ define('LDAP_MODIFY_BATCH_REPLACE', 3);
  * Specifies alternative rules for following aliases at the server.
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_DEREF', 2);
+define('LDAP_OPT_DEREF', 2);
 
 /**
  * <p>
@@ -1092,7 +1214,7 @@ define ('LDAP_OPT_DEREF', 2);
  * The lesser of these two settings is the actual size limit.
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_SIZELIMIT', 3);
+define('LDAP_OPT_SIZELIMIT', 3);
 
 /**
  * Specifies the number of seconds to wait for search results.
@@ -1101,54 +1223,54 @@ define ('LDAP_OPT_SIZELIMIT', 3);
  * The lesser of these two settings is the actual time limit.
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_TIMELIMIT', 4);
+define('LDAP_OPT_TIMELIMIT', 4);
 
 /**
  * Option for <b>ldap_set_option</b> to allow setting network timeout.
  * (Available as of PHP 5.3.0)
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_NETWORK_TIMEOUT', 20485);
+define('LDAP_OPT_NETWORK_TIMEOUT', 20485);
 
 /**
  * Specifies the LDAP protocol to be used (V2 or V3).
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_PROTOCOL_VERSION', 17);
-define ('LDAP_OPT_ERROR_NUMBER', 49);
+define('LDAP_OPT_PROTOCOL_VERSION', 17);
+define('LDAP_OPT_ERROR_NUMBER', 49);
 
 /**
  * Specifies whether to automatically follow referrals returned
  * by the LDAP server.
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_REFERRALS', 8);
-define ('LDAP_OPT_RESTART', 9);
-define ('LDAP_OPT_HOST_NAME', 48);
-define ('LDAP_OPT_ERROR_STRING', 50);
-define ('LDAP_OPT_MATCHED_DN', 51);
+define('LDAP_OPT_REFERRALS', 8);
+define('LDAP_OPT_RESTART', 9);
+define('LDAP_OPT_HOST_NAME', 48);
+define('LDAP_OPT_ERROR_STRING', 50);
+define('LDAP_OPT_MATCHED_DN', 51);
 
 /**
  * Specifies a default list of server controls to be sent with each request.
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_SERVER_CONTROLS', 18);
+define('LDAP_OPT_SERVER_CONTROLS', 18);
 
 /**
  * Specifies a default list of client controls to be processed with each request.
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_CLIENT_CONTROLS', 19);
+define('LDAP_OPT_CLIENT_CONTROLS', 19);
 
 /**
  * Specifies a bitwise level for debug traces.
  * @link http://php.net/manual/en/ldap.constants.php
  */
-define ('LDAP_OPT_DEBUG_LEVEL', 20481);
-define ('LDAP_OPT_X_SASL_MECH', 24832);
-define ('LDAP_OPT_X_SASL_REALM', 24833);
-define ('LDAP_OPT_X_SASL_AUTHCID', 24834);
-define ('LDAP_OPT_X_SASL_AUTHZID', 24835);
+define('LDAP_OPT_DEBUG_LEVEL', 20481);
+define('LDAP_OPT_X_SASL_MECH', 24832);
+define('LDAP_OPT_X_SASL_REALM', 24833);
+define('LDAP_OPT_X_SASL_AUTHCID', 24834);
+define('LDAP_OPT_X_SASL_AUTHZID', 24835);
 
 // End of ldap v.
 ?>

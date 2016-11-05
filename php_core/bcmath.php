@@ -14,7 +14,9 @@
  * @since 4.0
  * @since 5.0
  */
-function bcadd ($left_operand, $right_operand, $scale = null) {}
+function bcadd($left_operand, $right_operand, $scale = null)
+{
+}
 
 /**
  * Subtract one arbitrary precision number from another
@@ -30,7 +32,9 @@ function bcadd ($left_operand, $right_operand, $scale = null) {}
  * @since 4.0
  * @since 5.0
  */
-function bcsub ($left_operand, $right_operand, $scale = null) {}
+function bcsub($left_operand, $right_operand, $scale = null)
+{
+}
 
 /**
  * Multiply two arbitrary precision numbers
@@ -46,7 +50,9 @@ function bcsub ($left_operand, $right_operand, $scale = null) {}
  * @since 4.0
  * @since 5.0
  */
-function bcmul ($left_operand, $right_operand, $scale = null) {}
+function bcmul($left_operand, $right_operand, $scale = null)
+{
+}
 
 /**
  * Divide two arbitrary precision numbers
@@ -63,7 +69,9 @@ function bcmul ($left_operand, $right_operand, $scale = null) {}
  * @since 4.0
  * @since 5.0
  */
-function bcdiv ($left_operand, $right_operand, $scale = null) {}
+function bcdiv($left_operand, $right_operand, $scale = null)
+{
+}
 
 /**
  * Get modulus of an arbitrary precision number
@@ -79,7 +87,9 @@ function bcdiv ($left_operand, $right_operand, $scale = null) {}
  * @since 4.0
  * @since 5.0
  */
-function bcmod ($left_operand, $modulus) {}
+function bcmod($left_operand, $modulus)
+{
+}
 
 /**
  * Raise an arbitrary precision number to another
@@ -95,7 +105,9 @@ function bcmod ($left_operand, $modulus) {}
  * @since 4.0
  * @since 5.0
  */
-function bcpow ($left_operand, $right_operand, $scale = null) {}
+function bcpow($left_operand, $right_operand, $scale = null)
+{
+}
 
 /**
  * Get the square root of an arbitrary precision number
@@ -109,7 +121,9 @@ function bcpow ($left_operand, $right_operand, $scale = null) {}
  * @since 4.0
  * @since 5.0
  */
-function bcsqrt ($operand, $scale = null) {}
+function bcsqrt($operand, $scale = null)
+{
+}
 
 /**
  * Set default scale parameter for all bc math functions
@@ -121,7 +135,9 @@ function bcsqrt ($operand, $scale = null) {}
  * @since 4.0
  * @since 5.0
  */
-function bcscale ($scale) {}
+function bcscale($scale)
+{
+}
 
 /**
  * Compare two arbitrary precision numbers
@@ -143,7 +159,9 @@ function bcscale ($scale) {}
  * @since 4.0
  * @since 5.0
  */
-function bccomp ($left_operand, $right_operand, $scale = null) {}
+function bccomp($left_operand, $right_operand, $scale = null)
+{
+}
 
 /**
  * Raise an arbitrary precision number to another, reduced by a specified modulus
@@ -162,4 +180,6 @@ function bccomp ($left_operand, $right_operand, $scale = null) {}
  * is 0.
  * @since 5.0
  */
-function bcpowmod ($left_operand, $right_operand, $modulus, $scale = null) {}
+function bcpowmod($left_operand, $right_operand, $modulus, $scale = null)
+{
+}

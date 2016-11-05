@@ -16,12 +16,14 @@
  *
  * @link https://docs.newrelic.com/docs/agents/php-agent/configuration/php-agent-api#api-custom-param
  *
- * @param string                       $key
+ * @param string $key
  * @param boolean|float|integer|string $value
  *
  * @return boolean
  */
-function newrelic_add_custom_parameter($key, $value) {}
+function newrelic_add_custom_parameter($key, $value)
+{
+}
 
 /**
  * Add user-defined functions or methods to the list to be instrumented . API equivalent of the
@@ -39,7 +41,9 @@ function newrelic_add_custom_parameter($key, $value) {}
  *
  * @return boolean
  */
-function newrelic_add_custom_tracer($functionName) {}
+function newrelic_add_custom_tracer($functionName)
+{
+}
 
 /**
  * Mark current transaction as a background job or a web transaction.
@@ -53,7 +57,9 @@ function newrelic_add_custom_tracer($functionName) {}
  *
  * @return void
  */
-function newrelic_background_job($flag = true) {}
+function newrelic_background_job($flag = true)
+{
+}
 
 /**
  * Enables the capturing of URL parameters for displaying in transaction traces. This will override the
@@ -68,7 +74,9 @@ function newrelic_background_job($flag = true) {}
  *
  * @return void
  */
-function newrelic_capture_params($enable = true) {}
+function newrelic_capture_params($enable = true)
+{
+}
 
 /**
  * Adds a custom metric with the specified name and value.
@@ -88,11 +96,13 @@ function newrelic_capture_params($enable = true) {}
  * @link https://docs.newrelic.com/docs/agents/php-agent/configuration/php-agent-api#api-custom-metric
  *
  * @param string $metricName
- * @param float  $value
+ * @param float $value
  *
  * @return boolean
  */
-function newrelic_custom_metric($metricName, $value) {}
+function newrelic_custom_metric($metricName, $value)
+{
+}
 
 /**
  * Prevents the output filter from attempting to insert the JavaScript for page load timing (sometimes referred to as
@@ -104,12 +114,16 @@ function newrelic_custom_metric($metricName, $value) {}
  *
  * @return true
  */
-function newrelic_disable_autorum() {}
+function newrelic_disable_autorum()
+{
+}
 
 /**
  * @deprecated use newrelic_capture_params() instead
  */
-function newrelic_enable_params() {}
+function newrelic_enable_params()
+{
+}
 
 /**
  * Stop recording the web transaction immediately.
@@ -124,7 +138,9 @@ function newrelic_enable_params() {}
  *
  * @return void
  */
-function newrelic_end_of_transaction() {}
+function newrelic_end_of_transaction()
+{
+}
 
 /**
  * Causes the current transaction to end immediately.
@@ -149,7 +165,9 @@ function newrelic_end_of_transaction() {}
  *
  * @return boolean
  */
-function newrelic_end_transaction($ignore = false) {}
+function newrelic_end_transaction($ignore = false)
+{
+}
 
 /**
  * Returns the JavaScript string to inject at the very end of the HTML output for page load timing (sometimes referred
@@ -163,7 +181,9 @@ function newrelic_end_transaction($ignore = false) {}
  *
  * @return string
  */
-function newrelic_get_browser_timing_footer ($includeTags = true) {}
+function newrelic_get_browser_timing_footer($includeTags = true)
+{
+}
 
 /**
  * Returns the JavaScript string to inject as part of the header for page load timing (sometimes referred to as real
@@ -177,7 +197,9 @@ function newrelic_get_browser_timing_footer ($includeTags = true) {}
  *
  * @return string
  */
-function newrelic_get_browser_timing_header($includeTags = true) {}
+function newrelic_get_browser_timing_header($includeTags = true)
+{
+}
 
 /**
  * Do not generate Apdex metrics for this transaction.
@@ -189,7 +211,9 @@ function newrelic_get_browser_timing_header($includeTags = true) {}
  *
  * @return void
  */
-function newrelic_ignore_apdex() {}
+function newrelic_ignore_apdex()
+{
+}
 
 /**
  * Do not generate metrics for this transaction.
@@ -201,7 +225,9 @@ function newrelic_ignore_apdex() {}
  *
  * @return void
  */
-function newrelic_ignore_transaction() {}
+function newrelic_ignore_transaction()
+{
+}
 
 /**
  * Sets the name of the transaction to the specified name.
@@ -231,7 +257,9 @@ function newrelic_ignore_transaction() {}
  *
  * @return boolean
  */
-function newrelic_name_transaction($name) {}
+function newrelic_name_transaction($name)
+{
+}
 
 /**
  * Report an error at this line of code, with a complete stack trace.
@@ -255,15 +283,22 @@ function newrelic_name_transaction($name) {}
  *
  * @link https://docs.newrelic.com/docs/agents/php-agent/configuration/php-agent-api#api-notice-error
  *
- * @param string|integer   $messageOrUnused    [optional]
+ * @param string|integer $messageOrUnused [optional]
  * @param Exception|string $exceptionOrMessage [optional]
- * @param string           $unused2            [optional]
- * @param integer          $unused3            [optional]
- * @param mixed            $unused4            [optional]
+ * @param string $unused2 [optional]
+ * @param integer $unused3 [optional]
+ * @param mixed $unused4 [optional]
  *
  * @return void
  */
-function newrelic_notice_error($messageOrUnused = null, $exceptionOrMessage = null, $unused2 = null, $unused3 = null, $unused4 = null) {}
+function newrelic_notice_error(
+    $messageOrUnused = null,
+    $exceptionOrMessage = null,
+    $unused2 = null,
+    $unused3 = null,
+    $unused4 = null
+) {
+}
 
 /**
  * Records a New Relic Insights custom event.
@@ -281,7 +316,9 @@ function newrelic_notice_error($messageOrUnused = null, $exceptionOrMessage = nu
  *
  * @return void
  */
-function newrelic_record_custom_event($name, array $attributes) {}
+function newrelic_record_custom_event($name, array $attributes)
+{
+}
 
 /**
  * Sets the name of the application to name.
@@ -311,13 +348,15 @@ function newrelic_record_custom_event($name, array $attributes) {}
  *
  * @link https://docs.newrelic.com/docs/agents/php-agent/configuration/php-agent-api#api-set-appname
  *
- * @param string  $name
- * @param string  $license [optional] defaults to ini_get('newrelic.license')
- * @param boolean $xmit    [optional]
+ * @param string $name
+ * @param string $license [optional] defaults to ini_get('newrelic.license')
+ * @param boolean $xmit [optional]
  *
  * @return boolean
  */
-function newrelic_set_appname($name, $license = null, $xmit = false) {}
+function newrelic_set_appname($name, $license = null, $xmit = false)
+{
+}
 
 /**
  * Sets user attributes (custom parameters).
@@ -335,7 +374,9 @@ function newrelic_set_appname($name, $license = null, $xmit = false) {}
  *
  * @return boolean
  */
-function newrelic_set_user_attributes($user, $account, $product) {}
+function newrelic_set_user_attributes($user, $account, $product)
+{
+}
 
 /**
  * If you have ended a transaction before your script terminates (perhaps due to it just having finished a task in a job
@@ -355,4 +396,6 @@ function newrelic_set_user_attributes($user, $account, $product) {}
  *
  * @return boolean
  */
-function newrelic_start_transaction($appName, $license = null) {}
+function newrelic_start_transaction($appName, $license = null)
+{
+}

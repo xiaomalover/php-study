@@ -2,32 +2,41 @@
 
 // Start of standard v.5.3.2-0.dotdeb.1
 
-class __PHP_Incomplete_Class  {
+class __PHP_Incomplete_Class
+{
 }
 
-class php_user_filter  {
-        public $filtername;
-        public $params;
+class php_user_filter
+{
+    public $filtername;
+    public $params;
 
 
-        /**
-         * @param $in
-         * @param $out
-         * @param $consumed
-         * @param $closing
-         */
-        public function filter ($in, $out, &$consumed, $closing) {}
+    /**
+     * @param $in
+     * @param $out
+     * @param $consumed
+     * @param $closing
+     */
+    public function filter($in, $out, &$consumed, $closing)
+    {
+    }
 
-        public function onCreate () {}
+    public function onCreate()
+    {
+    }
 
-        public function onClose () {}
+    public function onClose()
+    {
+    }
 
 }
 
 /**
  * Instances of Directory are created by calling the dir() function, not by the new operator.
  */
-class Directory  {
+class Directory
+{
 
     /**
      * @var string The directory that was opened.
@@ -38,14 +47,16 @@ class Directory  {
      * @var resource Can be used with other directory functions such as {@see readdir()}, {@see rewinddir()} and {@see closedir()}.
      */
     public $handle;
-    
+
     /**
      * Close directory handle.
      * Same as closedir(), only dir_handle defaults to $this.
      * @param resource $dir_handle [optional]
      * @link http://www.php.net/manual/en/directory.close.php
      */
-    public function close ( $dir_handle ) {}
+    public function close($dir_handle)
+    {
+    }
 
     /**
      *  Rewind directory handle.
@@ -53,7 +64,9 @@ class Directory  {
      * @param resource $dir_handle [optional]
      * @link http://www.php.net/manual/en/directory.rewind.php
      */
-    public function rewind ( $dir_handle ) {}
+    public function rewind($dir_handle)
+    {
+    }
 
     /**
      * Read entry from directory handle.
@@ -62,7 +75,9 @@ class Directory  {
      * @return string
      * @link http://www.php.net/manual/en/directory.read.php
      */
-    public function read ( $dir_handle) { }
+    public function read($dir_handle)
+    {
+    }
 
 }
 
@@ -77,7 +92,9 @@ class Directory  {
  * @since 4.0.4
  * @since 5.0
  */
-function constant ($name) {}
+function constant($name)
+{
+}
 
 /**
  * Convert binary data into hexadecimal representation
@@ -89,7 +106,9 @@ function constant ($name) {}
  * @since 4.0
  * @since 5.0
  */
-function bin2hex ($str) {}
+function bin2hex($str)
+{
+}
 
 /**
  * Delay execution
@@ -103,7 +122,9 @@ function bin2hex ($str) {}
  * @since 4.0
  * @since 5.0
  */
-function sleep ($seconds) {}
+function sleep($seconds)
+{
+}
 
 /**
  * Delay execution in microseconds
@@ -112,11 +133,13 @@ function sleep ($seconds) {}
  * Halt time in micro seconds. A micro second is one millionth of a
  * second.
  * </p>
- * @return void 
+ * @return void
  * @since 4.0
  * @since 5.0
  */
-function usleep ($micro_seconds) {}
+function usleep($micro_seconds)
+{
+}
 
 /**
  * Delay for a number of seconds and nanoseconds
@@ -138,7 +161,9 @@ function usleep ($micro_seconds) {}
  * remaining in the delay
  * @since 5.0
  */
-function time_nanosleep ($seconds, $nanoseconds) {}
+function time_nanosleep($seconds, $nanoseconds)
+{
+}
 
 /**
  * Make the script sleep until the specified time
@@ -149,7 +174,9 @@ function time_nanosleep ($seconds, $nanoseconds) {}
  * @return bool true on success or false on failure.
  * @since 5.1.0
  */
-function time_sleep_until ($timestamp) {}
+function time_sleep_until($timestamp)
+{
+}
 
 /**
  * Parse a time/date generated with <function>strftime</function>
@@ -214,16 +241,20 @@ function time_sleep_until ($timestamp) {}
  * </table>
  * @since 5.1.0
  */
-function strptime ($date, $format) {}
+function strptime($date, $format)
+{
+}
 
 /**
  * Flush the output buffer
  * @link http://php.net/manual/en/function.flush.php
- * @return void 
+ * @return void
  * @since 4.0
  * @since 5.0
  */
-function flush () {}
+function flush()
+{
+}
 
 /**
  * Wraps a string to a given number of characters
@@ -248,7 +279,9 @@ function flush () {}
  * @since 4.0.2
  * @since 5.0
  */
-function wordwrap ($str, $width = 75, $break = "\n", $cut = false) {}
+function wordwrap($str, $width = 75, $break = "\n", $cut = false)
+{
+}
 
 /**
  * Convert special characters to HTML entities
@@ -369,7 +402,9 @@ function wordwrap ($str, $width = 75, $break = "\n", $cut = false) {}
  * </p>
  * @return string The converted string.
  */
-function htmlspecialchars ($string, $flags = ENT_COMPAT, $encoding = 'UTF-8', $double_encode = true) {}
+function htmlspecialchars($string, $flags = ENT_COMPAT, $encoding = 'UTF-8', $double_encode = true)
+{
+}
 
 /**
  * Convert all applicable characters to HTML entities
@@ -417,7 +452,9 @@ function htmlspecialchars ($string, $flags = ENT_COMPAT, $encoding = 'UTF-8', $d
  * @since 4.0
  * @since 5.0
  */
-function htmlentities ($string, $quote_style = null, $charset = null, $double_encode = true) {}
+function htmlentities($string, $quote_style = null, $charset = null, $double_encode = true)
+{
+}
 
 /**
  * Convert all HTML entities to their applicable characters
@@ -460,7 +497,9 @@ function htmlentities ($string, $quote_style = null, $charset = null, $double_en
  * @since 4.3.0
  * @since 5.0
  */
-function html_entity_decode ($string, $quote_style = null, $charset = null) {}
+function html_entity_decode($string, $quote_style = null, $charset = null)
+{
+}
 
 /**
  * Convert special HTML entities back to characters
@@ -494,7 +533,9 @@ function html_entity_decode ($string, $quote_style = null, $charset = null) {}
  * @return string the decoded string.
  * @since 5.1.0
  */
-function htmlspecialchars_decode ($string, $quote_style = null) {}
+function htmlspecialchars_decode($string, $quote_style = null)
+{
+}
 
 /**
  * Returns the translation table used by <function>htmlspecialchars</function> and <function>htmlentities</function>
@@ -515,7 +556,9 @@ function htmlspecialchars_decode ($string, $quote_style = null) {}
  * @since 4.0
  * @since 5.0
  */
-function get_html_translation_table ($table = null, $quote_style = null) {}
+function get_html_translation_table($table = null, $quote_style = null)
+{
+}
 
 /**
  * Calculate the sha1 hash of a string
@@ -533,7 +576,9 @@ function get_html_translation_table ($table = null, $quote_style = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function sha1 ($str, $raw_output = null) {}
+function sha1($str, $raw_output = null)
+{
+}
 
 /**
  * Calculate the sha1 hash of a file
@@ -549,7 +594,9 @@ function sha1 ($str, $raw_output = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function sha1_file ($filename, $raw_output = null) {}
+function sha1_file($filename, $raw_output = null)
+{
+}
 
 /**
  * Calculate the md5 hash of a string
@@ -566,7 +613,9 @@ function sha1_file ($filename, $raw_output = null) {}
  * @since 4.0
  * @since 5.0
  */
-function md5 ($str, $raw_output = null) {}
+function md5($str, $raw_output = null)
+{
+}
 
 /**
  * Calculates the md5 hash of a given file
@@ -582,7 +631,9 @@ function md5 ($str, $raw_output = null) {}
  * @since 4.2.0
  * @since 5.0
  */
-function md5_file ($filename, $raw_output = null) {}
+function md5_file($filename, $raw_output = null)
+{
+}
 
 /**
  * Calculates the crc32 polynomial of a string
@@ -594,7 +645,9 @@ function md5_file ($filename, $raw_output = null) {}
  * @since 4.0.1
  * @since 5.0
  */
-function crc32 ($str) {}
+function crc32($str)
+{
+}
 
 /**
  * Parse a binary IPTC block into single tags.
@@ -607,7 +660,9 @@ function crc32 ($str) {}
  * @since 4.0
  * @since 5.0
  */
-function iptcparse ($iptcblock) {}
+function iptcparse($iptcblock)
+{
+}
 
 /**
  * Embeds binary IPTC data into a JPEG image
@@ -619,15 +674,17 @@ function iptcparse ($iptcblock) {}
  * Path to the JPEG image.
  * </p>
  * @param int $spool [optional] <p>
- * Spool flag. If the spool flag is over 2 then the JPEG will be 
+ * Spool flag. If the spool flag is over 2 then the JPEG will be
  * returned as a string.
  * </p>
- * @return mixed If success and spool flag is lower than 2 then the JPEG will not be 
+ * @return mixed If success and spool flag is lower than 2 then the JPEG will not be
  * returned as a string, false on errors.
  * @since 4.0
  * @since 5.0
  */
-function iptcembed ($iptcdata, $jpeg_file_name, $spool = null) {}
+function iptcembed($iptcdata, $jpeg_file_name, $spool = null)
+{
+}
 
 /**
  * Get the size of an image
@@ -635,14 +692,14 @@ function iptcembed ($iptcdata, $jpeg_file_name, $spool = null) {}
  * @param string $filename <p>
  * This parameter specifies the file you wish to retrieve information
  * about. It can reference a local file or (configuration permitting) a
- * remote file using one of the supported streams. 
+ * remote file using one of the supported streams.
  * </p>
  * @param array $imageinfo [optional] <p>
  * This optional parameter allows you to extract some extended
  * information from the image file. Currently, this will return the
  * different JPG APP markers as an associative array.
- * Some programs use these APP markers to embed text information in 
- * images. A very common one is to embed 
+ * Some programs use these APP markers to embed text information in
+ * images. A very common one is to embed
  * IPTC information in the APP13 marker.
  * You can use the iptcparse function to parse the
  * binary APP13 marker into something readable.
@@ -659,17 +716,17 @@ function iptcembed ($iptcdata, $jpeg_file_name, $spool = null) {}
  * zero for width and height in these cases.
  * </p>
  * <p>
- * Index 2 is one of the IMAGETYPE_XXX constants indicating 
+ * Index 2 is one of the IMAGETYPE_XXX constants indicating
  * the type of the image.
  * </p>
  * <p>
- * Index 3 is a text string with the correct 
+ * Index 3 is a text string with the correct
  * height="yyy" width="xxx" string that can be used
  * directly in an IMG tag.
  * </p>
  * <p>
  * mime is the correspondant MIME type of the image.
- * This information can be used to deliver images with correct the HTTP 
+ * This information can be used to deliver images with correct the HTTP
  * Content-type header:
  * getimagesize and MIME types
  * ]]>
@@ -693,7 +750,9 @@ function iptcembed ($iptcdata, $jpeg_file_name, $spool = null) {}
  * @since 4.0
  * @since 5.0
  */
-function getimagesize ($filename, array &$imageinfo = null) {}
+function getimagesize($filename, array &$imageinfo = null)
+{
+}
 
 /**
  * Return an image containing the affine tramsformed src image, using an optional clipping area
@@ -704,7 +763,9 @@ function getimagesize ($filename, array &$imageinfo = null) {}
  * @param array $clip [optional] <p>Array with keys "x", "y", "width" and "height".</p>
  * @return resource|bool Return affined image resource on success or FALSE on failure.
  */
-function imageaffine($image, $affine, $clip = null) {}
+function imageaffine($image, $affine, $clip = null)
+{
+}
 
 /**
  * Concat two matrices (as in doing many ops in one go)
@@ -714,7 +775,9 @@ function imageaffine($image, $affine, $clip = null) {}
  * @return array|bool Array with keys 0 to 5 and float values or <b>FALSE</b> on failure.
  * @since 5.5.0
  */
-function imageaffinematrixconcat(array $m1, array $m2) {}
+function imageaffinematrixconcat(array $m1, array $m2)
+{
+}
 
 /**
  * Return an image containing the affine tramsformed src image, using an optional clipping area
@@ -725,7 +788,9 @@ function imageaffinematrixconcat(array $m1, array $m2) {}
  * @since 5.5.0
  */
 
-function imageaffinematrixget ($type, $options = null) {}
+function imageaffinematrixget($type, $options = null)
+{
+}
 
 /**
  * Crop an image using the given coordinates and size, x, y, width and height
@@ -737,7 +802,9 @@ function imageaffinematrixget ($type, $options = null) {}
  * @return resource|bool Return cropped image resource on success or FALSE on failure.
  * @since 5.5.0
  */
-function imagecrop ($image, $rect) {}
+function imagecrop($image, $rect)
+{
+}
 
 /**
  * Crop an image automatically using one of the available modes
@@ -758,7 +825,9 @@ function imagecrop ($image, $rect) {}
  * @return resource|bool Return cropped image resource on success or <b>FALSE</b> on failure.
  * @since 5.5.0
  */
-function imagecropauto ($image, $mode = -1, $threshold = .5, $color = -1) {}
+function imagecropauto($image, $mode = -1, $threshold = .5, $color = -1)
+{
+}
 
 /**
  * Flips an image using a given mode
@@ -799,7 +868,9 @@ function imagecropauto ($image, $mode = -1, $threshold = .5, $color = -1) {}
  * @return bool Returns <b>TRUE</b> on success or <b>FALSE</b> on failure.
  * @since 5.5.0
  */
-function imageflip ($image, $mode) {}
+function imageflip($image, $mode)
+{
+}
 
 /**
  * Converts a palette based image to true color
@@ -810,7 +881,9 @@ function imageflip ($image, $mode) {}
  * @return bool Returns <b>TRUE</b> if the convertion was complete, or if the source image already is a true color image, otherwise <b>FALSE</b> is returned.
  * @since 5.5.0
  */
-function imagepalettetotruecolor ($image) {}
+function imagepalettetotruecolor($image)
+{
+}
 
 /**
  * @since 5.5.0
@@ -825,7 +898,9 @@ function imagepalettetotruecolor ($image) {}
  * @return resource|bool Return scaled image resource on success or <b>FALSE</b> on failure.
  */
 
-function imagescale ($image, $new_width, $new_height = -1, $mode = IMG_BILINEAR_FIXED) {}
+function imagescale($image, $new_width, $new_height = -1, $mode = IMG_BILINEAR_FIXED)
+{
+}
 
 /**
  * Set the interpolation method
@@ -904,13 +979,15 @@ function imagescale ($image, $new_width, $new_height = -1, $mode = IMG_BILINEAR_
  * @return bool Returns TRUE on success or FALSE on failure.
  * @since 5.5.0
  */
-function imagesetinterpolation ($image, $method = IMG_BILINEAR_FIXED) {}
+function imagesetinterpolation($image, $method = IMG_BILINEAR_FIXED)
+{
+}
 
 /**
  * Get Mime-Type for image-type returned by getimagesize,
  * @since 4.3.0
  * @since 5.0
-   exif_read_data, exif_thumbnail, exif_imagetype
+ * exif_read_data, exif_thumbnail, exif_imagetype
  * @link http://php.net/manual/en/function.image-type-to-mime-type.php
  * @param int $imagetype <p>
  * One of the IMAGETYPE_XXX constants.
@@ -994,7 +1071,9 @@ function imagesetinterpolation ($image, $method = IMG_BILINEAR_FIXED) {}
  * </tr>
  * </table>
  */
-function image_type_to_mime_type ($imagetype) {}
+function image_type_to_mime_type($imagetype)
+{
+}
 
 /**
  * Get file extension for image type
@@ -1008,7 +1087,9 @@ function image_type_to_mime_type ($imagetype) {}
  * @return string A string with the extension corresponding to the given image type.
  * @since 5.0
  */
-function image_type_to_extension ($imagetype, $include_dot = null) {}
+function image_type_to_extension($imagetype, $include_dot = null)
+{
+}
 
 /**
  * Outputs lots of PHP information
@@ -1071,7 +1152,7 @@ function image_type_to_extension ($imagetype, $include_dot = null) {}
  * <td>INFO_VARIABLES</td>
  * <td>32</td>
  * <td>
- * Shows all 
+ * Shows all
  * predefined variables from EGPCS (Environment, GET,
  * POST, Cookie, Server).
  * </td>
@@ -1096,7 +1177,9 @@ function image_type_to_extension ($imagetype, $include_dot = null) {}
  * @since 4.0
  * @since 5.0
  */
-function phpinfo ($what = null) {}
+function phpinfo($what = null)
+{
+}
 
 /**
  * Gets the current PHP version
@@ -1111,7 +1194,9 @@ function phpinfo ($what = null) {}
  * @since 4.0
  * @since 5.0
  */
-function phpversion ($extension = null) {}
+function phpversion($extension = null)
+{
+}
 
 /**
  * Prints out the credits for PHP
@@ -1178,7 +1263,9 @@ function phpversion ($extension = null) {}
  * @since 4.0
  * @since 5.0
  */
-function phpcredits ($flag = null) {}
+function phpcredits($flag = null)
+{
+}
 
 /**
  * @deprecated 5.5 Removed in PHP 5.5
@@ -1188,21 +1275,27 @@ function phpcredits ($flag = null) {}
  * @since 4.0
  * @since 5.0
  */
-function php_logo_guid () {}
+function php_logo_guid()
+{
+}
 
 /**
  * @deprecated 5.5 Removed in PHP 5.5
  * @since 4.0
  * @since 5.0
  */
-function php_real_logo_guid () {}
+function php_real_logo_guid()
+{
+}
 
 /**
  * @deprecated 5.5 Removed in PHP 5.5
  * @since 4.0
  * @since 5.0
  */
-function php_egg_logo_guid () {}
+function php_egg_logo_guid()
+{
+}
 
 /**
  * @deprecated 5.5 Removed in PHP 5.5
@@ -1212,7 +1305,9 @@ function php_egg_logo_guid () {}
  * @since 4.0
  * @since 5.0
  */
-function zend_logo_guid () {}
+function zend_logo_guid()
+{
+}
 
 /**
  * Returns the type of interface between web server and PHP
@@ -1220,20 +1315,22 @@ function zend_logo_guid () {}
  * @return string the interface type, as a lowercase string.
  * </p>
  * <p>
- * Although not exhaustive, the possible return values include 
- * aolserver, apache, 
- * apache2filter, apache2handler, 
- * caudium, cgi (until PHP 5.3), 
- * cgi-fcgi, cli, 
+ * Although not exhaustive, the possible return values include
+ * aolserver, apache,
+ * apache2filter, apache2handler,
+ * caudium, cgi (until PHP 5.3),
+ * cgi-fcgi, cli,
  * continuity, embed,
- * isapi, litespeed, 
- * milter, nsapi, 
+ * isapi, litespeed,
+ * milter, nsapi,
  * phttpd, pi3web, roxen,
  * thttpd, tux, and webjames.
  * @since 4.0.1
  * @since 5.0
  */
-function php_sapi_name () {}
+function php_sapi_name()
+{
+}
 
 /**
  * Returns information about the operating system PHP is running on
@@ -1247,7 +1344,9 @@ function php_sapi_name () {}
  * @since 4.0.2
  * @since 5.0
  */
-function php_uname ($mode = null) {}
+function php_uname($mode = null)
+{
+}
 
 /**
  * Return a list of .ini files parsed from the additional ini dir
@@ -1262,7 +1361,9 @@ function php_uname ($mode = null) {}
  * @since 4.3.0
  * @since 5.0
  */
-function php_ini_scanned_files () {}
+function php_ini_scanned_files()
+{
+}
 
 /**
  * Retrieve a path to the loaded php.ini file
@@ -1270,7 +1371,9 @@ function php_ini_scanned_files () {}
  * @return string The loaded &php.ini; path, or false if one is not loaded.
  * @since 5.2.4
  */
-function php_ini_loaded_file () {}
+function php_ini_loaded_file()
+{
+}
 
 /**
  * String comparisons using a "natural order" algorithm
@@ -1288,7 +1391,9 @@ function php_ini_loaded_file () {}
  * @since 4.0
  * @since 5.0
  */
-function strnatcmp ($str1, $str2) {}
+function strnatcmp($str1, $str2)
+{
+}
 
 /**
  * Case insensitive string comparisons using a "natural order" algorithm
@@ -1306,7 +1411,9 @@ function strnatcmp ($str1, $str2) {}
  * @since 4.0
  * @since 5.0
  */
-function strnatcasecmp ($str1, $str2) {}
+function strnatcasecmp($str1, $str2)
+{
+}
 
 /**
  * Count the number of substring occurrences
@@ -1329,13 +1436,15 @@ function strnatcasecmp ($str1, $str2) {}
  * @since 4.0
  * @since 5.0
  */
-function substr_count ($haystack, $needle, $offset = null, $length = null) {}
+function substr_count($haystack, $needle, $offset = null, $length = null)
+{
+}
 
 /**
  * Finds the length of the first segment of a string consisting
  * @since 4.0
  * @since 5.0
-   entirely of characters contained within a given mask.
+ * entirely of characters contained within a given mask.
  * @link http://php.net/manual/en/function.strspn.php
  * @param string $subject <p>
  * The string to examine.
@@ -1366,7 +1475,7 @@ function substr_count ($haystack, $needle, $offset = null, $length = null) {}
  * </p>
  * @param int $length [optional] <p>
  * The length of the segment from subject
- * to examine. 
+ * to examine.
  * </p>
  * <p>
  * If length is given and is non-negative,
@@ -1383,7 +1492,9 @@ function substr_count ($haystack, $needle, $offset = null, $length = null) {}
  * @return int the length of the initial segment of str1
  * which consists entirely of characters in str2.
  */
-function strspn ($subject, $mask, $start = null, $length = null) {}
+function strspn($subject, $mask, $start = null, $length = null)
+{
+}
 
 /**
  * Find length of initial segment not matching mask
@@ -1404,7 +1515,9 @@ function strspn ($subject, $mask, $start = null, $length = null) {}
  * @since 4.0
  * @since 5.0
  */
-function strcspn ($str1, $str2, $start = null, $length = null) {}
+function strcspn($str1, $str2, $start = null, $length = null)
+{
+}
 
 /**
  * Tokenize string
@@ -1424,4 +1537,6 @@ function strcspn ($str1, $str2, $start = null, $length = null) {}
  * @since 4.0
  * @since 5.0
  */
-function strtok ($str = null, $token) {}
+function strtok($str = null, $token)
+{
+}

@@ -80,7 +80,9 @@
  * @since 4.0
  * @since 5.0
  */
-function preg_match ($pattern, $subject, array &$matches = null, $flags = 0, $offset = 0) {}
+function preg_match($pattern, $subject, array &$matches = null, $flags = 0, $offset = 0)
+{
+}
 
 /**
  * Perform a global regular expression match
@@ -142,7 +144,9 @@ function preg_match ($pattern, $subject, array &$matches = null, $flags = 0, $of
  * @since 4.0
  * @since 5.0
  */
-function preg_match_all ($pattern, $subject, array &$matches = null, $flags = PREG_PATTERN_ORDER, $offset = 0) {}
+function preg_match_all($pattern, $subject, array &$matches = null, $flags = PREG_PATTERN_ORDER, $offset = 0)
+{
+}
 
 /**
  * Perform a regular expression search and replace
@@ -232,7 +236,9 @@ function preg_match_all ($pattern, $subject, array &$matches = null, $flags = PR
  * @since 4.0
  * @since 5.0
  */
-function preg_replace ($pattern, $replacement, $subject, $limit = -1, &$count = null) {}
+function preg_replace($pattern, $replacement, $subject, $limit = -1, &$count = null)
+{
+}
 
 /**
  * Perform a regular expression search and replace using a callback
@@ -304,7 +310,9 @@ function preg_replace ($pattern, $replacement, $subject, $limit = -1, &$count = 
  * @since 4.0.5
  * @since 5.0
  */
-function preg_replace_callback ($pattern, callable $callback, $subject, $limit = -1, &$count = null) {}
+function preg_replace_callback($pattern, callable $callback, $subject, $limit = -1, &$count = null)
+{
+}
 
 /**
  * Perform a regular expression search and replace using callbacks
@@ -316,7 +324,9 @@ function preg_replace_callback ($pattern, callable $callback, $subject, $limit =
  * @return array|NUll  <p>preg_replace_callback_array() returns an array if the subject parameter is an array, or a string otherwise. On errors the return value is NULL</p>
  * <p>If matches are found, the new subject will be returned, otherwise subject will be returned unchanged.</p>
  */
-function preg_replace_callback_array ($patterns_and_callbacks, $subject , $limit = -1, &$count ) {}
+function preg_replace_callback_array($patterns_and_callbacks, $subject, $limit = -1, &$count)
+{
+}
 
 /**
  * Perform a regular expression search and replace
@@ -335,7 +345,9 @@ function preg_replace_callback_array ($patterns_and_callbacks, $subject , $limit
  * or <b>NULL</b> otherwise.
  * @since 5.3.0
  */
-function preg_filter ($pattern, $replacement, $subject, $limit = -1, &$count = null) {}
+function preg_filter($pattern, $replacement, $subject, $limit = -1, &$count = null)
+{
+}
 
 /**
  * Split string by a regular expression
@@ -364,7 +376,9 @@ function preg_filter ($pattern, $replacement, $subject, $limit = -1, &$count = n
  * @since 4.0
  * @since 5.0
  */
-function preg_split ($pattern, $subject, $limit = -1, $flags = 0) {}
+function preg_split($pattern, $subject, $limit = -1, $flags = 0)
+{
+}
 
 /**
  * Quote regular expression characters
@@ -382,7 +396,9 @@ function preg_split ($pattern, $subject, $limit = -1, $flags = 0) {}
  * @since 4.0
  * @since 5.0
  */
-function preg_quote ($str, $delimiter = null) {}
+function preg_quote($str, $delimiter = null)
+{
+}
 
 /**
  * Return array entries that match the pattern
@@ -403,7 +419,9 @@ function preg_quote ($str, $delimiter = null) {}
  * @since 4.0
  * @since 5.0
  */
-function preg_grep ($pattern, array $input, $flags = 0) {}
+function preg_grep($pattern, array $input, $flags = 0)
+{
+}
 
 /**
  * Returns the error code of the last PCRE regex execution
@@ -417,7 +435,9 @@ function preg_grep ($pattern, array $input, $flags = 0) {}
  * <b>PREG_BAD_UTF8_OFFSET_ERROR</b> (since PHP 5.3.0)
  * @since 5.2.0
  */
-function preg_last_error () {}
+function preg_last_error()
+{
+}
 
 
 /**
@@ -427,41 +447,41 @@ function preg_last_error () {}
  * <b>preg_match_all</b>.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_PATTERN_ORDER', 1);
+define('PREG_PATTERN_ORDER', 1);
 
 /**
  * Returned by {@see preg_last_error()} if the last PCRE function failed due to limited JIT stack space.
  * @since 7.0
  */
-define ('PREG_JIT_STACKLIMIT_ERROR', 6);
+define('PREG_JIT_STACKLIMIT_ERROR', 6);
 /**
  * Orders results so that $matches[0] is an array of first set of
  * matches, $matches[1] is an array of second set of matches, and so
  * on. This flag is only used with <b>preg_match_all</b>.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_SET_ORDER', 2);
+define('PREG_SET_ORDER', 2);
 
 /**
  * See the description of
  * <b>PREG_SPLIT_OFFSET_CAPTURE</b>.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_OFFSET_CAPTURE', 256);
+define('PREG_OFFSET_CAPTURE', 256);
 
 /**
  * This flag tells <b>preg_split</b> to return only non-empty
  * pieces.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_SPLIT_NO_EMPTY', 1);
+define('PREG_SPLIT_NO_EMPTY', 1);
 
 /**
  * This flag tells <b>preg_split</b> to capture
  * parenthesized expression in the delimiter pattern as well.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_SPLIT_DELIM_CAPTURE', 2);
+define('PREG_SPLIT_DELIM_CAPTURE', 2);
 
 /**
  * If this flag is set, for every occurring match the appendant string
@@ -471,41 +491,41 @@ define ('PREG_SPLIT_DELIM_CAPTURE', 2);
  * offset 1. This flag is only used for <b>preg_split</b>.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_SPLIT_OFFSET_CAPTURE', 4);
-define ('PREG_GREP_INVERT', 1);
+define('PREG_SPLIT_OFFSET_CAPTURE', 4);
+define('PREG_GREP_INVERT', 1);
 
 /**
  * Returned by <b>preg_last_error</b> if there were no
  * errors.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_NO_ERROR', 0);
+define('PREG_NO_ERROR', 0);
 
 /**
  * Returned by <b>preg_last_error</b> if there was an
  * internal PCRE error.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_INTERNAL_ERROR', 1);
+define('PREG_INTERNAL_ERROR', 1);
 
 /**
  * Returned by <b>preg_last_error</b> if backtrack limit was exhausted.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_BACKTRACK_LIMIT_ERROR', 2);
+define('PREG_BACKTRACK_LIMIT_ERROR', 2);
 
 /**
  * Returned by <b>preg_last_error</b> if recursion limit was exhausted.
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_RECURSION_LIMIT_ERROR', 3);
+define('PREG_RECURSION_LIMIT_ERROR', 3);
 
 /**
  * Returned by <b>preg_last_error</b> if the last error was
  * caused by malformed UTF-8 data (only when running a regex in UTF-8 mode).
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_BAD_UTF8_ERROR', 4);
+define('PREG_BAD_UTF8_ERROR', 4);
 
 /**
  * Returned by <b>preg_last_error</b> if the offset didn't
@@ -514,13 +534,13 @@ define ('PREG_BAD_UTF8_ERROR', 4);
  * mode).
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PREG_BAD_UTF8_OFFSET_ERROR', 5);
+define('PREG_BAD_UTF8_OFFSET_ERROR', 5);
 
 /**
  * PCRE version and release date (e.g. "7.0 18-Dec-2006").
  * @link http://php.net/manual/en/pcre.constants.php
  */
-define ('PCRE_VERSION', "8.31 2012-07-06");
+define('PCRE_VERSION', "8.31 2012-07-06");
 
 // End of pcre v.
 ?>

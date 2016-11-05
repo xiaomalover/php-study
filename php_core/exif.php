@@ -77,7 +77,9 @@
  * @since 4.2.0
  * @since 5.0
  */
-function exif_read_data ($filename, $sections = null, $arrays = false, $thumbnail = false) {}
+function exif_read_data($filename, $sections = null, $arrays = false, $thumbnail = false)
+{
+}
 
 /**
  * Alias of <b>exif_read_data</b>
@@ -89,7 +91,9 @@ function exif_read_data ($filename, $sections = null, $arrays = false, $thumbnai
  * @since 4.0.1
  * @since 5.0
  */
-function read_exif_data ($filename, $sections_needed, $sub_arrays, $read_thumbnail) {}
+function read_exif_data($filename, $sections_needed, $sub_arrays, $read_thumbnail)
+{
+}
 
 /**
  * Get the header name for an index
@@ -102,7 +106,9 @@ function read_exif_data ($filename, $sections_needed, $sub_arrays, $read_thumbna
  * @since 4.2.0
  * @since 5.0
  */
-function exif_tagname ($index) {}
+function exif_tagname($index)
+{
+}
 
 /**
  * Retrieve the embedded thumbnail of a TIFF or JPEG image
@@ -126,7 +132,9 @@ function exif_tagname ($index) {}
  * @since 4.2.0
  * @since 5.0
  */
-function exif_thumbnail ($filename, &$width = null, &$height = null, &$imagetype = null) {}
+function exif_thumbnail($filename, &$width = null, &$height = null, &$imagetype = null)
+{
+}
 
 /**
  * Determine the type of an image
@@ -144,9 +152,11 @@ function exif_thumbnail ($filename, &$width = null, &$height = null, &$imagetype
  * @since 4.3.0
  * @since 5.0
  */
-function exif_imagetype ($filename) {}
+function exif_imagetype($filename)
+{
+}
 
-define ('EXIF_USE_MBSTRING', 1);
+define('EXIF_USE_MBSTRING', 1);
 
 // End of exif v.1.4 $Id$
 ?>

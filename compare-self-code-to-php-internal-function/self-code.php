@@ -6,7 +6,7 @@ $arr2 = range(LENGTH / 2, LENGTH * 2);
 //自己用foreach 实现数组1数组2合并
 $carr = $arr1;
 foreach ($arr2 as $v) {
-    if (!in_array($v, $carr)){
+    if (!in_array($v, $carr)) {
         $carr[] = $v;
     }
 }

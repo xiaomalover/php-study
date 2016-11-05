@@ -16,7 +16,9 @@
  * @since 4.0.4
  * @since 5.0
  */
-function bzopen ($filename, $mode) {}
+function bzopen($filename, $mode)
+{
+}
 
 /**
  * Binary safe bzip2 file read
@@ -34,7 +36,9 @@ function bzopen ($filename, $mode) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzread ($bz, $length = 1024) {}
+function bzread($bz, $length = 1024)
+{
+}
 
 /**
  * Binary safe bzip2 file write
@@ -55,7 +59,9 @@ function bzread ($bz, $length = 1024) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzwrite ($bz, $data, $length = null) {}
+function bzwrite($bz, $data, $length = null)
+{
+}
 
 /**
  * Force a write of all buffered data
@@ -68,7 +74,9 @@ function bzwrite ($bz, $data, $length = null) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzflush ($bz) {}
+function bzflush($bz)
+{
+}
 
 /**
  * Close a bzip2 file
@@ -81,7 +89,9 @@ function bzflush ($bz) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzclose ($bz) {}
+function bzclose($bz)
+{
+}
 
 /**
  * Returns a bzip2 error number
@@ -94,7 +104,9 @@ function bzclose ($bz) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzerrno ($bz) {}
+function bzerrno($bz)
+{
+}
 
 /**
  * Returns a bzip2 error string
@@ -107,7 +119,9 @@ function bzerrno ($bz) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzerrstr ($bz) {}
+function bzerrstr($bz)
+{
+}
 
 /**
  * Returns the bzip2 error number and error string in an array
@@ -122,7 +136,9 @@ function bzerrstr ($bz) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzerror ($bz) {}
+function bzerror($bz)
+{
+}
 
 /**
  * Compress a string into bzip2 encoded data
@@ -148,7 +164,9 @@ function bzerror ($bz) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzcompress ($source, $blocksize = 4, $workfactor = 0) {}
+function bzcompress($source, $blocksize = 4, $workfactor = 0)
+{
+}
 
 /**
  * Decompresses bzip2 encoded data
@@ -169,4 +187,6 @@ function bzcompress ($source, $blocksize = 4, $workfactor = 0) {}
  * @since 4.0.4
  * @since 5.0
  */
-function bzdecompress ($source, $small = 0) {}
+function bzdecompress($source, $small = 0)
+{
+}
